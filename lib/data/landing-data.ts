@@ -408,12 +408,15 @@ export const statsData: StatsData = {
 export const clientLogosData: ClientLogosData = {
   headline: "Trusted by Leading Organizations",
   logos: [
-    { name: "Client 1", imageUrl: "/clients/client-1.png" },
-    { name: "Client 2", imageUrl: "/clients/client-2.png" },
-    { name: "Client 3", imageUrl: "/clients/client-3.png" },
-    { name: "Client 4", imageUrl: "/clients/client-4.png" },
-    { name: "Client 5", imageUrl: "/clients/client-5.png" },
-    { name: "Client 6", imageUrl: "/clients/client-6.png" },
+    { name: "Client Partner", imageUrl: "/clients/17.jpg" },
+    { name: "Industry Leader", imageUrl: "/clients/19.jpg" },
+    { name: "Global Corporation", imageUrl: "/clients/20.jpg" },
+    { name: "Tech Enterprise", imageUrl: "/clients/22.jpg" },
+    { name: "Manufacturing Giant", imageUrl: "/clients/23.jpg" },
+    { name: "Industrial Solutions", imageUrl: "/clients/24.jpg" },
+    { name: "Engineering Group", imageUrl: "/clients/25.jpg" },
+    { name: "Power Systems", imageUrl: "/clients/26.jpg" },
+    { name: "Process Industries", imageUrl: "/clients/27.jpg" },
   ],
 };
 
