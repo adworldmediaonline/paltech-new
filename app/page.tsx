@@ -6,6 +6,7 @@ import { Footer } from "@/components/landing/footer";
 import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
 import { Principles } from "@/components/landing/principles";
+import { ProductShowcase } from "@/components/landing/product-showcase";
 import { ServicesGrid } from "@/components/landing/services-grid";
 import { Stats } from "@/components/landing/stats";
 import { WhyChoose } from "@/components/landing/why-choose";
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Principles />
         <About />
+        <ProductShowcase />
         <WhyChoose />
         <ServicesGrid />
         <Stats />
