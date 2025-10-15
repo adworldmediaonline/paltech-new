@@ -35,14 +35,22 @@ export function Hero() {
           {/* Content - Centered */}
           <div className="text-center animate-fade-in">
             {/* Eyebrow badges */}
-            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-6 sm:mb-8">
-              <Badge className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm text-xs sm:text-sm">
-                <Award className="w-3 h-3 sm:w-3.5 sm:h-3.5 mr-1.5 sm:mr-2 text-primary" />
-                ISO 9001:2015 Certified
+            <div className="flex flex-wrap items-center justify-center gap-2 mb-6 sm:mb-8">
+              <Badge className="px-2.5 py-1.5 sm:px-3 sm:py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm text-[10px] sm:text-xs">
+                <Award className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1 sm:mr-1.5 text-primary" />
+                ISO 9001:2015
               </Badge>
-              <Badge className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm text-xs sm:text-sm">
-                <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 mr-1.5 sm:mr-2 text-primary" />
-                CTI Member Since 1986
+              <Badge className="px-2.5 py-1.5 sm:px-3 sm:py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm text-[10px] sm:text-xs">
+                <Award className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1 sm:mr-1.5 text-primary" />
+                ISO 14001:2015
+              </Badge>
+              <Badge className="px-2.5 py-1.5 sm:px-3 sm:py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm text-[10px] sm:text-xs">
+                <Award className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1 sm:mr-1.5 text-primary" />
+                ISO 45001:2018
+              </Badge>
+              <Badge className="px-2.5 py-1.5 sm:px-3 sm:py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm text-[10px] sm:text-xs">
+                <CheckCircle2 className="w-2.5 h-2.5 sm:w-3 sm:h-3 mr-1 sm:mr-1.5 text-primary" />
+                CTI USA Member
               </Badge>
             </div>
 
@@ -55,8 +63,8 @@ export function Hero() {
             </h1>
 
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-10 sm:mb-12 leading-relaxed max-w-4xl mx-auto font-light px-4">
-              Three decades of engineering excellence delivering industrial cooling systems to 25+ countries worldwide.
-              Trusted by global leaders for mission-critical operations.
+              Over three decades of delivering quality products and most reliable services.
+              Trusted by 11,000+ clients worldwide with 13,000+ installations across 25+ countries.
             </p>
 
             {/* CTAs */}
@@ -87,22 +95,22 @@ export function Hero() {
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-12 px-4">
               <div className="text-center">
                 <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">30+</div>
-                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Years Experience</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Years Excellence</div>
               </div>
               <div className="hidden sm:block w-px h-12 bg-white/10" />
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">500+</div>
-                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Projects Delivered</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">11K+</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Clients Served</div>
               </div>
               <div className="hidden sm:block w-px h-12 bg-white/10" />
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">25+</div>
-                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Countries Served</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">13K+</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Installations</div>
               </div>
               <div className="hidden sm:block w-px h-12 bg-white/10" />
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-1 sm:mb-2">99.8%</div>
-                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">System Uptime</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-1 sm:mb-2">25+</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Export Countries</div>
               </div>
             </div>
           </div>

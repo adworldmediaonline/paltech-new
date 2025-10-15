@@ -23,36 +23,31 @@ export interface HeroData {
   };
 }
 
-export interface WhatWeDoItem {
-  text: string;
-}
-
-export interface WhatWeDoData {
-  eyebrow: string;
-  headline: string;
+export interface ProductCategory {
+  icon: string;
+  title: string;
   description: string;
-  items: WhatWeDoItem[];
-  ctaText: string;
-  ctaHref: string;
+  products: string[];
 }
 
 export interface SolutionsShowcaseData {
   eyebrow: string;
   headline: string;
-  paragraphs: string[];
+  description: string;
+  categories: ProductCategory[];
   ctaText: string;
   ctaHref: string;
 }
 
-export interface WhoWeServeItem {
+export interface AboutItem {
   text: string;
 }
 
-export interface WhoWeServeData {
+export interface AboutData {
   eyebrow: string;
   headline: string;
   description: string;
-  items: WhoWeServeItem[];
+  items: AboutItem[];
   ctaText: string;
   ctaHref: string;
 }
@@ -91,6 +86,20 @@ export interface Stat {
 
 export interface StatsData {
   stats: Stat[];
+}
+
+export interface PrincipleCard {
+  icon: string;
+  title: string;
+  description: string;
+  highlight: string;
+}
+
+export interface PrinciplesData {
+  eyebrow: string;
+  headline: string;
+  subheadline: string;
+  principles: PrincipleCard[];
 }
 
 export interface ClientLogosData {
@@ -182,84 +191,128 @@ export const heroData: HeroData = {
   },
 };
 
-export const whatWeDoData: WhatWeDoData = {
-  eyebrow: "WHAT WE DO",
-  headline:
-    "Paltech delivers world-class cooling systems engineered for reliability and efficiency",
-  description:
-    "We design, manufacture, and deploy industrial cooling solutions that keep critical operations running smoothly. Our collaborative approach ensures precision-built systems that meet the exact needs of complex industrial environments.",
-  items: [
-    { text: "Industrial Cooling Tower Design & Manufacturing" },
-    { text: "Custom Heat Exchanger Solutions" },
-    { text: "HVAC System Integration" },
-    { text: "Energy-Efficient Cooling Technology" },
-    { text: "Precision Engineering & Testing" },
-    { text: "24/7 Technical Support & Maintenance" },
-  ],
-  ctaText: "Learn More About Our Capabilities",
-  ctaHref: "#solutions",
-};
-
 export const solutionsShowcaseData: SolutionsShowcaseData = {
-  eyebrow: "OUR SOLUTIONS",
-  headline: "Engineering excellence meets operational reliability",
-  paragraphs: [
-    "Our cooling solutions are built to withstand the most demanding industrial environments. From power generation to petrochemical processing, we deliver systems that maintain optimal performance even under extreme conditions.",
-    "Every project begins with a thorough analysis of your operational requirements. We combine decades of field experience with cutting-edge technology to design cooling systems that maximize efficiency while minimizing downtime and maintenance costs.",
+  eyebrow: "ABOUT US",
+  headline: "Synonymous with the highest standards of quality and integrity",
+  description: "PALTECH is a trusted name in the business of cooling solutions, specializing in comprehensive industrial cooling systems with proven expertise across diverse applications.",
+  categories: [
+    {
+      icon: "building",
+      title: "Cooling Towers",
+      description: "Comprehensive range of cooling tower solutions engineered for optimal thermal management",
+      products: [
+        "Packaged FRP Cooling Towers",
+        "Wooden Cooling Towers",
+        "Pultruded FRP Towers",
+        "RCC (Reinforced Concrete Cement) Towers",
+      ],
+    },
+    {
+      icon: "snowflake",
+      title: "Chilling Plants",
+      description: "Advanced chilling plant systems designed for precision temperature control",
+      products: [
+        "Air-Cooled Chilling Plants",
+        "Water-Cooled Chilling Plants",
+        "Custom Chilling Solutions",
+        "Energy-Efficient Systems",
+      ],
+    },
   ],
   ctaText: "Explore Our Products",
   ctaHref: "#products",
 };
 
-export const whoWeServeData: WhoWeServeData = {
-  eyebrow: "WHO WE SERVE",
+export const aboutData: AboutData = {
+  eyebrow: "ABOUT US",
   headline:
-    "Industrial cooling solutions for complex, mission-critical operations",
+    "Synonymous with the highest standards of quality and integrity",
   description:
-    "For over 30 years, we've partnered with B2B industrial and manufacturing companies that demand specialized cooling systems. Our clients share certain characteristics that require a customized engineering approach:",
+    "PALTECH is synonymous with the highest standards of quality and integrity in the business of cooling solutions. Specializing in a wide range of cooling towers, including Packaged FRP, Wooden, Pultruded FRP, and RCC (Reinforced Concrete Cement) models, PALTECH is a trusted name in the industry. Additionally, we excel in the production of Chilling Plants, catering to both air and water-cooled systems.",
   items: [
-    { text: "Complex equipment requiring precise temperature control" },
-    { text: "Mission-critical operations with zero tolerance for downtime" },
-    { text: "Long operational cycles requiring durable, reliable systems" },
-    { text: "Global operations requiring international support" },
-    { text: "Strict compliance with industry standards (ISO, CTI, ASHRAE)" },
-    { text: "Integration with existing infrastructure and control systems" },
+    { text: "Packaged FRP Cooling Towers" },
+    { text: "Wooden Cooling Towers" },
+    { text: "Pultruded FRP Cooling Towers" },
+    { text: "RCC (Reinforced Concrete Cement) Cooling Towers" },
+    { text: "Air-Cooled Chilling Plants" },
+    { text: "Water-Cooled Chilling Plants" },
   ],
-  ctaText: "See Our Industries",
-  ctaHref: "#industries",
+  ctaText: "Explore Our Products",
+  ctaHref: "#products",
 };
 
 export const whyChooseData: WhyChooseData = {
   eyebrow: "WHY COMPANIES CHOOSE US",
-  headline: "A trusted partner in industrial cooling excellence",
+  headline: "Excellence in every aspect of industrial cooling",
   cards: [
     {
+      icon: "shield-check",
+      title: "High Quality Components",
+      description:
+        "We use only premium-grade components in every product, ensuring you receive the best quality for optimal performance and longevity.",
+    },
+    {
+      icon: "volume-x",
+      title: "Low Noise Operation",
+      description:
+        "Committed to green environment standards, all our products are engineered to produce minimal noise levels in accordance with industry regulations.",
+    },
+    {
+      icon: "zap",
+      title: "Low Power Consumption",
+      description:
+        "Energy-efficient designs that reduce power consumption, benefiting both the environment and your operational costs while maintaining peak performance.",
+    },
+    {
+      icon: "trending-down",
+      title: "Economical Production Cost",
+      description:
+        "Low maintenance requirements and energy-efficient operation significantly reduce your production costs without compromising quality.",
+    },
+    {
       icon: "target",
-      title: "Precision Engineering",
+      title: "Precision Process Control",
       description:
-        "Every system is designed with meticulous attention to detail, ensuring optimal performance and long-term reliability for your critical operations.",
+        "Our entire manufacturing process is meticulously controlled to ensure the highest level of precision in every product we deliver.",
     },
     {
-      icon: "magnet",
-      title: "Customer-Focused Solutions",
+      icon: "cpu",
+      title: "Smarter & More Reliable",
       description:
-        "We don't offer one-size-fits-all products. Our team collaborates closely with you to deliver cooling systems tailored to your exact specifications.",
-    },
-    {
-      icon: "trending-up",
-      title: "Proven Track Record",
-      description:
-        "With 30+ years of experience and 500+ successful installations across 25+ countries, we deliver results that exceed expectations.",
-    },
-    {
-      icon: "wrench",
-      title: "Comprehensive Support",
-      description:
-        "From initial design through installation and ongoing maintenance, our expert team provides 24/7 support to keep your systems running smoothly.",
+        "Continuously evolving products that are smarter, simpler, safer, and more reliable through innovative design and constant improvement.",
     },
   ],
-  ctaText: "Get Started",
+  ctaText: "Request a Consultation",
   ctaHref: "#contact",
+};
+
+export const principlesData: PrinciplesData = {
+  eyebrow: "OUR PRINCIPLES",
+  headline: "Built on a foundation of excellence and innovation",
+  subheadline: "36+ years of delivering the best quality products and most reliable services at the most reasonable prices in the market",
+  principles: [
+    {
+      icon: "award",
+      title: "Quality Products & Services",
+      description:
+        "Paltech, our brand name, stands for the best quality products, genuine accessories, and the most reliable services at the most reasonable prices in the market. With over 36 years of experience in the industry, we are here to provide you with the best quality products and services compared to any other company in India.",
+      highlight: "36+ Years Excellence",
+    },
+    {
+      icon: "crosshair",
+      title: "Precision",
+      description:
+        "To continually innovate and modify process of manufacturing and development of equipments to get best quality products and services.",
+      highlight: "Continuous Innovation",
+    },
+    {
+      icon: "zap",
+      title: "Efficiency",
+      description:
+        "To continually innovate, develop and adopt state-of-art technology in methods and materials to enhance productivity and cost effectiveness.",
+      highlight: "State-of-Art Technology",
+    },
+  ],
 };
 
 export const servicesData: ServicesData = {
@@ -319,21 +372,24 @@ export const servicesData: ServicesData = {
 export const statsData: StatsData = {
   stats: [
     { value: "30+", label: "Years of Excellence" },
-    { value: "500+", label: "Projects Delivered" },
-    { value: "25+", label: "Countries Served" },
-    { value: "99.8%", label: "System Uptime" },
+    { value: "11,000+", label: "Clients Served" },
+    { value: "13,000+", label: "Installations Worldwide" },
+    { value: "25+", label: "Export Countries" },
   ],
 };
 
 export const clientLogosData: ClientLogosData = {
   headline: "Trusted by Leading Organizations",
   logos: [
-    { name: "Client 1", imageUrl: "/clients/client-1.png" },
-    { name: "Client 2", imageUrl: "/clients/client-2.png" },
-    { name: "Client 3", imageUrl: "/clients/client-3.png" },
-    { name: "Client 4", imageUrl: "/clients/client-4.png" },
-    { name: "Client 5", imageUrl: "/clients/client-5.png" },
-    { name: "Client 6", imageUrl: "/clients/client-6.png" },
+    { name: "Client Partner", imageUrl: "/clients/17.jpg" },
+    { name: "Industry Leader", imageUrl: "/clients/19.jpg" },
+    { name: "Global Corporation", imageUrl: "/clients/20.jpg" },
+    { name: "Tech Enterprise", imageUrl: "/clients/22.jpg" },
+    { name: "Manufacturing Giant", imageUrl: "/clients/23.jpg" },
+    { name: "Industrial Solutions", imageUrl: "/clients/24.jpg" },
+    { name: "Engineering Group", imageUrl: "/clients/25.jpg" },
+    { name: "Power Systems", imageUrl: "/clients/26.jpg" },
+    { name: "Process Industries", imageUrl: "/clients/27.jpg" },
   ],
 };
 
@@ -348,9 +404,9 @@ export const contactFormData: ContactFormData = {
   description:
     "Let's discuss how we can help optimize your industrial cooling operations. Our team of experts is ready to answer your questions and provide tailored solutions.",
   contactInfo: {
-    address: "Paltech Industrial Solutions\n123 Industry Drive\nMumbai, India 400001",
-    phone: "+91 (22) 1234-5678",
-    email: "info@paltech.in",
+    address: "Plot No. 774, IInd Floor, Udyog Vihar\nPhase - V, Gurugram, Haryana\nIndia",
+    phone: "+91.124.4499700",
+    email: "paltech@paltech.in",
   },
 };
 

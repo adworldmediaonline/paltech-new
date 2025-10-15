@@ -2,16 +2,16 @@
 
 import { Button } from "@/components/ui/button";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
-import { whoWeServeData } from "@/lib/data/landing-data";
+import { aboutData } from "@/lib/data/landing-data";
 import Link from "next/link";
 
-export function WhoWeServe() {
+export function About() {
   const [ref, isVisible] = useIntersectionObserver({ freezeOnceVisible: true });
 
   return (
     <section
       ref={ref}
-      id="industries"
+      id="about"
       className="relative py-20 md:py-28 lg:py-32 bg-slate-900"
     >
       {/* Background overlay */}
@@ -25,17 +25,17 @@ export function WhoWeServe() {
           }`}
         >
           <div className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">
-            {whoWeServeData.eyebrow}
+            {aboutData.eyebrow}
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 max-w-4xl">
-            {whoWeServeData.headline}
+            {aboutData.headline}
           </h2>
           <p className="text-lg text-white/80 mb-12 max-w-3xl leading-relaxed">
-            {whoWeServeData.description}
+            {aboutData.description}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-6 mb-10">
-            {whoWeServeData.items.map((item, index) => (
+            {aboutData.items.map((item, index) => (
               <div
                 key={index}
                 className="flex items-start gap-3 group"
@@ -50,9 +50,9 @@ export function WhoWeServe() {
             asChild
             size="lg"
             variant="outline"
-            className="mt-4 border-2 border-white text-white hover:bg-white hover:text-slate-900"
+            className="mt-4 border-2 border-white text-black hover:bg-white hover:text-slate-900"
           >
-            <Link href={whoWeServeData.ctaHref}>{whoWeServeData.ctaText}</Link>
+            <Link href={aboutData.ctaHref}>{aboutData.ctaText}</Link>
           </Button>
         </div>
       </div>
