@@ -129,7 +129,7 @@ export function ContactSection() {
                 <MapPin className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
                 <span className="text-xs text-white/60">Location</span>
                 <span className="text-sm font-semibold text-white">
-                  Mumbai, India
+                  Gurugram, Haryana
                 </span>
               </div>
             </div>

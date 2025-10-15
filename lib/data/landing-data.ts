@@ -404,9 +404,9 @@ export const contactFormData: ContactFormData = {
   description:
     "Let's discuss how we can help optimize your industrial cooling operations. Our team of experts is ready to answer your questions and provide tailored solutions.",
   contactInfo: {
-    address: "Paltech Industrial Solutions\n123 Industry Drive\nMumbai, India 400001",
-    phone: "+91 (22) 1234-5678",
-    email: "info@paltech.in",
+    address: "Plot No. 774, IInd Floor, Udyog Vihar\nPhase - V, Gurugram, Haryana\nIndia",
+    phone: "+91.124.4499700",
+    email: "paltech@paltech.in",
   },
 };
 
