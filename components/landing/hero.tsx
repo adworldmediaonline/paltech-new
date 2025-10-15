@@ -58,7 +58,7 @@ export function Hero() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-white/20 text-white hover:bg-white/10 backdrop-blur-sm text-base px-8 py-6 h-auto rounded-xl font-semibold"
+                className="border-2 border-white/20 text-black hover:bg-white/10 backdrop-blur-sm text-base px-8 py-6 h-auto rounded-xl font-semibold"
               >
                 <Link href={heroData.secondaryCta.href}>
                   {heroData.secondaryCta.text}

@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import { useScrollPosition } from "@/hooks/use-scroll-position";
 import { navItems } from "@/lib/data/landing-data";
 import { Menu, Search } from "lucide-react";
@@ -109,6 +109,7 @@ export function Header() {
                     <Menu className="h-5 w-5" />
                   </Button>
                 </SheetTrigger>
+                <SheetTitle className="sr-only">Menu</SheetTitle>
                 <SheetContent side="right" className="w-[280px] sm:w-[350px]">
                   <div className="flex flex-col gap-6 mt-8">
                     <nav className="flex flex-col gap-2">
