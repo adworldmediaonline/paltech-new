@@ -30,23 +30,23 @@ export function Hero() {
         </svg>
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40 w-full">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24 md:py-32 lg:py-40 w-full">
         <div className="max-w-5xl mx-auto">
           {/* Content - Centered */}
           <div className="text-center animate-fade-in">
             {/* Eyebrow badges */}
-            <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
-              <Badge className="px-4 py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm">
-                <Award className="w-3.5 h-3.5 mr-2 text-primary" />
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-6 sm:mb-8">
+              <Badge className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm text-xs sm:text-sm">
+                <Award className="w-3 h-3 sm:w-3.5 sm:h-3.5 mr-1.5 sm:mr-2 text-primary" />
                 ISO 9001:2015 Certified
               </Badge>
-              <Badge className="px-4 py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm">
-                <CheckCircle2 className="w-3.5 h-3.5 mr-2 text-primary" />
+              <Badge className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm text-xs sm:text-sm">
+                <CheckCircle2 className="w-3 h-3 sm:w-3.5 sm:h-3.5 mr-1.5 sm:mr-2 text-primary" />
                 CTI Member Since 1986
               </Badge>
             </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[1.08] tracking-tight mb-8">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white leading-[1.1] sm:leading-[1.08] tracking-tight mb-6 sm:mb-8 px-2">
               Precision-Engineered{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-primary animate-gradient inline-block">
                 Cooling Solutions
@@ -54,28 +54,28 @@ export function Hero() {
               for Critical Industries
             </h1>
 
-            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto font-light">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-10 sm:mb-12 leading-relaxed max-w-4xl mx-auto font-light px-4">
               Three decades of engineering excellence delivering industrial cooling systems to 25+ countries worldwide.
               Trusted by global leaders for mission-critical operations.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-12 sm:mb-16 px-4">
               <Button
                 asChild
                 size="lg"
-                className="group bg-gradient-to-r from-primary to-primary/90 text-white hover:shadow-2xl hover:shadow-primary/30 transition-all text-base sm:text-lg px-10 py-7 h-auto rounded-2xl font-semibold hover:scale-105"
+                className="group bg-gradient-to-r from-primary to-primary/90 text-white hover:shadow-2xl hover:shadow-primary/30 active:scale-95 transition-all text-sm sm:text-base md:text-lg px-8 sm:px-10 py-5 sm:py-6 md:py-7 h-auto rounded-xl sm:rounded-2xl font-semibold hover:scale-105 touch-manipulation"
               >
                 <Link href={heroData.primaryCta.href}>
                   {heroData.primaryCta.text}
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
               <Button
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-white/20 text-white hover:bg-white/10 backdrop-blur-sm text-base sm:text-lg px-10 py-7 h-auto rounded-2xl font-semibold transition-all hover:border-white/40"
+                className="border-2 border-white/20 text-black hover:bg-primary/10 hover:text-white backdrop-blur-sm active:scale-95 text-sm sm:text-base md:text-lg px-8 sm:px-10 py-5 sm:py-6 md:py-7 h-auto rounded-xl sm:rounded-2xl font-semibold transition-all hover:border-white/40 touch-manipulation"
               >
                 <Link href={heroData.secondaryCta.href}>
                   {heroData.secondaryCta.text}
@@ -84,25 +84,25 @@ export function Hero() {
             </div>
 
             {/* Trust Stats - Horizontal row */}
-            <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+            <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-12 px-4">
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">30+</div>
-                <div className="text-sm text-gray-400 uppercase tracking-wider">Years Experience</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">30+</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Years Experience</div>
               </div>
               <div className="hidden sm:block w-px h-12 bg-white/10" />
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">500+</div>
-                <div className="text-sm text-gray-400 uppercase tracking-wider">Projects Delivered</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">500+</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Projects Delivered</div>
               </div>
               <div className="hidden sm:block w-px h-12 bg-white/10" />
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">25+</div>
-                <div className="text-sm text-gray-400 uppercase tracking-wider">Countries Served</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">25+</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Countries Served</div>
               </div>
               <div className="hidden sm:block w-px h-12 bg-white/10" />
               <div className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">99.8%</div>
-                <div className="text-sm text-gray-400 uppercase tracking-wider">System Uptime</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-primary mb-1 sm:mb-2">99.8%</div>
+                <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">System Uptime</div>
               </div>
             </div>
           </div>

@@ -1,6 +1,13 @@
+export interface SubNavItem {
+  label: string;
+  href: string;
+}
+
 export interface NavItem {
   label: string;
   href: string;
+  hasDropdown?: boolean;
+  subItems?: SubNavItem[];
 }
 
 export interface HeroData {
@@ -129,10 +136,37 @@ export interface FooterData {
 
 // Landing page content
 export const navItems: NavItem[] = [
-  { label: "Solutions", href: "#solutions" },
-  { label: "Industries", href: "#industries" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  {
+    label: "About Us",
+    href: "#about",
+    hasDropdown: true,
+    subItems: [
+      { label: "Our Mission", href: "#mission" },
+      { label: "Our Clients", href: "#clients" },
+      { label: "Awards & Recognition", href: "#awards" },
+      { label: "Policies & Certification", href: "#certifications" },
+      { label: "Executed Projects", href: "#projects" },
+      { label: "Project Consultants", href: "#consultants" },
+      { label: "Affilliated Bodies", href: "#affiliations" },
+      { label: "Export Countries", href: "#exports" },
+    ]
+  },
+  {
+    label: "Products",
+    href: "#products",
+    hasDropdown: true,
+    subItems: [
+      { label: "Cooling Towers", href: "#cooling-towers" },
+      { label: "Heat Exchangers", href: "#heat-exchangers" },
+      { label: "HVAC Systems", href: "#hvac" },
+      { label: "Custom Solutions", href: "#custom" },
+    ]
+  },
+  { label: "Spares", href: "#spares" },
+  { label: "Other Services", href: "#services" },
+  { label: "Career", href: "#career" },
+  { label: "Contact Us", href: "#contact" },
 ];
 
 export const heroData: HeroData = {

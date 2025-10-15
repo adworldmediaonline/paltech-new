@@ -186,11 +186,31 @@
   body {
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
+    /* Mobile optimizations */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   /* Smooth scroll behavior */
   html {
     scroll-behavior: smooth;
+    /* Prevent horizontal scroll on mobile */
+    overflow-x: hidden;
+  }
+
+  /* Mobile-specific optimizations */
+  @supports (-webkit-touch-callout: none) {
+    /* iOS Safari specific fixes */
+    body {
+      /* Prevent bounce scroll */
+      overscroll-behavior-y: none;
+    }
+  }
+
+  /* Better touch scrolling on mobile */
+  * {
+    -webkit-overflow-scrolling: touch;
   }
 
   /* Respect prefers-reduced-motion */
@@ -203,6 +223,14 @@
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
     }
+  }
+
+  /* Better button/input handling on mobile */
+  button, a, input, textarea, select {
+    /* Remove iOS button styling */
+    -webkit-appearance: none;
+    /* Improve touch response */
+    touch-action: manipulation;
   }
 }
 
