@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="pt-16 md:pt-20">
+      <main>
         <Hero />
         <WhatWeDo />
         <SolutionsShowcase />
