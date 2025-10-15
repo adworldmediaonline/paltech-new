@@ -2,9 +2,8 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { heroData } from "@/lib/data/landing-data";
-import { ArrowRight, Award, Building2, CheckCircle2, Globe, Shield } from "lucide-react";
+import { ArrowRight, Award, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
 
 export function Hero() {
@@ -19,35 +18,53 @@ export function Hero() {
       {/* Grid pattern overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left Content */}
-          <div className="animate-fade-in">
-            {/* Eyebrow badge */}
-            <Badge className="mb-6 px-4 py-2 bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors">
-              <Award className="w-3 h-3 mr-2" />
-              ISO Certified • CTI Member Since 1986
-            </Badge>
+      {/* Hexagonal pattern on the right */}
+      <div className="absolute right-0 top-0 bottom-0 w-1/2 opacity-5 pointer-events-none">
+        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="hexagons" x="0" y="0" width="100" height="87" patternUnits="userSpaceOnUse">
+              <path d="M25 0l25 14.5v29L25 58 0 43.5v-29z" fill="none" stroke="currentColor" strokeWidth="1" className="text-primary" />
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" fill="url(#hexagons)" />
+        </svg>
+      </div>
 
-            <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold text-white leading-[1.1] tracking-tight mb-6">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 md:py-32 lg:py-40 w-full">
+        <div className="max-w-5xl mx-auto">
+          {/* Content - Centered */}
+          <div className="text-center animate-fade-in">
+            {/* Eyebrow badges */}
+            <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
+              <Badge className="px-4 py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm">
+                <Award className="w-3.5 h-3.5 mr-2 text-primary" />
+                ISO 9001:2015 Certified
+              </Badge>
+              <Badge className="px-4 py-2 bg-white/5 text-white border-white/10 hover:bg-white/10 transition-all backdrop-blur-sm">
+                <CheckCircle2 className="w-3.5 h-3.5 mr-2 text-primary" />
+                CTI Member Since 1986
+              </Badge>
+            </div>
+
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[1.08] tracking-tight mb-8">
               Precision-Engineered{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-primary animate-gradient">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-primary animate-gradient inline-block">
                 Cooling Solutions
               </span>{" "}
               for Critical Industries
             </h1>
 
-            <p className="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed max-w-2xl">
-              Three decades of engineering excellence delivering industrial cooling systems to 25+ countries.
+            <p className="text-lg md:text-xl lg:text-2xl text-gray-300 mb-12 leading-relaxed max-w-4xl mx-auto font-light">
+              Three decades of engineering excellence delivering industrial cooling systems to 25+ countries worldwide.
               Trusted by global leaders for mission-critical operations.
             </p>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-4 mb-10">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
               <Button
                 asChild
                 size="lg"
-                className="group bg-gradient-to-r from-primary to-primary/90 text-white hover:shadow-xl hover:shadow-primary/20 transition-all text-base px-8 py-6 h-auto rounded-xl font-semibold"
+                className="group bg-gradient-to-r from-primary to-primary/90 text-white hover:shadow-2xl hover:shadow-primary/30 transition-all text-base sm:text-lg px-10 py-7 h-auto rounded-2xl font-semibold hover:scale-105"
               >
                 <Link href={heroData.primaryCta.href}>
                   {heroData.primaryCta.text}
@@ -58,7 +75,7 @@ export function Hero() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-white/20 text-black hover:bg-white/10 backdrop-blur-sm text-base px-8 py-6 h-auto rounded-xl font-semibold"
+                className="border-2 border-white/20 text-white hover:bg-white/10 backdrop-blur-sm text-base sm:text-lg px-10 py-7 h-auto rounded-2xl font-semibold transition-all hover:border-white/40"
               >
                 <Link href={heroData.secondaryCta.href}>
                   {heroData.secondaryCta.text}
@@ -66,87 +83,27 @@ export function Hero() {
               </Button>
             </div>
 
-            {/* Trust indicators */}
-            <div className="flex flex-wrap items-center gap-6 text-sm text-gray-400">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
-                <span>30+ Years Experience</span>
+            {/* Trust Stats - Horizontal row */}
+            <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2">30+</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wider">Years Experience</div>
               </div>
-              <div className="flex items-center gap-2">
-                <Globe className="w-5 h-5 text-primary" />
-                <span>25+ Countries</span>
+              <div className="hidden sm:block w-px h-12 bg-white/10" />
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2">500+</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wider">Projects Delivered</div>
               </div>
-              <div className="flex items-center gap-2">
-                <Building2 className="w-5 h-5 text-primary" />
-                <span>500+ Projects</span>
+              <div className="hidden sm:block w-px h-12 bg-white/10" />
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-white mb-2">25+</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wider">Countries Served</div>
               </div>
-            </div>
-          </div>
-
-          {/* Right Visual */}
-          <div className="relative hidden lg:block">
-            {/* Floating certification cards */}
-            <div className="relative h-[600px]">
-              {/* Main visual circle */}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-96 h-96 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 backdrop-blur-sm border border-primary/20 flex items-center justify-center">
-                  <div className="w-72 h-72 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 backdrop-blur-sm border border-primary/20 flex items-center justify-center">
-                    <Shield className="w-32 h-32 text-primary/40" />
-                  </div>
-                </div>
+              <div className="hidden sm:block w-px h-12 bg-white/10" />
+              <div className="text-center">
+                <div className="text-4xl md:text-5xl font-bold text-primary mb-2">99.8%</div>
+                <div className="text-sm text-gray-400 uppercase tracking-wider">System Uptime</div>
               </div>
-
-              {/* Floating card 1 - Top Right */}
-              <Card className="absolute top-10 right-10 p-4 bg-white/10 backdrop-blur-md border-white/20 shadow-xl animate-float">
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <Award className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-white font-semibold text-sm mb-1">ISO 9001:2015</p>
-                    <p className="text-gray-300 text-xs">Quality Certified</p>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Floating card 2 - Left */}
-              <Card className="absolute top-1/4 left-0 p-4 bg-white/10 backdrop-blur-md border-white/20 shadow-xl animate-float" style={{ animationDelay: '0.5s' }}>
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <Shield className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-white font-semibold text-sm mb-1">CTI Member</p>
-                    <p className="text-gray-300 text-xs">Since 1986</p>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Floating card 3 - Bottom Right */}
-              <Card className="absolute bottom-20 right-0 p-4 bg-white/10 backdrop-blur-md border-white/20 shadow-xl animate-float" style={{ animationDelay: '1s' }}>
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <Globe className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-white font-semibold text-sm mb-1">Global Reach</p>
-                    <p className="text-gray-300 text-xs">25+ Countries</p>
-                  </div>
-                </div>
-              </Card>
-
-              {/* Floating card 4 - Bottom Left */}
-              <Card className="absolute bottom-10 left-10 p-4 bg-white/10 backdrop-blur-md border-white/20 shadow-xl animate-float" style={{ animationDelay: '1.5s' }}>
-                <div className="flex items-start gap-3">
-                  <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <Building2 className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <p className="text-white font-semibold text-sm mb-1">500+ Projects</p>
-                    <p className="text-gray-300 text-xs">Worldwide</p>
-                  </div>
-                </div>
-              </Card>
             </div>
           </div>
         </div>
@@ -157,4 +114,3 @@ export function Hero() {
     </section>
   );
 }
-
