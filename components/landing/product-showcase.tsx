@@ -2,9 +2,7 @@
 
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import Image from "next/image";
-import { useState } from "react";
-import type { Swiper as SwiperType } from 'swiper';
-import { Autoplay, EffectCoverflow, Navigation, Pagination, Thumbs } from 'swiper/modules';
+import { Autoplay, EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
@@ -12,7 +10,6 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/thumbs';
 
 const products = [
   {
@@ -37,10 +34,9 @@ const allImages = products.flatMap(category =>
 
 export function ProductShowcase() {
   const [ref, isVisible] = useIntersectionObserver({ freezeOnceVisible: true });
-  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
-    <section ref={ref} className="relative py-20 md:py-28 lg:py-32 bg-gradient-to-b from-white via-gray-50 to-white overflow-hidden">
+    <section ref={ref} className="relative py-10 md:py-12 lg:py-14 bg-gradient-to-b from-white via-gray-50 to-white overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -88,8 +84,7 @@ export function ProductShowcase() {
               dynamicBullets: true,
             }}
             navigation={true}
-            thumbs={{ swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null }}
-            modules={[EffectCoverflow, Autoplay, Pagination, Navigation, Thumbs]}
+            modules={[EffectCoverflow, Autoplay, Pagination, Navigation]}
             className="product-swiper"
           >
             {allImages.map((image, index) => (
@@ -114,52 +109,6 @@ export function ProductShowcase() {
 
                   {/* Subtle gradient overlay for badge readability */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-black/10 pointer-events-none" />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-
-        {/* Thumbnail Swiper */}
-        <div
-          className={`transition-all duration-700 delay-400 ${
-            isVisible ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <Swiper
-            onSwiper={setThumbsSwiper}
-            spaceBetween={12}
-            slidesPerView={4}
-            freeMode={true}
-            watchSlidesProgress={true}
-            modules={[Navigation, Thumbs]}
-            breakpoints={{
-              640: {
-                slidesPerView: 5,
-                spaceBetween: 16,
-              },
-              768: {
-                slidesPerView: 6,
-                spaceBetween: 16,
-              },
-              1024: {
-                slidesPerView: 8,
-                spaceBetween: 20,
-              },
-            }}
-            className="thumbnail-swiper"
-          >
-            {allImages.map((image, index) => (
-              <SwiperSlide key={index}>
-                <div className="group/thumb relative aspect-video rounded-lg overflow-hidden cursor-pointer border-2 border-gray-200 hover:border-primary transition-all duration-300">
-                  {/* Thumbnail fills completely - no padding */}
-                  <Image
-                    src={image.src}
-                    alt={`Thumbnail ${index + 1}`}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover/thumb:scale-110"
-                    sizes="150px"
-                  />
                 </div>
               </SwiperSlide>
             ))}
@@ -217,20 +166,6 @@ export function ProductShowcase() {
           opacity: 1;
           width: 30px;
           border-radius: 5px;
-        }
-
-        .thumbnail-swiper .swiper-slide {
-          opacity: 0.5;
-          transition: opacity 0.3s;
-        }
-
-        .thumbnail-swiper .swiper-slide-thumb-active {
-          opacity: 1;
-        }
-
-        .thumbnail-swiper .swiper-slide-thumb-active > div {
-          border-color: hsl(var(--primary));
-          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
         }
       `}</style>
     </section>
