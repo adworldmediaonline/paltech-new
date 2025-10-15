@@ -16,17 +16,6 @@ import 'swiper/css/thumbs';
 
 const products = [
   {
-    title: "Wooden Timber Cooling Towers",
-    images: [
-      "/products/Wooden Timber Cooling Towers 1_11zon.webp",
-      "/products/Wooden Timber Cooling Towers 2_11zon.webp",
-      "/products/Wooden Timber Cooling Towers 3_11zon.webp",
-      "/products/Wooden Timber Cooling Towers 4_11zon.webp",
-      "/products/Wooden Timber Cooling Towers 5_11zon.webp",
-      "/products/WoodenTimber Single & Double Flow Induced Draft Crossflow with Direct Drive Systems.jpg",
-    ],
-  },
-  {
     title: "Pultruded FRP Cooling Towers",
     images: [
       "/products/Pultruded FRP Cooling Towers_11zon.webp",
@@ -34,12 +23,6 @@ const products = [
       "/products/Pultruded FRP Cooling Towers 3_11zon.webp",
       "/products/Pultruded FRP Cooling Towers 4_11zon.webp",
       "/products/Pultruded FRP Cooling Towers 5_11zon.webp",
-    ],
-  },
-  {
-    title: "RCC Concrete Cooling Towers",
-    images: [
-      "/products/RCC Concrete Cooling Towers.jpg",
     ],
   },
 ];
@@ -111,21 +94,26 @@ export function ProductShowcase() {
           >
             {allImages.map((image, index) => (
               <SwiperSlide key={index}>
-                <div className="relative w-full aspect-[4/3] bg-white rounded-2xl shadow-2xl overflow-hidden border-2 border-gray-200">
+                <div className="group relative w-full aspect-[5/3] rounded-xl shadow-lg overflow-hidden">
+                  {/* Image fills entire card - no padding, no white space */}
                   <Image
                     src={image.src}
                     alt={image.category}
                     fill
-                    className="object-contain p-8"
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                     sizes="(max-width: 768px) 100vw, 800px"
                     priority={index < 3}
                   />
-                  {/* Category Badge */}
-                  <div className="absolute top-6 left-6 px-4 py-2 bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200">
-                    <span className="text-sm font-semibold text-foreground">
+
+                  {/* Category Badge - Floating over image */}
+                  <div className="absolute top-4 left-4 px-3 py-1.5 bg-white/95 backdrop-blur-md rounded-lg shadow-lg border border-white/20">
+                    <span className="text-xs font-semibold text-foreground">
                       {image.category}
                     </span>
                   </div>
+
+                  {/* Subtle gradient overlay for badge readability */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-black/10 pointer-events-none" />
                 </div>
               </SwiperSlide>
             ))}
@@ -163,12 +151,13 @@ export function ProductShowcase() {
           >
             {allImages.map((image, index) => (
               <SwiperSlide key={index}>
-                <div className="relative aspect-video rounded-xl overflow-hidden cursor-pointer border-2 border-gray-200 hover:border-primary transition-all duration-300 bg-white">
+                <div className="group/thumb relative aspect-video rounded-lg overflow-hidden cursor-pointer border-2 border-gray-200 hover:border-primary transition-all duration-300">
+                  {/* Thumbnail fills completely - no padding */}
                   <Image
                     src={image.src}
                     alt={`Thumbnail ${index + 1}`}
                     fill
-                    className="object-cover"
+                    className="object-cover transition-transform duration-300 group-hover/thumb:scale-110"
                     sizes="150px"
                   />
                 </div>
@@ -185,8 +174,8 @@ export function ProductShowcase() {
         }
 
         .product-swiper .swiper-slide {
-          width: 85%;
-          max-width: 800px;
+          width: 80%;
+          max-width: 750px;
         }
 
         .product-swiper .swiper-slide-shadow-left,
