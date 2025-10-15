@@ -1,6 +1,5 @@
 import { ClientLogos } from "@/components/landing/client-logos";
-import { ContactForm } from "@/components/landing/contact-form";
-import { CtaSection } from "@/components/landing/cta-section";
+import { ContactSection } from "@/components/landing/contact-section";
 import { FloatingCta } from "@/components/landing/floating-cta";
 import { Footer } from "@/components/landing/footer";
 import { Header } from "@/components/landing/header";
@@ -25,8 +24,7 @@ export default function Home() {
         <ServicesGrid />
         <Stats />
         <ClientLogos />
-        <CtaSection />
-        <ContactForm />
+        <ContactSection />
       </main>
       <Footer />
       <FloatingCta />
