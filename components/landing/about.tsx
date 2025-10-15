@@ -50,7 +50,7 @@ export function About() {
             asChild
             size="lg"
             variant="outline"
-            className="mt-4 border-2 border-white text-white hover:bg-white hover:text-slate-900"
+            className="mt-4 border-2 border-white text-black hover:bg-white hover:text-slate-900"
           >
             <Link href={aboutData.ctaHref}>{aboutData.ctaText}</Link>
           </Button>
