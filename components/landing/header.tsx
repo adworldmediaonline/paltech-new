@@ -6,11 +6,16 @@ import { useScrollPosition } from "@/hooks/use-scroll-position";
 import { navItems } from "@/lib/data/landing-data";
 import { Menu, Search } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const scrolled = useScrollPosition(50);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <header
@@ -63,34 +68,41 @@ export function Header() {
             >
               <Search className="h-5 w-5" />
             </button>
-            <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" aria-label="Open menu">
-                  <Menu className="h-6 w-6" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-[280px] sm:w-[350px]">
-                <div className="flex flex-col gap-6 mt-8">
-                  <nav className="flex flex-col gap-4">
-                    {navItems.map((item) => (
-                      <Link
-                        key={item.href}
-                        href={item.href}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="text-lg font-medium text-foreground/80 hover:text-foreground transition-colors py-2"
-                      >
-                        {item.label}
-                      </Link>
-                    ))}
-                  </nav>
-                  <Button asChild className="w-full bg-primary text-primary-foreground">
-                    <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>
-                      CONTACT
-                    </Link>
+            {mounted && (
+              <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon" aria-label="Open menu">
+                    <Menu className="h-6 w-6" />
                   </Button>
-                </div>
-              </SheetContent>
-            </Sheet>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[280px] sm:w-[350px]">
+                  <div className="flex flex-col gap-6 mt-8">
+                    <nav className="flex flex-col gap-4">
+                      {navItems.map((item) => (
+                        <Link
+                          key={item.href}
+                          href={item.href}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className="text-lg font-medium text-foreground/80 hover:text-foreground transition-colors py-2"
+                        >
+                          {item.label}
+                        </Link>
+                      ))}
+                    </nav>
+                    <Button asChild className="w-full bg-primary text-primary-foreground">
+                      <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>
+                        CONTACT
+                      </Link>
+                    </Button>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            )}
+            {!mounted && (
+              <Button variant="ghost" size="icon" aria-label="Open menu">
+                <Menu className="h-6 w-6" />
+              </Button>
+            )}
           </div>
         </div>
       </div>
