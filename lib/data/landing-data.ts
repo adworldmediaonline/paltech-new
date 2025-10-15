@@ -23,19 +23,6 @@ export interface HeroData {
   };
 }
 
-export interface WhatWeDoItem {
-  text: string;
-}
-
-export interface WhatWeDoData {
-  eyebrow: string;
-  headline: string;
-  description: string;
-  items: WhatWeDoItem[];
-  ctaText: string;
-  ctaHref: string;
-}
-
 export interface ProductCategory {
   icon: string;
   title: string;
@@ -105,12 +92,13 @@ export interface PrincipleCard {
   icon: string;
   title: string;
   description: string;
+  highlight: string;
 }
 
 export interface PrinciplesData {
   eyebrow: string;
   headline: string;
-  subheadline?: string;
+  subheadline: string;
   principles: PrincipleCard[];
 }
 
@@ -201,24 +189,6 @@ export const heroData: HeroData = {
     text: "Download Brochure",
     href: "#brochure",
   },
-};
-
-export const whatWeDoData: WhatWeDoData = {
-  eyebrow: "OUR COMMITMENT",
-  headline:
-    "Quality products and turnkey services from concept to commissioning",
-  description:
-    "Paltech remains steadfast in providing quality products and services to clients. We are deeply dedicated to turnkey solutions that encompass the entire process from conceptualization to commissioning, followed by ongoing performance monitoring.",
-  items: [
-    { text: "Quality Products & Most Reliable Services" },
-    { text: "Turnkey Solutions from Concept to Commissioning" },
-    { text: "Associate Member of CTI USA for 30+ Years" },
-    { text: "ISO 9001:2015 Quality Management Certified" },
-    { text: "ISO 14001:2015 Environmental Management Certified" },
-    { text: "ISO 45001:2018 Health & Safety Certified" },
-  ],
-  ctaText: "Explore Our Solutions",
-  ctaHref: "#solutions",
 };
 
 export const solutionsShowcaseData: SolutionsShowcaseData = {
@@ -326,18 +296,21 @@ export const principlesData: PrinciplesData = {
       title: "Quality Products & Services",
       description:
         "Paltech, our brand name, stands for the best quality products, genuine accessories, and the most reliable services at the most reasonable prices in the market. With over 36 years of experience in the industry, we are here to provide you with the best quality products and services compared to any other company in India.",
+      highlight: "36+ Years Excellence",
     },
     {
       icon: "crosshair",
       title: "Precision",
       description:
         "To continually innovate and modify process of manufacturing and development of equipments to get best quality products and services.",
+      highlight: "Continuous Innovation",
     },
     {
-      icon: "zap-off",
+      icon: "zap",
       title: "Efficiency",
       description:
         "To continually innovate, develop and adopt state-of-art technology in methods and materials to enhance productivity and cost effectiveness.",
+      highlight: "State-of-Art Technology",
     },
   ],
 };

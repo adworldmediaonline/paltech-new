@@ -5,9 +5,9 @@ import { FloatingCta } from "@/components/landing/floating-cta";
 import { Footer } from "@/components/landing/footer";
 import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
+import { Principles } from "@/components/landing/principles";
 import { ServicesGrid } from "@/components/landing/services-grid";
 import { Stats } from "@/components/landing/stats";
-import { WhatWeDo } from "@/components/landing/what-we-do";
 import { WhyChoose } from "@/components/landing/why-choose";
 
 export default function Home() {
@@ -16,8 +16,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <WhatWeDo />
-        {/* <SolutionsShowcase /> */}
+        <Principles />
         <About />
         <WhyChoose />
         <ServicesGrid />
