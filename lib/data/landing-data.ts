@@ -52,15 +52,15 @@ export interface SolutionsShowcaseData {
   ctaHref: string;
 }
 
-export interface WhoWeServeItem {
+export interface AboutItem {
   text: string;
 }
 
-export interface WhoWeServeData {
+export interface AboutData {
   eyebrow: string;
   headline: string;
   description: string;
-  items: WhoWeServeItem[];
+  items: AboutItem[];
   ctaText: string;
   ctaHref: string;
 }
@@ -253,22 +253,22 @@ export const solutionsShowcaseData: SolutionsShowcaseData = {
   ctaHref: "#products",
 };
 
-export const whoWeServeData: WhoWeServeData = {
-  eyebrow: "WHO WE SERVE",
+export const aboutData: AboutData = {
+  eyebrow: "ABOUT US",
   headline:
-    "Industrial cooling solutions for complex, mission-critical operations",
+    "Synonymous with the highest standards of quality and integrity",
   description:
-    "For over 30 years, we've partnered with B2B industrial and manufacturing companies that demand specialized cooling systems. Our clients share certain characteristics that require a customized engineering approach:",
+    "PALTECH is synonymous with the highest standards of quality and integrity in the business of cooling solutions. Specializing in a wide range of cooling towers, including Packaged FRP, Wooden, Pultruded FRP, and RCC (Reinforced Concrete Cement) models, PALTECH is a trusted name in the industry. Additionally, we excel in the production of Chilling Plants, catering to both air and water-cooled systems.",
   items: [
-    { text: "Complex equipment requiring precise temperature control" },
-    { text: "Mission-critical operations with zero tolerance for downtime" },
-    { text: "Long operational cycles requiring durable, reliable systems" },
-    { text: "Global operations requiring international support" },
-    { text: "Strict compliance with industry standards (ISO, CTI, ASHRAE)" },
-    { text: "Integration with existing infrastructure and control systems" },
+    { text: "Packaged FRP Cooling Towers" },
+    { text: "Wooden Cooling Towers" },
+    { text: "Pultruded FRP Cooling Towers" },
+    { text: "RCC (Reinforced Concrete Cement) Cooling Towers" },
+    { text: "Air-Cooled Chilling Plants" },
+    { text: "Water-Cooled Chilling Plants" },
   ],
-  ctaText: "See Our Industries",
-  ctaHref: "#industries",
+  ctaText: "Explore Our Products",
+  ctaHref: "#products",
 };
 
 export const whyChooseData: WhyChooseData = {
