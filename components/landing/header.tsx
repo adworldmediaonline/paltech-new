@@ -5,6 +5,7 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/s
 import { useScrollPosition } from "@/hooks/use-scroll-position";
 import { navItems } from "@/lib/data/landing-data";
 import { ChevronDown, Menu, Search } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -28,23 +29,18 @@ export function Header() {
             : "bg-white/10 backdrop-blur-md border border-white/10"
         } rounded-xl md:rounded-2xl`}
       >
-        <div className="flex h-12 sm:h-14 md:h-16 items-center justify-between px-3 sm:px-4 md:px-6">
+        <div className="flex h-16 sm:h-18 md:h-20 items-center justify-between px-4 sm:px-6 md:px-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-1.5 sm:gap-2 group">
-            <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-10 md:h-10 bg-gradient-to-br from-primary to-primary/80 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
-              <span className="text-white font-bold text-xs sm:text-sm md:text-base">P</span>
-            </div>
-            <div className="flex flex-col">
-              <span className={`text-base sm:text-lg md:text-xl font-bold leading-none transition-colors ${
-                scrolled ? "text-foreground" : "text-white"
-              }`}>
-                PALTECH
-              </span>
-              <span className={`text-[9px] sm:text-[10px] leading-none hidden sm:block transition-colors ${
-                scrolled ? "text-muted-foreground" : "text-gray-300"
-              }`}>
-                Industrial Solutions
-              </span>
+          <Link href="/" className="flex items-center group">
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 group-hover:scale-105 transition-transform">
+              <Image
+                src="/logo/image.png"
+                alt="PALTECH Logo"
+                fill
+                className="object-contain"
+                priority
+                sizes="(max-width: 640px) 48px, (max-width: 768px) 56px, 64px"
+              />
             </div>
           </Link>
 
