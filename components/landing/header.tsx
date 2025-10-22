@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
+import { ProductDropdown, ProductDropdownMobile } from "@/components/landing/product-dropdown";
 import { useScrollPosition } from "@/hooks/use-scroll-position";
 import { navItems } from "@/lib/data/landing-data";
 import { ChevronDown, Menu, Search } from "lucide-react";
@@ -14,6 +15,7 @@ export function Header() {
   const [mounted, setMounted] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const [expandedMobileItem, setExpandedMobileItem] = useState<string | null>(null);
+  const [mobileProductDropdownOpen, setMobileProductDropdownOpen] = useState(false);
   const scrolled = useScrollPosition(50);
 
   useEffect(() => {
@@ -69,8 +71,17 @@ export function Header() {
                   )}
                 </Link>
 
-                {/* Dropdown Menu */}
-                {item.hasDropdown && item.subItems && openDropdown === item.label && (
+                {/* Product Dropdown */}
+                {item.hasDropdown && item.label === "Products" && item.productCategories && openDropdown === item.label && (
+                  <ProductDropdown
+                    categories={item.productCategories}
+                    isOpen={openDropdown === item.label}
+                    onClose={() => setOpenDropdown(null)}
+                  />
+                )}
+
+                {/* Regular Dropdown Menu */}
+                {item.hasDropdown && item.subItems && item.label !== "Products" && openDropdown === item.label && (
                   <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-xl shadow-xl border border-gray-200/50 py-2 animate-fade-in">
                     {item.subItems.map((subItem) => (
                       <Link
@@ -142,9 +153,14 @@ export function Header() {
                             <button
                               onClick={() => {
                                 if (item.hasDropdown) {
-                                  setExpandedMobileItem(
-                                    expandedMobileItem === item.label ? null : item.label
-                                  );
+                                  if (item.label === "Products") {
+                                    setMobileProductDropdownOpen(true);
+                                    setMobileMenuOpen(false);
+                                  } else {
+                                    setExpandedMobileItem(
+                                      expandedMobileItem === item.label ? null : item.label
+                                    );
+                                  }
                                 } else {
                                   setMobileMenuOpen(false);
                                   // Navigate to href
@@ -161,7 +177,7 @@ export function Header() {
                               )}
                             </button>
                             {/* Mobile sub-items with smooth expand/collapse */}
-                            {item.hasDropdown && item.subItems && expandedMobileItem === item.label && (
+                            {item.hasDropdown && item.subItems && item.label !== "Products" && expandedMobileItem === item.label && (
                               <div className="ml-4 mt-1 space-y-0.5 animate-fade-in">
                                 {item.subItems.map((subItem, index) => (
                                   <Link
@@ -220,6 +236,15 @@ export function Header() {
           </div>
         </div>
       </div>
+
+      {/* Mobile Product Dropdown */}
+      {navItems.find(item => item.label === "Products")?.productCategories && (
+        <ProductDropdownMobile
+          categories={navItems.find(item => item.label === "Products")!.productCategories!}
+          isOpen={mobileProductDropdownOpen}
+          onClose={() => setMobileProductDropdownOpen(false)}
+        />
+      )}
     </header>
   );
 }
