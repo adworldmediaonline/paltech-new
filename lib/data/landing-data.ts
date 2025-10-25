@@ -200,7 +200,7 @@ export const navItems: NavItem[] = [
             nestedItems: [
               {
                 label: "Wooden/Timber Single & Double Flow Induced Draft Crossflow with Direct Drive Systems",
-                href: "/cooling-towers/wooden-timber-cooling-towers/direct-drive-systems"
+                href: "/cooling-towers/wooden-timber-cooling-towers/wooden-single-double-flow-induced-draft-crossflow-with-direct-drive-systems"
               },
               {
                 label: "Wooden/Timber Single & Double Flow Induced Draft Crossflow with Reduction Reducer Drive System",
