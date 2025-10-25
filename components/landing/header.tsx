@@ -17,6 +17,7 @@ import { navItems } from "@/lib/data/landing-data";
 import { ChevronDown, Menu, Search } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 export function Header() {
@@ -25,6 +26,10 @@ export function Header() {
   const [expandedMobileItem, setExpandedMobileItem] = useState<string | null>(null);
   const [mobileProductDropdownOpen, setMobileProductDropdownOpen] = useState(false);
   const scrolled = useScrollPosition(50);
+  const pathname = usePathname();
+
+  // Check if we're on a category page (not home page)
+  const isCategoryPage = pathname !== "/";
 
   useEffect(() => {
     setMounted(true);
@@ -33,7 +38,7 @@ export function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 pt-3 sm:pt-4 md:pt-6 px-3 sm:px-4 md:px-6 lg:px-8">
       <div
-        className={`mx-auto max-w-7xl transition-all duration-500 ${scrolled
+        className={`mx-auto max-w-7xl transition-all duration-500 ${scrolled || isCategoryPage
           ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-black/5 border border-gray-200/50"
           : "bg-white/10 backdrop-blur-md border border-white/10"
           } rounded-xl md:rounded-2xl`}
@@ -60,7 +65,7 @@ export function Header() {
                 <NavigationMenuItem key={item.href}>
                   {item.hasDropdown && item.label === "Products" && item.productCategories ? (
                     <>
-                      <NavigationMenuTrigger className={`flex bg-transparent items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled
+                      <NavigationMenuTrigger className={`flex bg-transparent items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
                         ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
                         : "text-white/80 hover:text-white hover:bg-white/10"
                         }`}>
@@ -120,7 +125,7 @@ export function Header() {
                     </>
                   ) : item.hasDropdown && item.subItems ? (
                     <>
-                      <NavigationMenuTrigger className={`flex bg-transparent items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled
+                      <NavigationMenuTrigger className={`flex bg-transparent items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
                         ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
                         : "text-white/80 hover:text-white hover:bg-white/10"
                         }`}>
@@ -164,7 +169,7 @@ export function Header() {
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-3">
             <button
-              className={`p-2 rounded-lg transition-all ${scrolled
+              className={`p-2 rounded-lg transition-all ${scrolled || isCategoryPage
                 ? "text-foreground/60 hover:text-foreground hover:bg-gray-100/50"
                 : "text-white/70 hover:text-white hover:bg-white/10"
                 }`}
@@ -183,7 +188,7 @@ export function Header() {
           {/* Mobile Navigation - Collapsible */}
           <div className="flex md:hidden items-center gap-2">
             <button
-              className={`p-2 transition-colors ${scrolled ? "text-foreground/60 hover:text-foreground" : "text-white/70 hover:text-white"
+              className={`p-2 transition-colors ${scrolled || isCategoryPage ? "text-foreground/60 hover:text-foreground" : "text-white/70 hover:text-white"
                 }`}
               aria-label="Search"
             >
@@ -196,7 +201,7 @@ export function Header() {
                     variant="ghost"
                     size="icon"
                     aria-label="Open menu"
-                    className={`transition-colors ${scrolled
+                    className={`transition-colors ${scrolled || isCategoryPage
                       ? "text-foreground hover:bg-gray-100/50"
                       : "text-white hover:bg-white/10"
                       }`}
