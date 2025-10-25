@@ -107,77 +107,96 @@ export function ProductDropdown({ categories, isOpen, onClose }: ProductDropdown
 
 // Mobile version for smaller screens
 export function ProductDropdownMobile({ categories, isOpen, onClose }: ProductDropdownProps) {
-  const [searchQuery, setSearchQuery] = useState("");
+  const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
 
   return (
     <div
       className={cn(
-        "fixed inset-0 z-50 bg-white transition-all duration-300",
+        "fixed inset-0 z-50 bg-white transition-all duration-300 flex flex-col mobile-product-dropdown",
         isOpen ? "opacity-100 visible" : "opacity-0 invisible"
       )}
     >
       {/* Header */}
-      <div className="sticky top-0 bg-white border-b border-gray-200">
+      <div className="sticky top-0 bg-white border-b border-gray-200 z-10 flex-shrink-0">
         <div className="flex items-center gap-4 p-4">
-          <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-lg transition-colors">
-            <ChevronDown className="w-6 h-6 text-gray-600" />
+          <button
+            onClick={onClose}
+            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            aria-label="Close menu"
+          >
+            <ChevronDown className="w-6 h-6 text-gray-600 rotate-90" />
           </button>
           <h2 className="text-xl font-bold text-gray-900">Products</h2>
         </div>
-
-        {/* Search Bar */}
-        <div className="px-4 pb-4">
-          <input
-            type="text"
-            placeholder="Search products..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/20 focus:border-primary transition-colors"
-          />
-        </div>
       </div>
 
-      {/* All Products - Single Scrollable List */}
-      <div className="overflow-y-auto pb-20">
+      {/* Collapsible Categories */}
+      <div className="flex-1 overflow-y-auto pb-20">
         {categories.map((category) => (
-          <div key={category.title} className="px-4 py-4">
-            {/* Category Header */}
-            <Link href={category.href} onClick={onClose}>
-              <h3 className="text-sm font-bold uppercase tracking-wide text-gray-500 mb-3 hover:text-primary transition-colors">
-                {category.title}
-              </h3>
+          <div key={category.title} className="border-b border-gray-100">
+            {/* Category Header - Collapsible */}
+            <button
+              onClick={() => setExpandedCategory(
+                expandedCategory === category.title ? null : category.title
+              )}
+              className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors"
+            >
+              <div className="flex items-center gap-3">
+                <h3 className="text-lg font-bold text-gray-900">{category.title}</h3>
+                <span className="text-sm text-gray-500">
+                  ({category.subItems?.length || 0} products)
+                </span>
+              </div>
+              <ChevronDown
+                className={cn(
+                  "w-5 h-5 text-gray-500 transition-transform duration-200",
+                  expandedCategory === category.title ? "rotate-180" : ""
+                )}
+              />
+            </button>
+
+            {/* Category Link */}
+            <Link
+              href={category.href}
+              onClick={onClose}
+              className="block px-4 pb-2 text-sm text-primary hover:text-primary/80 transition-colors"
+            >
+              View all {category.title} →
             </Link>
 
-            {/* All Products Visible */}
-            <div className="space-y-1">
-              {category.subItems?.map((item) => (
-                <div key={item.label}>
-                  <Link
-                    href={item.href}
-                    onClick={onClose}
-                    className="block py-3 text-base text-gray-900 hover:text-primary transition-colors"
-                  >
-                    {item.label}
-                  </Link>
+            {/* Products List - Collapsible */}
+            {expandedCategory === category.title && (
+              <div className="px-4 pb-4 space-y-1 animate-fade-in">
+                {category.subItems?.map((item) => (
+                  <div key={item.label} className="space-y-1">
+                    {/* Parent Product */}
+                    <Link
+                      href={item.href}
+                      onClick={onClose}
+                      className="block py-2 px-3 text-base text-gray-900 hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
+                    >
+                      {item.label}
+                    </Link>
 
-                  {/* Nested - Always Visible */}
-                  {item.nestedItems && (
-                    <div className="ml-4 space-y-1 border-l-2 border-gray-200 pl-3 bg-gray-50/50">
-                      {item.nestedItems.map((nested) => (
-                        <Link
-                          key={nested.label}
-                          href={nested.href}
-                          onClick={onClose}
-                          className="block py-2 text-sm text-gray-600 hover:text-primary transition-colors"
-                        >
-                          • {nested.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+                    {/* Nested Items - Always Visible when expanded */}
+                    {item.nestedItems && (
+                      <div className="ml-4 space-y-1 border-l-2 border-gray-200 pl-3 bg-gray-50/50 rounded-r-lg">
+                        {item.nestedItems.map((nested) => (
+                          <Link
+                            key={nested.label}
+                            href={nested.href}
+                            onClick={onClose}
+                            className="block py-1.5 px-3 text-sm text-gray-600 hover:text-primary hover:bg-gray-100 rounded-lg transition-colors"
+                          >
+                            • {nested.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         ))}
       </div>

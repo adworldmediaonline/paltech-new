@@ -327,8 +327,17 @@
 
   /* NavigationMenu custom styling */
   .navigation-menu-content {
-    min-width: 800px !important;
+    min-width: 90vw !important;
     max-width: 90vw !important;
+    max-height: 70vh !important;
+    overflow-y: auto !important;
+  }
+
+  @media (min-width: 640px) {
+    .navigation-menu-content {
+      min-width: 800px !important;
+      max-width: 90vw !important;
+    }
   }
 
   .navigation-menu-content ul {
@@ -338,5 +347,50 @@
   .navigation-menu-content li {
     min-width: auto !important;
     width: auto !important;
+  }
+
+  /* Responsive NavigationMenu adjustments */
+  @media (max-width: 1024px) {
+    .navigation-menu-content {
+      left: 0 !important;
+      transform: none !important;
+      width: 100vw !important;
+      max-width: 100vw !important;
+      max-height: 70vh !important;
+      overflow-y: auto !important;
+    }
+  }
+
+  /* Mobile-specific scrolling improvements */
+  @media (max-width: 768px) {
+    .navigation-menu-content {
+      max-height: 60vh !important;
+      overflow-y: auto !important;
+      -webkit-overflow-scrolling: touch !important;
+    }
+
+    .navigation-menu-content > div {
+      overflow-y: auto !important;
+      -webkit-overflow-scrolling: touch !important;
+    }
+  }
+
+  /* Mobile Product Dropdown Scrolling */
+  .mobile-product-dropdown {
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior: contain !important;
+  }
+
+  .mobile-product-dropdown .flex-1 {
+    -webkit-overflow-scrolling: touch !important;
+    overscroll-behavior: contain !important;
+  }
+
+  /* Ensure mobile scrolling works */
+  @media (max-width: 768px) {
+    .mobile-product-dropdown {
+      height: 100vh !important;
+      height: 100dvh !important; /* Dynamic viewport height for mobile */
+    }
   }
 }

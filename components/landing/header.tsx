@@ -54,7 +54,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <NavigationMenu className="hidden lg:flex">
+          <NavigationMenu className="hidden md:flex">
             <NavigationMenuList className="flex items-center gap-1">
               {navItems.map((item) => (
                 <NavigationMenuItem key={item.href}>
@@ -67,28 +67,28 @@ export function Header() {
                         {item.label}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent className="navigation-menu-content">
-                        <div className="px-6 py-8 max-h-[60vh] overflow-y-auto w-[800px]">
-                          <div className="grid grid-cols-3 gap-8">
+                        <div className="px-4 sm:px-6 py-6 sm:py-8 max-h-[70vh] overflow-y-auto w-[90vw] sm:w-[800px] max-w-6xl">
+                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
                             {item.productCategories.map((category) => (
                               <div key={category.title} className="min-w-0">
                                 {/* Category Header */}
                                 <NavigationMenuLink asChild>
-                                  <Link href={category.href} className="block mb-4">
-                                    <h3 className="text-lg font-bold text-gray-900 hover:text-primary transition-colors whitespace-nowrap">
+                                  <Link href={category.href} className="block mb-3 sm:mb-4">
+                                    <h3 className="text-base sm:text-lg font-bold text-gray-900 hover:text-primary transition-colors">
                                       {category.title}
                                     </h3>
                                   </Link>
                                 </NavigationMenuLink>
 
                                 {/* Products List - All Visible */}
-                                <div className="space-y-2">
+                                <div className="space-y-1 sm:space-y-2">
                                   {category.subItems?.map((subItem) => (
                                     <div key={subItem.label} className="min-w-0">
                                       {/* Parent Product */}
                                       <NavigationMenuLink asChild>
                                         <Link
                                           href={subItem.href}
-                                          className="block py-2 text-sm hover:text-primary transition-colors whitespace-normal leading-relaxed"
+                                          className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors break-words leading-relaxed"
                                         >
                                           {subItem.label}
                                         </Link>
@@ -96,12 +96,12 @@ export function Header() {
 
                                       {/* Nested Items - Always Visible */}
                                       {subItem.nestedItems && (
-                                        <div className="ml-4 pl-3 border-l-2 border-gray-200 space-y-1 bg-gray-50/50 py-1 rounded-r-lg">
+                                        <div className="ml-3 sm:ml-4 pl-2 sm:pl-3 border-l-2 border-gray-200 space-y-0.5 sm:space-y-1 bg-gray-50/50 py-0.5 sm:py-1 rounded-r-lg">
                                           {subItem.nestedItems.map((nested) => (
                                             <NavigationMenuLink asChild key={nested.label}>
                                               <Link
                                                 href={nested.href}
-                                                className="block py-1.5 text-xs text-gray-600 hover:text-primary transition-colors whitespace-normal leading-relaxed"
+                                                className="block py-1 sm:py-1.5 text-xs text-gray-600 hover:text-primary transition-colors break-words leading-relaxed"
                                               >
                                                 • {nested.label}
                                               </Link>
@@ -127,13 +127,13 @@ export function Header() {
                         {item.label}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent>
-                        <ul className="grid w-[200px] gap-2 p-4">
+                        <ul className="grid w-[180px] sm:w-[200px] gap-1 sm:gap-2 p-3 sm:p-4">
                           {item.subItems.map((subItem) => (
                             <li key={subItem.href}>
                               <NavigationMenuLink asChild>
                                 <Link
                                   href={subItem.href}
-                                  className="block px-3 py-2 text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-gray-50 transition-colors rounded-md"
+                                  className="block px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-gray-50 transition-colors rounded-md"
                                 >
                                   {subItem.label}
                                 </Link>
@@ -147,7 +147,7 @@ export function Header() {
                     <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                       <Link
                         href={item.href}
-                        className={`bg-transparent px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled
+                        className={`bg-transparent px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-lg transition-all ${scrolled
                           ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
                           : "text-white/80 hover:text-white hover:bg-white/10"
                           }`}
@@ -162,7 +162,7 @@ export function Header() {
           </NavigationMenu>
 
           {/* Desktop Actions */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3">
             <button
               className={`p-2 rounded-lg transition-all ${scrolled
                 ? "text-foreground/60 hover:text-foreground hover:bg-gray-100/50"
@@ -180,8 +180,8 @@ export function Header() {
             </Button>
           </div>
 
-          {/* Mobile Menu */}
-          <div className="flex lg:hidden items-center gap-2">
+          {/* Mobile Navigation - Collapsible */}
+          <div className="flex md:hidden items-center gap-2">
             <button
               className={`p-2 transition-colors ${scrolled ? "text-foreground/60 hover:text-foreground" : "text-white/70 hover:text-white"
                 }`}
