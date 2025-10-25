@@ -208,7 +208,7 @@ export const navItems: NavItem[] = [
               },
               {
                 label: "Packaged Wooden/Timber Double Flow Induced Draft Crossflow Cooling Towers",
-                href: "/cooling-towers/wooden-timber-cooling-towers/packaged-cooling-towers"
+                href: "/cooling-towers/wooden-timber-cooling-towers/packaged-wooden-double-flow-induced-draft-crossflow"
               }
             ]
           },
