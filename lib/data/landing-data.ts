@@ -2,11 +2,12 @@ export interface ProductSubItem {
   label: string;
   href: string;
   description?: string;
+  nestedItems?: ProductSubItem[]; // Add nested support
 }
 
 export interface ProductCategory {
   title: string;
-  href: string;
+  href: string; // Make parent clickable
   subItems?: ProductSubItem[];
 }
 
@@ -180,114 +181,122 @@ export const navItems: NavItem[] = [
     productCategories: [
       {
         title: "Cooling Towers",
-        href: "#cooling-towers",
+        href: "/cooling-towers",
         subItems: [
           {
             label: "RCC Concrete Cooling Towers",
-            href: "#rcc-cooling-towers",
+            href: "/cooling-towers/rcc-concrete-cooling-towers",
             description: "Cross Flow / Counter Flow"
           },
           {
             label: "Pultruded FRP Cooling Towers",
-            href: "#pultruded-frp-cooling-towers",
+            href: "/cooling-towers/pultruded-frp-cooling-towers",
             description: "Cross Flow / Counter Flow"
           },
           {
             label: "Wooden/Timber Cooling Towers",
-            href: "#wooden-cooling-towers",
-            description: "Wooden/Timber Single & Double Flow Induced Draft Crossflow with Direct Drive Systems"
-          },
-          {
-            label: "Wooden/Timber Cooling Towers",
-            href: "#wooden-cooling-towers-reducer",
-            description: "Wooden/Timber Single & Double Flow Induced Draft Crossflow with Reduction Reducer Drive System"
-          },
-          {
-            label: "Packaged Wooden/Timber Cooling Towers",
-            href: "#packaged-wooden-cooling-towers",
-            description: "Packaged Wooden/Timber Double Flow Induced Draft Crossflow Cooling Towers"
+            href: "/cooling-towers/wooden-timber-cooling-towers",
+            description: "Wooden/Timber Single & Double Flow Induced Draft Crossflow Cooling Towers",
+            nestedItems: [
+              {
+                label: "Wooden/Timber Single & Double Flow Induced Draft Crossflow with Direct Drive Systems",
+                href: "/cooling-towers/wooden-timber-cooling-towers/direct-drive-systems"
+              },
+              {
+                label: "Wooden/Timber Single & Double Flow Induced Draft Crossflow with Reduction Reducer Drive System",
+                href: "/cooling-towers/wooden-timber-cooling-towers/reducer-drive-system"
+              },
+              {
+                label: "Packaged Wooden/Timber Double Flow Induced Draft Crossflow Cooling Towers",
+                href: "/cooling-towers/wooden-timber-cooling-towers/packaged-cooling-towers"
+              }
+            ]
           },
           {
             label: "FRP Cooling Towers",
-            href: "#frp-cooling-towers",
-            description: "Counter Flow Bottle Shape"
-          },
-          {
-            label: "FRP Cooling Towers",
-            href: "#frp-cooling-towers-rectangular",
-            description: "Counter Flow Rectangular/Square Shape"
-          },
-          {
-            label: "Fanless FRP Cooling Towers",
-            href: "#fanless-frp-cooling-towers",
-            description: "Fan less Induced Draft - Jet Type FRP"
+            href: "/cooling-towers/frp-cooling-towers",
+            description: "Counter Flow FRP Cooling Towers",
+            nestedItems: [
+              {
+                label: "Counter Flow Bottle Shape",
+                href: "/cooling-towers/frp-cooling-towers/bottle-shape"
+              },
+              {
+                label: "Counter Flow Rectangular/Square Shape",
+                href: "/cooling-towers/frp-cooling-towers/rectangular-square-shape"
+              },
+              {
+                label: "Fanless Induced Draft - Jet Type FRP",
+                href: "/cooling-towers/frp-cooling-towers/fanless-jet-type"
+              }
+            ]
           }
         ]
       },
       {
         title: "Chilling Plants",
-        href: "#chilling-plants",
+        href: "/chilling-plants",
         subItems: [
           {
             label: "Water/Air Cooled Scroll Chilling Plants",
-            href: "#scroll-chilling-plants"
+            href: "/chilling-plants/water-air-cooled-scroll-chilling-plants"
           },
           {
             label: "CFC Free Water/Air Cooled Chilling Plant",
-            href: "#cfc-free-chilling-plants"
+            href: "/chilling-plants/cfc-free-water-air-cooled-chilling-plant"
           },
           {
             label: "Glycol Based Water/Air Cooled Chilling Plants",
-            href: "#glycol-chilling-plants"
+            href: "/chilling-plants/glycol-based-water-air-cooled-chilling-plants"
           },
           {
             label: "Micro Processor based Water/Air Cooled Chilling Plants",
-            href: "#microprocessor-chilling-plants"
+            href: "/chilling-plants/micro-processor-based-water-air-cooled-chilling-plants"
           },
           {
             label: "Multi Circuit Power Saver Scroll / Screw Chilling Plant",
-            href: "#multi-circuit-chilling-plants",
+            href: "/chilling-plants/multi-circuit-power-saver-scroll-screw-chilling-plant",
             description: "Water / Air Cooled"
           },
           {
             label: "Reciprocating Water / Air Cooled Chilling Plants",
-            href: "#reciprocating-chilling-plants"
+            href: "/chilling-plants/reciprocating-water-air-cooled-chilling-plants"
           },
           {
             label: "Standard Capacity Screw / Scroll Chilling Plants",
-            href: "#standard-chilling-plants",
+            href: "/chilling-plants/standard-capacity-screw-scroll-chilling-plants",
             description: "Water / Air Cooled"
           },
           {
             label: "Tailor Made Power Saver Screw / Scroll Chilling Plant",
-            href: "#tailor-made-chilling-plants",
+            href: "/chilling-plants/tailor-made-power-saver-screw-scroll-chilling-plant",
             description: "Water / Air Cooled"
           },
           {
             label: "Trolley Mounted Water / Air Cooled Chilling Plant",
-            href: "#trolley-chilling-plants"
+            href: "/chilling-plants/trolley-mounted-water-air-cooled-chilling-plant"
           }
         ]
       },
       {
         title: "FRP/GRP Structural Profiles",
-        href: "#frp-grp-profiles",
+        href: "/frp-grp-structural-profiles",
         subItems: [
           {
             label: "FRP Deck Panels",
-            href: "#frp-deck-panels"
+            href: "/frp-grp-structural-profiles/frp-deck-panels"
           },
           {
             label: "FRP Corrugated Sheets",
-            href: "#frp-corrugated-sheets"
+            href: "/frp-grp-structural-profiles/frp-corrugated-sheets"
           },
           {
             label: "FRP Gratings",
-            href: "#frp-gratings"
+            href: "/frp-grp-structural-profiles/frp-gratings"
           },
           {
             label: "FRP Ladders",
-            href: "#frp-ladders"
+            href: "/frp-grp-structural-profiles/frp-ladders"
           }
         ]
       }

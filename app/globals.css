@@ -311,4 +311,32 @@
   .pause-animation:hover {
     animation-play-state: paused;
   }
+
+  /* Prevent horizontal overflow for mega menu */
+  .product-dropdown-container {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  /* Ensure mega menu stays within viewport */
+  .mega-menu {
+    max-width: 100vw;
+    left: 0;
+    right: 0;
+  }
+
+  /* NavigationMenu custom styling */
+  .navigation-menu-content {
+    min-width: 800px !important;
+    max-width: 90vw !important;
+  }
+
+  .navigation-menu-content ul {
+    min-width: auto !important;
+  }
+
+  .navigation-menu-content li {
+    min-width: auto !important;
+    width: auto !important;
+  }
 }
