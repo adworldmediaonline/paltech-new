@@ -152,7 +152,7 @@ export function Header() {
                     <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
                       <Link
                         href={item.href}
-                        className={`bg-transparent px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-lg transition-all ${scrolled
+                        className={`bg-transparent px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
                           ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
                           : "text-white/80 hover:text-white hover:bg-white/10"
                           }`}
