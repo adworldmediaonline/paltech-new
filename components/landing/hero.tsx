@@ -24,7 +24,7 @@ export function Hero() {
       {/* Subtle grid pattern overlay */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 sm:py-24 md:py-32 lg:py-40 w-full">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-20 sm:pb-24 md:pb-32 lg:pb-40 pt-10 w-full">
         <div className="max-w-5xl mx-auto">
           {/* Content - Centered */}
           <div className="text-center animate-fade-in">

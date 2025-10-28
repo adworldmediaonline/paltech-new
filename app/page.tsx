@@ -5,6 +5,7 @@ import { FloatingCta } from "@/components/landing/floating-cta";
 import { Footer } from "@/components/landing/footer";
 import { Header } from "@/components/landing/header";
 import { Hero } from "@/components/landing/hero";
+import { HeroBanner } from "@/components/landing/hero-banner";
 import { Principles } from "@/components/landing/principles";
 import { ProductShowcase } from "@/components/landing/product-showcase";
 import { ServicesGrid } from "@/components/landing/services-grid";
@@ -13,8 +14,14 @@ import { WhyChoose } from "@/components/landing/why-choose";
 
 export default function Home() {
   return (
-    <>
+    <div className="min-h-screen">
+      {/* Background gradient area behind header */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-950/85 via-slate-900/80 to-slate-950/85 -z-10" />
+
       <Header />
+      <div className="pt-33">
+        <HeroBanner />
+      </div>
       <main>
         <Hero />
         <Principles />
@@ -28,6 +35,6 @@ export default function Home() {
       </main>
       <Footer />
       <FloatingCta />
-    </>
+    </div>
   );
 }
