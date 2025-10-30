@@ -123,7 +123,7 @@ export function PultrudedFRPCoolingTowersContent() {
   return (
     <>
       {/* Breadcrumb Section */}
-      <section className="pt-36 sm:pt-40 md:pt-44 pb-8 bg-white border-b">
+      <section className="pt-2  pb-8 bg-white border-b">
         <div>
           <Breadcrumb>
             <BreadcrumbList>

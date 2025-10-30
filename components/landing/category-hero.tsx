@@ -1,26 +1,26 @@
-
 "use client";
 
 import Image from "next/image";
+import { ReactNode } from "react";
 
 export interface CategoryHeroProps {
-  title: string;
   imageSrc?: string;
   alt?: string;
+  children?: ReactNode;
 }
 
-export function CategoryHero({ title, imageSrc = "/banner/banner.png", alt = title }: CategoryHeroProps) {
+export function CategoryHero({ imageSrc = "/banner/banner.png", alt = "Hero Banner", children }: CategoryHeroProps) {
   return (
-    <section className="relative w-full pt-36 sm:pt-40 md:pt-44">
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="relative w-full overflow-hidden rounded-2xl border border-gray-200 bg-white/40 shadow-sm">
-          <div className="relative h-[200px] sm:h-[260px] md:h-[320px]">
-            <Image src={imageSrc} alt={alt} fill sizes="100vw" className="object-cover" priority />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
-            <h1 className="absolute bottom-4 left-4 right-4 text-xl sm:text-2xl md:text-3xl font-semibold text-white drop-shadow">
-              {title}
-            </h1>
-          </div>
+    <section className="relative w-full pt-24 sm:pt-28 md:pt-32 pb-[5px] sm:pb-[10px]">
+      <div className="relative w-full overflow-hidden">
+        <div className="relative h-[200px] sm:h-[260px] md:h-[320px]">
+          <Image src={imageSrc} alt={alt} fill sizes="100vw" className="object-cover" priority />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
+          {children && (
+            <div className="absolute bottom-4 left-4 right-4 sm:left-6 sm:right-6 md:left-8 md:right-8">
+              {children}
+            </div>
+          )}
         </div>
       </div>
     </section>

@@ -7,31 +7,8 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 export function ChillingPlantsContent() {
   return (
     <section className="w-full">
-      {/* Header-safe spacing */}
-      <div className="pt-36 sm:pt-40 md:pt-44 pb-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/">Home</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Chilling Plants</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">Chilling Plants</h1>
-          <p className="mt-3 text-base sm:text-lg text-muted-foreground max-w-3xl">
-            High‑quality process chillers engineered for performance, reliability, and ease of maintenance—customized to your application and standards.
-          </p>
-        </div>
-      </div>
-
       {/* Intro with visual */}
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 pt-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           <div className="relative w-full rounded-2xl border border-gray-200 bg-white p-2 shadow-sm">
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">

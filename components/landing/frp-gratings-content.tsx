@@ -7,36 +7,7 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 export function FrpGratingsContent() {
   return (
     <section className="w-full">
-      {/* Header-safe spacing */}
-      <div className="pt-36 sm:pt-40 md:pt-44 pb-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/">Home</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/paltech-frpgrp-structural-profiles">FRP/GRP Structural Profiles</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>FRP Gratings</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">FRP Gratings</h1>
-          <p className="mt-3 text-base sm:text-lg text-muted-foreground max-w-3xl">
-            Pultruded fiberglass gratings available in Isophthalic Polyester and Vinyl Ester resins with T‑bar, I‑bar, and heavy‑load bar options—selected based on application and loading.
-          </p>
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14 pt-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Visual */}
           <div className="relative w-full rounded-2xl border border-gray-200 bg-white p-2 shadow-sm">

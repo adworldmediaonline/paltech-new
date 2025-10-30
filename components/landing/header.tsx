@@ -36,14 +36,12 @@ export function Header() {
   }, []);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 pt-3 sm:pt-4 md:pt-6 px-3 sm:px-4 md:px-6 lg:px-8">
-      <div
-        className={`mx-auto max-w-7xl transition-all duration-500 ${scrolled || isCategoryPage
-          ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-black/5 border border-gray-200/50"
-          : "bg-white/10 backdrop-blur-md border border-white/10"
-          } rounded-xl md:rounded-2xl`}
-      >
-        <div className="flex h-16 sm:h-18 md:h-20 items-center justify-between px-4 sm:px-6 md:px-8">
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled || isCategoryPage
+      ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-black/5 border-b border-gray-200/50"
+      : "bg-white/10 backdrop-blur-md border-b border-white/10"
+      }`}>
+      <div className="mx-auto max-w-7xl pt-3 sm:pt-4 md:pt-6 px-3 sm:px-4 md:px-6 lg:px-8">
+        <div className="flex h-16 sm:h-18 md:h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 group-hover:scale-105 transition-transform">

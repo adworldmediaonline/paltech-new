@@ -7,7 +7,7 @@ export function ReciprocatingWaterAirCooledChillingPlantContent() {
   return (
     <section className="w-full">
       {/* Header-safe spacing */}
-      <div className="pt-36 sm:pt-40 md:pt-44 pb-8">
+      <div className="pt-2  pb-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Breadcrumb>
             <BreadcrumbList>
