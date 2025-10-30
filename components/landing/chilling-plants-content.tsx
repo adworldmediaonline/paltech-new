@@ -8,16 +8,15 @@ export function ChillingPlantsContent() {
       {/* Intro with visual */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 pt-6">
         <div className="space-y-4 text-muted-foreground">
-            <p>
-              We, Paltech Cooling Towers & Equipments Limited, are committed to complete customer delight by manufacturing and supplying high quality Chilling Plants at competitive prices through emphasis on team work, environment, transparency and continuous innovation.
-            </p>
-            <p>
-              We strive to be a world‑class Chilling Plant manufacturer. Paltech packaged chillers are environment friendly and carefully designed for optimum performance. We have been manufacturing chilling plants using heavy‑duty and long‑lasting industrial components as per national and international designs and fabrication standards (IS‑2825/TEMA/ASHARE/ASME). Paltech has a full‑fledged in‑house test lab and technical support for manufacturing systems, installations, and after‑sales service at site.
-            </p>
-            <p>
-              With three decades of manufacturing excellence, our reputation for uncompromising professionalism has earned the trust of clients worldwide. Founded in 1986, Paltech operates three manufacturing facilities with the latest machinery and equipment, headquartered in Gurugram with branches across India.
-            </p>
-          </div>
+          <p>
+            We, Paltech Cooling Towers & Equipments Limited, are committed to complete customer delight by manufacturing and supplying high quality Chilling Plants at competitive prices through emphasis on team work, environment, transparency and continuous innovation.
+          </p>
+          <p>
+            We strive to be a world‑class Chilling Plant manufacturer. Paltech packaged chillers are environment friendly and carefully designed for optimum performance. We have been manufacturing chilling plants using heavy‑duty and long‑lasting industrial components as per national and international designs and fabrication standards (IS‑2825/TEMA/ASHARE/ASME). Paltech has a full‑fledged in‑house test lab and technical support for manufacturing systems, installations, and after‑sales service at site.
+          </p>
+          <p>
+            With three decades of manufacturing excellence, our reputation for uncompromising professionalism has earned the trust of clients worldwide. Founded in 1986, Paltech operates three manufacturing facilities with the latest machinery and equipment, headquartered in Gurugram with branches across India.
+          </p>
         </div>
       </div>
 
