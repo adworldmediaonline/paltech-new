@@ -246,30 +246,30 @@ export const navItems: NavItem[] = [
             href: "/chilling-plants/cfc-free-water-air-cooled-chilling-plant"
           },
           {
-            label: "Glycol Based Water/Air Cooled Chilling Plants",
-            href: "/chilling-plants/glycol-based-water-air-cooled-chilling-plants"
+            label: "Glycol-based Water/Air Cooled Chilling Plant",
+            href: "/chilling-plants/glycol-based-waterair-cooled-chilling-plant"
           },
           {
-            label: "Micro Processor based Water/Air Cooled Chilling Plants",
-            href: "/chilling-plants/micro-processor-based-water-air-cooled-chilling-plants"
+            label: "Micro Processor based Water/Air Cooled Chilling Plant",
+            href: "/chilling-plants/micro-processor-based-water-air-cooled-chilling-plant"
           },
           {
             label: "Multi Circuit Power Saver Scroll / Screw Chilling Plant",
-            href: "/chilling-plants/multi-circuit-power-saver-scroll-screw-chilling-plant",
+            href: "/chilling-plants/multi-circuit-power-saver-scroll-screw-chilling-plant-water-air-cooled",
             description: "Water / Air Cooled"
           },
           {
-            label: "Reciprocating Water / Air Cooled Chilling Plants",
-            href: "/chilling-plants/reciprocating-water-air-cooled-chilling-plants"
+            label: "Reciprocating Water / Air Cooled Chilling Plant",
+            href: "/chilling-plants/reciprocating-water-air-cooled-chilling-plant"
           },
           {
-            label: "Standard Capacity Screw / Scroll Chilling Plants",
-            href: "/chilling-plants/standard-capacity-screw-scroll-chilling-plants",
+            label: "Standard Capacity Screw / Scroll Chilling Plant",
+            href: "/chilling-plants/standard-capacity-screw-scroll-chilling-plant-water-air-cooled",
             description: "Water / Air Cooled"
           },
           {
             label: "Tailor Made Power Saver Screw / Scroll Chilling Plant",
-            href: "/chilling-plants/tailor-made-power-saver-screw-scroll-chilling-plant",
+            href: "/chilling-plants/tailor-made-power-saver-screw-scroll-chilling-plant-water-air-cooled",
             description: "Water / Air Cooled"
           },
           {
@@ -280,7 +280,7 @@ export const navItems: NavItem[] = [
       },
       {
         title: "FRP/GRP Structural Profiles",
-        href: "/frp-grp-structural-profiles",
+        href: "/paltech-frpgrp-structural-profiles",
         subItems: [
           {
             label: "FRP Deck Panels",
