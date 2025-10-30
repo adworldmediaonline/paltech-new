@@ -219,15 +219,15 @@ export const navItems: NavItem[] = [
             nestedItems: [
               {
                 label: "Counter Flow Bottle Shape",
-                href: "/cooling-towers/frp-cooling-towers/bottle-shape"
+                href: "/cooling-towers/frp-cooling-towers/counter-flow-bottle-shape-2"
               },
               {
                 label: "Counter Flow Rectangular/Square Shape",
-                href: "/cooling-towers/frp-cooling-towers/rectangular-square-shape"
+                href: "/cooling-towers/frp-cooling-towers/counter-flow-rectangularsquare-shape-2"
               },
               {
-                label: "Fanless Induced Draft - Jet Type FRP",
-                href: "/cooling-towers/frp-cooling-towers/fanless-jet-type"
+                label: "Fan less Induced Draft - Jet Type FRP",
+                href: "/cooling-towers/frp-cooling-towers/fan-less-induced-draft-jet-type-frp"
               }
             ]
           }
@@ -238,8 +238,8 @@ export const navItems: NavItem[] = [
         href: "/chilling-plants",
         subItems: [
           {
-            label: "Water/Air Cooled Scroll Chilling Plants",
-            href: "/chilling-plants/water-air-cooled-scroll-chilling-plants"
+            label: "Water/Air Cooled Scroll Chilling Plant",
+            href: "/chilling-plants/waterair-cooled-scroll-chilling-plant"
           },
           {
             label: "CFC Free Water/Air Cooled Chilling Plant",
