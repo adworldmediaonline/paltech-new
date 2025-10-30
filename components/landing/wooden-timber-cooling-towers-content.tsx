@@ -1,16 +1,5 @@
-"use client";
-
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Home, Zap, Settings, Droplets, Shield, Award, Clock, Users } from "lucide-react";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Clock, Users } from "lucide-react";
 
 export function WoodenTimberCoolingTowersContent() {
   const coolingTowerTypes = [
@@ -65,68 +54,20 @@ export function WoodenTimberCoolingTowersContent() {
 
   return (
     <>
-      {/* Breadcrumb Section */}
-      <section className="pt-36 sm:pt-40 md:pt-44 pb-8 bg-white border-b">
-        <div>
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/" className="flex items-center gap-2">
-                  <Home className="w-4 h-4" />
-                  Home
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/cooling-towers">Cooling Towers</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage className="font-semibold">Wooden/Timber Cooling Towers</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-
-          <div className="mt-6">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-              Wooden/Timber Cooling Towers
-            </h1>
-            <p className="text-lg text-gray-600">
-              Traditional strength meets modern cooling efficiency
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Product Description Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 pt-6">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">
-                The Enduring Legacy of Wooden/Timber Cooling Towers
-              </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  The evolution of cooling tower construction, driven by environmental concerns and advancements in materials, has led to the preference for Fiberglass Reinforced Plastic (FRP) as the ideal material. This transition away from wood cooling towers marks an interesting journey, starting with pinewood construction.
-                </p>
-                <p>
-                  However, specific installations have unique demands for wooden/timber cooling towers. Moreover, there are instances where old wooden/timber cooling towers still exist and require maintenance. As industrial experts in this area, Paltech steps in to provide solutions tailored to your specific needs. Whether it's the durability of FRP or the traditional requirement for wooden cooling towers, Paltech is your reliable partner in the cooling industry.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-2 shadow-xl">
-              <div className="rounded-lg overflow-hidden">
-                <Image
-                  src="/categories/wooden-timber-cooling-towers.png"
-                  alt="Wooden/Timber Cooling Tower"
-                  width={1000}
-                  height={625}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
-              </div>
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900">
+              The Enduring Legacy of Wooden/Timber Cooling Towers
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                The evolution of cooling tower construction, driven by environmental concerns and advancements in materials, has led to the preference for Fiberglass Reinforced Plastic (FRP) as the ideal material. This transition away from wood cooling towers marks an interesting journey, starting with pinewood construction.
+              </p>
+              <p>
+                However, specific installations have unique demands for wooden/timber cooling towers. Moreover, there are instances where old wooden/timber cooling towers still exist and require maintenance. As industrial experts in this area, Paltech steps in to provide solutions tailored to your specific needs. Whether it's the durability of FRP or the traditional requirement for wooden cooling towers, Paltech is your reliable partner in the cooling industry.
+              </p>
             </div>
           </div>
         </div>

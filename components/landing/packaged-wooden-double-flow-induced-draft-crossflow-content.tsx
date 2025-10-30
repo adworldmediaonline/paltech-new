@@ -1,16 +1,5 @@
-"use client";
-
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Home, Zap, Settings, Droplets, Shield, Award, Clock, Users, Globe } from "lucide-react";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Clock, Users, Globe } from "lucide-react";
 
 export function PackagedWoodenDoubleFlowInducedDraftCrossflowContent() {
   const keyFeatures = [
@@ -114,74 +103,20 @@ export function PackagedWoodenDoubleFlowInducedDraftCrossflowContent() {
 
   return (
     <>
-      {/* Breadcrumb Section */}
-      <section className="pt-36 sm:pt-40 md:pt-44 pb-8 bg-white border-b">
-        <div>
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/" className="flex items-center gap-2">
-                  <Home className="w-4 h-4" />
-                  Home
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/cooling-towers">Cooling Towers</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/cooling-towers/wooden-timber-cooling-towers">
-                  Wooden/Timber Cooling Towers
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage className="font-semibold">Packaged Double Flow Induced Draft Crossflow</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-
-          <div className="mt-6">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-              Packaged Wooden/Timber Double Flow Induced Draft Crossflow Cooling Towers
-            </h1>
-            <p className="text-lg text-gray-600">
-              Superior efficiency and consistent performance with vertical discharge design
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Product Description Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 pt-6">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">
-                Product Description
-              </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  Paltech proudly introduces the double cross flow induced draft Cooling Towers with basin, a design that has long been recognized for its superior efficiency and consistent performance.
-                </p>
-                <p>
-                  This innovative cooling tower features a vertical discharge, allowing for installation in areas where towers with horizontal discharge are not suitable. This unique design ensures optimal cooling efficiency and reliability, making it a top choice for various industrial applications.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-2 shadow-xl">
-              <div className="rounded-lg overflow-hidden">
-                <Image
-                  src="/categories/wooden-timber-cooling-towers/packaged-wooden-double-flow-induced-draft-crossflow.png"
-                  alt="Packaged Wooden/Timber Double Flow Induced Draft Crossflow Cooling Towers"
-                  width={1000}
-                  height={625}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
-              </div>
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900">
+              Product Description
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Paltech proudly introduces the double cross flow induced draft Cooling Towers with basin, a design that has long been recognized for its superior efficiency and consistent performance.
+              </p>
+              <p>
+                This innovative cooling tower features a vertical discharge, allowing for installation in areas where towers with horizontal discharge are not suitable. This unique design ensures optimal cooling efficiency and reliability, making it a top choice for various industrial applications.
+              </p>
             </div>
           </div>
         </div>

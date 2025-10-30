@@ -1,12 +1,12 @@
-import { PultrudedFRPCoolingTowersContent } from "@/components/landing/pultruded-frp-cooling-towers-content";
+import { TrolleyMountedWaterAirCooledChillingPlantContent } from "@/components/landing/trolley-mounted-waterair-cooled-chilling-plant-content";
 import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import Link from "next/link";
 
-export default function PultrudedFRPCoolingTowersPage() {
+export default function Page() {
   return (
     <>
-      <CategoryHero imageSrc="/categories/pultruded-frp-cooling-towers.png">
+      <CategoryHero>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -17,17 +17,19 @@ export default function PultrudedFRPCoolingTowersPage() {
             <BreadcrumbSeparator className="text-white/70" />
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <Link href="/cooling-towers" className="text-white/90 hover:text-white">Cooling Towers</Link>
+                <Link href="/chilling-plants" className="text-white/90 hover:text-white">Chilling Plants</Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator className="text-white/70" />
             <BreadcrumbItem>
-              <BreadcrumbPage className="text-white font-semibold">Pultruded FRP Cooling Towers</BreadcrumbPage>
+              <BreadcrumbPage className="text-white font-semibold">Trolley Mounted Water/Air Cooled Chilling Plant</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </CategoryHero>
-      <PultrudedFRPCoolingTowersContent />
+      <TrolleyMountedWaterAirCooledChillingPlantContent />
     </>
   );
 }
+
+

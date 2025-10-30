@@ -1,16 +1,5 @@
-"use client";
-
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Home, Zap, Settings, Droplets } from "lucide-react";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { ArrowRight, CheckCircle, Zap, Settings, Droplets } from "lucide-react";
 
 export function RCCConcreteCoolingTowersContent() {
   const availableTypes = [
@@ -47,68 +36,20 @@ export function RCCConcreteCoolingTowersContent() {
 
   return (
     <>
-      {/* Breadcrumb Section */}
-      <section className="pt-36 sm:pt-40 md:pt-44 pb-8 bg-white border-b">
-        <div>
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/" className="flex items-center gap-2">
-                  <Home className="w-4 h-4" />
-                  Home
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/cooling-towers">Cooling Towers</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage className="font-semibold">RCC Concrete Cooling Towers</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-
-          <div className="mt-6">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-              RCC Concrete Cooling Towers
-            </h1>
-            <p className="text-lg text-gray-600">
-              Reinforced Concrete Cement structures for large-scale industrial cooling applications
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Product Description Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 pt-6">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">
-                Product Description
-              </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  Paltech provides cooling towers in both counter flow and cross flow designs, featuring RCC/Concrete structures tailored for large-scale cooling tower applications.
-                </p>
-                <p>
-                  Various types of fills, including Asbestos fills, PVC Bars, PVC Film Fills, and polypropylene fills, are utilized based on specific application needs.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-2 shadow-xl">
-              <div className="rounded-lg overflow-hidden">
-                <Image
-                  src="/categories/rcc-concrete-cooling-towers.png"
-                  alt="RCC Concrete Cooling Towers"
-                  width={1000}
-                  height={625}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
-              </div>
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900">
+              Product Description
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Paltech provides cooling towers in both counter flow and cross flow designs, featuring RCC/Concrete structures tailored for large-scale cooling tower applications.
+              </p>
+              <p>
+                Various types of fills, including Asbestos fills, PVC Bars, PVC Film Fills, and polypropylene fills, are utilized based on specific application needs.
+              </p>
             </div>
           </div>
         </div>

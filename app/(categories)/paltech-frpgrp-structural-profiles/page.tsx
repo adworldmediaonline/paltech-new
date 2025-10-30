@@ -1,12 +1,12 @@
-import { PultrudedFRPCoolingTowersContent } from "@/components/landing/pultruded-frp-cooling-towers-content";
+import { PaltechFrpGrpStructuralProfilesContent } from "@/components/landing/paltech-frpgrp-structural-profiles-content";
 import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import Link from "next/link";
 
-export default function PultrudedFRPCoolingTowersPage() {
+export default function Page() {
   return (
     <>
-      <CategoryHero imageSrc="/categories/pultruded-frp-cooling-towers.png">
+      <CategoryHero>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
@@ -16,18 +16,14 @@ export default function PultrudedFRPCoolingTowersPage() {
             </BreadcrumbItem>
             <BreadcrumbSeparator className="text-white/70" />
             <BreadcrumbItem>
-              <BreadcrumbLink asChild>
-                <Link href="/cooling-towers" className="text-white/90 hover:text-white">Cooling Towers</Link>
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator className="text-white/70" />
-            <BreadcrumbItem>
-              <BreadcrumbPage className="text-white font-semibold">Pultruded FRP Cooling Towers</BreadcrumbPage>
+              <BreadcrumbPage className="text-white font-semibold">FRP/GRP Structural Profiles</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </CategoryHero>
-      <PultrudedFRPCoolingTowersContent />
+      <PaltechFrpGrpStructuralProfilesContent />
     </>
   );
 }
+
+

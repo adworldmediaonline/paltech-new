@@ -1,16 +1,5 @@
-"use client";
-
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Home, Zap, Settings, Droplets, Shield, Award, Clock, Users, Globe } from "lucide-react";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Clock, Users, Globe } from "lucide-react";
 
 export function WoodenTimberReductionGearboxDriveSystemContent() {
   const keyFeatures = [
@@ -81,77 +70,23 @@ export function WoodenTimberReductionGearboxDriveSystemContent() {
 
   return (
     <>
-      {/* Breadcrumb Section */}
-      <section className="pt-36 sm:pt-40 md:pt-44 pb-8 bg-white border-b">
-        <div>
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/" className="flex items-center gap-2">
-                  <Home className="w-4 h-4" />
-                  Home
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/cooling-towers">Cooling Towers</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/cooling-towers/wooden-timber-cooling-towers">
-                  Wooden/Timber Cooling Towers
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage className="font-semibold">Reduction Gearbox Drive System</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-
-          <div className="mt-6">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-              Wooden/Timber Single & Double Flow Induced Draft Crossflow with Reduction Gearbox Drive System
-            </h1>
-            <p className="text-lg text-gray-600">
-              Medium capacity cooling towers with specialized fan assembly and reduction gear reducer technology
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Product Description Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 pt-6">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">
-                Product Description
-              </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  Our medium capacity cooling towers are equipped with a specialized fan assembly driven by a reduction gear reducer of the spiral bevel type. The fan assembly operates with the assistance of a non-lubricated balanced drive shaft fitted with flexible links. This innovative design ensures efficient and smooth fan operation.
-                </p>
-                <p>
-                  The fans are powered by an electric motor connected to a gearbox through a dynamically balanced tubular drive shaft. This setup guarantees optimal performance and minimizes vibrations, enhancing the overall efficiency of the cooling tower.
-                </p>
-                <p>
-                  To ensure stability and durability, the entire equipment is mounted on a single fabricated mild steel frame, which is adequately weatherproofed to withstand various environmental conditions. This robust construction ensures the reliability and longevity of our cooling towers.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-2 shadow-xl">
-              <div className="rounded-lg overflow-hidden">
-                <Image
-                  src="/categories/wooden-timber-cooling-towers/wooden-single-double-flow-induced-draft-crossflow-with-reduction-gearbox-drive-system.png"
-                  alt="Wooden/Timber Single & Double Flow Induced Draft Crossflow with Reduction Gearbox Drive System"
-                  width={1000}
-                  height={625}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
-              </div>
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900">
+              Product Description
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Our medium capacity cooling towers are equipped with a specialized fan assembly driven by a reduction gear reducer of the spiral bevel type. The fan assembly operates with the assistance of a non-lubricated balanced drive shaft fitted with flexible links. This innovative design ensures efficient and smooth fan operation.
+              </p>
+              <p>
+                The fans are powered by an electric motor connected to a gearbox through a dynamically balanced tubular drive shaft. This setup guarantees optimal performance and minimizes vibrations, enhancing the overall efficiency of the cooling tower.
+              </p>
+              <p>
+                To ensure stability and durability, the entire equipment is mounted on a single fabricated mild steel frame, which is adequately weatherproofed to withstand various environmental conditions. This robust construction ensures the reliability and longevity of our cooling towers.
+              </p>
             </div>
           </div>
         </div>

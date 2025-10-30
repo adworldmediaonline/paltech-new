@@ -219,15 +219,15 @@ export const navItems: NavItem[] = [
             nestedItems: [
               {
                 label: "Counter Flow Bottle Shape",
-                href: "/cooling-towers/frp-cooling-towers/bottle-shape"
+                href: "/cooling-towers/frp-cooling-towers/counter-flow-bottle-shape-2"
               },
               {
                 label: "Counter Flow Rectangular/Square Shape",
-                href: "/cooling-towers/frp-cooling-towers/rectangular-square-shape"
+                href: "/cooling-towers/frp-cooling-towers/counter-flow-rectangularsquare-shape-2"
               },
               {
-                label: "Fanless Induced Draft - Jet Type FRP",
-                href: "/cooling-towers/frp-cooling-towers/fanless-jet-type"
+                label: "Fan less Induced Draft - Jet Type FRP",
+                href: "/cooling-towers/frp-cooling-towers/fan-less-induced-draft-jet-type-frp"
               }
             ]
           }
@@ -238,38 +238,38 @@ export const navItems: NavItem[] = [
         href: "/chilling-plants",
         subItems: [
           {
-            label: "Water/Air Cooled Scroll Chilling Plants",
-            href: "/chilling-plants/water-air-cooled-scroll-chilling-plants"
+            label: "Water/Air Cooled Scroll Chilling Plant",
+            href: "/chilling-plants/waterair-cooled-scroll-chilling-plant"
           },
           {
             label: "CFC Free Water/Air Cooled Chilling Plant",
             href: "/chilling-plants/cfc-free-water-air-cooled-chilling-plant"
           },
           {
-            label: "Glycol Based Water/Air Cooled Chilling Plants",
-            href: "/chilling-plants/glycol-based-water-air-cooled-chilling-plants"
+            label: "Glycol-based Water/Air Cooled Chilling Plant",
+            href: "/chilling-plants/glycol-based-waterair-cooled-chilling-plant"
           },
           {
-            label: "Micro Processor based Water/Air Cooled Chilling Plants",
-            href: "/chilling-plants/micro-processor-based-water-air-cooled-chilling-plants"
+            label: "Micro Processor based Water/Air Cooled Chilling Plant",
+            href: "/chilling-plants/micro-processor-based-water-air-cooled-chilling-plant"
           },
           {
             label: "Multi Circuit Power Saver Scroll / Screw Chilling Plant",
-            href: "/chilling-plants/multi-circuit-power-saver-scroll-screw-chilling-plant",
+            href: "/chilling-plants/multi-circuit-power-saver-scroll-screw-chilling-plant-water-air-cooled",
             description: "Water / Air Cooled"
           },
           {
-            label: "Reciprocating Water / Air Cooled Chilling Plants",
-            href: "/chilling-plants/reciprocating-water-air-cooled-chilling-plants"
+            label: "Reciprocating Water / Air Cooled Chilling Plant",
+            href: "/chilling-plants/reciprocating-water-air-cooled-chilling-plant"
           },
           {
-            label: "Standard Capacity Screw / Scroll Chilling Plants",
-            href: "/chilling-plants/standard-capacity-screw-scroll-chilling-plants",
+            label: "Standard Capacity Screw / Scroll Chilling Plant",
+            href: "/chilling-plants/standard-capacity-screw-scroll-chilling-plant-water-air-cooled",
             description: "Water / Air Cooled"
           },
           {
             label: "Tailor Made Power Saver Screw / Scroll Chilling Plant",
-            href: "/chilling-plants/tailor-made-power-saver-screw-scroll-chilling-plant",
+            href: "/chilling-plants/tailor-made-power-saver-screw-scroll-chilling-plant-water-air-cooled",
             description: "Water / Air Cooled"
           },
           {
@@ -280,23 +280,23 @@ export const navItems: NavItem[] = [
       },
       {
         title: "FRP/GRP Structural Profiles",
-        href: "/frp-grp-structural-profiles",
+        href: "/paltech-frpgrp-structural-profiles",
         subItems: [
           {
             label: "FRP Deck Panels",
-            href: "/frp-grp-structural-profiles/frp-deck-panels"
+            href: "/paltech-frpgrp-structural-profiles/frp-deck-panels"
           },
           {
             label: "FRP Corrugated Sheets",
-            href: "/frp-grp-structural-profiles/frp-corrugated-sheets"
+            href: "/paltech-frpgrp-structural-profiles/frp-corrugated-sheets"
           },
           {
             label: "FRP Gratings",
-            href: "/frp-grp-structural-profiles/frp-gratings"
+            href: "/paltech-frpgrp-structural-profiles/frp-gratings"
           },
           {
             label: "FRP Ladders",
-            href: "/frp-grp-structural-profiles/frp-ladders"
+            href: "/paltech-frpgrp-structural-profiles/frp-ladders"
           }
         ]
       }
