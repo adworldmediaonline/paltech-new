@@ -1,29 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 export function ChillingPlantsContent() {
   return (
     <section className="w-full">
       {/* Intro with visual */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 pt-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          <div className="relative w-full rounded-2xl border border-gray-200 bg-white p-2 shadow-sm">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
-              <Image
-                src="/categories/chilling-plants.png"
-                alt="Industrial Chilling Plant"
-                fill
-                className="object-contain"
-                sizes="(min-width: 1024px) 560px, 100vw"
-                priority
-              />
-            </div>
-          </div>
-
-          <div className="space-y-4 text-muted-foreground">
+        <div className="space-y-4 text-muted-foreground">
             <p>
               We, Paltech Cooling Towers & Equipments Limited, are committed to complete customer delight by manufacturing and supplying high quality Chilling Plants at competitive prices through emphasis on team work, environment, transparency and continuous innovation.
             </p>

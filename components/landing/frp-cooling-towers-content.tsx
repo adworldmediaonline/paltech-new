@@ -1,17 +1,13 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 export function FrpCoolingTowersContent() {
   return (
     <section className="w-full">
       {/* Main content */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12 pt-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          {/* Content */}
-          <div className="space-y-6">
+        <div className="space-y-6">
             <div className="space-y-3">
               <h2 className="text-xl sm:text-2xl font-semibold">Product Description</h2>
               <p className="text-muted-foreground">
@@ -45,20 +41,6 @@ export function FrpCoolingTowersContent() {
                   Request Proposal
                 </Link>
               </div>
-            </div>
-          </div>
-
-          {/* Visual */}
-          <div className="relative w-full rounded-2xl border border-gray-200 bg-white p-2 shadow-sm">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
-              <Image
-                src="/categories/frp-cooling-towers.png"
-                alt="FRP Cooling Towers"
-                fill
-                className="object-contain"
-                sizes="(min-width: 1024px) 560px, 100vw"
-                priority
-              />
             </div>
           </div>
         </div>

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Clock, Users } from "lucide-react";
 
@@ -115,32 +114,17 @@ export function PultrudedFRPCoolingTowersContent() {
       {/* Product Description Section */}
       <section className="py-16 bg-gray-50 pt-6">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <h2 className="text-3xl font-bold text-gray-900">
-                Product Description
-              </h2>
-              <div className="space-y-4 text-gray-700 leading-relaxed">
-                <p>
-                  Our Pultruded FRP Cooling Towers are highlighted for their <strong>lightweight construction</strong>, <strong>non-corrosive properties</strong>, <strong>long lifespan</strong>, <strong>exceptional durability</strong>, and <strong>high strength</strong>.
-                </p>
-                <p>
-                  They offer <strong>quick construction and installation</strong>, making them a superior alternative to conventional RCC or Wooden Cooling Towers. The description emphasizes benefits such as longevity, robustness, and efficient setup.
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-2 shadow-xl">
-              <div className="rounded-lg overflow-hidden">
-                <Image
-                  src="/categories/pultruded-frp-cooling-towers.png"
-                  alt="Pultruded FRP Cooling Towers"
-                  width={1000}
-                  height={625}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
-              </div>
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-gray-900">
+              Product Description
+            </h2>
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p>
+                Our Pultruded FRP Cooling Towers are highlighted for their <strong>lightweight construction</strong>, <strong>non-corrosive properties</strong>, <strong>long lifespan</strong>, <strong>exceptional durability</strong>, and <strong>high strength</strong>.
+              </p>
+              <p>
+                They offer <strong>quick construction and installation</strong>, making them a superior alternative to conventional RCC or Wooden Cooling Towers. The description emphasizes benefits such as longevity, robustness, and efficient setup.
+              </p>
             </div>
           </div>
         </div>
