@@ -1,56 +1,56 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Clock, Users, Globe } from "lucide-react";
+import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Clock, Users, Globe, Factory } from "lucide-react";
 
 export function WoodenTimberReductionGearboxDriveSystemContent() {
   const keyFeatures = [
     {
       icon: <Award className="w-5 h-5" />,
-      title: "Quality Products & Most Reliable Services",
-      description: "Paltech ensures top-tier quality and dependable services for all cooling tower components."
+      title: "Quality Products & Reliable Services",
+      description: "Paltech ensures top-tier quality and dependable services for all cooling tower components, backed by over 34 years of manufacturing excellence."
     },
     {
       icon: <Clock className="w-5 h-5" />,
-      title: "More than 34 years of mfg. Excellence",
-      description: "Decades of experience in manufacturing ensure superior product quality and performance."
+      title: "34+ Years Manufacturing Excellence",
+      description: "Decades of experience in manufacturing ensure superior product quality, performance, and reliability across diverse industrial applications."
     },
     {
       icon: <Users className="w-5 h-5" />,
-      title: "More than 9000 clients",
-      description: "A vast client base trusts Paltech for their industrial cooling solutions worldwide."
+      title: "9,000+ Satisfied Clients",
+      description: "A vast client base trusts Paltech for their industrial cooling solutions worldwide, demonstrating proven track record and customer satisfaction."
     },
     {
       icon: <Globe className="w-5 h-5" />,
-      title: "Export to 25+ countries",
-      description: "Our cooling towers are supplied globally, meeting international standards and demands."
+      title: "Global Export Network",
+      description: "Our cooling towers are supplied globally to 25+ countries, meeting international standards and diverse industrial requirements."
     },
   ];
 
   const technicalSpecs = [
     {
       icon: <Settings className="w-5 h-5" />,
-      title: "Fan Assembly",
+      title: "Spiral Bevel Gear Reducer Fan Assembly",
       items: [
-        "Specialized fan assembly driven by a reduction gear reducer of the spiral bevel type",
-        "Fan assembly operates with the assistance of a non-lubricated balanced drive shaft fitted with flexible links",
-        "Innovative design ensures efficient and smooth fan operation"
+        "Specialized fan assembly driven by reduction gear reducer of spiral bevel type ensuring optimal torque transmission",
+        "Fan assembly operates with non-lubricated balanced drive shaft fitted with flexible links for smooth operation",
+        "Innovative design ensures efficient and smooth fan operation with minimal vibration and enhanced reliability"
       ]
     },
     {
       icon: <Zap className="w-5 h-5" />,
-      title: "Motor & Drive System",
+      title: "Dynamically Balanced Drive System",
       items: [
-        "Fans are powered by an electric motor connected to a gearbox through a dynamically balanced tubular drive shaft",
-        "Setup guarantees optimal performance and minimizes vibrations",
-        "Enhances the overall efficiency of the cooling tower"
+        "Fans powered by electric motor connected to gearbox through dynamically balanced tubular drive shaft",
+        "Precision balancing guarantees optimal performance and minimizes vibrations for extended component life",
+        "Enhanced overall efficiency of cooling tower through optimized mechanical power transmission"
       ]
     },
     {
       icon: <Shield className="w-5 h-5" />,
-      title: "Structural Framework",
+      title: "Weatherproofed Structural Framework",
       items: [
-        "Entire equipment is mounted on a single fabricated mild steel frame",
-        "Adequately weatherproofed to withstand various environmental conditions",
-        "Robust construction ensures the reliability and longevity of our cooling towers"
+        "Entire equipment mounted on single fabricated mild steel frame ensuring structural integrity",
+        "Adequately weatherproofed to withstand various environmental conditions and operational stresses",
+        "Robust construction ensures reliability and longevity of cooling towers in demanding applications"
       ]
     }
   ];
@@ -58,186 +58,179 @@ export function WoodenTimberReductionGearboxDriveSystemContent() {
   const structuralDetails = [
     {
       icon: <Settings className="w-5 h-5" />,
-      title: "Structural Joints",
-      description: "All structural joints are securely fastened with galvanized bolts and S.S./Brass nails, ensuring robust construction. Stainless Steel or phosphor bronze hardware can be provided upon request, subject to an additional cost."
+      title: "Secure Structural Joints",
+      description: "All structural joints securely fastened with galvanized bolts and S.S./Brass nails ensuring robust construction. Stainless Steel or phosphor bronze hardware available upon request for enhanced corrosion resistance."
     },
     {
       icon: <Droplets className="w-5 h-5" />,
-      title: "Water Distribution",
-      description: "To achieve uniform water distribution, the hot water basin is equipped with a distribution box. This mechanism ensures equal distribution of water within the hot water basin. The water is then efficiently splashed downward through strategically positioned spray target nozzles, optimizing the cooling process."
+      title: "Optimized Water Distribution",
+      description: "Hot water basin equipped with distribution box ensuring uniform water distribution. Water efficiently splashed downward through strategically positioned spray target nozzles optimizing cooling process and thermal efficiency."
     }
   ];
 
   return (
     <>
-      {/* Product Description Section */}
+      {/* Hero Product Description */}
       <section className="py-16 bg-gray-50 pt-6">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Product Description
-            </h2>
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
+              Wooden/Timber Reduction Gearbox Drive Cooling Towers - Medium Capacity Solutions
+            </h1>
+            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
-                Our medium capacity cooling towers are equipped with a specialized fan assembly driven by a reduction gear reducer of the spiral bevel type. The fan assembly operates with the assistance of a non-lubricated balanced drive shaft fitted with flexible links. This innovative design ensures efficient and smooth fan operation.
+                Paltech's <strong>Wooden/Timber Single & Double Flow Induced Draft Crossflow Cooling Towers with Reduction Gearbox Drive Systems</strong> are engineered for <strong>medium capacity cooling applications</strong>, combining traditional timber construction with advanced mechanical drive technology. These robust cooling systems feature specialized fan assemblies driven by reduction gear reducers of spiral bevel type, ensuring optimal torque transmission and enhanced operational control.
               </p>
               <p>
-                The fans are powered by an electric motor connected to a gearbox through a dynamically balanced tubular drive shaft. This setup guarantees optimal performance and minimizes vibrations, enhancing the overall efficiency of the cooling tower.
+                Our medium capacity cooling towers are equipped with <strong>specialized fan assemblies</strong> driven by reduction gear reducers of spiral bevel type, operating with non-lubricated balanced drive shafts fitted with flexible links. This innovative design ensures efficient and smooth fan operation with minimal vibration, enhanced reliability, and optimal performance for medium-scale industrial cooling requirements.
               </p>
               <p>
-                To ensure stability and durability, the entire equipment is mounted on a single fabricated mild steel frame, which is adequately weatherproofed to withstand various environmental conditions. This robust construction ensures the reliability and longevity of our cooling towers.
+                The fans are powered by electric motors connected to gearboxes through <strong>dynamically balanced tubular drive shafts</strong>, guaranteeing optimal performance and minimizing vibrations. This setup enhances overall cooling tower efficiency while ensuring structural stability and extended component life. The entire equipment is mounted on a single fabricated mild steel frame, adequately weatherproofed to withstand various environmental conditions, ensuring reliability and longevity.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Technical Specifications Section */}
+      {/* Key Features */}
       <section className="py-16 bg-white">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Technical Specifications
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Advanced engineering specifications designed for medium capacity cooling applications
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-            {technicalSpecs.map((spec, index) => (
-              <div key={index} className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
-                    {spec.icon}
-                  </div>
-                  <h3 className="text-lg font-semibold text-gray-900">{spec.title}</h3>
-                </div>
-                <ul className="space-y-2">
-                  {spec.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start gap-2 text-sm text-gray-600">
-                      <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Structural Details Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Structural Details
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Robust construction and precision engineering for reliable performance
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {structuralDetails.map((detail, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
-                    {detail.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{detail.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{detail.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* USP Section */}
-      <section className="py-16 bg-white">
-        <div className="px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
               Why Choose Paltech Reduction Gearbox Drive Systems?
             </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Our proven track record and commitment to excellence
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {keyFeatures.map((feature, index) => (
-              <div key={index} className="bg-gradient-to-br from-green-50 to-emerald-50 p-4 sm:p-6 rounded-xl border border-green-200">
-                <div className="flex flex-col items-center text-center">
-                  <div className="w-12 h-12 sm:w-10 sm:h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-3 sm:mb-4">
-                    {feature.icon}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {keyFeatures.map((feature, index) => (
+                <div key={index} className="bg-gradient-to-br from-amber-50 to-orange-50 p-6 rounded-xl border border-amber-200 hover:shadow-lg transition-shadow">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600 mb-4">
+                      {feature.icon}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {feature.description}
+                    </p>
                   </div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {feature.description}
-                  </p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Additional Information Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="px-4 sm:px-6 lg:px-8">
-          <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Engineering Data & Dimensions</h3>
-              <p className="text-gray-600 mb-6">
-                Dimensions & other Engineering Data are available with Proposal / Quotation.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors"
-                >
-                  Request Proposal/Quotation
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-                <Link
-                  href="/cooling-towers/wooden-timber-cooling-towers"
-                  className="inline-flex items-center px-6 py-3 bg-transparent text-primary border-2 border-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors"
-                >
-                  Back to Wooden/Timber Cooling Towers
-                </Link>
-              </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-primary">
+      {/* Technical Specifications */}
+      <section className="py-16 bg-gray-50">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Advanced Engineering Specifications
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Precision-engineered components and drive systems designed for medium capacity applications requiring optimal performance and reliability.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+              {technicalSpecs.map((spec, index) => (
+                <div key={index} className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                      {spec.icon}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900">{spec.title}</h3>
+                  </div>
+                  <ul className="space-y-2">
+                    {spec.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="flex items-start gap-2 text-sm text-gray-600">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Structural Details */}
+      <section className="py-16 bg-white">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              Structural Components & Construction Details
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8">
+              {structuralDetails.map((detail, index) => (
+                <div key={index} className="bg-gray-50 p-6 rounded-xl border border-gray-200 hover:shadow-md transition-shadow">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                      {detail.icon}
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">{detail.title}</h3>
+                      <p className="text-gray-600 leading-relaxed">{detail.description}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Applications */}
+      <section className="py-16 bg-gray-50">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Ideal Applications & Use Cases
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                "Medium Capacity Industrial Cooling",
+                "Manufacturing Facilities",
+                "Chemical Processing Plants",
+                "Process Cooling Applications",
+                "Industrial HVAC Systems",
+                "Food Processing Industries",
+                "Textile Manufacturing",
+                "Pharmaceutical Facilities",
+                "Paper & Pulp Mills"
+              ].map((app, index) => (
+                <div key={index} className="p-4 bg-white rounded-lg border border-gray-200 hover:bg-primary/5 hover:border-primary transition-colors">
+                  <p className="text-gray-700 font-medium">{app}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-gradient-to-br from-primary to-primary/90 text-white">
         <div className="px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Interested in our Products? Let's Talk Business
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            Ready for Medium Capacity Cooling Solutions?
           </h2>
           <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
-            Contact us today to learn more about our reduction gearbox drive wooden/timber cooling towers and how they can benefit your industrial operations.
+            Get detailed information about our Reduction Gearbox Drive Cooling Towers and discover how they can benefit your medium capacity cooling applications. Request comprehensive specifications and expert consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
             >
-              Get Expert Consultation
+              Get Quote & Consultation
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
             <Link
-              href="/cooling-towers"
+              href="/cooling-towers/wooden-timber-cooling-towers"
               className="inline-flex items-center px-8 py-4 bg-transparent text-white border-2 border-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-colors"
             >
-              View All Cooling Towers
+              View All Wooden Cooling Towers
             </Link>
           </div>
         </div>

@@ -1,41 +1,62 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Clock, Users, Globe } from "lucide-react";
+import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Clock, Users, Globe, Factory } from "lucide-react";
 
 export function WoodenTimberDirectDriveSystemsContent() {
   const keyFeatures = [
     {
       icon: <Award className="w-5 h-5" />,
-      title: "Quality Products & Most Reliable Services",
-      description: "Paltech ensures top-tier quality and dependable services for all cooling tower components."
+      title: "Quality Products & Reliable Services",
+      description: "Paltech ensures top-tier quality and dependable services for all cooling tower components, backed by over 34 years of manufacturing excellence."
     },
     {
       icon: <Clock className="w-5 h-5" />,
-      title: "More than 34 years of mfg. Excellence",
-      description: "Decades of experience in manufacturing ensure superior product quality and performance."
+      title: "34+ Years Manufacturing Excellence",
+      description: "Decades of experience in manufacturing ensure superior product quality, performance, and reliability across diverse industrial applications."
     },
     {
       icon: <Users className="w-5 h-5" />,
-      title: "More than 9000 clients",
-      description: "A vast client base trusts Paltech for their industrial cooling solutions worldwide."
+      title: "9,000+ Satisfied Clients",
+      description: "A vast client base trusts Paltech for their industrial cooling solutions worldwide, demonstrating proven track record and customer satisfaction."
     },
     {
       icon: <Globe className="w-5 h-5" />,
-      title: "Export to 25+ countries",
-      description: "Our cooling towers are supplied globally, meeting international standards and demands."
+      title: "Global Export Network",
+      description: "Our cooling towers are supplied globally to 25+ countries, meeting international standards and diverse industrial requirements."
     },
   ];
 
   const structuralComponents = [
-    "Main structural components and other lightweight sections are crafted from selected preservative timber.",
-    "All structural joints are bolted using galvanized bolts, and Stainless Steel or Phosphor Bronze hardware can be supplied at an additional cost.",
-    "To ensure uniform water distribution, the hot water basin is equipped with a distribution box, which evenly disperses water in the hot water basin, subsequently splashing it downward through spray target nozzles."
+    {
+      title: "Preservative Timber Construction",
+      description: "Main structural components and lightweight sections crafted from selected preservative timber ensuring durability, resistance to decay, and long-term structural integrity."
+    },
+    {
+      title: "Galvanized Joint Fastening",
+      description: "All structural joints bolted using galvanized bolts with Stainless Steel or Phosphor Bronze hardware available as upgrade options for enhanced corrosion resistance."
+    },
+    {
+      title: "Uniform Water Distribution System",
+      description: "Hot water basin equipped with distribution box ensuring even water dispersion throughout the basin, with subsequent splashing through spray target nozzles for optimal cooling."
+    }
   ];
 
   const coolingComponents = [
-    "The standard cladding consists of profile corrugated sheets, with joints designed to shed water only inside the cooling tower.",
-    "Specially designed eliminators, available in single-pass to four-pass patterns made from various materials, are provided to minimize bleed losses.",
-    "Fill bars are designed to maximize splash surface and wetted surface, resulting in a high heat transfer rate.",
-    "Wooden/PVC fills are supported either on wooden stringers or inside S.S. wire mesh grids, ensuring secure and permanent positioning. Various fill materials with different shapes are available to suit specific design requirements."
+    {
+      title: "Weather-Resistant Cladding",
+      description: "Standard cladding consists of profile corrugated sheets with joints designed to shed water only inside the cooling tower, preventing external moisture ingress."
+    },
+    {
+      title: "Advanced Drift Eliminators",
+      description: "Specially designed eliminators available in single-pass to four-pass patterns made from various materials, minimizing bleed losses and water consumption."
+    },
+    {
+      title: "High-Efficiency Fill Systems",
+      description: "Fill bars designed to maximize splash surface and wetted surface area, resulting in superior heat transfer rates and optimal cooling performance."
+    },
+    {
+      title: "Versatile Fill Support Systems",
+      description: "Wooden/PVC fills supported on wooden stringers or S.S. wire mesh grids ensuring secure positioning. Various fill materials and shapes available for specific design requirements."
+    }
   ];
 
   const technicalSpecs = [
@@ -43,203 +64,212 @@ export function WoodenTimberDirectDriveSystemsContent() {
       icon: <Settings className="w-5 h-5" />,
       title: "Motor Specifications",
       items: [
-        "Special low R.P.M., totally enclosed vertical motor",
-        "Flange type, with an enlarged and threaded shaft, and a sealed top",
-        "Designed to be totally weatherproof with IP-55 protection",
-        "Suitable for operation in heated and humid environments"
+        "Special low R.P.M., totally enclosed vertical motor designed for cooling tower applications",
+        "Flange type configuration with enlarged and threaded shaft, sealed top for weatherproof operation",
+        "Totally weatherproof construction with IP-55 protection rating",
+        "Suitable for operation in heated and humid environments typical of cooling tower installations"
       ]
     },
     {
       icon: <Zap className="w-5 h-5" />,
       title: "Fan Drive System",
       items: [
-        "Fan is directly coupled with low RPM motors (vertical flange-mounted with a sealed top and enlarged threaded shaft)",
-        "As an option, a gear-driven fan system can be provided if required for more demanding applications"
+        "Direct coupling with low RPM motors (vertical flange-mounted with sealed top and enlarged threaded shaft)",
+        "Simplified mechanical design eliminating belt drives and associated maintenance requirements",
+        "Optional gear-driven fan systems available for more demanding applications requiring enhanced control"
       ]
     },
     {
       icon: <Droplets className="w-5 h-5" />,
       title: "Fan Specifications",
       items: [
-        "Fans with diameters of up to 8 feet",
-        "Multi-blade cast Aluminum/FRP adjustable pitch fan blades",
-        "M.S. fabricated H.D.G./S.S. hub and S.S. hardware",
-        "Designed for lower to medium capacity cooling needs"
+        "Fans with diameters up to 8 feet for lower to medium capacity cooling applications",
+        "Multi-blade cast Aluminum/FRP adjustable pitch fan blades for optimal air flow control",
+        "M.S. fabricated H.D.G./S.S. hub with S.S. hardware ensuring durability and corrosion resistance",
+        "Specifically designed for lower to medium capacity cooling needs with proven reliability"
       ]
     }
   ];
 
   return (
     <>
-      {/* Product Description Section */}
+      {/* Hero Product Description */}
       <section className="py-16 bg-gray-50 pt-6">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Product Description
-            </h2>
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
+              Wooden/Timber Direct Drive Cooling Towers - Lower to Medium Capacity Solutions
+            </h1>
+            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
-                Cooling Towers featuring the Direct Drive System are designed for lower to medium capacity cooling needs. These towers come with fans with diameters of up to 8 feet, equipped with multi-blade cast Aluminum/FRP adjustable pitch fan blades, an M.S. fabricated H.D.G./S.S. hub, and S.S. hardware to ensure efficient cooling performance.
+                Paltech's <strong>Wooden/Timber Single & Double Flow Induced Draft Crossflow Cooling Towers with Direct Drive Systems</strong> are engineered for <strong>lower to medium capacity cooling applications</strong>, combining traditional timber construction with modern mechanical efficiency. These robust cooling systems feature direct drive mechanisms eliminating belt drives and associated maintenance complexities, ensuring reliable operation and simplified service requirements.
               </p>
               <p>
-                Paltech's Wooden/Timber Direct Drive Systems combine traditional robust construction with modern efficiency, providing durable and high-performing cooling solutions for various industrial applications.
+                Our direct drive cooling towers are equipped with <strong>fans up to 8 feet in diameter</strong>, featuring multi-blade cast Aluminum/FRP adjustable pitch fan blades, M.S. fabricated H.D.G./S.S. hubs, and S.S. hardware ensuring efficient cooling performance. The direct coupling configuration with low RPM motors provides simplified mechanical design, reduced maintenance overhead, and enhanced reliability compared to belt-driven systems.
+              </p>
+              <p>
+                These cooling towers are available in both <strong>single flow and double flow induced draft crossflow configurations</strong>, providing flexibility for specific capacity requirements and installation constraints. The traditional timber construction, combined with modern mechanical components, delivers proven reliability and cost-effectiveness for applications requiring medium-capacity cooling solutions.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Technical Specifications Section */}
+      {/* Key Features */}
       <section className="py-16 bg-white">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Technical Specifications
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              Why Choose Paltech Direct Drive Cooling Towers?
             </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Detailed insights into the core components and operational features
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-            {technicalSpecs.map((spec, index) => (
-              <div key={index} className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
-                    {spec.icon}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {keyFeatures.map((feature, index) => (
+                <div key={index} className="bg-gradient-to-br from-amber-50 to-orange-50 p-6 rounded-xl border border-amber-200 hover:shadow-lg transition-shadow">
+                  <div className="flex flex-col items-center text-center">
+                    <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600 mb-4">
+                      {feature.icon}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {feature.description}
+                    </p>
                   </div>
-                  <h3 className="text-lg font-semibold text-gray-900">{spec.title}</h3>
                 </div>
-                <ul className="space-y-2">
-                  {spec.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start gap-2 text-sm text-gray-600">
-                      <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
-                      <span>{item}</span>
-                    </li>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Specifications */}
+      <section className="py-16 bg-gray-50">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Technical Specifications & Components
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Detailed insights into core components, operational features, and engineering specifications designed for reliable performance.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
+              {technicalSpecs.map((spec, index) => (
+                <div key={index} className="bg-white p-6 rounded-xl border border-gray-200 hover:shadow-lg transition-shadow">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                      {spec.icon}
+                    </div>
+                    <h3 className="text-lg font-semibold text-gray-900">{spec.title}</h3>
+                  </div>
+                  <ul className="space-y-2">
+                    {spec.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="flex items-start gap-2 text-sm text-gray-600">
+                        <CheckCircle className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Components */}
+      <section className="py-16 bg-white">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12">
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                  Key Structural Components
+                </h2>
+                <div className="space-y-4">
+                  {structuralComponents.map((item, index) => (
+                    <div key={index} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
+                        <p className="text-gray-600 text-sm">{item.description}</p>
+                      </div>
+                    </div>
                   ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Key Components Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Key Structural Components
-              </h2>
-              <ul className="space-y-4 text-gray-700 leading-relaxed">
-                {structuralComponents.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                Key Cooling Components
-              </h2>
-              <ul className="space-y-4 text-gray-700 leading-relaxed">
-                {coolingComponents.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* USP Section */}
-      <section className="py-16 bg-white">
-        <div className="px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Why Choose Paltech Direct Drive Systems?
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Our proven track record and commitment to excellence
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {keyFeatures.map((feature, index) => (
-              <div key={index} className="bg-gradient-to-br from-green-50 to-emerald-50 p-4 sm:p-6 rounded-xl border border-green-200">
-                <div className="flex flex-col items-center text-center">
-                  <div className="w-12 h-12 sm:w-10 sm:h-10 bg-green-100 rounded-lg flex items-center justify-center text-green-600 mb-3 sm:mb-4">
-                    {feature.icon}
-                  </div>
-                  <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">{feature.title}</h3>
-                  <p className="text-sm text-gray-600 leading-relaxed">
-                    {feature.description}
-                  </p>
                 </div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Additional Information Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="px-4 sm:px-6 lg:px-8">
-          <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-            <div className="text-center">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">Engineering Data & Dimensions</h3>
-              <p className="text-gray-600 mb-6">
-                For detailed dimensions and other engineering data, please refer to our Proposal/Quotation.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link
-                  href="/contact"
-                  className="inline-flex items-center px-6 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90 transition-colors"
-                >
-                  Request Proposal/Quotation
-                  <ArrowRight className="ml-2 w-4 h-4" />
-                </Link>
-                <Link
-                  href="/cooling-towers/wooden-timber-cooling-towers"
-                  className="inline-flex items-center px-6 py-3 bg-transparent text-primary border-2 border-primary font-semibold rounded-lg hover:bg-primary hover:text-white transition-colors"
-                >
-                  Back to Wooden/Timber Cooling Towers
-                </Link>
+              <div>
+                <h2 className="text-3xl font-bold text-gray-900 mb-6">
+                  Key Cooling Components
+                </h2>
+                <div className="space-y-4">
+                  {coolingComponents.map((item, index) => (
+                    <div key={index} className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg border border-gray-200">
+                      <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 mt-1" />
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-1">{item.title}</h3>
+                        <p className="text-gray-600 text-sm">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-primary">
+      {/* Applications */}
+      <section className="py-16 bg-gray-50">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Ideal Applications & Use Cases
+            </h2>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                "Lower to Medium Capacity Industrial Cooling",
+                "Manufacturing Facilities",
+                "Process Cooling Applications",
+                "HVAC Systems",
+                "Food Processing Industries",
+                "Textile Manufacturing",
+                "Chemical Processing",
+                "Small to Medium Power Plants",
+                "Commercial Buildings"
+              ].map((app, index) => (
+                <div key={index} className="p-4 bg-white rounded-lg border border-gray-200 hover:bg-primary/5 hover:border-primary transition-colors">
+                  <p className="text-gray-700 font-medium">{app}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 bg-gradient-to-br from-primary to-primary/90 text-white">
         <div className="px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Interested in our Products? Let's Talk Business
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            Interested in Direct Drive Cooling Towers?
           </h2>
           <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
-            Contact us today to learn more about our direct drive wooden/timber cooling towers and how they can benefit your industrial operations.
+            Get detailed information about our Wooden/Timber Direct Drive Systems and discover how they can benefit your lower to medium capacity cooling applications. Request comprehensive specifications and expert consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
             >
-              Get Expert Consultation
+              Get Quote & Consultation
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
             <Link
-              href="/cooling-towers"
+              href="/cooling-towers/wooden-timber-cooling-towers"
               className="inline-flex items-center px-8 py-4 bg-transparent text-white border-2 border-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-colors"
             >
-              View All Cooling Towers
+              View All Wooden Cooling Towers
             </Link>
           </div>
         </div>

@@ -1,147 +1,183 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Zap, Settings, Droplets } from "lucide-react";
+import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Building2, Factory } from "lucide-react";
 
 export function RCCConcreteCoolingTowersContent() {
   const availableTypes = [
     {
       icon: <Droplets className="w-5 h-5" />,
-      title: "Counter Flow with Splash Fills",
-      description: "Traditional splash fill design for reliable cooling performance"
+      title: "Counter Flow Cooling Towers with Splash Fills",
+      description: "Traditional splash fill design ensuring reliable cooling performance through enhanced water-air contact surface area. Ideal for applications requiring consistent thermal efficiency and lower maintenance requirements."
     },
     {
       icon: <Settings className="w-5 h-5" />,
-      title: "Counter Flow with Film Fills",
-      description: "Advanced film fill technology for enhanced efficiency"
+      title: "Counter Flow Cooling Towers with Film Fills",
+      description: "Advanced film fill technology delivering superior heat transfer efficiency and reduced water consumption. Perfect for applications prioritizing energy efficiency and compact footprint."
     },
     {
       icon: <Zap className="w-5 h-5" />,
-      title: "Cross Flow with Splash/Film Fills",
-      description: "Single Flow & Double Flow designs for versatile applications"
+      title: "Cross Flow Cooling Towers with Splash/Film Fills",
+      description: "Versatile single flow and double flow designs optimized for specific industrial requirements. Cross flow configuration offers lower pump head requirements and simplified maintenance access."
     }
   ];
 
   const capacityRanges = [
-    { range: "500 - 1,000", unit: "m³/hr per cell" },
-    { range: "1,000 - 2,000", unit: "m³/hr per cell" },
-    { range: "2,000 - 3,000", unit: "m³/hr per cell" },
-    { range: "3,000 - 4,500", unit: "m³/hr per cell" },
-    { range: "2 x 2,800", unit: "m³/hr (specific configuration)" },
-    { range: "Multicellular", unit: "construction for larger capacities" }
+    { range: "500 - 1,000", unit: "m³/hr per cell", applications: "Small to medium industrial facilities" },
+    { range: "1,000 - 2,000", unit: "m³/hr per cell", applications: "Medium-scale manufacturing plants" },
+    { range: "2,000 - 3,000", unit: "m³/hr per cell", applications: "Large industrial complexes" },
+    { range: "3,000 - 4,500", unit: "m³/hr per cell", applications: "Power plants and refineries" },
+    { range: "2 x 2,800", unit: "m³/hr (specific configuration)", applications: "Dual-cell installations" },
+    { range: "Multicellular", unit: "construction for larger capacities", applications: "Ultra-large capacity requirements" }
   ];
 
   const currentOperations = [
-    { capacity: "27,000", unit: "m³/hr", status: "Operational" },
-    { capacity: "14,000", unit: "m³/hr", status: "Operational" }
+    { capacity: "27,000", unit: "m³/hr", status: "Operational", location: "Large-scale power generation facility" },
+    { capacity: "14,000", unit: "m³/hr", status: "Operational", location: "Petrochemical processing plant" }
   ];
 
   return (
     <>
-      {/* Product Description Section */}
+      {/* Hero Product Description */}
       <section className="py-16 bg-gray-50 pt-6">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="space-y-6">
-            <h2 className="text-3xl font-bold text-gray-900">
-              Product Description
-            </h2>
-            <div className="space-y-4 text-gray-700 leading-relaxed">
+          <div className="max-w-4xl mx-auto space-y-6">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
+              RCC Concrete Cooling Towers - Large-Scale Industrial Cooling Solutions
+            </h1>
+            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
-                Paltech provides cooling towers in both counter flow and cross flow designs, featuring RCC/Concrete structures tailored for large-scale cooling tower applications.
+                Paltech's <strong>RCC (Reinforced Cement Concrete) cooling towers</strong> represent the pinnacle of large-scale industrial cooling technology, engineered for power generation facilities, petrochemical refineries, chemical processing plants, and other applications requiring <strong>massive cooling capacity and exceptional durability</strong>. These robust concrete structures offer unmatched longevity, typically operating for <strong>30+ years with proper maintenance</strong>, making them the preferred choice for capital-intensive industrial projects.
               </p>
               <p>
-                Various types of fills, including Asbestos fills, PVC Bars, PVC Film Fills, and polypropylene fills, are utilized based on specific application needs.
+                Our RCC concrete cooling towers are available in both <strong>counter flow and cross flow designs</strong>, each optimized for specific application requirements, space constraints, and operational preferences. Counter flow configurations deliver superior thermal efficiency by directing water downward against upward air flow, while cross flow designs offer lower pump head requirements and simplified maintenance access. Both configurations support <strong>single flow and double flow</strong> arrangements, providing flexibility for diverse industrial cooling needs.
+              </p>
+              <p>
+                Paltech utilizes various fill media types including <strong>PVC bars, PVC film fills, polypropylene fills, and asbestos fills</strong> (where applicable), selected based on water chemistry, temperature ranges, and efficiency requirements. Each fill type is engineered to maximize water-air contact surface area, optimize heat transfer rates, and minimize pressure drop, ensuring optimal cooling performance while maintaining energy efficiency.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Technical Specifications Section */}
+      {/* Key Features */}
       <section className="py-16 bg-white">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Technical Specifications
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
+              Key Features & Technical Advantages
             </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Paltech cooling towers boast a wide range of models designed to cater to diverse requirements, ensuring flexibility and suitability for various industrial applications.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Settings className="w-5 h-5 text-primary" />
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Settings className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900">Design Flexibility</h3>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">Design Flexibility</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Both counter flow and cross flow designs available with single and double flow configurations, enabling customization for specific space constraints, capacity requirements, and operational preferences.
+                </p>
               </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Both counter flow and cross flow designs available to meet specific application requirements.
-              </p>
-            </div>
 
-            <div className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Zap className="w-5 h-5 text-primary" />
+              <div className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900">Multiple Fill Options</h3>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">Fill Options</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Comprehensive fill media selection including PVC bars, PVC film fills, polypropylene fills, and asbestos fills, each optimized for specific water chemistry, temperature ranges, and efficiency targets.
+                </p>
               </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Multiple fill types including Asbestos, PVC Bars, PVC Film Fills, and polypropylene fills.
-              </p>
-            </div>
 
-            <div className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center">
-                  <Droplets className="w-5 h-5 text-primary" />
+              <div className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                    <Building2 className="w-6 h-6 text-primary" />
+                  </div>
+                  <h3 className="text-lg font-semibold text-gray-900">Large-Scale Capacity</h3>
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900">Large Scale</h3>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  Specifically engineered for large-scale industrial applications with robust reinforced concrete construction, supporting capacities from 500 m³/hr to unlimited multicellular configurations.
+                </p>
               </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
-                Specifically designed for large-scale cooling tower applications with robust construction.
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Capacity Available Section */}
+      {/* Capacity Ranges */}
       <section className="py-16 bg-gray-50">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Capacity Available
-            </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              Paltech offers a wide range of capacities to meet diverse industrial requirements
-            </p>
-          </div>
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Comprehensive Capacity Range
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Paltech offers extensive capacity options from single-cell units to multicellular installations, serving diverse industrial cooling requirements across multiple sectors.
+              </p>
+            </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {capacityRanges.map((item, index) => (
-              <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary mb-2">{item.range}</div>
-                  <div className="text-sm text-gray-600">{item.unit}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-            <h3 className="text-xl font-semibold text-gray-900 mb-6 text-center">Current Operations</h3>
-            <div className="grid md:grid-cols-2 gap-6">
-              {currentOperations.map((operation, index) => (
-                <div key={index} className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
-                  <div>
-                    <div className="text-lg font-semibold text-gray-900">{operation.capacity}</div>
-                    <div className="text-sm text-gray-600">{operation.unit}</div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+              {capacityRanges.map((item, index) => (
+                <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                  <div className="text-center mb-3">
+                    <div className="text-3xl font-bold text-primary mb-2">{item.range}</div>
+                    <div className="text-sm text-gray-600 font-medium mb-3">{item.unit}</div>
+                    <div className="text-xs text-gray-500">{item.applications}</div>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <CheckCircle className="w-5 h-5 text-green-500" />
-                    <span className="text-sm font-medium text-green-600">{operation.status}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Operational Track Record</h3>
+              <p className="text-gray-600 text-center mb-6">Paltech has successfully commissioned and maintains large-scale RCC concrete cooling towers including:</p>
+              <div className="grid md:grid-cols-2 gap-6">
+                {currentOperations.map((operation, index) => (
+                  <div key={index} className="flex items-center justify-between p-5 bg-gradient-to-r from-primary/5 to-blue-50 rounded-lg border border-primary/20">
+                    <div>
+                      <div className="text-2xl font-bold text-gray-900 mb-1">{operation.capacity}</div>
+                      <div className="text-sm text-gray-600 mb-2">{operation.unit}</div>
+                      <div className="text-xs text-gray-500">{operation.location}</div>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <CheckCircle className="w-6 h-6 text-green-500" />
+                      <span className="text-sm font-semibold text-green-600">{operation.status}</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Available Types */}
+      <section className="py-16 bg-white">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                Available RCC Concrete Cooling Tower Configurations
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Explore our comprehensive range of RCC concrete cooling tower designs, each engineered for specific performance characteristics and industrial applications.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              {availableTypes.map((type, index) => (
+                <div key={index} className="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors border border-gray-200">
+                  <div className="flex items-start gap-4">
+                    <div className="flex-shrink-0 w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                      {type.icon}
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">{type.title}</h3>
+                      <p className="text-gray-600 leading-relaxed">{type.description}</p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -150,58 +186,56 @@ export function RCCConcreteCoolingTowersContent() {
         </div>
       </section>
 
-      {/* Available Cooling Tower Types Section */}
-      <section className="py-16 bg-white">
+      {/* Applications */}
+      <section className="py-16 bg-gray-50">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Available Cooling Tower Types
+          <div className="max-w-7xl mx-auto">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+              Industrial Applications & Use Cases
             </h2>
-            <p className="text-gray-600 max-w-3xl mx-auto">
-              We offer various types of cooling towers to meet diverse industrial needs
-            </p>
-          </div>
-
-          <div className="space-y-6">
-            {availableTypes.map((type, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors">
-                <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
-                    {type.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">{type.title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{type.description}</p>
-                  </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                "Thermal Power Generation Plants",
+                "Petrochemical Refineries",
+                "Chemical Processing Industries",
+                "Steel Manufacturing Facilities",
+                "Large-Scale HVAC Systems",
+                "Industrial Manufacturing Plants",
+                "Oil & Gas Processing",
+                "Cement Production Facilities",
+                "Paper & Pulp Mills"
+              ].map((app, index) => (
+                <div key={index} className="p-4 bg-white rounded-lg border border-gray-200 hover:bg-primary/5 hover:border-primary transition-colors">
+                  <p className="text-gray-700 font-medium">{app}</p>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-16 bg-primary">
+      {/* CTA */}
+      <section className="py-16 bg-gradient-to-br from-primary to-primary/90 text-white">
         <div className="px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">
-            Ready for Detailed Engineering Data?
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+            Ready for Detailed Engineering Data & Specifications?
           </h2>
           <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
-            For detailed information, including dimensions and other engineering data, please refer to our Proposal/Quotation.
+            Request comprehensive technical documentation including dimensions, structural drawings, performance curves, and custom engineering solutions tailored to your large-scale cooling requirements.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center px-8 py-4 bg-white text-primary font-semibold rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
             >
-              Get Proposal/Quotation
+              Request Proposal & Quotation
               <ArrowRight className="ml-2 w-5 h-5" />
             </Link>
             <Link
               href="/cooling-towers"
               className="inline-flex items-center px-8 py-4 bg-transparent text-white border-2 border-white font-semibold rounded-lg hover:bg-white hover:text-primary transition-colors"
             >
-              View All Cooling Towers
+              Explore All Cooling Towers
             </Link>
           </div>
         </div>
