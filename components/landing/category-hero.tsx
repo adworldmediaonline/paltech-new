@@ -27,7 +27,7 @@ export function CategoryHero({
   const sliderImages = images || [imageSrc, imageSrc, imageSrc];
 
   return (
-    <section className="relative w-full pt-24 sm:pt-28 md:pt-32">
+    <section className="relative w-full pt-20">
       <div className="relative w-full overflow-hidden bg-gray-100">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
