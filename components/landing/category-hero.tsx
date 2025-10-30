@@ -1,30 +1,3 @@
-"use client";
-
-import Image from "next/image";
-
-interface CategoryHeroProps {
-  title: string;
-  imageSrc?: string;
-}
-
-export function CategoryHero({ title, imageSrc }: CategoryHeroProps) {
-  const src = imageSrc || "/banner/banner.png"; // fallback placeholder already in repo
-  return (
-    <section className="relative w-full h-[220px] sm:h-[280px] md:h-[340px] lg:h-[380px]">
-      <div className="absolute inset-0 overflow-hidden">
-        <Image src={src} alt={title} fill priority className="object-cover" sizes="100vw" />
-        <div className="absolute inset-0 bg-black/30" />
-      </div>
-      <div className="relative z-10 h-full flex items-end">
-        <div className="mx-auto max-w-7xl w-full px-4 sm:px-6 lg:px-8 pb-6">
-          <h1 className="text-white text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight drop-shadow">{title}</h1>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-export default CategoryHero;
 
 "use client";
 

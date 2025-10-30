@@ -70,7 +70,7 @@ export function CoolingTowersContent() {
       {/* Content Section */}
       <section className="py-16 bg-gray-50">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-1 gap-12 items-start">
             <div className="space-y-6">
               <h2 className="text-3xl font-bold text-gray-900">
                 Industry-Leading Cooling Solutions
@@ -82,19 +82,6 @@ export function CoolingTowersContent() {
                 <p>
                   Paltech has earned a reputation as one of the best cooling tower and equipment manufacturers in India. Our after-market services for cooling towers are well-known within the industry.
                 </p>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-xl p-2 shadow-xl">
-              <div className="rounded-lg overflow-hidden">
-                <Image
-                  src="/categories/cooling-towers.png"
-                  alt="Industrial Cooling Tower"
-                  width={1000}
-                  height={625}
-                  className="w-full h-auto object-contain"
-                  priority
-                />
               </div>
             </div>
           </div>

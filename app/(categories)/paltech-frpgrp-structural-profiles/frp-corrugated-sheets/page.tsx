@@ -1,7 +1,13 @@
 import { FrpCorrugatedSheetsContent } from "@/components/landing/frp-corrugated-sheets-content";
+import { CategoryHero } from "@/components/landing/category-hero";
 
 export default function Page() {
-  return <FrpCorrugatedSheetsContent />;
+  return (
+    <>
+      <CategoryHero title="FRP Corrugated Sheets" />
+      <FrpCorrugatedSheetsContent />
+    </>
+  );
 }
 
 

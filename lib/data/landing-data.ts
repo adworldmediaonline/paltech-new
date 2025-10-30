@@ -296,7 +296,7 @@ export const navItems: NavItem[] = [
           },
           {
             label: "FRP Ladders",
-            href: "/frp-grp-structural-profiles/frp-ladders"
+            href: "/paltech-frpgrp-structural-profiles/frp-ladders"
           }
         ]
       }
