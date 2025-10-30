@@ -292,7 +292,7 @@ export const navItems: NavItem[] = [
           },
           {
             label: "FRP Gratings",
-            href: "/frp-grp-structural-profiles/frp-gratings"
+            href: "/paltech-frpgrp-structural-profiles/frp-gratings"
           },
           {
             label: "FRP Ladders",
