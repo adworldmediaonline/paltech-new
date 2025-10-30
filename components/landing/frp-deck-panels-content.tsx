@@ -1,14 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 export function FrpDeckPanelsContent() {
   return (
     <section className="w-full">
-      {/* Header-safe spacing */}
-      <div className="pt-36 sm:pt-40 md:pt-44 pb-8">
+      {/* Hero */}
+      <CategoryHero title="FRP Deck Panels" imageSrc="/profiles/frp-deck-panels.png" />
+
+      {/* Breadcrumb */}
+      <div className="pb-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Breadcrumb>
             <BreadcrumbList>
@@ -38,13 +41,6 @@ export function FrpDeckPanelsContent() {
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-          {/* Visual */}
-          <div className="relative w-full rounded-2xl border border-gray-200 bg-white p-2 shadow-sm">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
-              <Image src="/profiles/frp-deck-panels.png" alt="FRP Deck Panels" fill className="object-contain" sizes="(min-width: 1024px) 560px, 100vw" />
-            </div>
-          </div>
-
           {/* Description & Applications */}
           <div className="space-y-6">
             <section className="space-y-3">
