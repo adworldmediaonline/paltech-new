@@ -2,15 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Home } from "lucide-react";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { ArrowRight } from "lucide-react";
 
 export function CoolingTowersContent() {
   const coolingTowerTypes = [
@@ -38,37 +30,8 @@ export function CoolingTowersContent() {
 
   return (
     <>
-      {/* Breadcrumb Section */}
-      <section className="pt-2  pb-8 bg-white border-b">
-        <div>
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/" className="flex items-center gap-2">
-                  <Home className="w-4 h-4" />
-                  Home
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage className="font-semibold">Cooling Towers</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-
-          <div className="mt-6">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-              Cooling Towers
-            </h1>
-            <p className="text-lg text-gray-600">
-              Precision-engineered thermal management solutions for industrial excellence
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Content Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 pt-6">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-1 gap-12 items-start">
             <div className="space-y-6">

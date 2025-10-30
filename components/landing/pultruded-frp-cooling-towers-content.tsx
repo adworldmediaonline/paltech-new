@@ -1,16 +1,6 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Home, Zap, Settings, Droplets, Shield, Award, Clock, Users } from "lucide-react";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Clock, Users } from "lucide-react";
 
 export function PultrudedFRPCoolingTowersContent() {
   const availableTypes = [
@@ -122,41 +112,8 @@ export function PultrudedFRPCoolingTowersContent() {
 
   return (
     <>
-      {/* Breadcrumb Section */}
-      <section className="pt-2  pb-8 bg-white border-b">
-        <div>
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/" className="flex items-center gap-2">
-                  <Home className="w-4 h-4" />
-                  Home
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink href="/cooling-towers">Cooling Towers</BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage className="font-semibold">Pultruded FRP Cooling Towers</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-
-          <div className="mt-6">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-              Pultruded FRP Cooling Towers
-            </h1>
-            <p className="text-lg text-gray-600">
-              Lightweight, non-corrosive, and exceptionally durable cooling solutions for modern industrial applications
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Product Description Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-gray-50 pt-6">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">

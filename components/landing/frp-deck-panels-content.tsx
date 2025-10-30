@@ -1,45 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { CategoryHero } from "@/components/landing/category-hero";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 export function FrpDeckPanelsContent() {
   return (
     <section className="w-full">
-      {/* Hero */}
-      <CategoryHero title="FRP Deck Panels" imageSrc="/profiles/frp-deck-panels.png" />
-
-      {/* Breadcrumb */}
-      <div className="pb-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/">Home</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/paltech-frpgrp-structural-profiles">FRP/GRP Structural Profiles</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>FRP Deck Panels</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">FRP Deck Panels</h1>
-          <p className="mt-3 text-base sm:text-lg text-muted-foreground max-w-3xl">
-            High‑strength, corrosion‑resistant, feather‑light GRP deck panels—ideal for cooling tower decking, walkways, temporary flooring, and more.
-          </p>
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14 pt-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
           {/* Description & Applications */}
           <div className="space-y-6">

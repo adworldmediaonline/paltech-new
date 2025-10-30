@@ -1,41 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 export function WaterAirCooledScrollChillingPlantContent() {
   return (
     <section className="w-full">
-      {/* Header-safe spacing */}
-      <div className="pt-2  pb-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/">Home</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/chilling-plants">Chilling Plants</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Water/Air Cooled Scroll Chilling Plant</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">Water/Air Cooled Scroll Chilling Plant</h1>
-          <p className="mt-3 text-base sm:text-lg text-muted-foreground max-w-3xl">
-            High-efficiency scroll chiller solutions available in water- and air‑cooled configurations with compact footprint, low noise, and reliable operation.
-          </p>
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14 space-y-10">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14 pt-6 space-y-10">
         <section className="space-y-3">
           <h2 className="text-xl sm:text-2xl font-semibold">Description</h2>
           <div className="space-y-3 text-muted-foreground">

@@ -1,47 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 
 export function FrpCounterFlowRectangularSquareShape2Content() {
   return (
     <section className="w-full">
-      {/* Spacing under fixed header */}
-      <div className="pt-2  pb-8">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <Breadcrumb>
-            <BreadcrumbList>
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/">Home</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/cooling-towers">Cooling Towers</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbLink asChild>
-                  <Link href="/cooling-towers/frp-cooling-towers">FRP Cooling Towers</Link>
-                </BreadcrumbLink>
-              </BreadcrumbItem>
-              <BreadcrumbSeparator />
-              <BreadcrumbItem>
-                <BreadcrumbPage>Counter Flow Rectangular/Square Shape</BreadcrumbPage>
-              </BreadcrumbItem>
-            </BreadcrumbList>
-          </Breadcrumb>
-          <h1 className="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold tracking-tight">Counter Flow Rectangular/Square Shape (FRP)</h1>
-          <p className="mt-3 text-base sm:text-lg text-muted-foreground max-w-3xl">
-            Modular FRP counter-flow towers in rectangular/square geometry designed for higher capacities and easy multi-cell expansion with low maintenance.
-          </p>
-        </div>
-      </div>
-
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-14 pt-6">
         <div className="space-y-8">
           <div className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm">
             <h2 className="text-xl sm:text-2xl font-semibold">Upto 1500 TR With FRP Basin in single cell</h2>
