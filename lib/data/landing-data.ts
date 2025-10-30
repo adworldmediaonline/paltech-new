@@ -284,11 +284,11 @@ export const navItems: NavItem[] = [
         subItems: [
           {
             label: "FRP Deck Panels",
-            href: "/frp-grp-structural-profiles/frp-deck-panels"
+            href: "/paltech-frpgrp-structural-profiles/frp-deck-panels"
           },
           {
             label: "FRP Corrugated Sheets",
-            href: "/frp-grp-structural-profiles/frp-corrugated-sheets"
+            href: "/paltech-frpgrp-structural-profiles/frp-corrugated-sheets"
           },
           {
             label: "FRP Gratings",
