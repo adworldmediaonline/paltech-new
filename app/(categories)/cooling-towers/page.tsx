@@ -3,12 +3,16 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import coolingTowers1 from '../../../public/categories/cooling-towers/cooling-towers-1.webp';
+import coolingTowers2 from '../../../public/categories/cooling-towers/cooling-towers-2.webp';
+import coolingTowers3 from '../../../public/categories/cooling-towers/cooling-towers-3.webp';
+import coolingTowers4 from '../../../public/categories/cooling-towers/cooling-towers-4.webp';
 
 export default function CoolingTowersPage() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero imageSrc="/categories/cooling-towers.png">
+      <CategoryHero imageSrc="/categories/cooling-towers.png" images={[coolingTowers1, coolingTowers2, coolingTowers3, coolingTowers4]}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -14,7 +14,7 @@ export interface CategoryHeroProps {
   imageSrc?: string;
   alt?: string;
   children?: ReactNode;
-  images?: string[]; // For multiple images in slider
+  images?: StaticImageData[]; // For multiple images in slider
 }
 
 export function CategoryHero({
