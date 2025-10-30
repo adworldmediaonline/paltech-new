@@ -1,11 +1,13 @@
 import { MultiCircuitPowerSaverScrollScrewChillingPlantWaterAirCooledContent } from "@/components/landing/multi-circuit-power-saver-scroll-screw-chilling-plant-water-air-cooled-content";
 import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 
 export default function Page() {
   return (
     <>
+      {/* Full-width Hero Slider */}
       <CategoryHero>
         <Breadcrumb>
           <BreadcrumbList>
@@ -22,14 +24,24 @@ export default function Page() {
             </BreadcrumbItem>
             <BreadcrumbSeparator className="text-white/70" />
             <BreadcrumbItem>
-              <BreadcrumbPage className="text-white font-semibold">Multi Circuit Power Saver Scroll/Screw Chilling Plant (Water/Air Cooled)</BreadcrumbPage>
+              <BreadcrumbPage className="text-white font-semibold">Multi Circuit Power Saver Scroll / Screw Chilling Plant</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
       </CategoryHero>
-      <MultiCircuitPowerSaverScrollScrewChillingPlantWaterAirCooledContent />
+
+      {/* Content Section with USP Sidebar */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex gap-8">
+          {/* Main Content */}
+          <main className="flex-1 min-w-0">
+            <MultiCircuitPowerSaverScrollScrewChillingPlantWaterAirCooledContent />
+          </main>
+
+          {/* USP Sidebar */}
+          <USPSidebar />
+        </div>
+      </div>
     </>
   );
 }
-
-

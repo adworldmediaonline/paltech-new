@@ -6,18 +6,9 @@ export default function CategoriesLayout({ children }: { children: React.ReactNo
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      <div className="flex-1">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex gap-8">
-            {/* Main Content */}
-            <main className="flex-1 min-w-0">
-              {children}
-            </main>
-
-            {/* USP Sidebar */}
-            <USPSidebar />
-          </div>
-        </div>
+      {/* Hero section will be rendered by pages and will be full-width */}
+      <div className="flex-1 flex flex-col">
+        {children}
       </div>
       <Footer />
     </div>

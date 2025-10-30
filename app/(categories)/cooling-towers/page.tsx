@@ -1,11 +1,13 @@
 import { CoolingTowersContent } from "@/components/landing/cooling-towers-content";
 import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 
 export default function CoolingTowersPage() {
   return (
     <>
+      {/* Full-width Hero Slider */}
       <CategoryHero imageSrc="/categories/cooling-towers.png">
         <Breadcrumb>
           <BreadcrumbList>
@@ -21,7 +23,19 @@ export default function CoolingTowersPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </CategoryHero>
-      <CoolingTowersContent />
+
+      {/* Content Section with USP Sidebar */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex gap-8">
+          {/* Main Content */}
+          <main className="flex-1 min-w-0">
+            <CoolingTowersContent />
+          </main>
+
+          {/* USP Sidebar */}
+          <USPSidebar />
+        </div>
+      </div>
     </>
   );
 }
