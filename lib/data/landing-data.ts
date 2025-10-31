@@ -324,7 +324,7 @@ export const heroData: HeroData = {
 export const solutionsShowcaseData: SolutionsShowcaseData = {
   eyebrow: "ABOUT US",
   headline: "Synonymous with the highest standards of quality and integrity",
-  description: "PALTECH is a trusted name in the business of cooling solutions, specializing in comprehensive industrial cooling systems with proven expertise across diverse applications.",
+  description: "Paltech™ is a trusted name in the business of cooling solutions, specializing in comprehensive industrial cooling systems with proven expertise across diverse applications.",
   categories: [
     {
       icon: "building",
@@ -358,7 +358,7 @@ export const aboutData: AboutData = {
   headline:
     "Synonymous with the highest standards of quality and integrity",
   description:
-    "PALTECH is synonymous with the highest standards of quality and integrity in the business of cooling solutions. Specializing in a wide range of cooling towers, including Packaged FRP, Wooden, Pultruded FRP, and RCC (Reinforced Concrete Cement) models, PALTECH is a trusted name in the industry. Additionally, we excel in the production of Chilling Plants, catering to both air and water-cooled systems.",
+    "Paltech™ is synonymous with the highest standards of quality and integrity in the business of cooling solutions. Specializing in a wide range of cooling towers, including Packaged FRP, Wooden, Pultruded FRP, and RCC (Reinforced Concrete Cement) models, Paltech™ is a trusted name in the industry. Additionally, we excel in the production of Chilling Plants, catering to both air and water-cooled systems.",
   items: [
     { text: "Packaged FRP Cooling Towers" },
     { text: "Wooden Cooling Towers" },
@@ -425,7 +425,7 @@ export const principlesData: PrinciplesData = {
       icon: "award",
       title: "Quality Products & Services",
       description:
-        "Paltech, our brand name, stands for the best quality products, genuine accessories, and the most reliable services at the most reasonable prices in the market. With over 36 years of experience in the industry, we are here to provide you with the best quality products and services compared to any other company in India.",
+        "Paltech™, our brand name, stands for the best quality products, genuine accessories, and the most reliable services at the most reasonable prices in the market. With over 36 years of experience in the industry, we are here to provide you with the best quality products and services compared to any other company in India.",
       highlight: "36+ Years Excellence",
     },
     {
@@ -579,7 +579,7 @@ export const footerData: FooterData = {
       ],
     },
   ],
-  copyright: `© ${new Date().getFullYear()} Paltech Industrial Solutions. All rights reserved.`,
+  copyright: `© ${new Date().getFullYear()} Paltech™ Industrial Solutions. All rights reserved.`,
   socialLinks: [
     { platform: "LinkedIn", href: "#linkedin" },
     { platform: "Twitter", href: "#twitter" },

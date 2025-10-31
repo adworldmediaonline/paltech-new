@@ -31,7 +31,7 @@ export function WhyChoose() {
               {whyChooseData.eyebrow}
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              Why <span className="text-primary">Paltech</span> is The Right Choice for You
+              Why <span className="text-primary">Paltech™</span> is The Right Choice for You
             </h2>
           </div>
         </div>

@@ -117,7 +117,7 @@ export function CfcFreeWaterAirCooledChillingPlantContent() {
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Conversion & Optimization Services</h2>
             <div className="space-y-4 text-gray-700 leading-relaxed">
               <p>
-                Paltech specializes in converting existing CFC-based chilling systems to modern CFC-free alternatives, ensuring smooth transition while maintaining or improving system performance. Our conversion process includes:
+                Paltech™ specializes in converting existing CFC-based chilling systems to modern CFC-free alternatives, ensuring smooth transition while maintaining or improving system performance. Our conversion process includes:
               </p>
               <ul className="grid md:grid-cols-2 gap-4 mt-6">
                 {[

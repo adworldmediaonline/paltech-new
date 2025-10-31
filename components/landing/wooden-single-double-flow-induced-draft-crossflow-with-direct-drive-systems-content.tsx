@@ -6,7 +6,7 @@ export function WoodenTimberDirectDriveSystemsContent() {
     {
       icon: <Award className="w-5 h-5" />,
       title: "Quality Products & Reliable Services",
-      description: "Paltech ensures top-tier quality and dependable services for all cooling tower components, backed by over 37 years of manufacturing excellence."
+      description: "Paltech™ ensures top-tier quality and dependable services for all cooling tower components, backed by over 37 years of manufacturing excellence."
     },
     {
       icon: <Clock className="w-5 h-5" />,
@@ -16,7 +16,7 @@ export function WoodenTimberDirectDriveSystemsContent() {
     {
       icon: <Users className="w-5 h-5" />,
       title: "9,000+ Satisfied Clients",
-      description: "A vast client base trusts Paltech for their industrial cooling solutions worldwide, demonstrating proven track record and customer satisfaction."
+      description: "A vast client base trusts Paltech™ for their industrial cooling solutions worldwide, demonstrating proven track record and customer satisfaction."
     },
     {
       icon: <Globe className="w-5 h-5" />,
@@ -120,7 +120,7 @@ export function WoodenTimberDirectDriveSystemsContent() {
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Why Choose Paltech Direct Drive Cooling Towers?
+              Why Choose Paltech™ Direct Drive Cooling Towers?
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {keyFeatures.map((feature, index) => (

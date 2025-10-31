@@ -64,7 +64,7 @@ export function FrpDeckPanelsContent() {
           </h1>
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
             <p>
-              Paltech introduces <strong>high-strength, corrosion-resistant, and feather-light GRP deck panels</strong> engineered for demanding industrial applications requiring superior performance, durability, and ease of installation. These premium-grade deck panels combine exceptional structural strength with corrosion resistance, making them ideal for applications where traditional materials fail due to environmental conditions or maintenance requirements.
+              Paltech™ introduces <strong>high-strength, corrosion-resistant, and feather-light GRP deck panels</strong> engineered for demanding industrial applications requiring superior performance, durability, and ease of installation. These premium-grade deck panels combine exceptional structural strength with corrosion resistance, making them ideal for applications where traditional materials fail due to environmental conditions or maintenance requirements.
             </p>
             <p>
               Our FRP deck panels feature <strong>compatibility with staircase platforms and ladder systems</strong>, providing integrated access solutions for industrial and commercial applications. The lightweight construction enables easy handling, transportation, and installation while maintaining exceptional structural strength and load-bearing capacity. This combination of properties makes FRP deck panels ideal for applications requiring both structural integrity and ease of installation.
