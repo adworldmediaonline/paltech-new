@@ -5,7 +5,7 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { statsData } from "@/lib/data/landing-data";
 
 function StatItem({ value, label, isVisible }: { value: string; label: string; isVisible: boolean }) {
-  // Extract number from value string (e.g., "30+" -> 30)
+  // Extract number from value string (e.g., "37+" -> 30)
   const numericValue = parseInt(value.replace(/\D/g, ""), 10) || 0;
   const suffix = value.replace(/[0-9]/g, "");
   const count = useCounterAnimation(numericValue, 2000, isVisible);
@@ -28,9 +28,8 @@ export function Stats() {
     <section ref={ref} className="py-20 md:py-28 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
-          className={`grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           {statsData.stats.map((stat, index) => (
             <div

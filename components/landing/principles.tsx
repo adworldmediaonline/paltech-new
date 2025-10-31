@@ -17,9 +17,8 @@ export function Principles() {
     <section ref={ref} className="py-20 md:py-28 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
-          className={`transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           {/* Header */}
           <div className="text-sm uppercase tracking-wider text-primary font-semibold mb-4">
@@ -71,7 +70,7 @@ export function Principles() {
                 "ISO 14001:2015",
                 "ISO 45001:2018",
                 "CTI USA Member",
-                "30+ Years",
+                "37+ Years",
                 "11K+ Clients",
               ].map((cert, index) => (
                 <div key={index} className="flex items-start gap-3 group">

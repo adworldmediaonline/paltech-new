@@ -305,7 +305,7 @@ export const navItems: NavItem[] = [
   { label: "Spares", href: "#spares" },
   { label: "Other Services", href: "#services" },
   { label: "Career", href: "#career" },
-  { label: "Contact Us", href: "#contact" },
+  // { label: "Contact Us", href: "#contact" },
 ];
 
 export const heroData: HeroData = {
@@ -501,7 +501,7 @@ export const servicesData: ServicesData = {
 
 export const statsData: StatsData = {
   stats: [
-    { value: "30+", label: "Years of Excellence" },
+    { value: "37+", label: "Years of Excellence" },
     { value: "11,000+", label: "Clients Served" },
     { value: "13,000+", label: "Installations Worldwide" },
     { value: "25+", label: "Export Countries" },

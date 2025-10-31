@@ -190,7 +190,7 @@ export function CoolingTowersContent() {
               {[
                 {
                   q: "What is the typical lifespan of a cooling tower?",
-                  a: "Cooling tower lifespan varies by type and maintenance: RCC concrete towers can last 30+ years with proper maintenance, FRP cooling towers typically offer 15-25 years of service life, while wooden towers require more frequent maintenance but can operate effectively for 10-15 years. Regular maintenance, water treatment, and component replacement significantly extend operational life."
+                  a: "Cooling tower lifespan varies by type and maintenance: RCC concrete towers can last 37+ years with proper maintenance, FRP cooling towers typically offer 15-25 years of service life, while wooden towers require more frequent maintenance but can operate effectively for 10-15 years. Regular maintenance, water treatment, and component replacement significantly extend operational life."
                 },
                 {
                   q: "How do I choose between cross-flow and counter-flow cooling towers?",
