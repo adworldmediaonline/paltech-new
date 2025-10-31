@@ -43,7 +43,7 @@ export function StandardCapacityScrewScrollChillingPlantWaterAirCooledContent() 
               Our standard capacity chilling plants feature <strong>LCD display and comprehensive data recording capability</strong>, utilizing best-in-class control systems ensuring precise operation, real-time monitoring, and performance optimization. The advanced control technology provides operators with comprehensive system visibility, enabling proactive maintenance, performance tracking, and optimal efficiency management.
             </p>
             <p>
-              Paltech utilizes <strong>heavy-duty, long-lasting industrial components</strong> conforming to relevant national and international standards including <strong>IS-2825, TEMA, ASHRAE, and ASME</strong>. Each system undergoes rigorous quality control and testing processes, ensuring reliable operation, extended service life, and optimal performance throughout the operational lifecycle. The standard capacity configurations provide proven reliability and cost-effectiveness for diverse cooling requirements.
+              Paltech™ utilizes <strong>heavy-duty, long-lasting industrial components</strong> conforming to relevant national and international standards including <strong>IS-2825, TEMA, ASHRAE, and ASME</strong>. Each system undergoes rigorous quality control and testing processes, ensuring reliable operation, extended service life, and optimal performance throughout the operational lifecycle. The standard capacity configurations provide proven reliability and cost-effectiveness for diverse cooling requirements.
             </p>
           </div>
         </div>

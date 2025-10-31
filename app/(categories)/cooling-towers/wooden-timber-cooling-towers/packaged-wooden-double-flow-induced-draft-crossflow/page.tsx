@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import packaged1 from '../../../../../public/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-1.webp';
+import packaged2 from '../../../../../public/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-2.webp';
+import packaged3 from '../../../../../public/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-3.webp';
+import packaged4 from '../../../../../public/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-4.webp';
+
+const images = [packaged1, packaged2, packaged3, packaged4];
 
 export default function PackagedWoodenDoubleFlowInducedDraftCrossflowPage() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero imageSrc="/categories/wooden-timber-cooling-towers/packaged-wooden-double-flow-induced-draft-crossflow.png">
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

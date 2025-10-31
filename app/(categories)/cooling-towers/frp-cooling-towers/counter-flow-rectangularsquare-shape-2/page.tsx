@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import rectangular1 from '../../../../../public/categories/counter-flow-rectangular-square-shape-1.webp';
+import rectangular2 from '../../../../../public/categories/counter-flow-rectangular-square-shape-2.webp';
+import rectangular3 from '../../../../../public/categories/counter-flow-rectangular-square-shape-3.webp';
+import rectangular4 from '../../../../../public/categories/counter-flow-rectangular-square-shape-4.webp';
+
+const images = [rectangular1, rectangular2, rectangular3, rectangular4];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

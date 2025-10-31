@@ -3,12 +3,17 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import tailor1 from '../../../../public/categories/tailor-made-power-saver-screw-scroll-chilling-plant-water-air-cooled-1.webp';
+import tailor2 from '../../../../public/categories/tailor-made-power-saver-screw-scroll-chilling-plant-water-air-cooled-2.webp';
+import tailor3 from '../../../../public/categories/tailor-made-power-saver-screw-scroll-chilling-plant-water-air-cooled-3.webp';
+
+const images = [tailor1, tailor2, tailor3];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import standard1 from '../../../../public/categories/standard-capacity-screw-scroll-chilling-plants-water-air-cooled-1.webp';
+import standard2 from '../../../../public/categories/standard-capacity-screw-scroll-chilling-plants-water-air-cooled-2.webp';
+import standard3 from '../../../../public/categories/standard-capacity-screw-scroll-chilling-plants-water-air-cooled-3.webp';
+import standard4 from '../../../../public/categories/standard-capacity-screw-scroll-chilling-plants-water-air-cooled-4.webp';
+
+const images = [standard1, standard2, standard3, standard4];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

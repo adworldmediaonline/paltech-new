@@ -3,12 +3,17 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import frpGrp1 from '../../../public/categories/frp-grp-structural-profiles-1.webp';
+import frpGrp2 from '../../../public/categories/frp-grp-structural-profiles-2.webp';
+import frpGrp3 from '../../../public/categories/frp-grp-structural-profiles-3.webp';
+
+const images = [frpGrp1, frpGrp2, frpGrp3];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

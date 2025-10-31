@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import multi1 from '../../../../public/categories/multi-circuit-power-saver-scroll-screw-chilling-plant-water-air-cooled-1.webp';
+import multi2 from '../../../../public/categories/multi-circuit-power-saver-scroll-screw-chilling-plant-water-air-cooled-2.webp';
+import multi3 from '../../../../public/categories/multi-circuit-power-saver-scroll-screw-chilling-plant-water-air-cooled-3.webp';
+import multi4 from '../../../../public/categories/multi-circuit-power-saver-scroll-screw-chilling-plant-water-air-cooled-4.webp';
+
+const images = [multi1, multi2, multi3, multi4];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

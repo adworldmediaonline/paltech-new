@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import pultruded1 from '../../../../public/categories/pultruded-frp-cooling-towers-1.webp';
+import pultruded2 from '../../../../public/categories/pultruded-frp-cooling-towers-2.webp';
+import pultruded3 from '../../../../public/categories/pultruded-frp-cooling-towers-3.webp';
+import pultruded4 from '../../../../public/categories/pultruded-frp-cooling-towers-4.webp';
+
+const images = [pultruded1, pultruded2, pultruded3, pultruded4];
 
 export default function PultrudedFRPCoolingTowersPage() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero imageSrc="/categories/pultruded-frp-cooling-towers.png">
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

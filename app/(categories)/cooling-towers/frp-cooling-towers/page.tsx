@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import counterFlow1 from '../../../../public/categories/counter-flow-bottle-shape-1.webp';
+import counterFlow2 from '../../../../public/categories/counter-flow-bottle-shape-2.webp';
+import counterFlow3 from '../../../../public/categories/counter-flow-bottle-shape-3.webp';
+import counterFlow4 from '../../../../public/categories/counter-flow-bottle-shape-4.webp';
+
+const images = [counterFlow1, counterFlow2, counterFlow3, counterFlow4];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero imageSrc="/categories/frp-cooling-towers.png">
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

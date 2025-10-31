@@ -6,17 +6,17 @@ export function PackagedWoodenDoubleFlowInducedDraftCrossflowContent() {
     {
       icon: <Award className="w-5 h-5" />,
       title: "Quality Products & Reliable Services",
-      description: "Paltech ensures top-tier quality and dependable services for all cooling tower components, backed by over 34 years of manufacturing excellence."
+      description: "Paltech™ ensures top-tier quality and dependable services for all cooling tower components, backed by over 37 years of manufacturing excellence."
     },
     {
       icon: <Clock className="w-5 h-5" />,
-      title: "34+ Years Manufacturing Excellence",
+      title: "37+ Years of Manufacturing Excellence",
       description: "Decades of experience in manufacturing ensure superior product quality, performance, and reliability across diverse industrial applications."
     },
     {
       icon: <Users className="w-5 h-5" />,
       title: "9,000+ Satisfied Clients",
-      description: "A vast client base trusts Paltech for their industrial cooling solutions worldwide, demonstrating proven track record and customer satisfaction."
+      description: "A vast client base trusts Paltech™ for their industrial cooling solutions worldwide, demonstrating proven track record and customer satisfaction."
     },
     {
       icon: <Globe className="w-5 h-5" />,
@@ -112,7 +112,7 @@ export function PackagedWoodenDoubleFlowInducedDraftCrossflowContent() {
             </h1>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
-                Paltech proudly introduces the <strong>Packaged Wooden/Timber Double Flow Induced Draft Crossflow Cooling Towers</strong>, a design that has long been recognized for its <strong>superior efficiency, consistent performance, and convenience</strong>. These complete packaged systems come fully assembled and ready for installation, providing comprehensive functionality and efficient cooling solutions for various industrial applications.
+                Paltech™ proudly introduces the <strong>Packaged Wooden/Timber Double Flow Induced Draft Crossflow Cooling Towers</strong>, a design that has long been recognized for its <strong>superior efficiency, consistent performance, and convenience</strong>. These complete packaged systems come fully assembled and ready for installation, providing comprehensive functionality and efficient cooling solutions for various industrial applications.
               </p>
               <p>
                 This innovative cooling tower features a <strong>vertical discharge configuration</strong>, allowing for installation in areas where towers with horizontal discharge are not suitable. This unique design ensures optimal cooling efficiency and reliability, making it a top choice for applications requiring specific discharge orientations and space constraints. The packaged design significantly reduces on-site assembly time and ensures consistent quality control.
@@ -130,7 +130,7 @@ export function PackagedWoodenDoubleFlowInducedDraftCrossflowContent() {
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Why Choose Paltech Packaged Cooling Towers?
+              Why Choose Paltech™ Packaged Cooling Towers?
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {keyFeatures.map((feature, index) => (

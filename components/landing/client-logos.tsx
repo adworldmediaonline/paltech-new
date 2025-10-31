@@ -37,7 +37,7 @@ export function ClientLogos() {
             {clientLogosData.headline}
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Partnering with industry leaders across 25+ countries for over three decades
+            Partnering with industry leaders across 25+ countries for over 37+
           </p>
         </div>
       </div>

@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import trolley1 from '../../../../public/categories/trolley-mounted-water-air-cooled-chilling-plant-1.webp';
+import trolley2 from '../../../../public/categories/trolley-mounted-water-air-cooled-chilling-plant-2.webp';
+import trolley3 from '../../../../public/categories/trolley-mounted-water-air-cooled-chilling-plant-3.webp';
+import trolley4 from '../../../../public/categories/trolley-mounted-water-air-cooled-chilling-plant-4.webp';
+
+const images = [trolley1, trolley2, trolley3, trolley4];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

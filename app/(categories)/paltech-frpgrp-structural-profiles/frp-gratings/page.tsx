@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import gratings1 from '../../../../public/categories/frp-gratings-1.webp';
+import gratings2 from '../../../../public/categories/frp-gratings-2.webp';
+import gratings3 from '../../../../public/categories/frp-gratings-3.webp';
+import gratings4 from '../../../../public/categories/frp-gratings-4.webp';
+
+const images = [gratings1, gratings2, gratings3, gratings4];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

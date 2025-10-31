@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import reducer1 from '../../../../../public/categories/wooden-timber-single-double-flow-induced-draft-crossflow-with-reduction-reducer-drive-system-1.webp';
+import reducer2 from '../../../../../public/categories/wooden-timber-single-double-flow-induced-draft-crossflow-with-reduction-reducer-drive-system-2.webp';
+import reducer3 from '../../../../../public/categories/wooden-timber-single-double-flow-induced-draft-crossflow-with-reduction-reducer-drive-system-3.webp';
+import reducer4 from '../../../../../public/categories/wooden-timber-single-double-flow-induced-draft-crossflow-with-reduction-reducer-drive-system-4.webp';
+
+const images = [reducer1, reducer2, reducer3, reducer4];
 
 export default function WoodenTimberReductionGearboxDriveSystemPage() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero imageSrc="/categories/wooden-timber-cooling-towers/wooden-single-double-flow-induced-draft-crossflow-with-reduction-gearbox-drive-system.png">
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

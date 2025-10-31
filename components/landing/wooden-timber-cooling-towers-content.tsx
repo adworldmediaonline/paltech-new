@@ -48,7 +48,7 @@ export function WoodenTimberCoolingTowersContent() {
     {
       icon: <Clock className="w-5 h-5" />,
       title: "Established Track Record",
-      description: "Over three decades of experience in wooden cooling tower construction, maintenance, and optimization, serving clients across diverse industrial sectors."
+      description: "Over 37+ of Years experience in wooden cooling tower construction, maintenance, and optimization, serving clients across diverse industrial sectors."
     }
   ];
 
@@ -66,10 +66,10 @@ export function WoodenTimberCoolingTowersContent() {
                 The evolution of cooling tower construction, driven by environmental considerations and material science advancements, has witnessed a shift toward modern composite materials like Fiberglass Reinforced Plastic (FRP). However, <strong>wooden and timber cooling towers</strong> continue to serve critical roles in specific industrial applications where traditional construction meets unique operational requirements, cost-effectiveness, and proven reliability.
               </p>
               <p>
-                Paltech recognizes that certain installations have distinctive demands for <strong>wooden/timber cooling tower solutions</strong>. Moreover, numerous existing facilities operate with legacy wooden cooling towers that require expert maintenance, repair, and performance optimization services. As industrial cooling specialists with extensive experience in traditional materials, Paltech provides comprehensive solutions tailored to your specific needs—whether you require new wooden cooling tower construction or ongoing maintenance for existing systems.
+                Paltech™ recognizes that certain installations have distinctive demands for <strong>wooden/timber cooling tower solutions</strong>. Moreover, numerous existing facilities operate with legacy wooden cooling towers that require expert maintenance, repair, and performance optimization services. As industrial cooling specialists with extensive experience in traditional materials, Paltech™ provides comprehensive solutions tailored to your specific needs—whether you require new wooden cooling tower construction or ongoing maintenance for existing systems.
               </p>
               <p>
-                Our expertise spans from <strong>pinewood construction</strong> to modern timber engineering techniques, ensuring optimal performance, durability, and cost-effectiveness. Whether your priority is the advanced durability of FRP cooling towers or the traditional reliability of wooden cooling towers, Paltech serves as your trusted partner in industrial cooling solutions, offering expert consultation, custom engineering, and comprehensive support services.
+                Our expertise spans from <strong>pinewood construction</strong> to modern timber engineering techniques, ensuring optimal performance, durability, and cost-effectiveness. Whether your priority is the advanced durability of FRP cooling towers or the traditional reliability of wooden cooling towers, Paltech™ serves as your trusted partner in industrial cooling solutions, offering expert consultation, custom engineering, and comprehensive support services.
               </p>
             </div>
           </div>

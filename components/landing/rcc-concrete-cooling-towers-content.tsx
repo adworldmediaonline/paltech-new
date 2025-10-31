@@ -51,7 +51,7 @@ export function RCCConcreteCoolingTowersContent() {
                 Our RCC concrete cooling towers are available in both <strong>counter flow and cross flow designs</strong>, each optimized for specific application requirements, space constraints, and operational preferences. Counter flow configurations deliver superior thermal efficiency by directing water downward against upward air flow, while cross flow designs offer lower pump head requirements and simplified maintenance access. Both configurations support <strong>single flow and double flow</strong> arrangements, providing flexibility for diverse industrial cooling needs.
               </p>
               <p>
-                Paltech utilizes various fill media types including <strong>PVC bars, PVC film fills, polypropylene fills, and asbestos fills</strong> (where applicable), selected based on water chemistry, temperature ranges, and efficiency requirements. Each fill type is engineered to maximize water-air contact surface area, optimize heat transfer rates, and minimize pressure drop, ensuring optimal cooling performance while maintaining energy efficiency.
+                Paltech™ utilizes various fill media types including <strong>PVC bars, PVC film fills, polypropylene fills, and asbestos fills</strong> (where applicable), selected based on water chemistry, temperature ranges, and efficiency requirements. Each fill type is engineered to maximize water-air contact surface area, optimize heat transfer rates, and minimize pressure drop, ensuring optimal cooling performance while maintaining energy efficiency.
               </p>
             </div>
           </div>
@@ -115,7 +115,7 @@ export function RCCConcreteCoolingTowersContent() {
                 Comprehensive Capacity Range
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Paltech offers extensive capacity options from single-cell units to multicellular installations, serving diverse industrial cooling requirements across multiple sectors.
+                Paltech™ offers extensive capacity options from single-cell units to multicellular installations, serving diverse industrial cooling requirements across multiple sectors.
               </p>
             </div>
 
@@ -133,7 +133,7 @@ export function RCCConcreteCoolingTowersContent() {
 
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Operational Track Record</h3>
-              <p className="text-gray-600 text-center mb-6">Paltech has successfully commissioned and maintains large-scale RCC concrete cooling towers including:</p>
+              <p className="text-gray-600 text-center mb-6">Paltech™ has successfully commissioned and maintains large-scale RCC concrete cooling towers including:</p>
               <div className="grid md:grid-cols-2 gap-6">
                 {currentOperations.map((operation, index) => (
                   <div key={index} className="flex items-center justify-between p-5 bg-gradient-to-r from-primary/5 to-blue-50 rounded-lg border border-primary/20">

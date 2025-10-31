@@ -77,7 +77,7 @@ export function PaltechFrpGrpStructuralProfilesContent() {
           </h1>
           <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
             <p>
-              Paltech manufactures premium <strong>FRP (Fiber Reinforced Plastic) and GRP (Glass Reinforced Plastic) structural profiles</strong> using advanced pultrusion technology, delivering superior alternatives to traditional materials like steel, aluminum, and wood. These engineered composite products offer exceptional <strong>corrosion resistance, lightweight construction, electrical non-conductivity, and long-term durability</strong>, making them ideal for demanding industrial, infrastructure, and specialty applications.
+              Paltech™ manufactures premium <strong>FRP (Fiber Reinforced Plastic) and GRP (Glass Reinforced Plastic) structural profiles</strong> using advanced pultrusion technology, delivering superior alternatives to traditional materials like steel, aluminum, and wood. These engineered composite products offer exceptional <strong>corrosion resistance, lightweight construction, electrical non-conductivity, and long-term durability</strong>, making them ideal for demanding industrial, infrastructure, and specialty applications.
             </p>
             <p>
               Traditional construction materials face inherent limitations: wood suffers from fungal attack and moisture degradation, steel rusts in corrosive environments, and aluminum deforms under certain conditions. <strong>FRP pultruded sections address these challenges</strong> by providing a lightweight, corrosion-resistant, electrically non-conductive alternative with extended service life and minimal maintenance requirements. Our profiles can be customized to application-specific shapes, dimensions, and structural parameters.
@@ -166,7 +166,7 @@ export function PaltechFrpGrpStructuralProfilesContent() {
           </h2>
           <div className="bg-gray-50 rounded-2xl p-8">
             <p className="text-gray-700 mb-6 leading-relaxed">
-              Paltech offers fully automatic, computer-controlled pultrusion manufacturing for structural profiles including <strong>angles, C-channels, I-beams, flats, square & round tubes, solid rods, and custom shapes</strong>. Our manufacturing capabilities extend to a comprehensive range of FRP products:
+              Paltech™ offers fully automatic, computer-controlled pultrusion manufacturing for structural profiles including <strong>angles, C-channels, I-beams, flats, square & round tubes, solid rods, and custom shapes</strong>. Our manufacturing capabilities extend to a comprehensive range of FRP products:
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3">
               {offerings.map((offering, index) => (

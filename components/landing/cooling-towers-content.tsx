@@ -34,8 +34,8 @@ export function CoolingTowersContent() {
   const keyBenefits = [
     {
       icon: <Building2 className="w-6 h-6" />,
-      title: "34+ Years Manufacturing Excellence",
-      description: "Established in 1986, Paltech has served over 9,000 clients across 25+ countries with proven expertise in cooling tower manufacturing."
+      title: "37+ Years of Manufacturing Excellence",
+      description: "Established in 1986, Paltech™ has served over 9,000 clients across 25+ countries with proven expertise in cooling tower manufacturing."
     },
     {
       icon: <Shield className="w-6 h-6" />,
@@ -65,13 +65,13 @@ export function CoolingTowersContent() {
             </h1>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
-                Paltech Cooling Towers & Equipments Limited stands as India's premier manufacturer of industrial cooling towers, serving diverse sectors including power plants, chemical processing, petrochemicals, refineries, HVAC systems, and manufacturing facilities. With <strong>over 34 years of manufacturing excellence</strong> and a track record of <strong>9,000+ successful installations</strong>, we deliver high-performance cooling solutions engineered for reliability, efficiency, and long-term value.
+                Paltech™ Cooling Towers & Equipments Limited stands as India's premier manufacturer of industrial cooling towers, serving diverse sectors including power plants, chemical processing, petrochemicals, refineries, HVAC systems, and manufacturing facilities. With <strong>over 37 years of manufacturing excellence</strong> and a track record of <strong>9,000+ successful installations</strong>, we deliver high-performance cooling solutions engineered for reliability, efficiency, and long-term value.
               </p>
               <p>
                 Our extensive range of cooling towers encompasses RCC concrete structures for large-scale applications, lightweight pultruded FRP systems for rapid deployment, traditional wooden towers for specific industrial needs, and versatile FRP cooling towers offering design flexibility. Each product category is manufactured using <strong>premium-grade materials</strong>, advanced engineering techniques, and rigorous quality control processes ensuring optimal thermal performance and extended service life.
               </p>
               <p>
-                Beyond manufacturing, Paltech provides comprehensive cooling tower services including <strong>installation, commissioning, maintenance, repair, and performance optimization</strong>. Our in-house technical team conducts detailed site surveys, offers expert consultation, and delivers customized solutions tailored to your specific cooling requirements, water chemistry, and environmental conditions.
+                Beyond manufacturing, Paltech™ provides comprehensive cooling tower services including <strong>installation, commissioning, maintenance, repair, and performance optimization</strong>. Our in-house technical team conducts detailed site surveys, offers expert consultation, and delivers customized solutions tailored to your specific cooling requirements, water chemistry, and environmental conditions.
               </p>
             </div>
           </div>
@@ -83,7 +83,7 @@ export function CoolingTowersContent() {
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
-              Why Choose Paltech Cooling Towers?
+              Why Choose Paltech™ Cooling Towers?
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
               {keyBenefits.map((benefit, index) => (
@@ -198,11 +198,11 @@ export function CoolingTowersContent() {
                 },
                 {
                   q: "What maintenance is required for cooling towers?",
-                  a: "Essential maintenance includes regular cleaning of fill media and basins, water treatment to prevent scaling and biological growth, fan and motor inspection, drift eliminator checks, and water quality monitoring. Paltech provides comprehensive maintenance contracts ensuring optimal performance and preventing downtime."
+                  a: "Essential maintenance includes regular cleaning of fill media and basins, water treatment to prevent scaling and biological growth, fan and motor inspection, drift eliminator checks, and water quality monitoring. Paltech™ provides comprehensive maintenance contracts ensuring optimal performance and preventing downtime."
                 },
                 {
                   q: "Can cooling towers be customized for specific applications?",
-                  a: "Yes, Paltech specializes in custom-engineered cooling towers tailored to specific capacity requirements, water chemistry, ambient conditions, and space constraints. Our engineering team conducts detailed site surveys and provides customized solutions including basin design, fill selection, and structural modifications."
+                  a: "Yes, Paltech™ specializes in custom-engineered cooling towers tailored to specific capacity requirements, water chemistry, ambient conditions, and space constraints. Our engineering team conducts detailed site surveys and provides customized solutions including basin design, fill selection, and structural modifications."
                 }
               ].map((faq, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
