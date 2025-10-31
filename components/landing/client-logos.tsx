@@ -66,7 +66,7 @@ export function ClientLogos() {
                         src={logo.imageUrl}
                         alt={logo.name}
                         fill
-                        className="object-contain p-4 grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
+                        className="object-contain p-4 group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
                         sizes="(max-width: 640px) 160px, (max-width: 768px) 192px, (max-width: 1024px) 224px, 256px"
                       />
                     </div>
