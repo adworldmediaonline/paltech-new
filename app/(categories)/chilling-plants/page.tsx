@@ -3,9 +3,9 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
-import chillingPlants1 from '../../../public/categories/chilling-plants/chilling-plants-1.webp';
-import chillingPlants2 from '../../../public/categories/chilling-plants/chilling-plants-2.webp';
-import chillingPlants3 from '../../../public/categories/chilling-plants/chilling-plants-3.webp';
+import chillingPlants1 from '../../../public/categories/chilling-plants-1.webp';
+import chillingPlants2 from '../../../public/categories/chilling-plants-2.webp';
+import chillingPlants3 from '../../../public/categories/chilling-plants-3.webp';
 
 const images = [chillingPlants1, chillingPlants2, chillingPlants3];
 

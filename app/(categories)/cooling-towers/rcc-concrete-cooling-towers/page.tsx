@@ -4,10 +4,10 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 
-import rccConcreteCoolingTowers1 from '../../../../public/categories/cooling-towers/cooling-towers-1.webp';
-import rccConcreteCoolingTowers2 from '../../../../public/categories/cooling-towers/cooling-towers-2.webp';
-import rccConcreteCoolingTowers3 from '../../../../public/categories/cooling-towers/cooling-towers-3.webp';
-import rccConcreteCoolingTowers4 from '../../../../public/categories/cooling-towers/cooling-towers-4.webp';
+import rccConcreteCoolingTowers1 from '../../../../public/categories/cooling-towers-1.webp';
+import rccConcreteCoolingTowers2 from '../../../../public/categories/cooling-towers-2.webp';
+import rccConcreteCoolingTowers3 from '../../../../public/categories/cooling-towers-3.webp';
+import rccConcreteCoolingTowers4 from '../../../../public/categories/cooling-towers-4.webp';
 
 const images = [rccConcreteCoolingTowers1, rccConcreteCoolingTowers2, rccConcreteCoolingTowers3, rccConcreteCoolingTowers4];
 

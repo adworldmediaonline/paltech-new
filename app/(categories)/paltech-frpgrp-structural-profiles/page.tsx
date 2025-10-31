@@ -4,9 +4,9 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 
-import paltechFrpGrpStructuralProfiles1 from '../../../public/categories/frpgrp-structural-profiles/frp-grp-structural-profiles-1.webp';
-import paltechFrpGrpStructuralProfiles2 from '../../../public/categories/frpgrp-structural-profiles/frp-grp-structural-profiles-2.webp';
-import paltechFrpGrpStructuralProfiles3 from '../../../public/categories/frpgrp-structural-profiles/frp-grp-structural-profiles-3.webp';
+import paltechFrpGrpStructuralProfiles1 from '../../../public/categories/frp-grp-structural-profiles-1.webp';
+import paltechFrpGrpStructuralProfiles2 from '../../../public/categories/frp-grp-structural-profiles-2.webp';
+import paltechFrpGrpStructuralProfiles3 from '../../../public/categories/frp-grp-structural-profiles-3.webp';
 const images = [paltechFrpGrpStructuralProfiles1, paltechFrpGrpStructuralProfiles2, paltechFrpGrpStructuralProfiles3];
 
 
