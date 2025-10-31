@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import reciprocating1 from '../../../../public/categories/reciprocating-water-air-cooled-chilling-plants-1.webp';
+import reciprocating2 from '../../../../public/categories/reciprocating-water-air-cooled-chilling-plants-2.webp';
+import reciprocating3 from '../../../../public/categories/reciprocating-water-air-cooled-chilling-plants-3.webp';
+import reciprocating4 from '../../../../public/categories/reciprocating-water-air-cooled-chilling-plants-4.webp';
+
+const images = [reciprocating1, reciprocating2, reciprocating3, reciprocating4];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

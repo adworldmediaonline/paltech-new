@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import wooden1 from '../../../../public/categories/wooden-timber-cooling-towers-1.webp';
+import wooden2 from '../../../../public/categories/wooden-timber-cooling-towers-2.webp';
+import wooden3 from '../../../../public/categories/wooden-timber-cooling-towers-3.webp';
+import wooden4 from '../../../../public/categories/wooden-timber-cooling-towers-4.webp';
+
+const images = [wooden1, wooden2, wooden3, wooden4];
 
 export default function WoodenTimberCoolingTowersPage() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero imageSrc="/categories/wooden-timber-cooling-towers.png">
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

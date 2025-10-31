@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import micro1 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plants-1.webp';
+import micro2 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plants-2.webp';
+import micro3 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plants-3.webp';
+import micro4 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plants-4.webp';
+
+const images = [micro1, micro2, micro3, micro4];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

@@ -3,12 +3,18 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import cfc1 from '../../../../public/categories/cfc-free-water-air-cooled-chilling-plant-1.webp';
+import cfc2 from '../../../../public/categories/cfc-free-water-air-cooled-chilling-plant-2.webp';
+import cfc3 from '../../../../public/categories/cfc-free-water-air-cooled-chilling-plant-3.webp';
+import cfc4 from '../../../../public/categories/cfc-free-water-air-cooled-chilling-plant-4.webp';
+
+const images = [cfc1, cfc2, cfc3, cfc4];
 
 export default function Page() {
   return (
     <>
       {/* Full-width Hero Slider */}
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

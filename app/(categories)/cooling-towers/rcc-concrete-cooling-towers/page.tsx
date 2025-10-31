@@ -3,13 +3,12 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import rcc1 from '../../../../public/categories/cooling-towers-1.webp';
+import rcc2 from '../../../../public/categories/cooling-towers-2.webp';
+import rcc3 from '../../../../public/categories/cooling-towers-3.webp';
+import rcc4 from '../../../../public/categories/cooling-towers-4.webp';
 
-import rccConcreteCoolingTowers1 from '../../../../public/categories/cooling-towers-1.webp';
-import rccConcreteCoolingTowers2 from '../../../../public/categories/cooling-towers-2.webp';
-import rccConcreteCoolingTowers3 from '../../../../public/categories/cooling-towers-3.webp';
-import rccConcreteCoolingTowers4 from '../../../../public/categories/cooling-towers-4.webp';
-
-const images = [rccConcreteCoolingTowers1, rccConcreteCoolingTowers2, rccConcreteCoolingTowers3, rccConcreteCoolingTowers4];
+const images = [rcc1, rcc2, rcc3, rcc4];
 
 export default function RCCConcreteCoolingTowersPage() {
   return (
