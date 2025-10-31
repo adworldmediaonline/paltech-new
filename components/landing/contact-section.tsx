@@ -59,9 +59,8 @@ export function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Side - CTA Content */}
           <div
-            className={`transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
-            }`}
+            className={`transition-all duration-700 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10"
+              }`}
           >
             {/* Section badge */}
             <div className="inline-flex items-center gap-2 mb-8 px-4 py-2 bg-primary/10 border border-primary/20 rounded-full backdrop-blur-sm">
@@ -86,7 +85,7 @@ export function ContactSection() {
               {[
                 "Expert consultation within 24 hours",
                 "Tailored solutions for your needs",
-                "30+ years of proven expertise",
+                "37+ years of proven expertise",
               ].map((item, index) => (
                 <div
                   key={index}
@@ -137,9 +136,8 @@ export function ContactSection() {
 
           {/* Right Side - Premium Form */}
           <div
-            className={`transition-all duration-700 delay-200 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
-            }`}
+            className={`transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
+              }`}
           >
             <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/20 shadow-2xl">
               {/* Glass shine effect */}

@@ -88,7 +88,7 @@ export function Hero() {
             {/* Trust Stats - Horizontal row */}
             <div className="grid grid-cols-2 sm:flex sm:flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-12 px-4">
               <div className="text-center">
-                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">30+</div>
+                <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-1 sm:mb-2">37+</div>
                 <div className="text-xs sm:text-sm text-gray-400 uppercase tracking-wider">Years Excellence</div>
               </div>
               <div className="hidden sm:block w-px h-12 bg-white/10" />

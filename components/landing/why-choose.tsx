@@ -24,9 +24,8 @@ export function WhyChoose() {
         {/* Section Header */}
         <div className="mb-20 md:mb-24">
           <div
-            className={`transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className={`transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
           >
             <div className="text-sm uppercase tracking-wider text-foreground/60 font-semibold mb-6 inline-block px-4 py-1.5 bg-gray-100 rounded-full">
               {whyChooseData.eyebrow}
@@ -41,9 +40,8 @@ export function WhyChoose() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
           {/* Card 1 - High Quality Components (Light, Top Left) */}
           <div
-            className={`lg:col-span-4 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className={`lg:col-span-4 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
             style={{ transitionDelay: "0ms" }}
           >
             <div className="h-full bg-gray-50 rounded-3xl p-10 lg:p-12">
@@ -68,9 +66,8 @@ export function WhyChoose() {
 
           {/* Card 2 - Low Noise Operation (Light, Top Middle) */}
           <div
-            className={`lg:col-span-4 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className={`lg:col-span-4 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
             style={{ transitionDelay: "100ms" }}
           >
             <div className="h-full bg-gray-50 rounded-3xl p-10 lg:p-12">
@@ -90,9 +87,8 @@ export function WhyChoose() {
 
           {/* Card 3 - Low Power Consumption (FEATURED DARK CARD - Top Right, Spans 2 Rows) */}
           <div
-            className={`lg:col-span-4 lg:row-span-2 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className={`lg:col-span-4 lg:row-span-2 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
             style={{ transitionDelay: "200ms" }}
           >
             <div className="h-full bg-gradient-to-br from-slate-900 to-slate-800 rounded-3xl p-10 lg:p-12 flex flex-col">
@@ -131,9 +127,8 @@ export function WhyChoose() {
 
           {/* Card 4 - Economical Production Cost (Light, Bottom Left, Spans 2 Columns) */}
           <div
-            className={`lg:col-span-8 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className={`lg:col-span-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
             style={{ transitionDelay: "300ms" }}
           >
             <div className="h-full bg-gray-50 rounded-3xl p-10 lg:p-12">
@@ -157,9 +152,8 @@ export function WhyChoose() {
 
           {/* Card 5 - Precision Process Control (Light, Second Row Left) */}
           <div
-            className={`lg:col-span-4 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className={`lg:col-span-4 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
             style={{ transitionDelay: "400ms" }}
           >
             <div className="h-full bg-gray-50 rounded-3xl p-10 lg:p-12">
@@ -179,9 +173,8 @@ export function WhyChoose() {
 
           {/* Card 6 - Smarter & More Reliable (Light, Second Row Middle) */}
           <div
-            className={`lg:col-span-4 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-            }`}
+            className={`lg:col-span-4 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
             style={{ transitionDelay: "500ms" }}
           >
             <div className="h-full bg-gray-50 rounded-3xl p-10 lg:p-12">
@@ -202,13 +195,12 @@ export function WhyChoose() {
 
         {/* Stats Row */}
         <div
-          className={`mt-24 lg:mt-32 transition-all duration-700 delay-600 ${
-            isVisible ? "opacity-100" : "opacity-0"
-          }`}
+          className={`mt-24 lg:mt-32 transition-all duration-700 delay-600 ${isVisible ? "opacity-100" : "opacity-0"
+            }`}
         >
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 text-center">
             <div>
-              <div className="text-5xl lg:text-6xl font-bold text-foreground mb-3">30+</div>
+              <div className="text-5xl lg:text-6xl font-bold text-foreground mb-3">37+</div>
               <div className="text-sm lg:text-base text-muted-foreground">Years of Excellence</div>
             </div>
             <div>

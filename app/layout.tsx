@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Paltech | Industrial Cooling Solutions | Cooling Towers & Heat Exchangers",
   description:
-    "Precision-engineered cooling solutions for critical industries. 30+ years of excellence in industrial cooling towers, heat exchangers, and HVAC systems serving 25+ countries worldwide.",
+    "Precision-engineered cooling solutions for critical industries. 37+ years of excellence in industrial cooling towers, heat exchangers, and HVAC systems serving 25+ countries worldwide.",
   keywords: [
     "industrial cooling towers",
     "heat exchangers",
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Paltech | Industrial Cooling Solutions",
     description:
-      "Precision-engineered cooling solutions for critical industries. 30+ years of excellence serving 25+ countries worldwide.",
+      "Precision-engineered cooling solutions for critical industries. 37+ years of excellence serving 25+ countries worldwide.",
     type: "website",
     locale: "en_IN",
     siteName: "Paltech",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Paltech | Industrial Cooling Solutions",
     description:
-      "Precision-engineered cooling solutions for critical industries. 30+ years of excellence serving 25+ countries worldwide.",
+      "Precision-engineered cooling solutions for critical industries. 37+ years of excellence serving 25+ countries worldwide.",
   },
   robots: {
     index: true,

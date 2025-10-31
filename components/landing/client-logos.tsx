@@ -24,9 +24,8 @@ export function ClientLogos() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mb-16">
         {/* Section Header */}
         <div
-          className={`text-center transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`text-center transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           <div className="inline-flex items-center gap-2 mb-6 px-5 py-2 bg-primary/10 rounded-full">
             <Award className="w-4 h-4 text-primary" />
@@ -45,9 +44,8 @@ export function ClientLogos() {
 
       {/* Marquee Container */}
       <div
-        className={`relative transition-all duration-700 delay-300 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
+        className={`relative transition-all duration-700 delay-300 ${isVisible ? "opacity-100" : "opacity-0"
+          }`}
       >
         {/* First Row - Scroll Left */}
         <div className="mb-6 lg:mb-8">
@@ -93,7 +91,7 @@ export function ClientLogos() {
                         src={logo.imageUrl}
                         alt={logo.name}
                         fill
-                        className="object-contain p-4 grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
+                        className="object-contain p-4  group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
                         sizes="(max-width: 640px) 160px, (max-width: 768px) 192px, (max-width: 1024px) 224px, 256px"
                       />
                     </div>
@@ -121,7 +119,7 @@ export function ClientLogos() {
                         src={logo.imageUrl}
                         alt={logo.name}
                         fill
-                        className="object-contain p-4 grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
+                        className="object-contain p-4  group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
                         sizes="(max-width: 640px) 160px, (max-width: 768px) 192px, (max-width: 1024px) 224px, 256px"
                       />
                     </div>
@@ -144,7 +142,7 @@ export function ClientLogos() {
                         src={logo.imageUrl}
                         alt={logo.name}
                         fill
-                        className="object-contain p-4 grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
+                        className="object-contain p-4  group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110"
                         sizes="(max-width: 640px) 160px, (max-width: 768px) 192px, (max-width: 1024px) 224px, 256px"
                       />
                     </div>
@@ -159,9 +157,8 @@ export function ClientLogos() {
 
       {/* Bottom Stats */}
       <div
-        className={`relative mt-16 lg:mt-20 text-center transition-all duration-700 delay-600 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
+        className={`relative mt-16 lg:mt-20 text-center transition-all duration-700 delay-600 ${isVisible ? "opacity-100" : "opacity-0"
+          }`}
       >
         <div className="inline-flex items-center gap-3 px-8 py-4 bg-white/80 backdrop-blur-sm rounded-full border border-gray-200 shadow-lg">
           <div className="flex items-center gap-2">
@@ -181,7 +178,7 @@ export function ClientLogos() {
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" style={{ animationDelay: '1s' }} />
             <span className="text-sm font-semibold text-foreground">
-              30+ years trusted
+              37+ years trusted
             </span>
           </div>
         </div>
