@@ -10,7 +10,7 @@ export function WoodenTimberReductionGearboxDriveSystemContent() {
     },
     {
       icon: <Clock className="w-5 h-5" />,
-      title: "37+ Years Manufacturing Excellence",
+      title: "37+ Years of Manufacturing Excellence",
       description: "Decades of experience in manufacturing ensure superior product quality, performance, and reliability across diverse industrial applications."
     },
     {

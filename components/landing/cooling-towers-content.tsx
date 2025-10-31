@@ -34,7 +34,7 @@ export function CoolingTowersContent() {
   const keyBenefits = [
     {
       icon: <Building2 className="w-6 h-6" />,
-      title: "37+ Years Manufacturing Excellence",
+      title: "37+ Years of Manufacturing Excellence",
       description: "Established in 1986, Paltech has served over 9,000 clients across 25+ countries with proven expertise in cooling tower manufacturing."
     },
     {
