@@ -48,7 +48,7 @@ export function WoodenTimberCoolingTowersContent() {
     {
       icon: <Clock className="w-5 h-5" />,
       title: "Established Track Record",
-      description: "Over three decades of experience in wooden cooling tower construction, maintenance, and optimization, serving clients across diverse industrial sectors."
+      description: "Over 37+ of Years experience in wooden cooling tower construction, maintenance, and optimization, serving clients across diverse industrial sectors."
     }
   ];
 
