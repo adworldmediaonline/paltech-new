@@ -302,7 +302,94 @@ export const navItems: NavItem[] = [
       }
     ]
   },
-  { label: "Spares", href: "#spares" },
+  {
+    label: "Spares",
+    href: "#spares",
+    hasDropdown: true,
+    productCategories: [
+      {
+        title: "Drive Shafts",
+        href: "#spares/drive-shafts",
+        subItems: [
+          {
+            label: "HDGMS: Carbon Fiber",
+            href: "#spares/drive-shafts/carbon-fiber"
+          },
+          {
+            label: "SS (Stainless Steel)",
+            href: "#spares/drive-shafts/stainless-steel"
+          }
+        ]
+      },
+      {
+        title: "Axial Fans",
+        href: "#spares/axial-fans",
+        subItems: [
+          {
+            label: "FRP",
+            href: "#spares/axial-fans/frp"
+          },
+          {
+            label: "Aluminum",
+            href: "#spares/axial-fans/aluminum"
+          }
+        ]
+      },
+      {
+        title: "Fills",
+        href: "#spares/fills",
+        subItems: [
+          {
+            label: "PVC Film",
+            href: "#spares/fills/pvc-film"
+          },
+          {
+            label: "PVC Splash Fills",
+            href: "#spares/fills/pvc-splash-fills"
+          },
+          {
+            label: "PP Ball Fills",
+            href: "#spares/fills/pp-ball-fills"
+          },
+          {
+            label: "Trickle Grid Fills",
+            href: "#spares/fills/trickle-grid-fills"
+          },
+          {
+            label: "Cooling Tower Splash Bar",
+            href: "#spares/cooling-tower-splash-bar"
+          },
+          {
+            label: "Drift Eliminator",
+            href: "#spares/drift-eliminator"
+          },
+          {
+            label: "FC Valve",
+            href: "#spares/fc-valve"
+          },
+          {
+            label: "Nozzles",
+            href: "#spares/nozzles"
+          }
+        ]
+      },
+      {
+        title: "Gear Reducers",
+        href: "#spares/gear-reducers",
+        subItems: []
+      },
+      {
+        title: "Fan Cylinders",
+        href: "#spares/fan-cylinders",
+        subItems: []
+      },
+      {
+        title: "Fan Guards",
+        href: "#spares/fan-guards",
+        subItems: []
+      }
+    ]
+  },
   { label: "Other Services", href: "#services" },
   { label: "Career", href: "#career" },
   // { label: "Contact Us", href: "#contact" },
