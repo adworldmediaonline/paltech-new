@@ -1,11 +1,13 @@
 import { PackagedWoodenDoubleFlowInducedDraftCrossflowContent } from "@/components/landing/packaged-wooden-double-flow-induced-draft-crossflow-content";
 import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
+import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 
 export default function PackagedWoodenDoubleFlowInducedDraftCrossflowPage() {
   return (
     <>
+      {/* Full-width Hero Slider */}
       <CategoryHero imageSrc="/categories/wooden-timber-cooling-towers/packaged-wooden-double-flow-induced-draft-crossflow.png">
         <Breadcrumb>
           <BreadcrumbList>
@@ -33,7 +35,19 @@ export default function PackagedWoodenDoubleFlowInducedDraftCrossflowPage() {
           </BreadcrumbList>
         </Breadcrumb>
       </CategoryHero>
-      <PackagedWoodenDoubleFlowInducedDraftCrossflowContent />
+
+      {/* Content Section with USP Sidebar */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+        <div className="flex gap-8">
+          {/* Main Content */}
+          <main className="flex-1 min-w-0">
+            <PackagedWoodenDoubleFlowInducedDraftCrossflowContent />
+          </main>
+
+          {/* USP Sidebar */}
+          <USPSidebar />
+        </div>
+      </div>
     </>
   );
 }

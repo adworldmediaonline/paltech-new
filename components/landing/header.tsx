@@ -40,7 +40,7 @@ export function Header() {
       ? "bg-white/95 backdrop-blur-xl shadow-lg shadow-black/5 border-b border-gray-200/50"
       : "bg-white/10 backdrop-blur-md border-b border-white/10"
       }`}>
-      <div className="mx-auto max-w-7xl pt-3 sm:pt-4 md:pt-6 px-3 sm:px-4 md:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl  px-3 sm:px-4 md:px-6 lg:px-8">
         <div className="flex h-16 sm:h-18 md:h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center group">
