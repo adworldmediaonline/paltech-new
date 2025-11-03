@@ -304,20 +304,20 @@ export const navItems: NavItem[] = [
   },
   {
     label: "Spares",
-    href: "#spares",
+    href: "/spares",
     hasDropdown: true,
     productCategories: [
       {
         title: "Drive Shafts",
-        href: "#spares/drive-shafts",
+        href: "/spares/drive-shafts",
         subItems: [
           {
             label: "HDGMS: Carbon Fiber",
-            href: "#spares/drive-shafts/carbon-fiber"
+            href: "/spares/drive-shafts/carbon-fiber"
           },
           {
             label: "SS (Stainless Steel)",
-            href: "#spares/drive-shafts/stainless-steel"
+            href: "/spares/drive-shafts/stainless-steel"
           }
         ]
       },
@@ -375,7 +375,7 @@ export const navItems: NavItem[] = [
       },
       {
         title: "Gear Reducers",
-        href: "#spares/gear-reducers",
+        href: "/spares/gear-reducers",
         subItems: []
       },
       {
