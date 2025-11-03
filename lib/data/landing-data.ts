@@ -323,21 +323,21 @@ export const navItems: NavItem[] = [
       },
       {
         title: "Axial Fans",
-        href: "#spares/axial-fans",
+        href: "/spares/axial-fans",
         subItems: [
           {
             label: "FRP",
-            href: "#spares/axial-fans/frp"
+            href: "/spares/axial-fans/frp"
           },
           {
             label: "Aluminum",
-            href: "#spares/axial-fans/aluminum"
+            href: "/spares/axial-fans/aluminum"
           }
         ]
       },
       {
         title: "Fills",
-        href: "#spares/fills",
+        href: "/spares/fills",
         subItems: [
           {
             label: "PVC Film",
@@ -345,15 +345,15 @@ export const navItems: NavItem[] = [
           },
           {
             label: "PVC Splash Fills",
-            href: "#spares/fills/pvc-splash-fills"
+            href: "/spares/fills/pvc-splash-fills"
           },
           {
             label: "PP Ball Fills",
-            href: "#spares/fills/pp-ball-fills"
+            href: "/spares/fills/pp-ball-fills"
           },
           {
             label: "Trickle Grid Fills",
-            href: "#spares/fills/trickle-grid-fills"
+            href: "/spares/fills/trickle-grid-fills"
           },
           {
             label: "Cooling Tower Splash Bar",
@@ -380,12 +380,12 @@ export const navItems: NavItem[] = [
       },
       {
         title: "Fan Cylinders",
-        href: "#spares/fan-cylinders",
+        href: "/spares/fan-cylinders",
         subItems: []
       },
       {
         title: "Fan Guards",
-        href: "#spares/fan-guards",
+        href: "/spares/fan-guards",
         subItems: []
       }
     ]
