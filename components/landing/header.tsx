@@ -209,7 +209,7 @@ export function Header() {
               asChild
               className="bg-gradient-to-r from-primary to-primary/90 text-white hover:shadow-lg hover:shadow-primary/20 transition-all rounded-xl font-semibold"
             >
-              <Link href="#contact">Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
             </Button>
           </div>
 
@@ -293,7 +293,7 @@ export function Header() {
                       size="lg"
                       className="w-full bg-gradient-to-r from-primary to-primary/90 text-white shadow-lg hover:shadow-xl transition-all rounded-xl py-6 touch-manipulation"
                     >
-                      <Link href="#contact" onClick={() => setMobileMenuOpen(false)}>
+                      <Link href="/contact-us" onClick={() => setMobileMenuOpen(false)}>
                         Contact Us
                       </Link>
                     </Button>
@@ -302,13 +302,13 @@ export function Header() {
                     <div className="pt-4 border-t border-gray-200">
                       <p className="text-xs text-muted-foreground px-4 mb-3 uppercase tracking-wider">Quick Contact</p>
                       <div className="space-y-2 text-sm">
-                        <a href="tel:+912212345678" className="flex items-center gap-2 px-4 py-2 text-foreground/70 hover:text-foreground transition-colors touch-manipulation">
+                        <a href="tel:+911244499700" className="flex items-center gap-2 px-4 py-2 text-foreground/70 hover:text-foreground transition-colors touch-manipulation">
                           <span>📞</span>
-                          <span>+91 (22) 1234-5678</span>
+                          <span>+91.124.4499700</span>
                         </a>
-                        <a href="mailto:info@paltech.in" className="flex items-center gap-2 px-4 py-2 text-foreground/70 hover:text-foreground transition-colors touch-manipulation">
+                        <a href="mailto:paltech@paltech.net.in" className="flex items-center gap-2 px-4 py-2 text-foreground/70 hover:text-foreground transition-colors touch-manipulation">
                           <span>✉️</span>
-                          <span>info@paltech.in</span>
+                          <span>paltech@paltech.net.in</span>
                         </a>
                       </div>
                     </div>

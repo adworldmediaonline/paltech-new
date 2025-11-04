@@ -422,8 +422,8 @@ export const navItems: NavItem[] = [
       }
     ]
   },
-  { label: "Career", href: "#career" },
-  // { label: "Contact Us", href: "#contact" },
+  // { label: "Career", href: "#career" },
+  // { label: "Contact Us", href: "/contact-us" },
 ];
 
 export const heroData: HeroData = {
