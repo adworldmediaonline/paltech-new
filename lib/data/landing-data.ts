@@ -357,19 +357,19 @@ export const navItems: NavItem[] = [
           },
           {
             label: "Cooling Tower Splash Bar",
-            href: "#spares/cooling-tower-splash-bar"
+            href: "/spares/fills/cooling-tower-splash-bar"
           },
           {
             label: "Drift Eliminator",
-            href: "#spares/drift-eliminator"
+            href: "/spares/fills/drift-eliminator"
           },
           {
             label: "FC Valve",
-            href: "#spares/fc-valve"
+            href: "/spares/fills/fc-valve"
           },
           {
             label: "Nozzles",
-            href: "#spares/nozzles"
+            href: "/spares/fills/nozzles"
           }
         ]
       },
