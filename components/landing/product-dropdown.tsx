@@ -10,6 +10,7 @@ interface ProductDropdownProps {
   categories: ProductCategory[];
   isOpen: boolean;
   onClose: () => void;
+  title?: string;
 }
 
 export function ProductDropdown({ categories, isOpen, onClose }: ProductDropdownProps) {
@@ -106,99 +107,157 @@ export function ProductDropdown({ categories, isOpen, onClose }: ProductDropdown
 }
 
 // Mobile version for smaller screens
-export function ProductDropdownMobile({ categories, isOpen, onClose }: ProductDropdownProps) {
+export function ProductDropdownMobile({ categories, isOpen, onClose, title = "Products" }: ProductDropdownProps) {
   const [expandedCategory, setExpandedCategory] = useState<string | null>(null);
+
+  // Close on escape key
+  useEffect(() => {
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && isOpen) {
+        onClose();
+      }
+    };
+
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, [isOpen, onClose]);
+
+  // Prevent body scroll when dropdown is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   return (
     <div
       className={cn(
         "fixed inset-0 z-50 bg-white transition-all duration-300 flex flex-col mobile-product-dropdown",
-        isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        isOpen ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
       )}
     >
       {/* Header */}
-      <div className="sticky top-0 bg-white border-b border-gray-200 z-10 flex-shrink-0">
+      <div className="sticky top-0 bg-white border-b border-gray-200 z-10 flex-shrink-0 shadow-sm">
         <div className="flex items-center gap-4 p-4">
           <button
             onClick={onClose}
-            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+            className="p-2 hover:bg-gray-100 active:bg-gray-200 rounded-lg transition-colors touch-manipulation"
             aria-label="Close menu"
           >
             <ChevronDown className="w-6 h-6 text-gray-600 rotate-90" />
           </button>
-          <h2 className="text-xl font-bold text-gray-900">Products</h2>
+          <h2 className="text-xl font-bold text-gray-900">{title}</h2>
         </div>
       </div>
 
       {/* Collapsible Categories */}
-      <div className="flex-1 overflow-y-auto pb-20">
-        {categories.map((category) => (
-          <div key={category.title} className="border-b border-gray-100">
-            {/* Category Header - Collapsible */}
-            <button
-              onClick={() => setExpandedCategory(
-                expandedCategory === category.title ? null : category.title
-              )}
-              className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 transition-colors"
-            >
-              <div className="flex items-center gap-3">
-                <h3 className="text-lg font-bold text-gray-900">{category.title}</h3>
-                <span className="text-sm text-gray-500">
-                  ({category.subItems?.length || 0} products)
-                </span>
-              </div>
-              <ChevronDown
-                className={cn(
-                  "w-5 h-5 text-gray-500 transition-transform duration-200",
-                  expandedCategory === category.title ? "rotate-180" : ""
-                )}
-              />
-            </button>
+      <div className="flex-1 overflow-y-auto pb-20 -webkit-overflow-scrolling-touch overscroll-contain">
+        {(() => {
+          // Separate categories with subItems from those without
+          const categoriesWithItems = categories.filter(cat => cat.subItems && cat.subItems.length > 0);
+          const categoriesWithoutItems = categories.filter(cat => !cat.subItems || cat.subItems.length === 0);
 
-            {/* Category Link */}
-            <Link
-              href={category.href}
-              onClick={onClose}
-              className="block px-4 pb-2 text-sm text-primary hover:text-primary/80 transition-colors"
-            >
-              View all {category.title} →
-            </Link>
+          return (
+            <>
+              {/* Categories with sub-items */}
+              {categoriesWithItems.map((category) => (
+                <div key={category.title || 'spares'} className="border-b border-gray-100">
+                  {/* Category Header - Collapsible */}
+                  {category.title && (
+                    <>
+                      <button
+                        onClick={() => setExpandedCategory(
+                          expandedCategory === category.title ? null : category.title
+                        )}
+                        className="w-full flex items-center justify-between p-4 text-left hover:bg-gray-50 active:bg-gray-100 transition-colors touch-manipulation"
+                      >
+                        <div className="flex items-center gap-3 flex-1 min-w-0">
+                          <h3 className="text-lg font-bold text-gray-900 truncate">{category.title}</h3>
+                          <span className="text-sm text-gray-500 whitespace-nowrap">
+                            ({category.subItems?.length || 0})
+                          </span>
+                        </div>
+                        <ChevronDown
+                          className={cn(
+                            "w-5 h-5 text-gray-500 transition-transform duration-200 flex-shrink-0",
+                            expandedCategory === category.title ? "rotate-180" : ""
+                          )}
+                        />
+                      </button>
 
-            {/* Products List - Collapsible */}
-            {expandedCategory === category.title && (
-              <div className="px-4 pb-4 space-y-1 animate-fade-in">
-                {category.subItems?.map((item) => (
-                  <div key={item.label} className="space-y-1">
-                    {/* Parent Product */}
-                    <Link
-                      href={item.href}
-                      onClick={onClose}
-                      className="block py-2 px-3 text-base text-gray-900 hover:text-primary hover:bg-gray-50 rounded-lg transition-colors"
-                    >
-                      {item.label}
-                    </Link>
+                      {/* Category Link */}
+                      <Link
+                        href={category.href}
+                        onClick={onClose}
+                        className="block px-4 pb-2 text-sm text-primary hover:text-primary/80 active:text-primary/70 transition-colors touch-manipulation"
+                      >
+                        View all {category.title} →
+                      </Link>
 
-                    {/* Nested Items - Always Visible when expanded */}
-                    {item.nestedItems && (
-                      <div className="ml-4 space-y-1 border-l-2 border-gray-200 pl-3 bg-gray-50/50 rounded-r-lg">
-                        {item.nestedItems.map((nested) => (
-                          <Link
-                            key={nested.label}
-                            href={nested.href}
-                            onClick={onClose}
-                            className="block py-1.5 px-3 text-sm text-gray-600 hover:text-primary hover:bg-gray-100 rounded-lg transition-colors"
-                          >
-                            • {nested.label}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
+                      {/* Products List - Collapsible */}
+                      {expandedCategory === category.title && (
+                        <div className="px-4 pb-4 space-y-1 animate-fade-in">
+                          {category.subItems?.map((item, index) => (
+                            <div key={item.label} className="space-y-1" style={{ animationDelay: `${index * 20}ms` }}>
+                              {/* Parent Product */}
+                              <Link
+                                href={item.href}
+                                onClick={onClose}
+                                className="block py-2.5 px-3 text-base text-gray-900 hover:text-primary hover:bg-gray-50 active:bg-gray-100 rounded-lg transition-colors touch-manipulation"
+                              >
+                                {item.label}
+                              </Link>
+
+                              {/* Nested Items - Always Visible when expanded */}
+                              {item.nestedItems && (
+                                <div className="ml-4 space-y-1 border-l-2 border-gray-200 pl-3 bg-gray-50/50 rounded-r-lg">
+                                  {item.nestedItems.map((nested) => (
+                                    <Link
+                                      key={nested.label}
+                                      href={nested.href}
+                                      onClick={onClose}
+                                      className="block py-1.5 px-3 text-sm text-gray-600 hover:text-primary hover:bg-gray-100 active:bg-gray-200 rounded-lg transition-colors touch-manipulation"
+                                    >
+                                      • {nested.label}
+                                    </Link>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                    </>
+                  )}
+                </div>
+              ))}
+
+              {/* Categories without sub-items - grouped together */}
+              {categoriesWithoutItems.length > 0 && (
+                <div className="border-b border-gray-100">
+                  <div className="px-4 py-4 space-y-2">
+                    {categoriesWithoutItems.map((category) => (
+                      <Link
+                        key={category.title || 'spares'}
+                        href={category.href}
+                        onClick={onClose}
+                        className="block py-2.5 px-3 text-base font-medium text-gray-900 hover:text-primary hover:bg-gray-50 active:bg-gray-100 rounded-lg transition-colors touch-manipulation"
+                      >
+                        {category.title}
+                      </Link>
+                    ))}
                   </div>
-                ))}
-              </div>
-            )}
-          </div>
-        ))}
+                </div>
+              )}
+            </>
+          );
+        })()}
       </div>
     </div>
   );

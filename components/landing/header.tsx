@@ -25,6 +25,7 @@ export function Header() {
   const [mounted, setMounted] = useState(false);
   const [expandedMobileItem, setExpandedMobileItem] = useState<string | null>(null);
   const [mobileProductDropdownOpen, setMobileProductDropdownOpen] = useState(false);
+  const [openDropdownType, setOpenDropdownType] = useState<"Products" | "Spares" | null>(null);
   const scrolled = useScrollPosition(50);
   const pathname = usePathname();
 
@@ -61,7 +62,7 @@ export function Header() {
             <NavigationMenuList className="flex items-center gap-1">
               {navItems.map((item) => (
                 <NavigationMenuItem key={item.href}>
-                  {item.hasDropdown && item.label === "Products" && item.productCategories ? (
+                  {item.hasDropdown && (item.label === "Products" || item.label === "Spares") && item.productCategories ? (
                     <>
                       <NavigationMenuTrigger className={`flex bg-transparent items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
                         ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
@@ -71,53 +72,82 @@ export function Header() {
                       </NavigationMenuTrigger>
                       <NavigationMenuContent className="navigation-menu-content">
                         <div className="px-4 sm:px-6 py-6 sm:py-8 max-h-[70vh] overflow-y-auto w-[90vw] sm:w-[800px] max-w-6xl">
-                          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
-                            {item.productCategories.map((category) => (
-                              <div key={category.title} className="min-w-0">
-                                {/* Category Header */}
-                                <NavigationMenuLink asChild>
-                                  <Link href={category.href} className="block mb-3 sm:mb-4">
-                                    <h3 className="text-base sm:text-lg font-bold text-gray-900 hover:text-primary transition-colors">
-                                      {category.title}
-                                    </h3>
-                                  </Link>
-                                </NavigationMenuLink>
+                          {(() => {
+                            // Separate categories with subItems from those without
+                            const categoriesWithItems = item.productCategories.filter(cat => cat.subItems && cat.subItems.length > 0);
+                            const categoriesWithoutItems = item.productCategories.filter(cat => !cat.subItems || cat.subItems.length === 0);
 
-                                {/* Products List - All Visible */}
-                                <div className="space-y-1 sm:space-y-2">
-                                  {category.subItems?.map((subItem) => (
-                                    <div key={subItem.label} className="min-w-0">
-                                      {/* Parent Product */}
+                            return (
+                              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+                                {/* Categories with sub-items */}
+                                {categoriesWithItems.map((category) => (
+                                  <div key={category.title || 'spares'} className="min-w-0">
+                                    {/* Category Header */}
+                                    {category.title && (
                                       <NavigationMenuLink asChild>
-                                        <Link
-                                          href={subItem.href}
-                                          className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors break-words leading-relaxed"
-                                        >
-                                          {subItem.label}
+                                        <Link href={category.href} className="block mb-3 sm:mb-4">
+                                          <h3 className="text-base sm:text-lg font-bold text-gray-900 hover:text-primary transition-colors">
+                                            {category.title}
+                                          </h3>
                                         </Link>
                                       </NavigationMenuLink>
+                                    )}
 
-                                      {/* Nested Items - Always Visible */}
-                                      {subItem.nestedItems && (
-                                        <div className="ml-3 sm:ml-4 pl-2 sm:pl-3 border-l-2 border-gray-200 space-y-0.5 sm:space-y-1 bg-gray-50/50 py-0.5 sm:py-1 rounded-r-lg">
-                                          {subItem.nestedItems.map((nested) => (
-                                            <NavigationMenuLink asChild key={nested.label}>
-                                              <Link
-                                                href={nested.href}
-                                                className="block py-1 sm:py-1.5 text-xs text-gray-600 hover:text-primary transition-colors break-words leading-relaxed"
-                                              >
-                                                • {nested.label}
-                                              </Link>
-                                            </NavigationMenuLink>
-                                          ))}
+                                    {/* Products List - All Visible */}
+                                    <div className="space-y-1 sm:space-y-2">
+                                      {category.subItems?.map((subItem) => (
+                                        <div key={subItem.label} className="min-w-0">
+                                          {/* Parent Product */}
+                                          <NavigationMenuLink asChild>
+                                            <Link
+                                              href={subItem.href}
+                                              className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors break-words leading-relaxed"
+                                            >
+                                              {subItem.label}
+                                            </Link>
+                                          </NavigationMenuLink>
+
+                                          {/* Nested Items - Always Visible */}
+                                          {subItem.nestedItems && (
+                                            <div className="ml-3 sm:ml-4 pl-2 sm:pl-3 border-l-2 border-gray-200 space-y-0.5 sm:space-y-1 bg-gray-50/50 py-0.5 sm:py-1 rounded-r-lg">
+                                              {subItem.nestedItems.map((nested) => (
+                                                <NavigationMenuLink asChild key={nested.label}>
+                                                  <Link
+                                                    href={nested.href}
+                                                    className="block py-1 sm:py-1.5 text-xs text-gray-600 hover:text-primary transition-colors break-words leading-relaxed"
+                                                  >
+                                                    • {nested.label}
+                                                  </Link>
+                                                </NavigationMenuLink>
+                                              ))}
+                                            </div>
+                                          )}
                                         </div>
-                                      )}
+                                      ))}
                                     </div>
-                                  ))}
-                                </div>
+                                  </div>
+                                ))}
+
+                                {/* Fourth column for categories without sub-items */}
+                                {categoriesWithoutItems.length > 0 && (
+                                  <div className="min-w-0">
+                                    <div className="space-y-1 sm:space-y-2">
+                                      {categoriesWithoutItems.map((category) => (
+                                        <NavigationMenuLink asChild key={category.title || 'spares'}>
+                                          <Link
+                                            href={category.href}
+                                            className="block py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-gray-900 hover:text-primary transition-colors break-words leading-relaxed"
+                                          >
+                                            {category.title}
+                                          </Link>
+                                        </NavigationMenuLink>
+                                      ))}
+                                    </div>
+                                  </div>
+                                )}
                               </div>
-                            ))}
-                          </div>
+                            );
+                          })()}
                         </div>
                       </NavigationMenuContent>
                     </>
@@ -216,7 +246,8 @@ export function Header() {
                           <button
                             onClick={() => {
                               if (item.hasDropdown) {
-                                if (item.label === "Products") {
+                                if (item.label === "Products" || item.label === "Spares") {
+                                  setOpenDropdownType(item.label as "Products" | "Spares");
                                   setMobileProductDropdownOpen(true);
                                   setMobileMenuOpen(false);
                                 } else {
@@ -299,12 +330,16 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Product Dropdown */}
-      {navItems.find(item => item.label === "Products")?.productCategories && (
+      {/* Mobile Product/Spares Dropdown */}
+      {openDropdownType && navItems.find(item => item.label === openDropdownType)?.productCategories && (
         <ProductDropdownMobile
-          categories={navItems.find(item => item.label === "Products")!.productCategories!}
+          categories={navItems.find(item => item.label === openDropdownType)!.productCategories!}
           isOpen={mobileProductDropdownOpen}
-          onClose={() => setMobileProductDropdownOpen(false)}
+          onClose={() => {
+            setMobileProductDropdownOpen(false);
+            setOpenDropdownType(null);
+          }}
+          title={openDropdownType}
         />
       )}
     </header>
