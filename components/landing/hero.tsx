@@ -5,24 +5,35 @@ import { Button } from "@/components/ui/button";
 import { heroData } from "@/lib/data/landing-data";
 import { ArrowRight, Award, CheckCircle2 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
+import heroBackground from "../../public/banner/banner.png";
 
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image */}
+      {/* Optimized Background Image for LCP */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[url('/banner/banner.png')] bg-cover bg-center bg-no-repeat" />
+        <Image
+          src={heroBackground}
+          alt="Paltech Cooling Towers Background"
+          fill
+          preload={true}
+          quality={85}
+          sizes="100vw"
+          className="object-cover object-center"
+          placeholder="blur"
+        />
         {/* Dark overlay for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-950/85 via-slate-900/80 to-slate-950/85" />
+        <div className="absolute inset-0 bg-linear-to-br from-slate-950/85 via-slate-900/80 to-slate-950/85" />
       </div>
       {/* Subtle animated gradient orbs for depth */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-to-br from-primary/10 via-transparent to-transparent rounded-full blur-3xl animate-pulse" />
-        <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-gradient-to-tl from-primary/8 via-transparent to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        <div className="absolute -top-1/2 -left-1/2 w-full h-full bg-linear-to-br from-primary/10 via-transparent to-transparent rounded-full blur-3xl animate-pulse" />
+        <div className="absolute -bottom-1/2 -right-1/2 w-full h-full bg-linear-to-tl from-primary/8 via-transparent to-transparent rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
       </div>
 
       {/* Subtle grid pattern overlay */}
-      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.01)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.01)_1px,transparent_1px)] bg-size-[64px_64px]" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-20 sm:pb-24 md:pb-32 lg:pb-40 pt-10 w-full">
         <div className="max-w-5xl mx-auto">
@@ -50,7 +61,7 @@ export function Hero() {
 
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold text-white leading-[1.1] sm:leading-[1.08] tracking-tight mb-6 sm:mb-8 px-2">
               Precision-Engineered{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-blue-400 to-primary animate-gradient inline-block">
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-primary via-blue-400 to-primary animate-gradient inline-block">
                 Cooling Solutions
               </span>{" "}
               for Critical Industries
@@ -66,7 +77,7 @@ export function Hero() {
               <Button
                 asChild
                 size="lg"
-                className="group bg-gradient-to-r from-primary to-primary/90 text-white hover:shadow-2xl hover:shadow-primary/30 active:scale-95 transition-all text-sm sm:text-base md:text-lg px-8 sm:px-10 py-5 sm:py-6 md:py-7 h-auto rounded-xl sm:rounded-2xl font-semibold hover:scale-105 touch-manipulation"
+                className="group bg-linear-to-r from-primary to-primary/90 text-white hover:shadow-2xl hover:shadow-primary/30 active:scale-95 transition-all text-sm sm:text-base md:text-lg px-8 sm:px-10 py-5 sm:py-6 md:py-7 h-auto rounded-xl sm:rounded-2xl font-semibold hover:scale-105 touch-manipulation"
               >
                 <Link href={heroData.primaryCta.href}>
                   {heroData.primaryCta.text}
@@ -112,7 +123,7 @@ export function Hero() {
       </div>
 
       {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-linear-to-t from-background to-transparent" />
     </section>
   );
 }
