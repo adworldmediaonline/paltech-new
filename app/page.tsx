@@ -10,7 +10,7 @@ import { HeroBanner } from "@/components/landing/hero-banner";
 import { Principles } from "@/components/landing/principles";
 import { ProductShowcase } from "@/components/landing/product-showcase";
 import { ServicesGrid } from "@/components/landing/services-grid";
-import { Stats } from "@/components/landing/stats";
+// import { Stats } from "@/components/landing/stats";
 import { WhyChoose } from "@/components/landing/why-choose";
 
 export default function Home() {
@@ -30,7 +30,7 @@ export default function Home() {
         <ProductShowcase />
         <WhyChoose />
         <ServicesGrid />
-        <Stats />
+        {/* <Stats /> */}
         <ExportMap />
         <ClientLogos />
         <ContactSection />

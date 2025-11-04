@@ -6,14 +6,14 @@ import { whyChooseData } from "@/lib/data/landing-data";
 import { ArrowRight, Cpu, ShieldCheck, Target, TrendingDown, VolumeX, Zap } from "lucide-react";
 import Link from "next/link";
 
-const iconMap = {
-  "shield-check": ShieldCheck,
-  "volume-x": VolumeX,
-  zap: Zap,
-  "trending-down": TrendingDown,
-  target: Target,
-  cpu: Cpu,
-};
+// const iconMap = {
+//   "shield-check": ShieldCheck,
+//   "volume-x": VolumeX,
+//   zap: Zap,
+//   "trending-down": TrendingDown,
+//   target: Target,
+//   cpu: Cpu,
+// };
 
 export function WhyChoose() {
   const [ref, isVisible] = useIntersectionObserver({ freezeOnceVisible: true });
@@ -194,7 +194,7 @@ export function WhyChoose() {
         </div>
 
         {/* Stats Row */}
-        <div
+        {/* <div
           className={`mt-24 lg:mt-32 transition-all duration-700 delay-600 ${isVisible ? "opacity-100" : "opacity-0"
             }`}
         >
@@ -216,7 +216,7 @@ export function WhyChoose() {
               <div className="text-sm lg:text-base text-muted-foreground">Export Countries</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
