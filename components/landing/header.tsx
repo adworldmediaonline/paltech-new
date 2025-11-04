@@ -25,7 +25,7 @@ export function Header() {
   const [mounted, setMounted] = useState(false);
   const [expandedMobileItem, setExpandedMobileItem] = useState<string | null>(null);
   const [mobileProductDropdownOpen, setMobileProductDropdownOpen] = useState(false);
-  const [openDropdownType, setOpenDropdownType] = useState<"Products" | "Spares" | null>(null);
+  const [openDropdownType, setOpenDropdownType] = useState<"Products" | "Spares" | "Other Services" | null>(null);
   const scrolled = useScrollPosition(50);
   const pathname = usePathname();
 
@@ -62,7 +62,7 @@ export function Header() {
             <NavigationMenuList className="flex items-center gap-1">
               {navItems.map((item) => (
                 <NavigationMenuItem key={item.href}>
-                  {item.hasDropdown && (item.label === "Products" || item.label === "Spares") && item.productCategories ? (
+                  {item.hasDropdown && item.productCategories ? (
                     <>
                       <NavigationMenuTrigger className={`flex bg-transparent items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
                         ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
@@ -246,8 +246,8 @@ export function Header() {
                           <button
                             onClick={() => {
                               if (item.hasDropdown) {
-                                if (item.label === "Products" || item.label === "Spares") {
-                                  setOpenDropdownType(item.label as "Products" | "Spares");
+                                if (item.productCategories) {
+                                  setOpenDropdownType(item.label as "Products" | "Spares" | "Other Services");
                                   setMobileProductDropdownOpen(true);
                                   setMobileMenuOpen(false);
                                 } else {
@@ -270,7 +270,7 @@ export function Header() {
                             )}
                           </button>
                           {/* Mobile sub-items with smooth expand/collapse */}
-                          {item.hasDropdown && item.subItems && item.label !== "Products" && expandedMobileItem === item.label && (
+                          {item.hasDropdown && item.subItems && !item.productCategories && expandedMobileItem === item.label && (
                             <div className="ml-4 mt-1 space-y-0.5 animate-fade-in">
                               {item.subItems.map((subItem, index) => (
                                 <Link
@@ -330,7 +330,7 @@ export function Header() {
         </div>
       </div>
 
-      {/* Mobile Product/Spares Dropdown */}
+      {/* Mobile Product/Spares/Services Dropdown */}
       {openDropdownType && navItems.find(item => item.label === openDropdownType)?.productCategories && (
         <ProductDropdownMobile
           categories={navItems.find(item => item.label === openDropdownType)!.productCategories!}

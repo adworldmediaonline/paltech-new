@@ -390,7 +390,38 @@ export const navItems: NavItem[] = [
       }
     ]
   },
-  { label: "Other Services", href: "#services" },
+  {
+    label: "Other Services",
+    href: "/other-services",
+    hasDropdown: true,
+    productCategories: [
+      {
+        title: "Filtration",
+        href: "/other-services/filtration",
+        subItems: []
+      },
+      {
+        title: "DM Plant: Demineralization",
+        href: "/other-services/dm-plant-demineralization",
+        subItems: []
+      },
+      {
+        title: "Water Softening",
+        href: "/other-services/water-softening",
+        subItems: []
+      },
+      {
+        title: "Ultrapure Water",
+        href: "/other-services/ultrapure-water",
+        subItems: []
+      },
+      {
+        title: "Reverse Osmosis / R.O",
+        href: "/other-services/reverse-osmosis-ro",
+        subItems: []
+      }
+    ]
+  },
   { label: "Career", href: "#career" },
   // { label: "Contact Us", href: "#contact" },
 ];
