@@ -5,6 +5,13 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import ultrapureWater1 from '../../../../public/other-services/Ultrapure Water 1.webp';
+import ultrapureWater2 from '../../../../public/other-services/Ultrapure Water 2.webp';
+import ultrapureWater3 from '../../../../public/other-services/Ultrapure Water 3.webp';
+import ultrapureWater4 from '../../../../public/other-services/Ultrapure Water 4.webp';
+
+const images = [ultrapureWater1, ultrapureWater2, ultrapureWater3, ultrapureWater4];
+
 export const metadata: Metadata = {
   title: "Ultrapure Water Systems for Semiconductor & Pharma | Paltech™",
   description: "Paltech™ ultrapure water systems provide industry-leading purity for semiconductor and pharmaceutical applications via advanced demineralization and polishing technology.",
@@ -33,7 +40,7 @@ export const metadata: Metadata = {
 export default function UltrapureWaterPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

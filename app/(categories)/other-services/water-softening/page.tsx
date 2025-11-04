@@ -5,6 +5,13 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import waterSoftening1 from '../../../../public/other-services/Water Softeness 1.webp';
+import waterSoftening2 from '../../../../public/other-services/Water Softeness 2.webp';
+import waterSoftening3 from '../../../../public/other-services/Water Softeness 3.webp';
+import waterSoftening4 from '../../../../public/other-services/Water Softeness 4.webp';
+
+const images = [waterSoftening1, waterSoftening2, waterSoftening3, waterSoftening4];
+
 export const metadata: Metadata = {
   title: "Industrial Water Softening Systems for Cooling Towers | Paltech™",
   description: "Paltech™ water softening systems prevent scale and corrosion in cooling towers with high-capacity resin technology and automated regeneration.",
@@ -33,7 +40,7 @@ export const metadata: Metadata = {
 export default function WaterSofteningPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

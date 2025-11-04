@@ -5,6 +5,13 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import dmPlant1 from '../../../../public/other-services/DM Plant Demineralization 1.webp';
+import dmPlant2 from '../../../../public/other-services/DM Plant Demineralization 2.webp';
+import dmPlant3 from '../../../../public/other-services/DM Plant Demineralization 3.webp';
+import dmPlant4 from '../../../../public/other-services/DM Plant Demineralization 4.webp';
+
+const images = [dmPlant1, dmPlant2, dmPlant3, dmPlant4];
+
 export const metadata: Metadata = {
   title: "Industrial Demineralization Plants | Paltech™ Water Treatment Solutions",
   description: "Paltech™ offers advanced demineralization plants producing ultra-pure water for cooling towers. Enhance efficiency, reduce scaling and corrosion with our modular systems.",
@@ -33,7 +40,7 @@ export const metadata: Metadata = {
 export default function DmPlantPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

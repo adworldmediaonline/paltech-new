@@ -5,6 +5,13 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import reverseOsmosis1 from '../../../../public/other-services/Reverse Osmosis R.O. 1.webp';
+import reverseOsmosis2 from '../../../../public/other-services/Reverse Osmosis R.O. 2.webp';
+import reverseOsmosis3 from '../../../../public/other-services/Reverse Osmosis R.O. 3.webp';
+import reverseOsmosis4 from '../../../../public/other-services/Reverse Osmosis R.O. 4.webp';
+
+const images = [reverseOsmosis1, reverseOsmosis2, reverseOsmosis3, reverseOsmosis4];
+
 export const metadata: Metadata = {
   title: "Industrial Reverse Osmosis Systems | Paltech™ Cooling Tower Water Treatment",
   description: "Paltech™ provides scalable and energy-efficient RO plants for industrial water purification. Designed for cooling towers, mineral water, and process water treatment.",
@@ -33,7 +40,7 @@ export const metadata: Metadata = {
 export default function ReverseOsmosisPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
