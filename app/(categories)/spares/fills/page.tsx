@@ -5,6 +5,9 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import fills1 from '../../../../public/categories/fills.webp';
+
+const images = [fills1];
 export const metadata: Metadata = {
   title: "Cooling Tower Fill Solutions | Film & Splash Fill by Paltech™",
   description: "Paltech™ offers efficient corrosion-resistant cooling tower fill packs. Film-type, splash-type, and fill-less designs for maximum cooling and durability.",
@@ -37,7 +40,7 @@ export const metadata: Metadata = {
 export default function FillsPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

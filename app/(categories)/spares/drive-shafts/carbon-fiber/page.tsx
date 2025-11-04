@@ -5,6 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import carbonFiberDriveShafts1 from '../../../../../public/categories/drive-shaftshdgms-carbon-fiber.webp';
+
+const images = [carbonFiberDriveShafts1];
+
 export const metadata: Metadata = {
   title: "Carbon Fiber Drive Shafts | Paltech™ Advanced Cooling Tower Components",
   description: "Paltech™ Carbon Fiber Drive Shafts – lightweight, high-torque, corrosion-resistant, and maintenance-free solutions for modern industrial cooling towers.",
@@ -35,7 +39,7 @@ export const metadata: Metadata = {
 export default function CarbonFiberDriveShaftsPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

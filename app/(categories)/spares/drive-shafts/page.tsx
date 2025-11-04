@@ -4,6 +4,10 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
+import driveShafts1 from '../../../../public/categories/drive-shafts-1.webp';
+import driveShafts2 from '../../../../public/categories/drive-shafts-2.webp';
+import driveShafts3 from '../../../../public/categories/drive-shafts-3.webp';
+import driveShafts4 from '../../../../public/categories/drive-shafts-4.webp';
 
 export const metadata: Metadata = {
   title: "Drive Shafts for Cooling Towers | Paltech™ Industrial Power Components",
@@ -31,10 +35,13 @@ export const metadata: Metadata = {
   },
 };
 
+
+
+const images = [driveShafts1, driveShafts2, driveShafts3, driveShafts4];
 export default function DriveShaftsPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

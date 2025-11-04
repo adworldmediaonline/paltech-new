@@ -5,6 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import aluminumFans1 from '../../../../../public/categories/aluminum-fans.webp';
+
+const images = [aluminumFans1];
+
 export const metadata: Metadata = {
   title: "Aluminum Fans for Cooling Towers | Commercial-Grade by Paltech™",
   description: "Discover high-efficiency aluminum cooling tower fans by Paltech™. Durable, corrosion-resistant, custom-sized fans for commercial and industrial cooling applications.",
@@ -33,7 +37,7 @@ export const metadata: Metadata = {
 export default function AluminumFansPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

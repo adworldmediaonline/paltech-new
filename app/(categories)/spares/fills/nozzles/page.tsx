@@ -5,6 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import nozzles1 from '../../../../../public/categories/nozzles.webp';
+
+const images = [nozzles1];
+
 export const metadata: Metadata = {
   title: "Cooling Tower Spray Nozzles | Uniform Water Distribution by Paltech™",
   description: "Paltech™ spiral spray nozzles provide consistent, uniform water distribution for cooling towers. Durable polypropylene construction with low pressure, clog-resistant design.",
@@ -33,7 +37,7 @@ export const metadata: Metadata = {
 export default function NozzlesPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
