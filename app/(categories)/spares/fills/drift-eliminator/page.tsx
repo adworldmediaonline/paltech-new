@@ -5,6 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import driftEliminators1 from '../../../../../public/categories/drift-eliminator.webp';
+
+const images = [driftEliminators1];
+
 export const metadata: Metadata = {
   title: "Drift Eliminators for Cooling Towers | Efficient Water Conservation by Paltech™",
   description: "Paltech™ XCEL Drift Eliminators minimize water drift loss to 0.005% or 0.0005% with advanced 6-pass models. Fire-retardant PVC, low pressure drop, energy-saving design.",
@@ -33,7 +37,7 @@ export const metadata: Metadata = {
 export default function DriftEliminatorPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

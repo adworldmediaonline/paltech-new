@@ -5,6 +5,11 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import pvcSplashFills1 from '../../../../../public/categories/pvc-splash-fills.webp';
+
+const images = [pvcSplashFills1];
+
+
 export const metadata: Metadata = {
   title: "PVC Splash Fills for Cooling Towers | Durable Fill Media by Paltech™",
   description: "Paltech™ PVC splash fills enhance cooling tower efficiency by increasing water-air contact. Corrosion resistant, reliable, and ideal for contaminated water conditions.",
@@ -33,7 +38,7 @@ export const metadata: Metadata = {
 export default function PVCSplashFillsPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

@@ -5,6 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import frpFans1 from '../../../../../public/categories/frp-fan.webp';
+
+const images = [frpFans1];
+
 export const metadata: Metadata = {
   title: "FRP Cooling Tower Fans | High-Efficiency Industrial Fans by Paltech™",
   description: "Boost cooling tower performance with Paltech™ FRP Fans. Achieve up to 40% energy savings, whisper-quiet operation, and long-term durability in any industry.",
@@ -34,7 +38,7 @@ export const metadata: Metadata = {
 export default function FRPFansPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

@@ -5,6 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import fanGuards1 from '../../../../public/categories/fan-guards.webp';
+
+const images = [fanGuards1];
+
 export const metadata: Metadata = {
   title: "Custom Metal Fan Screens & Guards | Paltech™ Cooling Tower Solutions",
   description: "Premium fan screens and guards for cooling towers and HVAC by Paltech™. Custom fabricated from galvanized or stainless steel, available in all sizes and mesh patterns.",
@@ -34,7 +38,7 @@ export const metadata: Metadata = {
 export default function FanGuardsPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

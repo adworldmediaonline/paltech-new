@@ -5,6 +5,11 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import trickleGridFills1 from '../../../../../public/categories/trickle-grid-fills.webp';
+
+const images = [trickleGridFills1];
+
+
 export const metadata: Metadata = {
   title: "Trickle Grid Fills for Cooling Towers | High-Efficiency Fill Media by Paltech™",
   description: "Paltech™ trickle grid fills provide uniform water distribution and enhanced heat transfer for industrial cooling towers. Durable PP/PVC construction with low maintenance.",
@@ -33,7 +38,7 @@ export const metadata: Metadata = {
 export default function TrickleGridFillsPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

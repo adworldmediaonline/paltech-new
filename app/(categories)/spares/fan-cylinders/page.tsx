@@ -5,6 +5,12 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import fanCylinders1 from '../../../../public/categories/fan-cylinders-1.webp';
+import fanCylinders2 from '../../../../public/categories/fan-cylinders-2.webp';
+import fanCylinders3 from '../../../../public/categories/fan-cylinders-3.webp';
+
+const images = [fanCylinders1, fanCylinders2, fanCylinders3];
+
 export const metadata: Metadata = {
   title: "Cooling Tower Fan Cylinders | Premium FRP Cylinders by Paltech™",
   description: "Discover high-performance FRP cooling tower fan cylinders by Paltech™. Made to CTI STD-131(86) standards, up to 11 meters diameter, fire-retardant options.",
@@ -33,7 +39,7 @@ export const metadata: Metadata = {
 export default function FanCylindersPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

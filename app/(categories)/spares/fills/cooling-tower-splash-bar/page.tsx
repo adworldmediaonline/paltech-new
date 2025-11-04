@@ -5,6 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import coolingTowerSplashBars1 from '../../../../../public/categories/cooling-tower-splash-bar.webp';
+
+const images = [coolingTowerSplashBars1];
+
 export const metadata: Metadata = {
   title: "Cooling Tower Splash Bars | Durable PVC Fill Media by Paltech™",
   description: "Paltech™ splash bars enhance cooling tower heat exchange with optimized droplet formation. Corrosion-resistant and ideal for fouling-prone environments.",
@@ -33,7 +37,7 @@ export const metadata: Metadata = {
 export default function CoolingTowerSplashBarPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

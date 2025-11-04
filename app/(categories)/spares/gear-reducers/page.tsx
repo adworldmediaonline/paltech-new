@@ -5,6 +5,13 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import gearReducers1 from '../../../../public/categories/gear-reducer-1.webp';
+import gearReducers2 from '../../../../public/categories/gear-reducer-2.webp';
+import gearReducers3 from '../../../../public/categories/gear-reducer-3.webp';
+import gearReducers4 from '../../../../public/categories/gear-reducer-4.webp';
+
+const images = [gearReducers1, gearReducers2, gearReducers3, gearReducers4];
+
 export const metadata: Metadata = {
   title: "Gear Reducers for Cooling Towers | Paltech™ Industrial Gearboxes",
   description: "Paltech™ Gear Reducers – heavy-duty, right-angle gearboxes for cooling towers. High torque, durable, and CTI-compliant power transmission solutions.",
@@ -35,7 +42,7 @@ export const metadata: Metadata = {
 export default function GearReducersPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

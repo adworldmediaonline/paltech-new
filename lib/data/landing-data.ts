@@ -341,7 +341,7 @@ export const navItems: NavItem[] = [
         subItems: [
           {
             label: "PVC Film",
-            href: "#spares/fills/pvc-film"
+            href: "/spares/fills/pvc-film"
           },
           {
             label: "PVC Splash Fills",

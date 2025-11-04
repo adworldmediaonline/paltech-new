@@ -5,6 +5,9 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import ppBallFills1 from '../../../../../public/categories/pp-ball-fills.webp';
+
+const images = [ppBallFills1];
 export const metadata: Metadata = {
   title: "PP Ball Fills for Cooling Towers | Durable Polypropylene Fills by Paltech™",
   description: "Paltech™ offers high-efficiency polypropylene (PP) ball fills designed for optimal cooling tower heat transfer and chemical resistance in industrial applications.",
@@ -33,7 +36,7 @@ export const metadata: Metadata = {
 export default function PPBallFillsPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
