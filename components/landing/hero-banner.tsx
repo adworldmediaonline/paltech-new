@@ -16,6 +16,7 @@ export function HeroBanner() {
         sizes="100vw"
         className="object-cover object-top"
         placeholder="blur"
+        loading="eager"
       />
     </section>
   );

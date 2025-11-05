@@ -22,6 +22,7 @@ export function Hero() {
           sizes="100vw"
           className="object-cover object-center"
           placeholder="blur"
+          loading="eager"
         />
         {/* Dark overlay for text readability */}
         <div className="absolute inset-0 bg-linear-to-br from-slate-950/85 via-slate-900/80 to-slate-950/85" />
