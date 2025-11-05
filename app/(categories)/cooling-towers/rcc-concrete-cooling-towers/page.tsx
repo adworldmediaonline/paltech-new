@@ -3,10 +3,11 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
-import rcc1 from '../../../../public/categories/cooling-towers-1.webp';
-import rcc2 from '../../../../public/categories/cooling-towers-2.webp';
-import rcc3 from '../../../../public/categories/cooling-towers-3.webp';
-import rcc4 from '../../../../public/categories/cooling-towers-4.webp';
+
+import rcc1 from '../../../../public/categories/RCC Concrete Cooling Towers 1.webp';
+import rcc2 from '../../../../public/categories/RCC Concrete Cooling Towers 2.webp';
+import rcc3 from '../../../../public/categories/RCC Concrete Cooling Towers 3.webp';
+import rcc4 from '../../../../public/categories/RCC Concrete Cooling Towers 4.webp';
 
 const images = [rcc1, rcc2, rcc3, rcc4];
 

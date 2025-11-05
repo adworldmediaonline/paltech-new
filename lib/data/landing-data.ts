@@ -164,14 +164,13 @@ export const navItems: NavItem[] = [
     href: "#about",
     hasDropdown: true,
     subItems: [
-      { label: "Our Mission", href: "/about/our-mission" },
       { label: "Our Clients", href: "/about/our-clients" },
       { label: "Awards & Recognition", href: "/about/awards-recognition" },
       { label: "Policies & Certification", href: "/about/policies-certification" },
       { label: "Executed Projects", href: "/about/executed-projects" },
       { label: "Project Consultants", href: "/about/project-consultants" },
       { label: "Affilliated Bodies", href: "/about/affiliated-bodies" },
-      { label: "Export Countries", href: "#exports" },
+      { label: "Export Countries", href: "/about/export-countries" },
     ]
   },
   {
@@ -422,8 +421,8 @@ export const navItems: NavItem[] = [
       }
     ]
   },
-  { label: "Career", href: "#career" },
-  // { label: "Contact Us", href: "#contact" },
+  // { label: "Career", href: "#career" },
+  // { label: "Contact Us", href: "/contact-us" },
 ];
 
 export const heroData: HeroData = {

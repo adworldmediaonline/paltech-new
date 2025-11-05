@@ -37,7 +37,7 @@ export function ContactSection() {
     <section
       ref={ref}
       id="contact"
-      className="relative py-24 md:py-32 lg:py-40 overflow-hidden bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950"
+      className="relative py-24 md:py-32 lg:py-40 overflow-hidden bg-linear-to-br from-slate-950 via-slate-900 to-slate-950"
     >
       {/* Decorative background elements */}
       <div className="absolute inset-0">
@@ -92,7 +92,7 @@ export function ContactSection() {
                   className="flex items-center gap-3"
                   style={{ animationDelay: `${index * 100}ms` }}
                 >
-                  <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                  <div className="shrink-0 w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
                     <CheckCircle2 className="w-4 h-4 text-primary" />
                   </div>
                   <span className="text-base text-white/90">{item}</span>
@@ -100,36 +100,52 @@ export function ContactSection() {
               ))}
             </div>
 
-            {/* Contact info cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {/* Contact info cards - Full Details */}
+            <div className="space-y-4">
+              {/* Phone */}
               <a
-                href={`tel:${contactFormData.contactInfo.phone}`}
-                className="group flex flex-col gap-2 p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary/30 transition-all duration-300 backdrop-blur-sm"
+                href="tel:+911244499700"
+                className="group flex items-start gap-4 p-5 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary/30 transition-all duration-300 backdrop-blur-sm"
               >
-                <Phone className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                <span className="text-xs text-white/60">Phone</span>
-                <span className="text-sm font-semibold text-white group-hover:text-primary transition-colors">
-                  {contactFormData.contactInfo.phone}
-                </span>
+                <div className="shrink-0 w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
+                  <Phone className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                </div>
+                <div className="flex-1">
+                  <span className="text-xs text-white/60 uppercase tracking-wider font-medium block mb-1">Phone No (s)</span>
+                  <span className="text-base font-semibold text-white group-hover:text-primary transition-colors">
+                    +91.124.4499700
+                  </span>
+                </div>
               </a>
 
-              <a
-                href={`mailto:${contactFormData.contactInfo.email}`}
-                className="group flex flex-col gap-2 p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary/30 transition-all duration-300 backdrop-blur-sm"
-              >
-                <Mail className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                <span className="text-xs text-white/60">Email</span>
-                <span className="text-sm font-semibold text-white group-hover:text-primary transition-colors">
-                  {contactFormData.contactInfo.email}
-                </span>
-              </a>
+              {/* Emails */}
+              <div className="group flex items-start gap-4 p-5 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary/30 transition-all duration-300 backdrop-blur-sm">
+                <div className="shrink-0 w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
+                  <Mail className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                </div>
+                <div className="flex-1">
+                  <span className="text-xs text-white/60 uppercase tracking-wider font-medium block mb-1">E-mail</span>
+                  <a href="mailto:paltech@paltech.net.in" className="text-base font-semibold text-white hover:text-primary transition-colors block">
+                    paltech@paltech.net.in
+                  </a>
+                  <a href="mailto:bd@paltech.net.in" className="text-base font-semibold text-white hover:text-primary transition-colors block mt-1">
+                    bd@paltech.net.in
+                  </a>
+                </div>
+              </div>
 
-              <div className="group flex flex-col gap-2 p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary/30 transition-all duration-300 backdrop-blur-sm">
-                <MapPin className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" />
-                <span className="text-xs text-white/60">Location</span>
-                <span className="text-sm font-semibold text-white">
-                  Gurugram, Haryana
-                </span>
+              {/* Location */}
+              <div className="group flex items-start gap-4 p-5 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary/30 transition-all duration-300 backdrop-blur-sm">
+                <div className="shrink-0 w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+                </div>
+                <div className="flex-1">
+                  <span className="text-xs text-white/60 uppercase tracking-wider font-medium block mb-1">Location</span>
+                  <p className="text-sm font-medium text-white leading-relaxed">
+                    Plot No. 774, IInd Floor, Udyog Vihar,<br />
+                    Phase - V, Gurugram, Haryana-122016
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -141,7 +157,7 @@ export function ContactSection() {
           >
             <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 md:p-10 border border-white/20 shadow-2xl">
               {/* Glass shine effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent rounded-3xl" />
+              <div className="absolute inset-0 bg-linear-to-br from-white/10 to-transparent rounded-3xl" />
 
               <div className="relative">
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
