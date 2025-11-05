@@ -164,7 +164,6 @@ export const navItems: NavItem[] = [
     href: "#about",
     hasDropdown: true,
     subItems: [
-      { label: "Our Mission", href: "/about/our-mission" },
       { label: "Our Clients", href: "/about/our-clients" },
       { label: "Awards & Recognition", href: "/about/awards-recognition" },
       { label: "Policies & Certification", href: "/about/policies-certification" },
