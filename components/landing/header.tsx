@@ -43,9 +43,9 @@ export function Header() {
       }`}>
       <div className="mx-auto max-w-7xl  px-3 sm:px-4 md:px-6 lg:px-8">
         <div className="flex h-16 sm:h-18 md:h-20 items-center justify-between">
-          {/* Logo */}
-          <Link href="/" className="flex items-center group">
-            <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 group-hover:scale-105 transition-transform">
+          {/* Logo with Company Name */}
+          <Link href="/" className="flex items-center gap-3 sm:gap-4 group">
+            <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 shrink-0 group-hover:scale-105 transition-transform">
               <Image
                 src="/logo/logo.png"
                 alt="PALTECH Logo"
@@ -54,6 +54,22 @@ export function Header() {
                 priority
                 sizes="(max-width: 640px) 48px, (max-width: 768px) 56px, 64px"
               />
+            </div>
+            <div className="flex flex-col justify-center">
+              <h1 className={`text-sm sm:text-base md:text-lg lg:text-xl font-bold leading-tight tracking-tight transition-colors ${
+                scrolled || isCategoryPage
+                  ? "text-gray-900"
+                  : "text-white"
+              }`}>
+                Paltech Cooling Towers &<br className="hidden sm:inline" /> Equipments Ltd.
+              </h1>
+              <p className={`text-[9px] sm:text-[10px] md:text-xs font-normal leading-tight mt-0.5 sm:mt-1 transition-colors ${
+                scrolled || isCategoryPage
+                  ? "text-gray-600"
+                  : "text-white/80"
+              }`}>
+                An ISO 9001:2015, ISO 14001:2015, OHSAS 45001:2018 certified Company
+              </p>
             </div>
           </Link>
 
