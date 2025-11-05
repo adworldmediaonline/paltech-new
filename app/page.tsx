@@ -1,17 +1,48 @@
-import { About } from "@/components/landing/about";
-import { ClientLogos } from "@/components/landing/client-logos";
-import { ContactSection } from "@/components/landing/contact-section";
-import { ExportMap } from "@/components/landing/export-map";
-import { FloatingCta } from "@/components/landing/floating-cta";
-import { Footer } from "@/components/landing/footer";
+import dynamic from "next/dynamic";
 import { Header } from "@/components/landing/header";
-import { Hero } from "@/components/landing/hero";
 import { HeroBanner } from "@/components/landing/hero-banner";
-import { Principles } from "@/components/landing/principles";
-import { ProductShowcase } from "@/components/landing/product-showcase";
-import { ServicesGrid } from "@/components/landing/services-grid";
-// import { Stats } from "@/components/landing/stats";
-import { WhyChoose } from "@/components/landing/why-choose";
+import { Hero } from "@/components/landing/hero";
+
+// Lazy load below-the-fold components to reduce initial JavaScript bundle
+const Principles = dynamic(() => import("@/components/landing/principles").then((mod) => ({ default: mod.Principles })), {
+  loading: () => <div className="h-32 sm:h-48" />,
+});
+
+const About = dynamic(() => import("@/components/landing/about").then((mod) => ({ default: mod.About })), {
+  loading: () => <div className="h-64 sm:h-96" />,
+});
+
+const ProductShowcase = dynamic(() => import("@/components/landing/product-showcase").then((mod) => ({ default: mod.ProductShowcase })), {
+  loading: () => <div className="h-96 sm:h-[600px]" />,
+});
+
+const WhyChoose = dynamic(() => import("@/components/landing/why-choose").then((mod) => ({ default: mod.WhyChoose })), {
+  loading: () => <div className="h-96 sm:h-[600px]" />,
+});
+
+const ServicesGrid = dynamic(() => import("@/components/landing/services-grid").then((mod) => ({ default: mod.ServicesGrid })), {
+  loading: () => <div className="h-96 sm:h-[600px]" />,
+});
+
+const ExportMap = dynamic(() => import("@/components/landing/export-map").then((mod) => ({ default: mod.ExportMap })), {
+  loading: () => <div className="h-96 sm:h-[500px]" />,
+});
+
+const ClientLogos = dynamic(() => import("@/components/landing/client-logos").then((mod) => ({ default: mod.ClientLogos })), {
+  loading: () => <div className="h-64 sm:h-80" />,
+});
+
+const ContactSection = dynamic(() => import("@/components/landing/contact-section").then((mod) => ({ default: mod.ContactSection })), {
+  loading: () => <div className="h-96 sm:h-[600px]" />,
+});
+
+const Footer = dynamic(() => import("@/components/landing/footer").then((mod) => ({ default: mod.Footer })), {
+  loading: () => <div className="h-64 sm:h-96" />,
+});
+
+const FloatingCta = dynamic(() => import("@/components/landing/floating-cta").then((mod) => ({ default: mod.FloatingCta })), {
+  loading: () => null,
+});
 
 export default function Home() {
   return (

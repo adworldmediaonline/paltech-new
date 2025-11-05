@@ -6,9 +6,17 @@ export function useScrollPosition(threshold: number = 0): boolean {
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      const position = window.scrollY;
-      setScrolled(position > threshold);
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const position = window.scrollY;
+          setScrolled(position > threshold);
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
     // Initial check
