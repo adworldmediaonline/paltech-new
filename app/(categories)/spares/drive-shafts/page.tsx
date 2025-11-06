@@ -12,6 +12,9 @@ import driveShafts4 from '../../../../public/categories/drive-shafts-4.webp';
 export const metadata: Metadata = {
   title: "Drive Shafts for Cooling Towers | Paltech™ Industrial Power Components",
   description: "Paltech™ manufactures premium drive shafts for cooling towers—dynamic balance, zero maintenance, and long service life for heavy-duty industrial use.",
+  alternates: {
+    canonical: '/spares/drive-shafts',
+  },
   keywords: [
     "Drive Shaft for Cooling Tower",
     "Cooling Tower Drive Shaft",

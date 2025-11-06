@@ -12,6 +12,9 @@ const images = [fcValve1];
 export const metadata: Metadata = {
   title: "Durable Flow Control Valves for Cooling Towers | Paltech™",
   description: "Paltech™ heavy-duty flow control valves designed for cooling towers. Low head loss, corrosion-resistant, available in multiple sizes and capacities.",
+  alternates: {
+    canonical: '/spares/fills/fc-valve',
+  },
   keywords: [
     "Flow Control Valve",
     "Cooling Tower Flow Valve",

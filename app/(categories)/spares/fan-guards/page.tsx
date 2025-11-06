@@ -12,6 +12,9 @@ const images = [fanGuards1];
 export const metadata: Metadata = {
   title: "Custom Metal Fan Screens & Guards | Paltech™ Cooling Tower Solutions",
   description: "Premium fan screens and guards for cooling towers and HVAC by Paltech™. Custom fabricated from galvanized or stainless steel, available in all sizes and mesh patterns.",
+  alternates: {
+    canonical: '/spares/fan-guards',
+  },
   keywords: [
     "Cooling Tower Fan Screen",
     "Cooling Tower Fan Guard",

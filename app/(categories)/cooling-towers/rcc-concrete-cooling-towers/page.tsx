@@ -3,6 +3,7 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import { Metadata } from "next";
 
 import rcc1 from '../../../../public/categories/RCC Concrete Cooling Towers 1.webp';
 import rcc2 from '../../../../public/categories/RCC Concrete Cooling Towers 2.webp';
@@ -10,6 +11,59 @@ import rcc3 from '../../../../public/categories/RCC Concrete Cooling Towers 3.we
 import rcc4 from '../../../../public/categories/RCC Concrete Cooling Towers 4.webp';
 
 const images = [rcc1, rcc2, rcc3, rcc4];
+
+export const metadata: Metadata = {
+  title: "RCC Concrete Cooling Towers | Large-Scale Industrial Cooling",
+  description: "High-performance RCC concrete cooling towers for power plants, refineries, and large industries. ISO-certified, durable, and energy-efficient. Get a quote today!",
+  keywords: [
+    "RCC Cooling Towers",
+    "Concrete Cooling",
+    "Industrial Cooling",
+    "Large Cooling Towers",
+    "FRP Cooling",
+    "Cross Flow Towers",
+    "Counter Flow Towers",
+    "Cooling Tower Manufacturer",
+    "RCC concrete cooling towers for industries",
+    "Large-scale industrial cooling tower solutions",
+    "Counter flow and cross flow RCC towers",
+    "Industrial cooling towers for power plants",
+    "Petrochemical refinery cooling tower solutions",
+    "High-capacity reinforced concrete cooling towers",
+    "Energy-efficient industrial cooling towers",
+    "Custom RCC cooling tower design and installation",
+    "Splash fill and film fill cooling towers",
+    "Multicellular RCC cooling towers for large capacity",
+    "Industrial cooling towers",
+    "Power plant cooling solutions",
+    "Petrochemical cooling systems",
+    "Chemical plant cooling towers",
+    "Large industrial cooling solutions",
+    "ISO-certified cooling tower manufacturer",
+    "Energy-efficient cooling tower systems",
+    "Global cooling tower suppliers",
+    "Custom engineered cooling towers",
+    "Thermal power cooling towers",
+    "Reinforced cement concrete towers",
+    "Industrial heat exchange towers",
+    "Cooling tower design and engineering",
+    "High-efficiency cooling towers",
+    "Multi-cell cooling tower systems",
+    "Large-scale HVAC cooling towers",
+    "Industrial water cooling solutions",
+    "Cooling tower maintenance and repair",
+    "Long-lasting concrete cooling towers",
+    "Technical specifications for RCC towers"
+  ],
+  alternates: {
+    canonical: '/cooling-towers/rcc-concrete-cooling-towers',
+  },
+  openGraph: {
+    title: "RCC Concrete Cooling Towers | Large-Scale Industrial Cooling",
+    description: "High-performance RCC concrete cooling towers for power plants, refineries, and large industries. ISO-certified, durable, and energy-efficient. Get a quote today!",
+    type: "website",
+  },
+};
 
 export default function RCCConcreteCoolingTowersPage() {
   return (

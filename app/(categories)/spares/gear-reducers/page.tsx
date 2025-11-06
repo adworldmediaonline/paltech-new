@@ -15,6 +15,9 @@ const images = [gearReducers1, gearReducers2, gearReducers3, gearReducers4];
 export const metadata: Metadata = {
   title: "Gear Reducers for Cooling Towers | Paltech™ Industrial Gearboxes",
   description: "Paltech™ Gear Reducers – heavy-duty, right-angle gearboxes for cooling towers. High torque, durable, and CTI-compliant power transmission solutions.",
+  alternates: {
+    canonical: '/spares/gear-reducers',
+  },
   keywords: [
     "Cooling Tower Gear Reducer",
     "Cooling Tower Gearbox",

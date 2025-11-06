@@ -15,6 +15,9 @@ const images = [ultrapureWater1, ultrapureWater2, ultrapureWater3, ultrapureWate
 export const metadata: Metadata = {
   title: "Ultrapure Water Systems for Semiconductor & Pharma | Paltech™",
   description: "Paltech™ ultrapure water systems provide industry-leading purity for semiconductor and pharmaceutical applications via advanced demineralization and polishing technology.",
+  alternates: {
+    canonical: '/other-services/ultrapure-water',
+  },
   keywords: [
     "Ultrapure Water System",
     "Semiconductor Ultrapure Water",

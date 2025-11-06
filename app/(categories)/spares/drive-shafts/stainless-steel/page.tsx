@@ -8,6 +8,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Metallic Drive Shafts for Cooling Towers | Paltech™ Industrial Solutions",
   description: "Paltech™ Metallic Drive Shafts – engineered for high torque, long life, and smooth operation. Available in GS, SS304 & SS316 for industrial cooling towers.",
+  alternates: {
+    canonical: '/spares/drive-shafts/stainless-steel',
+  },
   keywords: [
     "Metallic Drive Shaft",
     "Cooling Tower Drive Shaft",

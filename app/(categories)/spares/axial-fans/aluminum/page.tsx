@@ -12,6 +12,9 @@ const images = [aluminumFans1];
 export const metadata: Metadata = {
   title: "Aluminum Fans for Cooling Towers | Commercial-Grade by Paltech™",
   description: "Discover high-efficiency aluminum cooling tower fans by Paltech™. Durable, corrosion-resistant, custom-sized fans for commercial and industrial cooling applications.",
+  alternates: {
+    canonical: '/spares/axial-fans/aluminum',
+  },
   keywords: [
     "Cooling Tower Aluminum Fan",
     "Aluminum Fan for Cooling Tower",

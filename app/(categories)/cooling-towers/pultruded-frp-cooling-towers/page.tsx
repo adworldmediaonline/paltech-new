@@ -3,12 +3,66 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import { Metadata } from "next";
 import pultruded1 from '../../../../public/categories/pultruded-frp-cooling-towers-1.webp';
 import pultruded2 from '../../../../public/categories/pultruded-frp-cooling-towers-2.webp';
 import pultruded3 from '../../../../public/categories/pultruded-frp-cooling-towers-3.webp';
 import pultruded4 from '../../../../public/categories/pultruded-frp-cooling-towers-4.webp';
 
 const images = [pultruded1, pultruded2, pultruded3, pultruded4];
+
+export const metadata: Metadata = {
+  title: "Pultruded FRP Cooling Towers | Lightweight Industrial Solutions",
+  description: "Advanced pultruded FRP cooling towers for chemical, petrochemical & coastal industries. Lightweight, corrosion-resistant & energy-efficient. Request a quote today!",
+  keywords: [
+    "FRP Cooling Towers",
+    "Pultruded Towers",
+    "Industrial Cooling",
+    "Lightweight Cooling",
+    "Composite Cooling",
+    "Cross Flow Towers",
+    "Counter Flow Towers",
+    "Corrosion-Resistant Towers",
+    "Pultruded FRP cooling towers for industries",
+    "Lightweight corrosion-resistant industrial cooling towers",
+    "Counter flow FRP cooling towers with splash fill",
+    "Cross flow FRP cooling towers with film fill",
+    "High-capacity pultruded FRP cooling solutions",
+    "Coastal and chemical plant FRP towers",
+    "Advanced FRP cooling towers for HVAC systems",
+    "Energy-efficient industrial FRP cooling towers",
+    "Multi-cell pultruded FRP cooling tower configurations",
+    "Custom FRP cooling towers for rapid installation",
+    "Industrial cooling towers",
+    "Chemical plant cooling towers",
+    "Petrochemical cooling systems",
+    "Seawater cooling solutions",
+    "Energy-efficient cooling towers",
+    "Corrosion-resistant industrial towers",
+    "Lightweight cooling tower manufacturer",
+    "Global FRP cooling tower supplier",
+    "Custom engineered cooling towers",
+    "Pultruded fiberglass cooling towers",
+    "Fiber reinforced plastic cooling towers",
+    "GRP cooling tower systems",
+    "FRP fan deck design",
+    "PVC/PP drift eliminators",
+    "Non-clogging nozzle cooling towers",
+    "Spiral bevel gearbox cooling towers",
+    "Coastal industrial cooling solutions",
+    "FRP tower maintenance and repair",
+    "High-efficiency heat transfer cooling towers",
+    "Industrial water cooling solutions"
+  ],
+  alternates: {
+    canonical: '/cooling-towers/pultruded-frp-cooling-towers',
+  },
+  openGraph: {
+    title: "Pultruded FRP Cooling Towers | Lightweight Industrial Solutions",
+    description: "Advanced pultruded FRP cooling towers for chemical, petrochemical & coastal industries. Lightweight, corrosion-resistant & energy-efficient. Request a quote today!",
+    type: "website",
+  },
+};
 
 export default function PultrudedFRPCoolingTowersPage() {
   return (

@@ -12,6 +12,9 @@ const images = [nozzles1];
 export const metadata: Metadata = {
   title: "Cooling Tower Spray Nozzles | Uniform Water Distribution by Paltech™",
   description: "Paltech™ spiral spray nozzles provide consistent, uniform water distribution for cooling towers. Durable polypropylene construction with low pressure, clog-resistant design.",
+  alternates: {
+    canonical: '/spares/fills/nozzles',
+  },
   keywords: [
     "Cooling Tower Spray Nozzle",
     "Spiral Spray Nozzle",

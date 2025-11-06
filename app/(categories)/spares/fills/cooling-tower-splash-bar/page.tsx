@@ -12,6 +12,9 @@ const images = [coolingTowerSplashBars1];
 export const metadata: Metadata = {
   title: "Cooling Tower Splash Bars | Durable PVC Fill Media by Paltech™",
   description: "Paltech™ splash bars enhance cooling tower heat exchange with optimized droplet formation. Corrosion-resistant and ideal for fouling-prone environments.",
+  alternates: {
+    canonical: '/spares/fills/cooling-tower-splash-bar',
+  },
   keywords: [
     "Cooling Tower Splash Bars",
     "Splash Bar Fill",

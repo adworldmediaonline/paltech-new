@@ -3,12 +3,65 @@ import { CategoryHero } from "@/components/landing/category-hero";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
+import { Metadata } from "next";
 import wooden1 from '../../../../public/categories/wooden-timber-cooling-towers-1.webp';
 import wooden2 from '../../../../public/categories/wooden-timber-cooling-towers-2.webp';
 import wooden3 from '../../../../public/categories/wooden-timber-cooling-towers-3.webp';
 import wooden4 from '../../../../public/categories/wooden-timber-cooling-towers-4.webp';
 
 const images = [wooden1, wooden2, wooden3, wooden4];
+
+export const metadata: Metadata = {
+  title: "Wooden/Timber Cooling Towers | Traditional Industrial Solutions",
+  description: "Expert wooden/timber cooling towers for industrial applications. Proven durability, cost-effective solutions, and maintenance support. Get a consultation today!",
+  keywords: [
+    "Wooden Cooling Towers",
+    "Timber Cooling Towers",
+    "Industrial Cooling",
+    "Cooling Towers",
+    "Crossflow Towers",
+    "Induced Draft Towers",
+    "Fan-less Towers",
+    "Wooden cooling towers for industrial use",
+    "Timber cooling towers with gearbox drive",
+    "Induced draft wooden cooling towers",
+    "Double flow wooden crossflow cooling towers",
+    "Maintenance and repair for wooden cooling towers",
+    "Legacy industrial wooden cooling tower solutions",
+    "Cost-effective traditional cooling tower systems",
+    "Fan-less wooden/timber cooling towers",
+    "Custom engineered wooden cooling towers",
+    "Refurbishment and upgrade of timber cooling towers",
+    "Industrial cooling towers",
+    "Crossflow cooling towers",
+    "Induced draft cooling systems",
+    "Timber cooling towers manufacturer",
+    "Wooden cooling tower services",
+    "Legacy cooling tower maintenance",
+    "Traditional industrial cooling solutions",
+    "Energy-efficient wooden cooling towers",
+    "Industrial timber cooling systems",
+    "Wooden tower repair and upgrades",
+    "Pinewood cooling tower construction",
+    "Wooden cooling tower installation",
+    "Timber cooling tower structural reinforcement",
+    "Industrial cooling tower optimization",
+    "Retrofit wooden cooling towers",
+    "Medium to large capacity wooden towers",
+    "Environmental compliance cooling towers",
+    "Industrial facility cooling solutions",
+    "Sustainable wooden cooling towers",
+    "Expert consultation for timber cooling towers"
+  ],
+  alternates: {
+    canonical: '/cooling-towers/wooden-timber-cooling-towers',
+  },
+  openGraph: {
+    title: "Wooden/Timber Cooling Towers | Traditional Industrial Solutions",
+    description: "Expert wooden/timber cooling towers for industrial applications. Proven durability, cost-effective solutions, and maintenance support. Get a consultation today!",
+    type: "website",
+  },
+};
 
 export default function WoodenTimberCoolingTowersPage() {
   return (

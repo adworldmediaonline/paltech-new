@@ -8,6 +8,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Cooling Tower Annual Maintenance & Services | Paltech™ Experts",
   description: "Paltech™ annual maintenance contracts and comprehensive services ensure optimized performance and longevity of cooling towers. Trusted by 9000+ clients worldwide.",
+  alternates: {
+    canonical: '/other-services',
+  },
   keywords: [
     "Cooling Tower Annual Maintenance",
     "Cooling Tower Repair Service",

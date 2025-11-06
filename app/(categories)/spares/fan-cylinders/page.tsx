@@ -14,6 +14,9 @@ const images = [fanCylinders1, fanCylinders2, fanCylinders3];
 export const metadata: Metadata = {
   title: "Cooling Tower Fan Cylinders | Premium FRP Cylinders by Paltech™",
   description: "Discover high-performance FRP cooling tower fan cylinders by Paltech™. Made to CTI STD-131(86) standards, up to 11 meters diameter, fire-retardant options.",
+  alternates: {
+    canonical: '/spares/fan-cylinders',
+  },
   keywords: [
     "Cooling Tower Fan Cylinder",
     "FRP Fan Cylinder",

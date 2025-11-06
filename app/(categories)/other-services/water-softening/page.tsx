@@ -15,6 +15,9 @@ const images = [waterSoftening1, waterSoftening2, waterSoftening3, waterSoftenin
 export const metadata: Metadata = {
   title: "Industrial Water Softening Systems for Cooling Towers | Paltech™",
   description: "Paltech™ water softening systems prevent scale and corrosion in cooling towers with high-capacity resin technology and automated regeneration.",
+  alternates: {
+    canonical: '/other-services/water-softening',
+  },
   keywords: [
     "Cooling Tower Water Softening",
     "Industrial Water Softener",
