@@ -12,6 +12,9 @@ const images = [carbonFiberDriveShafts1];
 export const metadata: Metadata = {
   title: "Carbon Fiber Drive Shafts | Paltech™ Advanced Cooling Tower Components",
   description: "Paltech™ Carbon Fiber Drive Shafts – lightweight, high-torque, corrosion-resistant, and maintenance-free solutions for modern industrial cooling towers.",
+  alternates: {
+    canonical: '/spares/drive-shafts/carbon-fiber',
+  },
   keywords: [
     "Carbon Fiber Drive Shaft",
     "Composite Drive Shaft",

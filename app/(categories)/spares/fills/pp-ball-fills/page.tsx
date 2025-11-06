@@ -11,6 +11,9 @@ const images = [ppBallFills1];
 export const metadata: Metadata = {
   title: "PP Ball Fills for Cooling Towers | Durable Polypropylene Fills by Paltech™",
   description: "Paltech™ offers high-efficiency polypropylene (PP) ball fills designed for optimal cooling tower heat transfer and chemical resistance in industrial applications.",
+  alternates: {
+    canonical: '/spares/fills/pp-ball-fills',
+  },
   keywords: [
     "PP Ball Fill",
     "Polypropylene Ball Fill Cooling Tower",

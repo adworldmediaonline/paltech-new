@@ -15,6 +15,9 @@ const images = [reverseOsmosis1, reverseOsmosis2, reverseOsmosis3, reverseOsmosi
 export const metadata: Metadata = {
   title: "Industrial Reverse Osmosis Systems | Paltech™ Cooling Tower Water Treatment",
   description: "Paltech™ provides scalable and energy-efficient RO plants for industrial water purification. Designed for cooling towers, mineral water, and process water treatment.",
+  alternates: {
+    canonical: '/other-services/reverse-osmosis-ro',
+  },
   keywords: [
     "Reverse Osmosis System",
     "Industrial RO Plant",

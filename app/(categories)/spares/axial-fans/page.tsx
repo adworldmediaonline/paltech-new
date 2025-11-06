@@ -12,6 +12,9 @@ const images = [axialFans1];
 export const metadata: Metadata = {
   title: "FRP Cooling Tower Fans | High-Efficiency Industrial Fans by Paltech™",
   description: "Boost cooling tower performance with Paltech™ FRP Fans. Achieve up to 40% energy savings, whisper-quiet operation, and long-term durability in any industry.",
+  alternates: {
+    canonical: '/spares/axial-fans',
+  },
   keywords: [
     "FRP Cooling Tower Fan",
     "High Efficiency Cooling Tower Fan",

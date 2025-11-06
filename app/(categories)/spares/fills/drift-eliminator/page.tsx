@@ -12,6 +12,9 @@ const images = [driftEliminators1];
 export const metadata: Metadata = {
   title: "Drift Eliminators for Cooling Towers | Efficient Water Conservation by Paltech™",
   description: "Paltech™ XCEL Drift Eliminators minimize water drift loss to 0.005% or 0.0005% with advanced 6-pass models. Fire-retardant PVC, low pressure drop, energy-saving design.",
+  alternates: {
+    canonical: '/spares/fills/drift-eliminator',
+  },
   keywords: [
     "Drift Eliminator",
     "Cooling Tower Drift Eliminator",

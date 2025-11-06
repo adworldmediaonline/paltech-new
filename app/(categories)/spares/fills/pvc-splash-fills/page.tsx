@@ -13,6 +13,9 @@ const images = [pvcSplashFills1];
 export const metadata: Metadata = {
   title: "PVC Splash Fills for Cooling Towers | Durable Fill Media by Paltech™",
   description: "Paltech™ PVC splash fills enhance cooling tower efficiency by increasing water-air contact. Corrosion resistant, reliable, and ideal for contaminated water conditions.",
+  alternates: {
+    canonical: '/spares/fills/pvc-splash-fills',
+  },
   keywords: [
     "PVC Splash Fill",
     "Cooling Tower Splash Fill",

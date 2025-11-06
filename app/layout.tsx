@@ -10,34 +10,52 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Paltech™ | Industrial Cooling Solutions | Cooling Towers & Heat Exchangers",
-  description:
-    "Precision-engineered cooling solutions for critical industries. 37+ years of excellence in industrial cooling towers, heat exchangers, and HVAC systems serving 25+ countries worldwide.",
+  title: "Paltech™ Industrial Cooling Towers & Heat Exchangers",
+  description: "Trusted industrial cooling solutions with 37+ years expertise. High-quality cooling towers, heat exchangers & energy-efficient systems worldwide.",
   keywords: [
-    "industrial cooling towers",
-    "heat exchangers",
-    "HVAC systems",
-    "cooling solutions",
-    "industrial cooling",
-    "precision engineering",
-    "energy efficient cooling",
-    "cooling tower manufacturer",
-    "India cooling solutions",
+    "Cooling Towers",
+    "Heat Exchangers",
+    "Industrial Cooling",
+    "HVAC Systems",
+    "Chilling Plants",
+    "Industrial cooling towers for factories",
+    "Energy-efficient cooling solutions",
+    "Air-cooled and water-cooled chilling plants",
+    "Custom-designed heat exchanger systems",
+    "ISO-certified cooling tower manufacturer in India",
+    "Industrial HVAC integration and optimization",
+    "Cooling towers manufacturer",
+    "Industrial cooling solutions",
+    "FRP cooling towers",
+    "RCC cooling towers",
+    "Pultruded FRP cooling towers",
+    "Packaged cooling towers",
+    "Industrial heat exchangers",
+    "Energy-efficient HVAC systems",
+    "Cooling tower maintenance services",
+    "Industrial cooling system optimization",
+    "Low power consumption cooling towers",
+    "Low noise industrial cooling solutions",
+    "ISO 9001:2015 cooling tower company",
+    "CTI USA member cooling towers",
+    "Precision-engineered cooling equipment",
+    "Industrial temperature control solutions"
   ],
-  authors: [{ name: "Paltech™ Industrial Solutions" }],
+  metadataBase: new URL('https://www.paltech.in'),
+  alternates: {
+    canonical: '/',
+  },
   openGraph: {
-    title: "Paltech™ | Industrial Cooling Solutions",
-    description:
-      "Precision-engineered cooling solutions for critical industries. 37+ years of excellence serving 25+ countries worldwide.",
+    title: "Paltech™ Industrial Cooling Towers & Heat Exchangers",
+    description: "Trusted industrial cooling solutions with 37+ years expertise. High-quality cooling towers, heat exchangers & energy-efficient systems worldwide.",
     type: "website",
-    locale: "en_IN",
-    siteName: "Paltech",
+    url: 'https://www.paltech.in',
+    siteName: "Paltech™",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paltech™ | Industrial Cooling Solutions",
-    description:
-      "Precision-engineered cooling solutions for critical industries. 37+ years of excellence serving 25+ countries worldwide.",
+    title: "Paltech™ Industrial Cooling Towers & Heat Exchangers",
+    description: "Trusted industrial cooling solutions with 37+ years expertise. High-quality cooling towers, heat exchangers & energy-efficient systems worldwide.",
   },
   robots: {
     index: true,
@@ -49,10 +67,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  verification: {
-    // Add Google Search Console verification here when available
-    // google: 'your-verification-code',
   },
 };
 

@@ -12,6 +12,9 @@ const images = [pvcFilmFills1];
 export const metadata: Metadata = {
   title: "Cooling Tower Fill Solutions | Film & Splash Fill by Paltech™",
   description: "Paltech™ offers efficient corrosion-resistant cooling tower fill packs. Film-type, splash-type, and fill-less designs for maximum cooling and durability.",
+  alternates: {
+    canonical: '/spares/fills/pvc-film',
+  },
   keywords: [
     "Cooling Tower Fill",
     "Film Fill Cooling Tower",

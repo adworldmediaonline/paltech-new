@@ -15,6 +15,9 @@ const images = [filtration1, filtration2, filtration3, filtration4];
 export const metadata: Metadata = {
   title: "Industrial Cooling Tower Filtration Systems | Paltech™ Water Treatment",
   description: "Paltech™ offers comprehensive filtration solutions for cooling towers, including sand, activated carbon, multimedia, and cartridge filters to enhance water quality and system efficiency.",
+  alternates: {
+    canonical: '/other-services/filtration',
+  },
   keywords: [
     "Cooling Tower Filtration",
     "Industrial Water Filtration",

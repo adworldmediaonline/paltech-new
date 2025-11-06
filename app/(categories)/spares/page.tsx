@@ -8,6 +8,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Cooling Tower Spares & FRP Fans | Paltech™ Industrial Cooling Components",
   description: "Buy premium Cooling Tower Spares & FRP Fans from Paltech™ – India's trusted cooling equipment manufacturer with 37+ years of industry expertise.",
+  alternates: {
+    canonical: '/spares',
+  },
   keywords: [
     "Cooling Tower Spares",
     "FRP Cooling Tower Fans",

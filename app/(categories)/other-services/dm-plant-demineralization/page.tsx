@@ -15,6 +15,9 @@ const images = [dmPlant1, dmPlant2, dmPlant3, dmPlant4];
 export const metadata: Metadata = {
   title: "Industrial Demineralization Plants | Paltech™ Water Treatment Solutions",
   description: "Paltech™ offers advanced demineralization plants producing ultra-pure water for cooling towers. Enhance efficiency, reduce scaling and corrosion with our modular systems.",
+  alternates: {
+    canonical: '/other-services/dm-plant-demineralization',
+  },
   keywords: [
     "Demineralization Plant",
     "Cooling Tower Water Treatment",
