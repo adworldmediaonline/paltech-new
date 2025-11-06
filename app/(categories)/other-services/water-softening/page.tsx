@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   keywords: [
     "Cooling Tower Water Softening",
     "Industrial Water Softener",
-    "Paltech Water Softening System",
+    "Paltech™ Water Softening System",
     "Scale Prevention Cooling System",
     "Ion Exchange Water Softener",
     "Automated Water Softening Plant",

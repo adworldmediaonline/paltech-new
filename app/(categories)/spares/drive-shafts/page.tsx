@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     "Industrial Cooling Tower Components",
     "Energy Efficient Cooling Tower Parts",
     "Non-Lubricated Drive Shaft",
-    "Paltech Cooling Tower Spares"
+    "Paltech™ Cooling Tower Spares"
   ],
   openGraph: {
     title: "Drive Shafts for Cooling Towers | Paltech™ Industrial Power Components",

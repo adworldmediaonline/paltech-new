@@ -280,7 +280,7 @@ export function FanGuardsContent() {
               answer: "Fan screens and guards prevent debris, wildlife, and accidental contact with fan blades, extending the lifespan and safety of cooling towers and HVAC systems."
             },
             {
-              question: "Can Paltech™ screens fit non-Paltech cooling towers?",
+              question: "Can Paltech™ screens fit non-Paltech™ cooling towers?",
               answer: "Yes. Our products are custom fabricated for all major brands and models, ensuring universal compatibility and exact fit—regardless of year or manufacturer."
             },
             {

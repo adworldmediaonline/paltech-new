@@ -6,12 +6,12 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Export Countries | Paltech™ Global Cooling Tower Solutions",
-  description: "Paltech exports cooling towers to 40+ countries across Middle East, Asia Pacific, Africa, Europe, and Americas. Trusted worldwide for industrial cooling solutions.",
+  description: "Paltech™ exports cooling towers to 40+ countries across Middle East, Asia Pacific, Africa, Europe, and Americas. Trusted worldwide for industrial cooling solutions.",
   keywords: [
     "Export Countries",
     "Global Cooling Towers",
     "International Exports",
-    "Paltech Global Presence",
+    "Paltech™ Global Presence",
     "Middle East Cooling Towers",
     "Asia Pacific Cooling",
     "Africa Cooling Solutions",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Export Countries | Paltech™ Global Cooling Tower Solutions",
-    description: "Paltech exports cooling towers to 40+ countries across Middle East, Asia Pacific, Africa, Europe, and Americas. Trusted worldwide for industrial cooling solutions.",
+    description: "Paltech™ exports cooling towers to 40+ countries across Middle East, Asia Pacific, Africa, Europe, and Americas. Trusted worldwide for industrial cooling solutions.",
     type: "website",
   },
 };

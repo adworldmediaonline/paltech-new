@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Cooling Tower Fan Screen",
     "Cooling Tower Fan Guard",
     "Custom Fan Screen",
-    "Paltech Metal Fan Guard",
+    "Paltech™ Metal Fan Guard",
     "Stainless Steel Fan Guard",
     "Galvanized Fan Screen",
     "HVAC Fan Guard",

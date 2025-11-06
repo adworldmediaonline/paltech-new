@@ -203,7 +203,7 @@ export function ExportCountriesContent() {
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">All Export Destinations</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Complete list of 42 countries where Paltech delivers world-class cooling tower solutions
+            Complete list of 42 countries where Paltech™ delivers world-class cooling tower solutions
           </p>
         </div>
 

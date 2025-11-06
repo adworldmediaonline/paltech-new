@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   keywords: [
     "Cooling Tower Projects",
     "Executed Projects",
-    "Paltech Installations",
+    "Paltech™ Installations",
     "Industrial Cooling Towers",
     "FRP Cooling Towers",
     "RCC Cooling Towers",

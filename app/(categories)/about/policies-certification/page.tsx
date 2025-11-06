@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Policies & Certification | Paltech™ ISO Certified Company",
-  description: "Paltech is ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018 certified, demonstrating our commitment to quality, environmental management, and workplace safety.",
+  description: "Paltech™ is ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018 certified, demonstrating our commitment to quality, environmental management, and workplace safety.",
   keywords: [
     "ISO 9001:2015",
     "ISO 14001:2015",
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "Environmental Management",
     "Occupational Health and Safety",
     "ISO Certification",
-    "Paltech Certifications",
+    "Paltech™ Certifications",
     "Quality Policy",
     "Environmental Policy",
     "Safety Policy",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Policies & Certification | Paltech™ ISO Certified Company",
-    description: "Paltech is ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018 certified, demonstrating our commitment to quality, environmental management, and workplace safety.",
+    description: "Paltech™ is ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018 certified, demonstrating our commitment to quality, environmental management, and workplace safety.",
     type: "website",
   },
 };

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: [
     "Cooling Tower Splash Bars",
     "Splash Bar Fill",
-    "Paltech Cooling Tower Fill",
+    "Paltech™ Cooling Tower Fill",
     "PVC Splash Bar",
     "Corrosion Resistant Splash Bars",
     "Industrial Cooling Tower Fill Media",

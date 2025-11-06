@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: [
     "FRP Cooling Tower Fan",
     "High Efficiency Cooling Tower Fan",
-    "Paltech FRP Fan",
+    "Paltech™ FRP Fan",
     "Industrial Cooling Tower Fan",
     "Energy Saving Cooling Tower Fan",
     "Axial Flow FRP Fan",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   keywords: [
     "Cooling Tower Annual Maintenance",
     "Cooling Tower Repair Service",
-    "Paltech Cooling Maintenance",
+    "Paltech™ Cooling Maintenance",
     "Cooling Tower AMC",
     "Cooling Tower Inspection and Cleaning",
     "Cooling Tower Renovation",

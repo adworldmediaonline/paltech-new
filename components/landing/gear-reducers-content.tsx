@@ -221,7 +221,7 @@ export function GearReducersContent() {
         </ul>
       </div>
 
-      {/* Why Choose Paltech */}
+      {/* Why Choose Paltech™ */}
       <div className="space-y-6">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center">Why Choose Paltech™ Gear Reducers?</h2>
         <div className="grid sm:grid-cols-2 gap-4">

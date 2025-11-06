@@ -6,9 +6,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Our Clients | Paltech™ Trusted by 11,000+ Organizations",
-  description: "Paltech has successfully served 11,000+ clients across 25+ countries in power, steel, sugar, chemical, and other industries with world-class cooling tower solutions.",
+  description: "Paltech™ has successfully served 11,000+ clients across 25+ countries in power, steel, sugar, chemical, and other industries with world-class cooling tower solutions.",
   keywords: [
-    "Paltech Clients",
+    "Paltech™ Clients",
     "Client Portfolio",
     "Cooling Tower Clients",
     "Industrial Clients",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Our Clients | Paltech™ Trusted by 11,000+ Organizations",
-    description: "Paltech has successfully served 11,000+ clients across 25+ countries in power, steel, sugar, chemical, and other industries with world-class cooling tower solutions.",
+    description: "Paltech™ has successfully served 11,000+ clients across 25+ countries in power, steel, sugar, chemical, and other industries with world-class cooling tower solutions.",
     type: "website",
   },
 };

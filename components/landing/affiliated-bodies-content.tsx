@@ -37,7 +37,7 @@ export function AffiliatedBodiesContent() {
           Affiliated Bodies
         </h1>
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-          Paltech maintains active memberships and affiliations with leading industry bodies, ensuring we stay at the forefront of technological advancements, quality standards, and best practices in cooling tower engineering.
+          Paltech™ maintains active memberships and affiliations with leading industry bodies, ensuring we stay at the forefront of technological advancements, quality standards, and best practices in cooling tower engineering.
         </p>
       </div>
 
@@ -85,7 +85,7 @@ export function AffiliatedBodiesContent() {
       {/* Title Section */}
       <div className="space-y-2">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">
-          Paltech has project affiliation for
+          Paltech™ has project affiliation for
         </h2>
       </div>
 
@@ -193,7 +193,7 @@ export function AffiliatedBodiesContent() {
           Industry-Leading Standards, Guaranteed
         </h2>
         <p className="text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-          Our affiliations with premier industry bodies ensure that every Paltech cooling tower meets or exceeds global standards for quality, safety, and performance.
+          Our affiliations with premier industry bodies ensure that every Paltech™ cooling tower meets or exceeds global standards for quality, safety, and performance.
         </p>
         <button className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors shadow-lg">
           Learn More About Our Standards

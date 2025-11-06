@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Affiliated Bodies | Paltech™ Industry Memberships",
-  description: "Paltech is affiliated with leading industry bodies including Cooling Technology Institute (CTI) USA, CII, FICCI, and NCR Chamber of Commerce, ensuring global standards.",
+  description: "Paltech™ is affiliated with leading industry bodies including Cooling Technology Institute (CTI) USA, CII, FICCI, and NCR Chamber of Commerce, ensuring global standards.",
   keywords: [
     "Affiliated Bodies",
     "Industry Memberships",
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Affiliated Bodies | Paltech™ Industry Memberships",
-    description: "Paltech is affiliated with leading industry bodies including Cooling Technology Institute (CTI) USA, CII, FICCI, and NCR Chamber of Commerce, ensuring global standards.",
+    description: "Paltech™ is affiliated with leading industry bodies including Cooling Technology Institute (CTI) USA, CII, FICCI, and NCR Chamber of Commerce, ensuring global standards.",
     type: "website",
   },
 };

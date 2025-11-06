@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   keywords: [
     "Cooling Tower Filtration",
     "Industrial Water Filtration",
-    "Paltech Filtration Systems",
+    "Paltech™ Filtration Systems",
     "Cooling Water Treatment",
     "Sand Filter Cooling Tower",
     "Activated Carbon Filtration",

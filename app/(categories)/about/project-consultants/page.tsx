@@ -6,11 +6,11 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Project Consultants | Paltech™ Engineering Partnerships",
-  description: "Paltech collaborates with leading national and international engineering consultants including Engineers India, Tata Projects, Jacobs Engineering, and more for world-class cooling tower projects.",
+  description: "Paltech™ collaborates with leading national and international engineering consultants including Engineers India, Tata Projects, Jacobs Engineering, and more for world-class cooling tower projects.",
   keywords: [
     "Project Consultants",
     "Engineering Consultants",
-    "Paltech Partners",
+    "Paltech™ Partners",
     "Cooling Tower Consultants",
     "Engineers India Limited",
     "Tata Projects",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Project Consultants | Paltech™ Engineering Partnerships",
-    description: "Paltech collaborates with leading national and international engineering consultants including Engineers India, Tata Projects, Jacobs Engineering, and more for world-class cooling tower projects.",
+    description: "Paltech™ collaborates with leading national and international engineering consultants including Engineers India, Tata Projects, Jacobs Engineering, and more for world-class cooling tower projects.",
     type: "website",
   },
 };

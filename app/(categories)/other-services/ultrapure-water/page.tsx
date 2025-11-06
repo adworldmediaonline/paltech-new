@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "Ultrapure Water System",
     "Semiconductor Ultrapure Water",
     "Pharmaceutical Water Purification",
-    "Paltech Water Treatment",
+    "Paltech™ Water Treatment",
     "Mixed Bed Demineralization",
     "Electrodeionization Plant",
     "High Purity Water System",

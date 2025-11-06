@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "Corrosion Resistant Fan",
     "Commercial Cooling Tower Fan",
     "Alloy Fan Blade",
-    "Paltech Aluminum Fan",
+    "Paltech™ Aluminum Fan",
     "Heavy Duty Cooling Tower Fan",
     "Extruded Alloy Hub Fan",
     "Zinc Plated Fan Hardware",

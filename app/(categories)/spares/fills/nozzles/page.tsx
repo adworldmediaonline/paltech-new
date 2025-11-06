@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: [
     "Cooling Tower Spray Nozzle",
     "Spiral Spray Nozzle",
-    "Paltech Spray Nozzle",
+    "Paltech™ Spray Nozzle",
     "Uniform Water Distribution Nozzle",
     "Low Pressure Nozzle",
     "Non-Clogging Spray Nozzle",

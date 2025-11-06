@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     "Cooling Tower Fan Cylinder",
     "FRP Fan Cylinder",
     "Industrial Cooling Tower Fan Cylinder",
-    "Paltech Fan Cylinder",
+    "Paltech™ Fan Cylinder",
     "Fiberglass Reinforced Plastic Fan Cylinder",
     "CTI Standard Fan Cylinder",
     "Large Diameter Fan Cylinder",

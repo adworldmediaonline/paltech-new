@@ -6,9 +6,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Awards & Recognition | Paltech™ Cooling Towers and Equipments Ltd.",
-  description: "Paltech has been honored with two National Awards for Quality and Excellence & Performance by the Hon'ble Prime Minister and Vice President of India.",
+  description: "Paltech™ has been honored with two National Awards for Quality and Excellence & Performance by the Hon'ble Prime Minister and Vice President of India.",
   keywords: [
-    "Paltech Awards",
+    "Paltech™ Awards",
     "National Awards",
     "Quality Excellence",
     "Performance Recognition",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Awards & Recognition | Paltech™ Cooling Towers and Equipments Ltd.",
-    description: "Paltech has been honored with two National Awards for Quality and Excellence & Performance by the Hon'ble Prime Minister and Vice President of India.",
+    description: "Paltech™ has been honored with two National Awards for Quality and Excellence & Performance by the Hon'ble Prime Minister and Vice President of India.",
     type: "website",
   },
 };

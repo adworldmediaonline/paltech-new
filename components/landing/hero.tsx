@@ -15,7 +15,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <Image
           src={heroBackground}
-          alt="Paltech Cooling Towers Background"
+          alt="Paltech™ Cooling Towers Background"
           fill
           preload={true}
           quality={85}
