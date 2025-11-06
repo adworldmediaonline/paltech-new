@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     "Industrial Cooling Tower Components",
     "Long Span Metallic Shaft",
     "Vibration Free Power Transmission",
-    "Paltech Cooling Tower Accessories",
+    "Paltech™ Cooling Tower Accessories",
     "Stainless Steel Cooling Tower Shaft"
   ],
   openGraph: {

@@ -197,7 +197,7 @@ export function OurClientsContent() {
       <div className="space-y-6">
         <div className="text-center space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Our Esteemed Clients</h2>
-          <p className="text-gray-600">A comprehensive list of organizations that trust Paltech for their cooling solutions</p>
+          <p className="text-gray-600">A comprehensive list of organizations that trust Paltech™ for their cooling solutions</p>
         </div>
 
         {/* Desktop Table */}

@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Paltech | Industrial Cooling Solutions | Cooling Towers & Heat Exchangers",
+  title: "Paltech™ | Industrial Cooling Solutions | Cooling Towers & Heat Exchangers",
   description:
     "Precision-engineered cooling solutions for critical industries. 37+ years of excellence in industrial cooling towers, heat exchangers, and HVAC systems serving 25+ countries worldwide.",
   keywords: [
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     "cooling tower manufacturer",
     "India cooling solutions",
   ],
-  authors: [{ name: "Paltech Industrial Solutions" }],
+  authors: [{ name: "Paltech™ Industrial Solutions" }],
   openGraph: {
-    title: "Paltech | Industrial Cooling Solutions",
+    title: "Paltech™ | Industrial Cooling Solutions",
     description:
       "Precision-engineered cooling solutions for critical industries. 37+ years of excellence serving 25+ countries worldwide.",
     type: "website",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Paltech | Industrial Cooling Solutions",
+    title: "Paltech™ | Industrial Cooling Solutions",
     description:
       "Precision-engineered cooling solutions for critical industries. 37+ years of excellence serving 25+ countries worldwide.",
   },

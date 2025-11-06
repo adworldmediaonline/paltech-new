@@ -1,4 +1,4 @@
-# Paltech Industrial Solutions - Landing Page
+# Paltech™ Industrial Solutions - Landing Page
 
 A world-class, conversion-optimized B2B landing page for industrial cooling solutions. Built with Next.js 16, React 19, Tailwind CSS v4, and shadcn/ui components.
 
@@ -298,7 +298,7 @@ For enhanced search results, add JSON-LD in `app/layout.tsx`:
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Paltech Industrial Solutions",
+      "name": "Paltech™ Industrial Solutions",
       // ... more properties
     })
   }}
@@ -387,7 +387,7 @@ paltech/
 
 ## 📄 License
 
-All rights reserved - Paltech Industrial Solutions
+All rights reserved - Paltech™ Industrial Solutions
 
 ## 🙋 Support
 

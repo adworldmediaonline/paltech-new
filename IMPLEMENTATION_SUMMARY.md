@@ -1,8 +1,8 @@
-# Paltech Landing Page - Implementation Summary
+# Paltech™ Landing Page - Implementation Summary
 
 ## ✅ What Has Been Built
 
-A complete, production-ready B2B landing page for Paltech Industrial Solutions with 13 distinct sections, following world-class design patterns and best practices.
+A complete, production-ready B2B landing page for Paltech™ Industrial Solutions with 13 distinct sections, following world-class design patterns and best practices.
 
 ## 🎯 Key Features Delivered
 

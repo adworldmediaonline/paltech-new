@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     "PP Ball Fill",
     "Polypropylene Ball Fill Cooling Tower",
     "Cooling Tower Fill Media",
-    "Paltech Ball Fills",
+    "Paltech™ Ball Fills",
     "Chemical Resistant Cooling Tower Fill",
     "Industrial Cooling Tower Media",
     "Low Fouling Fill Pack",

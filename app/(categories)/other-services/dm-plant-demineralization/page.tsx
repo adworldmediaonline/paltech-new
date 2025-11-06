@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     "Demineralization Plant",
     "Cooling Tower Water Treatment",
     "Industrial Water Demineralization",
-    "Paltech Demineralized Water",
+    "Paltech™ Demineralized Water",
     "Ion Exchange Water Treatment",
     "High Purity Water Systems",
     "Scale Prevention Water Treatment",

@@ -668,7 +668,7 @@ export const clientLogosData: ClientLogosData = {
     { name: "Client 38", imageUrl: "/clients/images (38).jpeg" },
     { name: "Client 39", imageUrl: "/clients/images (39).jpeg" },
     { name: "Client 40", imageUrl: "/clients/images (40).jpeg" },
-    { name: "Paltech Client", imageUrl: "/clients/images.png" },
+    { name: "Paltech™ Client", imageUrl: "/clients/images.png" },
   ],
 };
 

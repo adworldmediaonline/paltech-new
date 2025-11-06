@@ -27,7 +27,7 @@ export function ProjectConsultantsContent() {
           Project Consultants
         </h1>
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-          Paltech has collaborated with leading national and international engineering consultants, demonstrating our capability to deliver world-class cooling tower solutions for complex industrial projects.
+          Paltech™ has collaborated with leading national and international engineering consultants, demonstrating our capability to deliver world-class cooling tower solutions for complex industrial projects.
         </p>
       </div>
 
@@ -75,7 +75,7 @@ export function ProjectConsultantsContent() {
       {/* Title Section */}
       <div className="text-center space-y-2">
         <h2 className="text-2xl sm:text-3xl font-bold text-red-700">
-          Project consultants (with whom Paltech has worked / working with)
+          Project consultants (with whom Paltech™ has worked / working with)
         </h2>
       </div>
 
@@ -180,7 +180,7 @@ export function ProjectConsultantsContent() {
           Partner With Paltech™ for Your Next Project
         </h2>
         <p className="text-lg text-white/90 leading-relaxed max-w-3xl mx-auto mb-8">
-          Join the prestigious list of engineering consultants who trust Paltech for delivering exceptional cooling tower solutions. Let's collaborate to achieve excellence together.
+          Join the prestigious list of engineering consultants who trust Paltech™ for delivering exceptional cooling tower solutions. Let's collaborate to achieve excellence together.
         </p>
         <button className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:bg-white/90 transition-colors shadow-lg">
           Discuss Your Project Requirements

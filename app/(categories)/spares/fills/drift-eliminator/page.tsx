@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: [
     "Drift Eliminator",
     "Cooling Tower Drift Eliminator",
-    "Paltech Drift Eliminator",
+    "Paltech™ Drift Eliminator",
     "Low Drift Cooling Tower Fill",
     "Water Loss Reduction Fill",
     "Fire-Retardant Drift Eliminator",

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: [
     "Flow Control Valve",
     "Cooling Tower Flow Valve",
-    "Paltech Flow Control Valve",
+    "Paltech™ Flow Control Valve",
     "Low Head Loss Valve",
     "Cast Iron Valve",
     "Stainless Steel Valve Stem",

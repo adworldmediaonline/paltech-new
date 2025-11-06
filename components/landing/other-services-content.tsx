@@ -93,7 +93,7 @@ export function OtherServicesContent() {
         </div>
       </div>
 
-      {/* Why Choose Paltech */}
+      {/* Why Choose Paltech™ */}
       <div className="space-y-6">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center">Why Choose Paltech™ for Cooling Tower Service?</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -227,15 +227,15 @@ export function OtherServicesContent() {
         <div className="space-y-4">
           {[
             {
-              question: "What is included in Paltech annual maintenance contracts?",
+              question: "What is included in Paltech™ annual maintenance contracts?",
               answer: "Our AMCs cover regular inspections, cleaning, preventive maintenance, consumable replacement, and emergency repair services ensuring consistent tower performance and minimal downtime."
             },
             {
-              question: "Can Paltech assist with cooling tower revamps?",
+              question: "Can Paltech™ assist with cooling tower revamps?",
               answer: "Yes. We specialize in upgrading existing cooling towers by redesigning components and structure, enhancing operational life and efficiency."
             },
             {
-              question: "Does Paltech provide water treatment services for cooling towers?",
+              question: "Does Paltech™ provide water treatment services for cooling towers?",
               answer: "Absolutely. We offer complete water treatment packages including side stream filtration, chemical dosing, softening, and reverse osmosis systems tailored for your plant's needs."
             }
           ].map((faq, index) => (

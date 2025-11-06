@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   keywords: [
     "Trickle Grid Fill",
     "Cooling Tower Trickle Fill",
-    "Paltech Trickle Grid",
+    "Paltech™ Trickle Grid",
     "High Efficiency Cooling Tower Fill",
     "Uniform Water Distribution Fill",
     "Corrosion Resistant Cooling Fill",

@@ -1,8 +1,8 @@
-# Paltech Landing Page - Developer Guide
+# Paltech™ Landing Page - Developer Guide
 
 ## Overview
 
-This guide documents the architecture, design system, and best practices for the Paltech industrial cooling solutions landing page. The page is built with Next.js 16, React 19, Tailwind CSS v4, and shadcn/ui components.
+This guide documents the architecture, design system, and best practices for the Paltech™ industrial cooling solutions landing page. The page is built with Next.js 16, React 19, Tailwind CSS v4, and shadcn/ui components.
 
 ## Architecture
 
@@ -278,7 +278,7 @@ To add JSON-LD structured data:
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Paltech Industrial Solutions",
+      "name": "Paltech™ Industrial Solutions",
       // ... more schema.org properties
     })
   }}

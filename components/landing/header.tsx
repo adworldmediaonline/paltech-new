@@ -48,7 +48,7 @@ export function Header() {
             <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 shrink-0 group-hover:scale-105 transition-transform">
               <Image
                 src="/logo/logo.png"
-                alt="PALTECH Logo"
+                alt="Paltech™ Logo"
                 fill
                 className="object-contain"
                 priority
@@ -61,7 +61,7 @@ export function Header() {
                   ? "text-gray-900"
                   : "text-white"
               }`}>
-                Paltech Cooling Towers &<br className="hidden sm:inline" /> Equipments Ltd.
+                Paltech™ Cooling Towers &<br className="hidden sm:inline" /> Equipments Ltd.
               </h1>
               <p className={`text-[9px] sm:text-[10px] md:text-xs font-normal leading-tight mt-0.5 sm:mt-1 transition-colors ${
                 scrolled || isCategoryPage

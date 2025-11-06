@@ -12,7 +12,7 @@ export function AwardsRecognitionContent() {
           Awards & Recognition
         </h1>
         <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-          It was a momentous occasion for <strong>"Paltech Cooling Towers & Equipments Limited"</strong> when two National Awards were conferred to the Company in a row for Excellence and Quality.
+          It was a momentous occasion for <strong>"Paltech™ Cooling Towers & Equipments Limited"</strong> when two National Awards were conferred to the Company in a row for Excellence and Quality.
         </p>
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
           Since 1986, the company started proving itself in the field of Cooling Towers (FRP/Wooden/Rcc), Water Treatment Systems and Chilling Plants in it's bouquet for various applications.
@@ -169,7 +169,7 @@ export function AwardsRecognitionContent() {
             <div>
               <h3 className="text-xl font-bold mb-2">Foundation Year</h3>
               <p className="text-white/90 leading-relaxed">
-                Paltech Cooling Towers & Equipments Limited was established, marking the beginning of our journey in delivering exceptional cooling solutions.
+                Paltech™ Cooling Towers & Equipments Limited was established, marking the beginning of our journey in delivering exceptional cooling solutions.
               </p>
             </div>
           </div>

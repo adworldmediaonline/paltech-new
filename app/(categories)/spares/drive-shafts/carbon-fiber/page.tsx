@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "Composite Drive Shaft",
     "Cooling Tower Drive Shaft",
     "Industrial Drive Shaft Manufacturer",
-    "Paltech Carbon Fiber Shaft",
+    "Paltech™ Carbon Fiber Shaft",
     "Non-Lubricated Drive Shaft",
     "High Torque Drive Shaft",
     "Lightweight Cooling Tower Shaft",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "Long Span Drive Shaft",
     "Maintenance Free Cooling Tower Shaft",
     "Carbon Fiber Cooling Tower Component",
-    "Paltech Cooling Equipment"
+    "Paltech™ Cooling Equipment"
   ],
   openGraph: {
     title: "Carbon Fiber Drive Shafts | Paltech™ Advanced Cooling Tower Components",

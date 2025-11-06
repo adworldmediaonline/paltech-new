@@ -63,7 +63,7 @@ export function PoliciesCertificationContent() {
           <div className="relative aspect-[3/4] sm:aspect-[4/3] lg:aspect-[16/10]">
             <Image
               src={certificateImage}
-              alt="Paltech ISO Certificate of Compliance - ISO 9001:2015, ISO 14001:2015, ISO 45001:2018"
+              alt="Paltech™ ISO Certificate of Compliance - ISO 9001:2015, ISO 14001:2015, ISO 45001:2018"
               fill
               className="object-contain p-4"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"

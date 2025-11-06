@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "Cooling Tower Gearbox",
     "Industrial Gear Reducer Manufacturer",
     "Right Angle Gearbox",
-    "Paltech Gear Drive",
+    "Paltech™ Gear Drive",
     "Spiral Bevel Gearbox",
     "Double Reduction Gearbox",
     "CTI Standard Gear Reducer",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     "High Torque Gear Reducer",
     "Cooling Tower Fan Drive System",
     "Gearbox for Cooling Towers",
-    "Paltech Cooling Tower Spares"
+    "Paltech™ Cooling Tower Spares"
   ],
   openGraph: {
     title: "Gear Reducers for Cooling Towers | Paltech™ Industrial Gearboxes",

@@ -9,7 +9,7 @@ export function HeroBanner() {
       {/* Optimized Background Image for LCP */}
       <Image
         src={heroBanner}
-        alt="Paltech Cooling Towers - Industrial Cooling Solutions"
+        alt="Paltech™ Cooling Towers - Industrial Cooling Solutions"
         fill
         preload={true}
         quality={90}

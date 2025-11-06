@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     "PVC Splash Fill",
     "Cooling Tower Splash Fill",
     "Splash Fill Media",
-    "Paltech Splash Fill",
+    "Paltech™ Splash Fill",
     "Corrosion Resistant Splash Fill",
     "Industrial Cooling Tower Fill",
     "PVC Cooling Tower Media",

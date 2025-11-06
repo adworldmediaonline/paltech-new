@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   keywords: [
     "Reverse Osmosis System",
     "Industrial RO Plant",
-    "Paltech RO Plant",
+    "Paltech™ RO Plant",
     "Cooling Tower Water Treatment RO",
     "Membrane Water Filtration",
     "High-Purity Water Manufacturing",
