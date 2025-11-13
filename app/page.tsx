@@ -28,6 +28,10 @@ const ExportMap = dynamic(() => import("@/components/landing/export-map").then((
   loading: () => <div className="h-96 sm:h-[500px]" />,
 });
 
+const InstitutionalPartners = dynamic(() => import("@/components/landing/institutional-partners").then((mod) => ({ default: mod.InstitutionalPartners })), {
+  loading: () => <div className="h-96 sm:h-[500px]" />,
+});
+
 const ClientLogos = dynamic(() => import("@/components/landing/client-logos").then((mod) => ({ default: mod.ClientLogos })), {
   loading: () => <div className="h-64 sm:h-80" />,
 });
@@ -63,6 +67,7 @@ export default function Home() {
         <ServicesGrid />
         {/* <Stats /> */}
         <ExportMap />
+        <InstitutionalPartners />
         <ClientLogos />
         <ContactSection />
       </main>
