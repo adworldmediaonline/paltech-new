@@ -1,18 +1,68 @@
 "use client";
 
 import { memo, useState } from "react";
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { ComposableMap, Geographies, Geography, Marker } from "react-simple-maps";
 import { Globe, MapPin, Award, TrendingUp } from "lucide-react";
 
 const geoUrl = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json";
 
 const exportCountries = [
-  "Sudan", "United Arab Emirates", "Nepal", "Sri Lanka", "Bangladesh", "Thailand",
-  "Malaysia", "Bhutan", "Daman", "Yemen", "Morocco", "Nigeria", "Czech Republic",
-  "Azerbaijan", "Bahrain", "Burkina Faso", "Egypt", "Ethiopia", "Ghana", "Guinea",
-  "Indonesia", "Iran", "Iraq", "Ivory Coast", "Kenya", "Panama", "Myanmar", "Oman",
-  "Pakistan", "Philippines", "Saudi Arabia", "Senegal", "South Africa", "Syria",
-  "Tanzania", "Turkey", "Uganda", "Vietnam", "Zambia", "Zimbabwe", "Marshall Islands", "Ukraine"
+  "Mexico", "Guatemala", "Colombia", "Sudan", "United Arab Emirates", "Nepal",
+  "Sri Lanka", "Bangladesh", "Thailand", "Malaysia", "Bhutan", "Daman", "Yemen",
+  "Morocco", "Nigeria", "Czech Republic", "Azerbaijan", "Bahrain", "Burkina Faso",
+  "Egypt", "Ethiopia", "Ghana", "Guinea", "Indonesia", "Iran", "Iraq", "Ivory Coast",
+  "Kenya", "Panama", "Myanmar", "Oman", "Pakistan", "Philippines", "Saudi Arabia",
+  "Senegal", "South Africa", "Syria", "Tanzania", "Turkey", "Uganda", "Vietnam",
+  "Zambia", "Zimbabwe", "Marshall Islands", "Ukraine", "Madagascar"
+];
+
+// Country label coordinates (approximate center of each country)
+const countryLabels = [
+  { name: "Mexico", coordinates: [-102, 23] },
+  { name: "Guatemala", coordinates: [-90, 15] },
+  { name: "Colombia", coordinates: [-72, 4] },
+  { name: "Czech Republic", coordinates: [15, 50] },
+  { name: "Ukraine", coordinates: [32, 49] },
+  { name: "Turkey", coordinates: [35, 39] },
+  { name: "Syria", coordinates: [38, 35] },
+  { name: "Iraq", coordinates: [43, 33] },
+  { name: "Iran", coordinates: [53, 32] },
+  { name: "Kuwait", coordinates: [47.5, 29.5] },
+  { name: "Bahrain", coordinates: [50.5, 26] },
+  { name: "Saudi Arabia", coordinates: [45, 24] },
+  { name: "UAE", coordinates: [54, 24] },
+  { name: "Oman", coordinates: [56, 21] },
+  { name: "Yemen", coordinates: [48, 15] },
+  { name: "Egypt", coordinates: [30, 26] },
+  { name: "Sudan", coordinates: [30, 15] },
+  { name: "Morocco", coordinates: [-7, 32] },
+  { name: "Burkina Faso", coordinates: [-2, 13] },
+  { name: "Guinea", coordinates: [-10, 10] },
+  { name: "Ivory Coast", coordinates: [-5, 8] },
+  { name: "Ghana", coordinates: [-2, 8] },
+  { name: "Nigeria", coordinates: [8, 9] },
+  { name: "Ethiopia", coordinates: [40, 8] },
+  { name: "Kenya", coordinates: [38, 1] },
+  { name: "Uganda", coordinates: [32, 1] },
+  { name: "Tanzania", coordinates: [35, -6] },
+  { name: "Zambia", coordinates: [27, -13] },
+  { name: "Zimbabwe", coordinates: [30, -19] },
+  { name: "Madagascar", coordinates: [47, -19] },
+  { name: "South Africa", coordinates: [25, -29] },
+  { name: "Senegal", coordinates: [-14, 14] },
+  { name: "Azerbaijan", coordinates: [47, 40] },
+  { name: "Pakistan", coordinates: [69, 30] },
+  { name: "Nepal", coordinates: [84, 28] },
+  { name: "Bhutan", coordinates: [90, 27] },
+  { name: "Bangladesh", coordinates: [90, 24] },
+  { name: "Myanmar", coordinates: [96, 21] },
+  { name: "Thailand", coordinates: [101, 15] },
+  { name: "Vietnam", coordinates: [106, 16] },
+  { name: "Sri Lanka", coordinates: [81, 7] },
+  { name: "Malaysia", coordinates: [102, 4] },
+  { name: "Indonesia", coordinates: [118, -2] },
+  { name: "Philippines", coordinates: [122, 12] },
+  { name: "Panama", coordinates: [-80, 9] },
 ];
 
 const countryNameMap: { [key: string]: string } = {
@@ -22,7 +72,11 @@ const countryNameMap: { [key: string]: string } = {
   "Ivory Coast": "Côte d'Ivoire",
   "Marshall Islands": "Marshall Is.",
   "Myanmar": "Myanmar",
-  "Daman": "India"
+  "Daman": "India",
+  "Mexico": "Mexico",
+  "Guatemala": "Guatemala",
+  "Colombia": "Colombia",
+  "Madagascar": "Madagascar"
 };
 
 const getCountryName = (country: string): string => {
@@ -103,6 +157,29 @@ const MapChart = memo(({ setTooltipContent, setTooltipPosition }: {
           })
         }
       </Geographies>
+
+      {/* Country Labels */}
+      {countryLabels.map(({ name, coordinates }) => (
+        <Marker key={name} coordinates={coordinates as [number, number]}>
+          <text
+            textAnchor="middle"
+            y={0}
+            style={{
+              fontFamily: "system-ui, sans-serif",
+              fontSize: "7px",
+              fontWeight: "bold",
+              fill: "#ffffff",
+              stroke: "#1e293b",
+              strokeWidth: "0.5px",
+              paintOrder: "stroke",
+              pointerEvents: "none",
+              userSelect: "none"
+            }}
+          >
+            {name}
+          </text>
+        </Marker>
+      ))}
     </ComposableMap>
   );
 });
@@ -121,7 +198,7 @@ export function ExportCountriesContent() {
           Export Countries
         </h1>
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-          Paltech's cooling tower solutions have reached across continents, serving clients in over <strong>40+ countries</strong> worldwide. Our global presence demonstrates our commitment to delivering world-class cooling technology to diverse markets.
+          Paltech's cooling tower solutions have reached across continents, serving clients in over <strong>46+ countries</strong> worldwide. Our global presence demonstrates our commitment to delivering world-class cooling technology to diverse markets.
         </p>
       </div>
 
@@ -130,7 +207,7 @@ export function ExportCountriesContent() {
         {[
           {
             icon: <Globe className="w-7 h-7" />,
-            value: "40+",
+            value: "46+",
             label: "Export Countries",
             color: "from-blue-500 to-blue-600"
           },
@@ -203,7 +280,7 @@ export function ExportCountriesContent() {
           </div>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">All Export Destinations</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Complete list of 42 countries where Paltech™ delivers world-class cooling tower solutions
+            Complete list of 46 countries where Paltech™ delivers world-class cooling tower solutions
           </p>
         </div>
 
@@ -229,11 +306,11 @@ export function ExportCountriesContent() {
         </h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {[
-            { region: "Middle East", countries: 9, icon: "🏜️" },
-            { region: "Asia Pacific", countries: 11, icon: "🌏" },
-            { region: "Africa", countries: 16, icon: "🌍" },
-            { region: "Europe", countries: 3, icon: "🏰" },
-            { region: "Americas", countries: 1, icon: "🌎" }
+            { region: "Middle East", countries: 11, icon: "🏜️" },
+            { region: "Asia Pacific", countries: 12, icon: "🌏" },
+            { region: "Africa", countries: 17, icon: "🌍" },
+            { region: "Europe", countries: 2, icon: "🏰" },
+            { region: "Americas", countries: 4, icon: "🌎" }
           ].map((region, index) => (
             <div
               key={index}

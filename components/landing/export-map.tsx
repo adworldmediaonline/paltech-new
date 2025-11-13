@@ -23,31 +23,47 @@ const countryLabels = [
   { name: "Guatemala", coordinates: [-90, 15] },
   { name: "Colombia", coordinates: [-72, 4] },
   { name: "Czech Republic", coordinates: [15, 50] },
-  { name: "Egypt", coordinates: [30, 26] },
-  { name: "Sudan", coordinates: [30, 15] },
-  { name: "Ghana", coordinates: [-2, 8] },
-  { name: "Nigeria", coordinates: [8, 9] },
-  { name: "Kenya", coordinates: [38, 1] },
-  { name: "Madagascar", coordinates: [47, -19] },
-  { name: "South Africa", coordinates: [25, -29] },
+  { name: "Ukraine", coordinates: [32, 49] },
   { name: "Turkey", coordinates: [35, 39] },
   { name: "Syria", coordinates: [38, 35] },
   { name: "Iraq", coordinates: [43, 33] },
-  { name: "Kuwait", coordinates: [48, 29] },
-  { name: "Bahrain", coordinates: [50, 26] },
+  { name: "Iran", coordinates: [53, 32] },
+  { name: "Kuwait", coordinates: [47.5, 29.5] },
+  { name: "Bahrain", coordinates: [50.5, 26] },
   { name: "Saudi Arabia", coordinates: [45, 24] },
   { name: "UAE", coordinates: [54, 24] },
   { name: "Oman", coordinates: [56, 21] },
   { name: "Yemen", coordinates: [48, 15] },
+  { name: "Egypt", coordinates: [30, 26] },
+  { name: "Sudan", coordinates: [30, 15] },
+  { name: "Morocco", coordinates: [-7, 32] },
+  { name: "Burkina Faso", coordinates: [-2, 13] },
+  { name: "Guinea", coordinates: [-10, 10] },
+  { name: "Ivory Coast", coordinates: [-5, 8] },
+  { name: "Ghana", coordinates: [-2, 8] },
+  { name: "Nigeria", coordinates: [8, 9] },
+  { name: "Ethiopia", coordinates: [40, 8] },
+  { name: "Kenya", coordinates: [38, 1] },
+  { name: "Uganda", coordinates: [32, 1] },
+  { name: "Tanzania", coordinates: [35, -6] },
+  { name: "Zambia", coordinates: [27, -13] },
+  { name: "Zimbabwe", coordinates: [30, -19] },
+  { name: "Madagascar", coordinates: [47, -19] },
+  { name: "South Africa", coordinates: [25, -29] },
+  { name: "Senegal", coordinates: [-14, 14] },
+  { name: "Azerbaijan", coordinates: [47, 40] },
   { name: "Pakistan", coordinates: [69, 30] },
   { name: "Nepal", coordinates: [84, 28] },
   { name: "Bhutan", coordinates: [90, 27] },
   { name: "Bangladesh", coordinates: [90, 24] },
   { name: "Myanmar", coordinates: [96, 21] },
+  { name: "Thailand", coordinates: [101, 15] },
+  { name: "Vietnam", coordinates: [106, 16] },
   { name: "Sri Lanka", coordinates: [81, 7] },
   { name: "Malaysia", coordinates: [102, 4] },
-  { name: "Indonesia", coordinates: [120, -2] },
+  { name: "Indonesia", coordinates: [118, -2] },
   { name: "Philippines", coordinates: [122, 12] },
+  { name: "Panama", coordinates: [-80, 9] },
 ];
 
 const countryNameMap: { [key: string]: string } = {
@@ -194,7 +210,7 @@ export function ExportMap() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
-            Exporting to 45+ Countries
+            Exporting to 46+ Countries
           </h2>
         </div>
 
