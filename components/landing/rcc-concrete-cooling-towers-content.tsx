@@ -30,8 +30,7 @@ export function RCCConcreteCoolingTowersContent() {
   ];
 
   const currentOperations = [
-    { capacity: "27,000", unit: "m³/hr", status: "Operational", location: "Large-scale power generation facility" },
-    { capacity: "14,000", unit: "m³/hr", status: "Operational", location: "Petrochemical processing plant" }
+    { capacity: "56,000", unit: "m³/hr", status: "Operational", location: "Large-scale power generation facility" }
   ];
 
   return (
@@ -66,7 +65,7 @@ export function RCCConcreteCoolingTowersContent() {
               Key Features & Technical Advantages
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
+              <div className="bg-linear-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Settings className="w-6 h-6 text-primary" />
@@ -78,7 +77,7 @@ export function RCCConcreteCoolingTowersContent() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
+              <div className="bg-linear-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Zap className="w-6 h-6 text-primary" />
@@ -90,7 +89,7 @@ export function RCCConcreteCoolingTowersContent() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
+              <div className="bg-linear-to-br from-primary/5 to-blue-50 p-6 rounded-xl border border-primary/20">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
                     <Building2 className="w-6 h-6 text-primary" />
@@ -150,7 +149,7 @@ export function RCCConcreteCoolingTowersContent() {
               <p className="text-gray-600 text-center mb-6">Paltech™ has successfully commissioned and maintains large-scale RCC concrete cooling towers including:</p>
               <div className="grid md:grid-cols-2 gap-6">
                 {currentOperations.map((operation, index) => (
-                  <div key={index} className="flex items-center justify-between p-5 bg-gradient-to-r from-primary/5 to-blue-50 rounded-lg border border-primary/20">
+                  <div key={index} className="flex items-center justify-between p-5 bg-linear-to-r from-primary/5 to-blue-50 rounded-lg border border-primary/20">
                     <div>
                       <div className="text-2xl font-bold text-gray-900 mb-1">{operation.capacity}</div>
                       <div className="text-sm text-gray-600 mb-2">{operation.unit}</div>
@@ -185,7 +184,7 @@ export function RCCConcreteCoolingTowersContent() {
               {availableTypes.map((type, index) => (
                 <div key={index} className="bg-gray-50 rounded-xl p-6 hover:bg-gray-100 transition-colors border border-gray-200">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                    <div className="shrink-0 w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
                       {type.icon}
                     </div>
                     <div className="flex-1">
@@ -229,7 +228,7 @@ export function RCCConcreteCoolingTowersContent() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-br from-primary to-primary/90 text-white">
+      <section className="py-16 bg-linear-to-br from-primary to-primary/90 text-white">
         <div className="px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready for Detailed Engineering Data & Specifications?
