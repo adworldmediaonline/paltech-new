@@ -37,10 +37,39 @@ export function OurClientsContent() {
           Our Clients
         </h1>
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-          Partnering with industry leaders across 25+ countries for over 37 years. Paltech™ is trusted by thousands of organizations worldwide for delivering exceptional cooling solutions.
+          Partnering with industry leaders across 25+ countries for over 37+ years. Paltech™ is trusted by thousands of organizations worldwide for delivering exceptional cooling solutions.
         </p>
       </div>
-
+      {/* Industries Served */}
+      <div className="bg-linear-to-br from-primary/5 to-transparent rounded-2xl p-8 border border-primary/10">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
+          Industries We Serve
+        </h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            "Power Generation",
+            "Steel & Mining",
+            "Sugar & Food Processing",
+            "Cement & Construction",
+            "Chemical & Petrochemical",
+            "Paper & Pulp",
+            "Textile & Garments",
+            "Pharmaceutical",
+            "Automobile Manufacturing",
+            "Oil & Gas",
+            "HVAC Systems",
+            "Process Cooling"
+          ].map((industry, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-3 bg-white rounded-lg px-4 py-3 border border-gray-200 hover:border-primary/40 hover:shadow-md transition-all duration-300"
+            >
+              <div className="w-2 h-2 bg-primary rounded-full shrink-0"></div>
+              <span className="text-sm font-medium text-gray-700">{industry}</span>
+            </div>
+          ))}
+        </div>
+      </div>
       {/* Key Statistics */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
         {[
@@ -317,36 +346,7 @@ export function OurClientsContent() {
         </Tabs>
       </div>
 
-      {/* Industries Served */}
-      <div className="bg-linear-to-br from-primary/5 to-transparent rounded-2xl p-8 border border-primary/10">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">
-          Industries We Serve
-        </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          {[
-            "Power Generation",
-            "Steel & Mining",
-            "Sugar & Food Processing",
-            "Cement & Construction",
-            "Chemical & Petrochemical",
-            "Paper & Pulp",
-            "Textile & Garments",
-            "Pharmaceutical",
-            "Automobile Manufacturing",
-            "Oil & Gas",
-            "HVAC Systems",
-            "Process Cooling"
-          ].map((industry, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-3 bg-white rounded-lg px-4 py-3 border border-gray-200 hover:border-primary/40 hover:shadow-md transition-all duration-300"
-            >
-              <div className="w-2 h-2 bg-primary rounded-full shrink-0"></div>
-              <span className="text-sm font-medium text-gray-700">{industry}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+
     </div>
   );
 }
