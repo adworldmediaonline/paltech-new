@@ -620,7 +620,7 @@ export const statsData: StatsData = {
   stats: [
     { value: "37+", label: "Years of Excellence" },
     { value: "11,000+", label: "Clients Served" },
-    { value: "13,000+", label: "Installations Worldwide" },
+    { value: "14,000+", label: "Installations Worldwide" },
     { value: "25+", label: "Export Countries" },
   ],
 };

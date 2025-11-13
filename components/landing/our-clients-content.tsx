@@ -4,9 +4,14 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { clientLogosData } from "@/lib/data/landing-data";
 import { Award, Building2, Globe, Users } from "lucide-react";
 import Image from "next/image";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export function OurClientsContent() {
   const [ref, isVisible] = useIntersectionObserver({ freezeOnceVisible: true });
+
+  // Filter clients by sector
+  const privateClients = clientsList.filter(client => client.sector === 'PRIVATE');
+  const publicClients = clientsList.filter(client => client.sector === 'PUBLIC');
 
   // Split logos into 5 rows for more comprehensive display
   const logosPerRow = Math.ceil(clientLogosData.logos.length / 5);
@@ -41,7 +46,7 @@ export function OurClientsContent() {
         {[
           {
             icon: <Users className="w-7 h-7" />,
-            value: "65",
+            value: "65+",
             label: "Featured Clients",
             color: "from-blue-500 to-blue-600"
           },
@@ -101,9 +106,8 @@ export function OurClientsContent() {
 
       {/* Multi-Row Marquee Container */}
       <div
-        className={`relative transition-all duration-700 delay-300 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
+        className={`relative transition-all duration-700 delay-300 ${isVisible ? "opacity-100" : "opacity-0"
+          }`}
       >
         {rows.map((row, rowIndex) => (
           <div key={rowIndex} className="mb-6 lg:mb-8">
@@ -165,9 +169,8 @@ export function OurClientsContent() {
 
       {/* Bottom Info */}
       <div
-        className={`text-center transition-all duration-700 delay-600 ${
-          isVisible ? "opacity-100" : "opacity-0"
-        }`}
+        className={`text-center transition-all duration-700 delay-600 ${isVisible ? "opacity-100" : "opacity-0"
+          }`}
       >
         <div className="inline-flex items-center gap-3 px-8 py-4 bg-white rounded-full border border-gray-200 shadow-lg">
           <div className="flex items-center gap-2">
@@ -193,79 +196,125 @@ export function OurClientsContent() {
         </div>
       </div>
 
-      {/* Comprehensive Client List */}
+      {/* Comprehensive Client List with Tabs */}
       <div className="space-y-6">
         <div className="text-center space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Our Esteemed Clients</h2>
           <p className="text-gray-600">A comprehensive list of organizations that trust Paltech™ for their cooling solutions</p>
         </div>
 
-        {/* Desktop Table */}
-        <div className="hidden lg:block bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead className="bg-primary text-white">
-                <tr>
-                  <th className="px-6 py-4 text-left font-semibold w-20">S.No.</th>
-                  <th className="px-6 py-4 text-left font-semibold">Client Name</th>
-                  <th className="px-6 py-4 text-center font-semibold w-32">Sector</th>
-                </tr>
-              </thead>
-              <tbody>
-                {clientsList.map((client, index) => (
-                  <tr
-                    key={client.sno}
-                    className={`${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'} hover:bg-primary/5 transition-colors`}
-                  >
-                    <td className="px-6 py-4 text-gray-900 font-medium border-t border-gray-200">
-                      {client.sno}
-                    </td>
-                    <td className="px-6 py-4 text-gray-900 border-t border-gray-200">
-                      {client.name}
-                    </td>
-                    <td className="px-6 py-4 text-center border-t border-gray-200">
-                      <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold ${
-                        client.sector === 'PUBLIC'
-                          ? 'bg-blue-100 text-blue-700'
-                          : 'bg-green-100 text-green-700'
-                      }`}>
-                        {client.sector}
-                      </span>
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
+        <Tabs defaultValue="private" className="w-full">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-6">
+            <TabsTrigger value="private" className="text-sm sm:text-base">
+              Private Sector ({privateClients.length})
+            </TabsTrigger>
+            <TabsTrigger value="public" className="text-sm sm:text-base">
+              Public Sector ({publicClients.length})
+            </TabsTrigger>
+          </TabsList>
 
-        {/* Mobile/Tablet Cards */}
-        <div className="lg:hidden space-y-3">
-          {clientsList.map((client) => (
-            <div
-              key={client.sno}
-              className="bg-white rounded-xl border border-gray-200 p-4 hover:border-primary/40 hover:shadow-md transition-all duration-300"
-            >
-              <div className="flex items-start justify-between gap-4">
-                <div className="flex items-start gap-3 flex-1">
-                  <div className="w-8 h-8 bg-primary/10 rounded-lg flex items-center justify-center text-primary font-bold text-sm shrink-0">
-                    {client.sno}
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-gray-900 text-sm mb-2">{client.name}</h3>
-                  </div>
-                </div>
-                <span className={`inline-flex px-3 py-1 rounded-full text-xs font-semibold shrink-0 ${
-                  client.sector === 'PUBLIC'
-                    ? 'bg-blue-100 text-blue-700'
-                    : 'bg-green-100 text-green-700'
-                }`}>
-                  {client.sector}
-                </span>
+          {/* Private Sector Tab */}
+          <TabsContent value="private" className="space-y-4">
+            {/* Desktop Table */}
+            <div className="hidden lg:block bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead className="bg-green-600 text-white">
+                    <tr>
+                      <th className="px-6 py-4 text-left font-semibold w-20">S.No.</th>
+                      <th className="px-6 py-4 text-left font-semibold">Client Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {privateClients.map((client, index) => (
+                      <tr
+                        key={client.sno}
+                        className={`${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'} hover:bg-green-50 transition-colors`}
+                      >
+                        <td className="px-6 py-4 text-gray-900 font-medium border-t border-gray-200">
+                          {index + 1}
+                        </td>
+                        <td className="px-6 py-4 text-gray-900 border-t border-gray-200">
+                          {client.name}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
               </div>
             </div>
-          ))}
-        </div>
+
+            {/* Mobile/Tablet Cards */}
+            <div className="lg:hidden space-y-3">
+              {privateClients.map((client, index) => (
+                <div
+                  key={client.sno}
+                  className="bg-white rounded-xl border border-gray-200 p-4 hover:border-green-400 hover:shadow-md transition-all duration-300"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center text-green-700 font-bold text-sm shrink-0">
+                      {index + 1}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-gray-900 text-sm">{client.name}</h3>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </TabsContent>
+
+          {/* Public Sector Tab */}
+          <TabsContent value="public" className="space-y-4">
+            {/* Desktop Table */}
+            <div className="hidden lg:block bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+              <div className="overflow-x-auto">
+                <table className="w-full">
+                  <thead className="bg-blue-600 text-white">
+                    <tr>
+                      <th className="px-6 py-4 text-left font-semibold w-20">S.No.</th>
+                      <th className="px-6 py-4 text-left font-semibold">Client Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {publicClients.map((client, index) => (
+                      <tr
+                        key={client.sno}
+                        className={`${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'} hover:bg-blue-50 transition-colors`}
+                      >
+                        <td className="px-6 py-4 text-gray-900 font-medium border-t border-gray-200">
+                          {index + 1}
+                        </td>
+                        <td className="px-6 py-4 text-gray-900 border-t border-gray-200">
+                          {client.name}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            {/* Mobile/Tablet Cards */}
+            <div className="lg:hidden space-y-3">
+              {publicClients.map((client, index) => (
+                <div
+                  key={client.sno}
+                  className="bg-white rounded-xl border border-gray-200 p-4 hover:border-blue-400 hover:shadow-md transition-all duration-300"
+                >
+                  <div className="flex items-start gap-3">
+                    <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center text-blue-700 font-bold text-sm shrink-0">
+                      {index + 1}
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="font-semibold text-gray-900 text-sm">{client.name}</h3>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </TabsContent>
+        </Tabs>
       </div>
 
       {/* Industries Served */}

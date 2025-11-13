@@ -66,7 +66,7 @@ export function Header() {
                 ? "text-gray-600"
                 : "text-white/80"
                 }`}>
-                An ISO 9001:2015, ISO 14001:2015, OHSAS 45001:2018 certified Company
+                An ISO 9001:2015, ISO 14001:2015, OHSAS 45001:2018 Certified Company
               </p>
             </div>
           </Link>
