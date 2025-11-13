@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Award, Trophy, Star, CheckCircle } from "lucide-react";
-import award1 from '../../public/about/img-1.webp';
-import award2 from '../../public/about/img-2.webp';
+import award2 from '../../public/about/img-1.jpg';
+import award1 from '../../public/about/img-2.jpg';
 
 export function AwardsRecognitionContent() {
   return (
