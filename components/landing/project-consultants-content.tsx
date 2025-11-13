@@ -1,9 +1,9 @@
 import { Building2, Users, Award, Globe, Handshake, CheckCircle } from "lucide-react";
 
 const consultantsData = [
+  "Engineers India Limited",
   "Kvaerner Powergas Pvt. Ltd.",
   "Avant - Garde Engineers & Consultants Pvt. Ltd.",
-  "Engineers India Limited",
   "Fichtner Consulting Engineers (India) Pvt. Ltd.",
   "Jacobs Engineering Group Inc.",
   "LURGI",
@@ -75,7 +75,7 @@ export function ProjectConsultantsContent() {
       {/* Title Section */}
       <div className="text-center space-y-2">
         <h2 className="text-2xl sm:text-3xl font-bold text-red-700">
-          Project consultants (with whom Paltech™ has worked / working with)
+          Consultants Who Rely on Paltech™, Delivering Excellence Together
         </h2>
       </div>
 

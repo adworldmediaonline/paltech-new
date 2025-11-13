@@ -166,11 +166,11 @@ export const navItems: NavItem[] = [
     subItems: [
       { label: "Our Clients", href: "/about/our-clients" },
       { label: "Awards & Recognition", href: "/about/awards-recognition" },
-      { label: "Policies & Certification", href: "/about/policies-certification" },
+      { label: "Export Countries", href: "/about/export-countries" },
       { label: "Executed Projects", href: "/about/executed-projects" },
       { label: "Project Consultants", href: "/about/project-consultants" },
       { label: "Affilliated Bodies", href: "/about/affiliated-bodies" },
-      { label: "Export Countries", href: "/about/export-countries" },
+      { label: "Policies & Certification", href: "/about/policies-certification" },
     ]
   },
   {
@@ -311,7 +311,11 @@ export const navItems: NavItem[] = [
         href: "/spares/drive-shafts",
         subItems: [
           {
-            label: "HDGMS: Carbon Fiber",
+            label: "HDGMS",
+            href: "/spares/drive-shafts/hdgms"
+          },
+          {
+            label: "Carbon Fiber",
             href: "/spares/drive-shafts/carbon-fiber"
           },
           {
@@ -620,7 +624,7 @@ export const statsData: StatsData = {
   stats: [
     { value: "37+", label: "Years of Excellence" },
     { value: "11,000+", label: "Clients Served" },
-    { value: "13,000+", label: "Installations Worldwide" },
+    { value: "14,000+", label: "Installations Worldwide" },
     { value: "25+", label: "Export Countries" },
   ],
 };

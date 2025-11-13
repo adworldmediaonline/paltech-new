@@ -42,33 +42,31 @@ export function Header() {
       : "bg-white/10 backdrop-blur-md border-b border-white/10"
       }`}>
       <div className="mx-auto max-w-7xl  px-3 sm:px-4 md:px-6 lg:px-8">
-        <div className="flex h-16 sm:h-18 md:h-20 items-center justify-between">
+        <div className="flex h-20 sm:h-24 md:h-28 lg:h-32 items-center justify-between">
           {/* Logo with Company Name */}
-          <Link href="/" className="flex items-center gap-3 sm:gap-4 group">
-            <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 shrink-0 group-hover:scale-105 transition-transform">
+          <Link href="/" className="flex items-center gap-2 group">
+            <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 shrink-0 group-hover:scale-105 transition-transform">
               <Image
                 src="/logo/logo.png"
-                alt="Paltech™ Logo"
+                alt="PALTECH™ Logo"
                 fill
                 className="object-contain"
                 priority
-                sizes="(max-width: 640px) 48px, (max-width: 768px) 56px, 64px"
+                sizes="(max-width: 640px) 64px, (max-width: 768px) 80px, (max-width: 1024px) 96px, 112px"
               />
             </div>
             <div className="flex flex-col justify-center">
-              <h1 className={`text-sm sm:text-base md:text-lg lg:text-xl font-bold leading-tight tracking-tight transition-colors ${
-                scrolled || isCategoryPage
-                  ? "text-gray-900"
-                  : "text-white"
-              }`}>
+              <h1 className={`text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl font-bold leading-tight tracking-wide uppercase transition-colors ${scrolled || isCategoryPage
+                ? "text-gray-900"
+                : "text-white"
+                }`}>
                 Paltech™ Cooling Towers &<br className="hidden sm:inline" /> Equipments Ltd.
               </h1>
-              <p className={`text-[9px] sm:text-[10px] md:text-xs font-normal leading-tight mt-0.5 sm:mt-1 transition-colors ${
-                scrolled || isCategoryPage
-                  ? "text-gray-600"
-                  : "text-white/80"
-              }`}>
-                An ISO 9001:2015, ISO 14001:2015, OHSAS 45001:2018 certified Company
+              <p className={`text-[8px] sm:text-[9px] md:text-[10px] lg:text-xs font-normal leading-tight mt-1 sm:mt-1.5 md:mt-2 transition-colors ${scrolled || isCategoryPage
+                ? "text-gray-600"
+                : "text-white/80"
+                }`}>
+                An ISO 9001:2015, ISO 14001:2015, OHSAS 45001:2018 Certified Company
               </p>
             </div>
           </Link>
@@ -117,7 +115,7 @@ export function Header() {
                                           <NavigationMenuLink asChild>
                                             <Link
                                               href={subItem.href}
-                                              className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors break-words leading-relaxed"
+                                              className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors wrap-break-word leading-relaxed"
                                             >
                                               {subItem.label}
                                             </Link>
@@ -130,7 +128,7 @@ export function Header() {
                                                 <NavigationMenuLink asChild key={nested.label}>
                                                   <Link
                                                     href={nested.href}
-                                                    className="block py-1 sm:py-1.5 text-xs text-gray-600 hover:text-primary transition-colors break-words leading-relaxed"
+                                                    className="block py-1 sm:py-1.5 text-xs text-gray-600 hover:text-primary transition-colors wrap-break-word leading-relaxed"
                                                   >
                                                     • {nested.label}
                                                   </Link>
@@ -152,7 +150,7 @@ export function Header() {
                                         <NavigationMenuLink asChild key={category.title || 'spares'}>
                                           <Link
                                             href={category.href}
-                                            className="block py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-gray-900 hover:text-primary transition-colors break-words leading-relaxed"
+                                            className="block py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-gray-900 hover:text-primary transition-colors wrap-break-word leading-relaxed"
                                           >
                                             {category.title}
                                           </Link>
@@ -223,7 +221,7 @@ export function Header() {
             </button>
             <Button
               asChild
-              className="bg-gradient-to-r from-primary to-primary/90 text-white hover:shadow-lg hover:shadow-primary/20 transition-all rounded-xl font-semibold"
+              className="bg-linear-to-r from-primary to-primary/90 text-white hover:shadow-lg hover:shadow-primary/20 transition-all rounded-xl font-semibold"
             >
               <Link href="/contact-us">Contact Us</Link>
             </Button>
@@ -307,7 +305,7 @@ export function Header() {
                     <Button
                       asChild
                       size="lg"
-                      className="w-full bg-gradient-to-r from-primary to-primary/90 text-white shadow-lg hover:shadow-xl transition-all rounded-xl py-6 touch-manipulation"
+                      className="w-full bg-linear-to-r from-primary to-primary/90 text-white shadow-lg hover:shadow-xl transition-all rounded-xl py-6 touch-manipulation"
                     >
                       <Link href="/contact-us" onClick={() => setMobileMenuOpen(false)}>
                         Contact Us

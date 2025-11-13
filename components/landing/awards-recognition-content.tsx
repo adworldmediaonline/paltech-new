@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Award, Trophy, Star, CheckCircle } from "lucide-react";
-import award1 from '../../public/about/img-1.webp';
-import award2 from '../../public/about/img-2.webp';
+import award2 from '../../public/about/img-1.jpg';
+import award1 from '../../public/about/img-2.jpg';
 
 export function AwardsRecognitionContent() {
   return (
@@ -23,7 +23,7 @@ export function AwardsRecognitionContent() {
       <div className="grid md:grid-cols-2 gap-8">
         {/* Award 1 - Prime Minister */}
         <div className="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
-          <div className="relative aspect-[4/3] overflow-hidden">
+          <div className="relative aspect-4/3 overflow-hidden">
             <Image
               src={award1}
               alt="National Award for Quality presented by Hon'ble Prime Minister Dr. Manmohan Singh"
@@ -51,7 +51,7 @@ export function AwardsRecognitionContent() {
 
         {/* Award 2 - Vice President */}
         <div className="bg-white rounded-2xl border-2 border-gray-200 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group">
-          <div className="relative aspect-[4/3] overflow-hidden">
+          <div className="relative aspect-4/3 overflow-hidden">
             <Image
               src={award2}
               alt="National Award for Excellence & Performance presented by Hon'ble Vice President Shri Bhairon Singh Shekhawat"
@@ -79,7 +79,7 @@ export function AwardsRecognitionContent() {
       </div>
 
       {/* Achievement Highlights */}
-      <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-8 border border-primary/10">
+      <div className="bg-linear-to-br from-primary/5 to-transparent rounded-2xl p-8 border border-primary/10">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">Our Achievement Highlights</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
@@ -118,48 +118,8 @@ export function AwardsRecognitionContent() {
         </div>
       </div>
 
-      {/* Product Portfolio */}
-      <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-8 border border-gray-200">
-        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">Our Core Competencies</h2>
-        <div className="grid sm:grid-cols-3 gap-6">
-          {[
-            {
-              title: "Cooling Towers",
-              description: "FRP, Wooden, and RCC cooling towers for diverse industrial applications",
-              types: ["FRP Cooling Towers", "Wooden Cooling Towers", "RCC Cooling Towers", "Pultruded FRP Towers"]
-            },
-            {
-              title: "Water Treatment Systems",
-              description: "Comprehensive water treatment solutions for optimal cooling tower performance",
-              types: ["Filtration Systems", "DM Plants", "Water Softening", "RO Systems"]
-            },
-            {
-              title: "Chilling Plants",
-              description: "Advanced chilling plant solutions for industrial and commercial applications",
-              types: ["Water Cooled Chillers", "Air Cooled Chillers", "Scroll Chillers", "Screw Chillers"]
-            }
-          ].map((product, index) => (
-            <div
-              key={index}
-              className="p-6 bg-white rounded-xl border border-gray-200 hover:border-primary/40 hover:shadow-lg transition-all duration-300"
-            >
-              <h3 className="text-xl font-bold text-gray-900 mb-3">{product.title}</h3>
-              <p className="text-gray-600 text-sm mb-4 leading-relaxed">{product.description}</p>
-              <div className="space-y-2">
-                {product.types.map((type, idx) => (
-                  <div key={idx} className="flex items-center gap-2 text-sm text-gray-700">
-                    <CheckCircle className="w-4 h-4 text-primary shrink-0" />
-                    <span>{type}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
       {/* Timeline */}
-      <div className="bg-gradient-to-br from-primary to-primary/90 rounded-2xl p-8 sm:p-12 text-white">
+      <div className="bg-linear-to-br from-primary to-primary/90 rounded-2xl p-8 sm:p-12 text-white">
         <h2 className="text-2xl sm:text-3xl font-bold mb-6 text-center">Journey of Excellence</h2>
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="flex items-start gap-4">
