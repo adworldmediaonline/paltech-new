@@ -1,4 +1,4 @@
-import { Building2, MapPin, Gauge, Award, Globe } from "lucide-react";
+import { Building2, MapPin, Gauge, Award } from "lucide-react";
 
 const projectsData = [
   {
@@ -148,19 +148,16 @@ const projectsData = [
 ];
 
 export function ExecutedProjectsContent() {
-  // Calculate statistics
-  const totalProjects = projectsData.length;
-  const totalCapacity = projectsData.reduce((sum, project) => {
-    const capacities = project.capacity.split(',').map(c => parseFloat(c.replace(/,/g, '')));
-    return sum + capacities.reduce((a, b) => a + b, 0);
-  }, 0);
-  const internationalProjects = projectsData.filter(p =>
-    p.address.toLowerCase().includes('malaysia') ||
-    p.address.toLowerCase().includes('south africa') ||
-    p.address.toLowerCase().includes('uae') ||
-    p.address.toLowerCase().includes('syria') ||
-    p.address.toLowerCase().includes('sudan')
-  ).length;
+  // Sort projects by capacity in descending order
+  const sortedProjects = [...projectsData].sort((a, b) => {
+    // Get max capacity for each project
+    const getMaxCapacity = (capacityStr: string) => {
+      // Split by ", " to handle multiple capacities, then remove thousand separators
+      const capacities = capacityStr.split(', ').map(c => parseFloat(c.replace(/,/g, '')));
+      return Math.max(...capacities);
+    };
+    return getMaxCapacity(b.capacity) - getMaxCapacity(a.capacity);
+  });
 
   return (
     <div className="space-y-12">
@@ -175,25 +172,13 @@ export function ExecutedProjectsContent() {
       </div>
 
       {/* Statistics */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
         {[
           {
-            icon: <Building2 className="w-7 h-7" />,
-            value: totalProjects,
-            label: "Completed Projects",
-            color: "from-blue-500 to-blue-600"
-          },
-          {
             icon: <Gauge className="w-7 h-7" />,
-            value: `${Math.round(totalCapacity / 1000)}K+`,
+            value: "50K+",
             label: "Total Capacity (M³/hr)",
             color: "from-green-500 to-green-600"
-          },
-          {
-            icon: <Globe className="w-7 h-7" />,
-            value: internationalProjects,
-            label: "International Projects",
-            color: "from-purple-500 to-purple-600"
           },
           {
             icon: <Award className="w-7 h-7" />,
@@ -206,7 +191,7 @@ export function ExecutedProjectsContent() {
             key={index}
             className="p-6 bg-white rounded-xl border border-gray-200 hover:border-primary/40 hover:shadow-lg transition-all duration-300"
           >
-            <div className={`w-12 h-12 bg-gradient-to-br ${stat.color} rounded-lg flex items-center justify-center text-white mb-4`}>
+            <div className={`w-12 h-12 bg-linear-to-br ${stat.color} rounded-lg flex items-center justify-center text-white mb-4`}>
               {stat.icon}
             </div>
             <div className="text-3xl font-bold text-gray-900 mb-1">{stat.value}</div>
@@ -237,13 +222,13 @@ export function ExecutedProjectsContent() {
               </tr>
             </thead>
             <tbody>
-              {projectsData.map((project, index) => (
+              {sortedProjects.map((project, index) => (
                 <tr
                   key={project.sno}
                   className={`${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'} hover:bg-primary/5 transition-colors`}
                 >
                   <td className="px-6 py-4 text-gray-900 font-medium border-t border-gray-200">
-                    {project.sno}.
+                    {index + 1}.
                   </td>
                   <td className="px-6 py-4 border-t border-gray-200">
                     <div className="font-semibold text-gray-900 mb-1">{project.name}</div>
@@ -263,14 +248,14 @@ export function ExecutedProjectsContent() {
 
       {/* Projects Cards - Mobile/Tablet */}
       <div className="lg:hidden space-y-4">
-        {projectsData.map((project) => (
+        {sortedProjects.map((project, index) => (
           <div
             key={project.sno}
             className="bg-white rounded-xl border border-gray-200 p-6 hover:border-primary/40 hover:shadow-lg transition-all duration-300"
           >
             <div className="flex items-start justify-between mb-3">
               <div className="w-10 h-10 bg-primary/10 rounded-lg flex items-center justify-center text-primary font-bold shrink-0">
-                {project.sno}
+                {index + 1}
               </div>
               <div className="ml-4 flex-1">
                 <h3 className="font-bold text-gray-900 text-sm mb-2">{project.name}</h3>
@@ -291,7 +276,7 @@ export function ExecutedProjectsContent() {
       </div>
 
       {/* Industry Sectors */}
-      <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-8 border border-primary/10">
+      <div className="bg-linear-to-br from-primary/5 to-transparent rounded-2xl p-8 border border-primary/10">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">Industries We Serve</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
@@ -316,7 +301,7 @@ export function ExecutedProjectsContent() {
       </div>
 
       {/* CTA */}
-      <div className="bg-gradient-to-br from-primary to-primary/90 rounded-2xl p-8 sm:p-12 text-center text-white">
+      <div className="bg-linear-to-br from-primary to-primary/90 rounded-2xl p-8 sm:p-12 text-center text-white">
         <Building2 className="w-16 h-16 mx-auto mb-6" />
         <h2 className="text-2xl sm:text-3xl font-bold mb-4">
           Partner With Us for Your Next Project
