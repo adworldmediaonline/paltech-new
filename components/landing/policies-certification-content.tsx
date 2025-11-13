@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Shield, Award, CheckCircle, FileText, Users, Leaf } from "lucide-react";
-import certificateImage from '../../public/about/certificate.jpg';
+import certificateImage from '../../public/about/image.png'
 
 export function PoliciesCertificationContent() {
   return (
