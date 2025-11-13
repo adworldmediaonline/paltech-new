@@ -51,7 +51,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-linear-to-br from-slate-950/85 via-slate-900/80 to-slate-950/85 -z-10" />
 
       <Header />
-      <div className="pt-20">
+      <div className="pt-32">
         <HeroBanner />
       </div>
       <main>
