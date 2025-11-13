@@ -1,6 +1,5 @@
 import { AwardsRecognitionContent } from "@/components/landing/awards-recognition-content";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbPage, BreadcrumbSeparator } from "@/components/ui/breadcrumb";
-import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
@@ -64,12 +63,7 @@ export default function AwardsRecognitionPage() {
         </BreadcrumbList>
       </Breadcrumb>
 
-      <div className="flex gap-8">
-        <main className="flex-1 min-w-0">
-          <AwardsRecognitionContent />
-        </main>
-        <USPSidebar />
-      </div>
+      <AwardsRecognitionContent />
     </div>
   );
 }
