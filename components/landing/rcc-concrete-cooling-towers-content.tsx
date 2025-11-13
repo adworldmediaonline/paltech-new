@@ -21,12 +21,12 @@ export function RCCConcreteCoolingTowersContent() {
   ];
 
   const capacityRanges = [
-    { range: "500 - 1,000", unit: "m³/hr per cell", applications: "Small to medium industrial facilities" },
-    { range: "1,000 - 2,000", unit: "m³/hr per cell", applications: "Medium-scale manufacturing plants" },
-    { range: "2,000 - 3,000", unit: "m³/hr per cell", applications: "Large industrial complexes" },
-    { range: "3,000 - 4,500", unit: "m³/hr per cell", applications: "Power plants and refineries" },
-    { range: "2 x 2,800", unit: "m³/hr (specific configuration)", applications: "Dual-cell installations" },
-    { range: "Multicellular", unit: "construction for larger capacities", applications: "Ultra-large capacity requirements" }
+    { min: "500", max: "1,000", unit: "m³/hr per cell", applications: "Small to medium industrial facilities" },
+    { min: "1,000", max: "2,000", unit: "m³/hr per cell", applications: "Medium-scale manufacturing plants" },
+    { min: "2,000", max: "3,000", unit: "m³/hr per cell", applications: "Large industrial complexes" },
+    { min: "3,000", max: "4,500", unit: "m³/hr per cell", applications: "Power plants and refineries" },
+    { min: "2 x 2,800", max: "", unit: "m³/hr (specific configuration)", applications: "Dual-cell installations" },
+    { min: "Multicellular", max: "", unit: "construction for larger capacities", applications: "Ultra-large capacity requirements" }
   ];
 
   const currentOperations = [
@@ -123,7 +123,21 @@ export function RCCConcreteCoolingTowersContent() {
               {capacityRanges.map((item, index) => (
                 <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
                   <div className="text-center mb-3">
-                    <div className="text-3xl font-bold text-primary mb-2">{item.range}</div>
+                    {item.max ? (
+                      <div className="flex items-center justify-center gap-3 mb-2">
+                        <div>
+                          <div className="text-xs text-gray-500 mb-1">Min</div>
+                          <div className="text-2xl font-bold text-primary">{item.min}</div>
+                        </div>
+                        <div className="text-2xl text-gray-300">—</div>
+                        <div>
+                          <div className="text-xs text-gray-500 mb-1">Max</div>
+                          <div className="text-2xl font-bold text-primary">{item.max}</div>
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="text-3xl font-bold text-primary mb-2">{item.min}</div>
+                    )}
                     <div className="text-sm text-gray-600 font-medium mb-3">{item.unit}</div>
                     <div className="text-xs text-gray-500">{item.applications}</div>
                   </div>
