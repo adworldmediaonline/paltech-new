@@ -51,7 +51,7 @@ export function InstitutionalPartners() {
                 <div className="relative w-full max-w-md aspect-square">
                   <Image
                     src={iitLogo}
-                    alt="Indian Institute of Technology Delhi Logo"
+                    alt="Indian Institute of Technology Logo"
                     fill
                     className="object-contain p-8"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -69,10 +69,10 @@ export function InstitutionalPartners() {
                     </span>
                   </div>
                   <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 leading-tight">
-                    Indian Institute of Technology Delhi
+                    Indian Institute of Technology
                   </h3>
                   <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                    One of India's most prestigious technical institutions, IIT Delhi represents excellence in engineering education, research, and innovation.
+                    One of India's most prestigious technical institutions, representing excellence in engineering education, research, and innovation.
                   </p>
                 </div>
 
@@ -112,17 +112,6 @@ export function InstitutionalPartners() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Additional Info */}
-        <div
-          className={`mt-8 text-center transition-all duration-700 delay-400 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-        >
-          <p className="text-gray-600 text-sm">
-            Paltech™ values academic partnerships that drive innovation and excellence in industrial cooling solutions
-          </p>
         </div>
       </div>
     </section>
