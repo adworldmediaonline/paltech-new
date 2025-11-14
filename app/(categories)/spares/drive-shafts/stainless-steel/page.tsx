@@ -5,6 +5,13 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
+import stainlessSteelDriveShafts1 from '../../../../../public/categories/ss-stainless-steel-1.webp';
+import stainlessSteelDriveShafts2 from '../../../../../public/categories/ss-stainless-steel-2.webp';
+import stainlessSteelDriveShafts3 from '../../../../../public/categories/ss-stainless-steel-3.webp';
+import stainlessSteelDriveShafts4 from '../../../../../public/categories/ss-stainless-steel-4.webp';
+
+const images = [stainlessSteelDriveShafts1, stainlessSteelDriveShafts2, stainlessSteelDriveShafts3, stainlessSteelDriveShafts4];
+
 export const metadata: Metadata = {
   title: "Metallic Drive Shafts for Cooling Towers | Paltech™ Industrial Solutions",
   description: "Paltech™ Metallic Drive Shafts – engineered for high torque, long life, and smooth operation. Available in GS, SS304 & SS316 for industrial cooling towers.",
@@ -38,7 +45,7 @@ export const metadata: Metadata = {
 export default function StainlessSteelDriveShaftsPage() {
   return (
     <>
-      <CategoryHero>
+      <CategoryHero images={images}>
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>

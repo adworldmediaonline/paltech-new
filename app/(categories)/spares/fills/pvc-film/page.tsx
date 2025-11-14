@@ -5,7 +5,7 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import pvcFilmFills1 from '../../../../../public/categories/cooling-tower-pvc-fills.webp';
+import pvcFilmFills1 from '../../../../../public/categories/pvc-film.webp';
 
 const images = [pvcFilmFills1];
 

@@ -5,9 +5,12 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import carbonFiberDriveShafts1 from '../../../../../public/categories/drive-shaftshdgms-carbon-fiber.webp';
+import carbonFiberDriveShafts1 from '../../../../../public/categories/carbon-fiber-1.webp';
+import carbonFiberDriveShafts2 from '../../../../../public/categories/carbon-fiber-2.webp';
+import carbonFiberDriveShafts3 from '../../../../../public/categories/carbon-fiber-3.webp';
+import carbonFiberDriveShafts4 from '../../../../../public/categories/carbon-fiber-4.webp';
 
-const images = [carbonFiberDriveShafts1];
+const images = [carbonFiberDriveShafts1, carbonFiberDriveShafts2, carbonFiberDriveShafts3, carbonFiberDriveShafts4];
 
 export const metadata: Metadata = {
   title: "Carbon Fiber Drive Shafts | Paltech™ Advanced Cooling Tower Components",

@@ -8,9 +8,9 @@ import { Metadata } from "next";
 import rcc1 from '../../../../public/categories/RCC Concrete Cooling Towers 1.webp';
 import rcc2 from '../../../../public/categories/RCC Concrete Cooling Towers 2.webp';
 import rcc3 from '../../../../public/categories/RCC Concrete Cooling Towers 3.webp';
-import rcc4 from '../../../../public/categories/RCC Concrete Cooling Towers 4.webp';
 
-const images = [rcc1, rcc2, rcc3, rcc4];
+
+const images = [rcc1, rcc2, rcc3];
 
 export const metadata: Metadata = {
   title: "RCC Concrete Cooling Towers | Large-Scale Industrial Cooling",

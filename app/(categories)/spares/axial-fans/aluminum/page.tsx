@@ -5,9 +5,12 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import aluminumFans1 from '../../../../../public/categories/aluminum-fans.webp';
+import aluminumFans1 from '../../../../../public/categories/aluminum-fans-1.webp';
+import aluminumFans2 from '../../../../../public/categories/aluminum-fans-2.webp';
+import aluminumFans3 from '../../../../../public/categories/aluminum-fans-3.webp';
+import aluminumFans4 from '../../../../../public/categories/aluminum-fans-4.webp';
 
-const images = [aluminumFans1];
+const images = [aluminumFans1, aluminumFans2, aluminumFans3, aluminumFans4];
 
 export const metadata: Metadata = {
   title: "Aluminum Fans for Cooling Towers | Commercial-Grade by Paltech™",

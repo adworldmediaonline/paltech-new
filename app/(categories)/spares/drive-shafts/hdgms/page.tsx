@@ -5,9 +5,12 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import hdgmsDriveShafts1 from '../../../../../public/categories/drive-shafts-stainless-steel.webp';
+import hdgmsDriveShafts1 from '../../../../../public/categories/HDGMS-1.webp';
+import hdgmsDriveShafts2 from '../../../../../public/categories/HDGMS-2.webp';
+import hdgmsDriveShafts3 from '../../../../../public/categories/HDGMS-3.webp';
+import hdgmsDriveShafts4 from '../../../../../public/categories/HDGMS-4.webp';
 
-const images = [hdgmsDriveShafts1];
+const images = [hdgmsDriveShafts1, hdgmsDriveShafts2, hdgmsDriveShafts3, hdgmsDriveShafts4];
 
 export const metadata: Metadata = {
   title: "HDGMS Drive Shafts | Paltech™ High-Density Composite Cooling Tower Components",

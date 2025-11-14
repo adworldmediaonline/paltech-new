@@ -5,10 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import gearReducers1 from '../../../../public/categories/gear-reducer-1.webp';
-import gearReducers2 from '../../../../public/categories/gear-reducer-2.webp';
-import gearReducers3 from '../../../../public/categories/gear-reducer-3.webp';
-import gearReducers4 from '../../../../public/categories/gear-reducer-4.webp';
+import gearReducers1 from '../../../../public/categories/gear-reducers-1.webp';
+import gearReducers2 from '../../../../public/categories/gear-reducers-2.webp';
+import gearReducers3 from '../../../../public/categories/gear-reducers-3.webp';
+import gearReducers4 from '../../../../public/categories/gear-reducers-4.webp';
 
 const images = [gearReducers1, gearReducers2, gearReducers3, gearReducers4];
 
