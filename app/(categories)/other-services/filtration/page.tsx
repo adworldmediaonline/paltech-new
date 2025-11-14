@@ -5,10 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import filtration1 from '../../../../public/other-services/Filtration 1.webp';
-import filtration2 from '../../../../public/other-services/Filtration 2.webp';
-import filtration3 from '../../../../public/other-services/Filtration 3.webp';
-import filtration4 from '../../../../public/other-services/Filtration 4.webp';
+import filtration1 from '../../../../public/categories/filtration-1.webp';
+import filtration2 from '../../../../public/categories/filtration-2.webp';
+import filtration3 from '../../../../public/categories/filtration-3.webp';
+import filtration4 from '../../../../public/categories/filtration-4.webp';
 
 const images = [filtration1, filtration2, filtration3, filtration4];
 

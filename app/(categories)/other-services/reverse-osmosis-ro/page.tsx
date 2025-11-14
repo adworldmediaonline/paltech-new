@@ -5,10 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import reverseOsmosis1 from '../../../../public/other-services/Reverse Osmosis R.O. 1.webp';
-import reverseOsmosis2 from '../../../../public/other-services/Reverse Osmosis R.O. 2.webp';
-import reverseOsmosis3 from '../../../../public/other-services/Reverse Osmosis R.O. 3.webp';
-import reverseOsmosis4 from '../../../../public/other-services/Reverse Osmosis R.O. 4.webp';
+import reverseOsmosis1 from '../../../../public/categories/reverse-osmosis-ro-1.webp';
+import reverseOsmosis2 from '../../../../public/categories/reverse-osmosis-ro-2.webp';
+import reverseOsmosis3 from '../../../../public/categories/reverse-osmosis-ro-3.webp';
+import reverseOsmosis4 from '../../../../public/categories/reverse-osmosis-ro-4.webp';
 
 const images = [reverseOsmosis1, reverseOsmosis2, reverseOsmosis3, reverseOsmosis4];
 

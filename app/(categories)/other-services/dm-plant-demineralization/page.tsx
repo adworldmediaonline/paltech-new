@@ -5,10 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import dmPlant1 from '../../../../public/other-services/DM Plant Demineralization 1.webp';
-import dmPlant2 from '../../../../public/other-services/DM Plant Demineralization 2.webp';
-import dmPlant3 from '../../../../public/other-services/DM Plant Demineralization 3.webp';
-import dmPlant4 from '../../../../public/other-services/DM Plant Demineralization 4.webp';
+import dmPlant1 from '../../../../public/categories/dm-plant-demineralization-1.webp';
+import dmPlant2 from '../../../../public/categories/dm-plant-demineralization-2.webp';
+import dmPlant3 from '../../../../public/categories/dm-plant-demineralization-3.webp';
+import dmPlant4 from '../../../../public/categories/dm-plant-demineralization-4.webp';
 
 const images = [dmPlant1, dmPlant2, dmPlant3, dmPlant4];
 

@@ -7,9 +7,11 @@ import coolingTowers1 from '../../../public/categories/cooling-towers-1.webp';
 import coolingTowers2 from '../../../public/categories/cooling-towers-2.webp';
 import coolingTowers3 from '../../../public/categories/cooling-towers-3.webp';
 import coolingTowers4 from '../../../public/categories/cooling-towers-4.webp';
+import coolingTowers5 from '../../../public/categories/cooling-towers-5.webp';
+import coolingTowers6 from '../../../public/categories/cooling-towers-6.webp';
 import { Metadata } from "next";
 
-const images = [coolingTowers1, coolingTowers2, coolingTowers3, coolingTowers4];
+const images = [coolingTowers1, coolingTowers2, coolingTowers3, coolingTowers4, coolingTowers5, coolingTowers6];
 
 export const metadata: Metadata = {
   title: "Premium Industrial Cooling Towers | Paltech™ India",

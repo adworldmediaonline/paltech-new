@@ -4,10 +4,11 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
-import micro1 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plants-1.webp';
-import micro2 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plants-2.webp';
-import micro3 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plants-3.webp';
-import micro4 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plants-4.webp';
+import micro1 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plant-1.webp';
+import micro2 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plant-2.webp';
+import micro3 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plant-3.webp';
+
+import micro4 from '../../../../public/categories/micro-processor-based-water-air-cooled-chilling-plant-4.webp';
 
 const images = [micro1, micro2, micro3, micro4];
 

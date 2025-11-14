@@ -5,9 +5,12 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import axialFans1 from '../../../../public/categories/axial-fans.webp';
+import axialFans1 from '../../../../public/categories/axial-fans-1.webp';
+import axialFans2 from '../../../../public/categories/axial-fans-2.webp';
+import axialFans3 from '../../../../public/categories/axial-fans-3.webp';
+import axialFans4 from '../../../../public/categories/axial-fans-4.webp';
 
-const images = [axialFans1];
+const images = [axialFans1, axialFans2, axialFans3, axialFans4];
 
 export const metadata: Metadata = {
   title: "FRP Cooling Tower Fans | High-Efficiency Industrial Fans by Paltech™",

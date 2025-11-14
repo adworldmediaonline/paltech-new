@@ -5,10 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import waterSoftening1 from '../../../../public/other-services/Water Softeness 1.webp';
-import waterSoftening2 from '../../../../public/other-services/Water Softeness 2.webp';
-import waterSoftening3 from '../../../../public/other-services/Water Softeness 3.webp';
-import waterSoftening4 from '../../../../public/other-services/Water Softeness 4.webp';
+import waterSoftening1 from '../../../../public/categories/water-softening-1.webp';
+import waterSoftening2 from '../../../../public/categories/water-softening-2.webp';
+import waterSoftening3 from '../../../../public/categories/water-softening-3.webp';
+import waterSoftening4 from '../../../../public/categories/water-softening-4.webp';
 
 const images = [waterSoftening1, waterSoftening2, waterSoftening3, waterSoftening4];
 
