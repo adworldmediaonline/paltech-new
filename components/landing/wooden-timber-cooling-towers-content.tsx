@@ -109,7 +109,7 @@ export function WoodenTimberCoolingTowersContent() {
                 </button>
               </DialogTrigger>
               <DialogTitle className="sr-only">General arrangement drawing for Paltech™ wooden/timber cooling tower</DialogTitle>
-              <DialogContent className="max-w-7xl w-[95vw] max-h-[90vh] p-4 sm:p-6 overflow-auto">
+              <DialogContent>
                 <div className="relative w-full aspect-auto min-h-[600px] bg-gray-50 rounded-lg border border-gray-200">
                   <Image
                     src={woodenBlueprint}
