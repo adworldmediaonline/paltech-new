@@ -1,5 +1,11 @@
+"use client";
+
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Clock, Users, Factory } from "lucide-react";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import woodenBlueprint from "@/public/5DFID-6M-5-GA-Model_page.jpg";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 export function WoodenTimberCoolingTowersContent() {
   const coolingTowerTypes = [
@@ -76,6 +82,50 @@ export function WoodenTimberCoolingTowersContent() {
         </div>
       </section>
 
+      {/* Engineering Blueprint */}
+      <section className="py-12 bg-white">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-5xl mx-auto">
+            <Dialog>
+              <DialogTrigger asChild>
+                <button className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden hover:shadow-lg transition-shadow cursor-pointer w-full">
+                  <div className="p-4 sm:p-6">
+                    <div className="relative w-full aspect-3/2 bg-gray-50 rounded-xl border border-gray-100 group">
+                      <Image
+                        src={woodenBlueprint}
+                        alt="General arrangement drawing for Paltech™ wooden/timber cooling tower"
+                        fill
+                        sizes="(min-width: 1024px) 900px, (min-width: 640px) 80vw, 100vw"
+                        className="object-contain p-4 group-hover:opacity-90 transition-opacity"
+                        priority
+                      />
+                      <div className="absolute inset-0 flex items-center justify-center bg-black/0 group-hover:bg-black/5 transition-colors rounded-xl">
+                        <div className="opacity-0 group-hover:opacity-100 transition-opacity text-sm font-medium text-gray-700 bg-white/90 px-4 py-2 rounded-lg shadow-lg">
+                          Click to view full size
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </button>
+              </DialogTrigger>
+              <DialogTitle className="sr-only">General arrangement drawing for Paltech™ wooden/timber cooling tower</DialogTitle>
+              <DialogContent className="max-w-7xl w-[95vw] max-h-[90vh] p-4 sm:p-6 overflow-auto">
+                <div className="relative w-full aspect-auto min-h-[600px] bg-gray-50 rounded-lg border border-gray-200">
+                  <Image
+                    src={woodenBlueprint}
+                    alt="General arrangement drawing for Paltech™ wooden/timber cooling tower - Full view"
+                    fill
+                    sizes="100vw"
+                    className="object-contain p-4"
+                    quality={100}
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
+          </div>
+        </div>
+      </section>
+
       {/* Key Features */}
       <section className="py-16 bg-white">
         <div className="px-4 sm:px-6 lg:px-8">
@@ -85,7 +135,7 @@ export function WoodenTimberCoolingTowersContent() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {keyFeatures.map((feature, index) => (
-                <div key={index} className="bg-gradient-to-br from-amber-50 to-orange-50 p-6 rounded-xl border border-amber-200 hover:shadow-lg transition-shadow">
+                <div key={index} className="bg-linear-to-br from-amber-50 to-orange-50 p-6 rounded-xl border border-amber-200 hover:shadow-lg transition-shadow">
                   <div className="flex flex-col items-center text-center">
                     <div className="w-12 h-12 bg-amber-100 rounded-lg flex items-center justify-center text-amber-600 mb-4">
                       {feature.icon}
@@ -119,7 +169,7 @@ export function WoodenTimberCoolingTowersContent() {
               {coolingTowerTypes.map((type, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-lg transition-shadow">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                    <div className="shrink-0 w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
                       {type.icon}
                     </div>
                     <div className="flex-1">
@@ -161,7 +211,7 @@ export function WoodenTimberCoolingTowersContent() {
             </div>
 
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-200">
+              <div className="bg-linear-to-br from-blue-50 to-indigo-50 p-8 rounded-xl border border-blue-200">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600">
                     <Settings className="w-6 h-6" />
@@ -173,7 +223,7 @@ export function WoodenTimberCoolingTowersContent() {
                 </p>
               </div>
 
-              <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-xl border border-green-200">
+              <div className="bg-linear-to-br from-green-50 to-emerald-50 p-8 rounded-xl border border-green-200">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600">
                     <Shield className="w-6 h-6" />
@@ -205,7 +255,7 @@ export function WoodenTimberCoolingTowersContent() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-br from-primary to-primary/90 text-white">
+      <section className="py-16 bg-linear-to-br from-primary to-primary/90 text-white">
         <div className="px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Need Expert Wooden/Timber Cooling Tower Solutions?
