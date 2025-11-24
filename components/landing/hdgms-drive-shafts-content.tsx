@@ -243,7 +243,7 @@ export function HdgmsDriveShaftsContent() {
             },
             {
               icon: <Factory className="w-5 h-5" />,
-              text: "Trusted by industries across 25+ countries worldwide."
+              text: "Trusted by industries across 46+ countries worldwide."
             },
             {
               icon: <Shield className="w-5 h-5" />,

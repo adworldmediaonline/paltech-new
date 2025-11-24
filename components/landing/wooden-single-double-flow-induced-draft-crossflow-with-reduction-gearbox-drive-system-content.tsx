@@ -21,7 +21,7 @@ export function WoodenTimberReductionGearboxDriveSystemContent() {
     {
       icon: <Globe className="w-5 h-5" />,
       title: "Global Export Network",
-      description: "Our cooling towers are supplied globally to 25+ countries, meeting international standards and diverse industrial requirements."
+      description: "Our cooling towers are supplied globally to 46+ countries, meeting international standards and diverse industrial requirements."
     },
   ];
 

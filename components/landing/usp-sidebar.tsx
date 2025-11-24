@@ -21,7 +21,7 @@ export function USPSidebar() {
     },
     {
       icon: <Globe className="w-5 h-5" />,
-      text: "Export to 25+ countries"
+      text: "Export to 46+ countries"
     },
     {
       icon: <Shield className="w-5 h-5" />,

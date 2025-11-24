@@ -7,7 +7,7 @@ export function USP() {
     "Quality Products & Most Reliable Services",
     "More than 37 years of mfg. Excellence",
     "More than 9000 clients",
-    "Export to 25+ countries",
+    "Export to 46+ countries",
     "More than 11000 Installations Worldwide",
     "Associate Member of Cooling Technology Institute (CTI) USA, Since more than Last Two Decades",
     "ISO 9001: 2015 Quality Management System, ISO 14001:2015 Environmental Management System and OHSAS 45001:2018 Occupational Health and Safety Management Systems Certified Company"
