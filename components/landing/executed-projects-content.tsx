@@ -11,7 +11,7 @@ const projectsData = [
     sno: 2,
     name: "PRAKASH INDUSTRIES LTD.",
     address: "CHAMPA - 495671, CHHATTISGARH. TEL.: 07819-245103",
-    capacity: "34,000, 27,000"
+    capacity: "34,000 & 27,000"
   },
   {
     sno: 3,
@@ -148,15 +148,15 @@ const projectsData = [
 ];
 
 export function ExecutedProjectsContent() {
-  // Sort projects by capacity in descending order
+  // Sort projects by capacity in ascending order (low to high)
   const sortedProjects = [...projectsData].sort((a, b) => {
     // Get max capacity for each project
     const getMaxCapacity = (capacityStr: string) => {
       // Split by ", " to handle multiple capacities, then remove thousand separators
-      const capacities = capacityStr.split(', ').map(c => parseFloat(c.replace(/,/g, '')));
+      const capacities = capacityStr.split(' & ').map(c => parseFloat(c.replace(/,/g, '')));
       return Math.max(...capacities);
     };
-    return getMaxCapacity(b.capacity) - getMaxCapacity(a.capacity);
+    return getMaxCapacity(a.capacity) - getMaxCapacity(b.capacity);
   });
 
   return (
