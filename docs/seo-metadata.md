@@ -95,7 +95,7 @@ Meta Title (≤60 characters)
 Paltech™ Trusted by 11,000+ Industrial Clients Worldwide
 
 Meta Description (≤160 characters)
-Serving 11,000+ clients across 25+ countries with ISO-certified cooling towers & heat exchangers. Trusted industrial solutions for 37+ years.
+Serving 11,000+ clients across 46+ countries with ISO-certified cooling towers & heat exchangers. Trusted industrial solutions for 37+ years.
 
 Keyword List
 Short-Tail Keywords:
@@ -171,7 +171,7 @@ Related / Semantic Keywords:
 Trusted by 11,000+ organizations
 
 
-Exporting cooling towers to 25+ countries
+Exporting cooling towers to 46+ countries
 
 
 Low power consumption cooling towers

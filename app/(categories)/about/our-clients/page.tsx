@@ -5,8 +5,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Paltech™ Trusted by 11,000+ Industrial Clients Worldwide",
-  description: "Serving 11,000+ clients across 25+ countries with ISO-certified cooling towers & heat exchangers. Trusted industrial solutions for 37+ years.",
+  title: "Paltech™ Trusted by 9,000+ Industrial Clients Worldwide",
+  description: "Serving 9,000+ clients across 46+ countries with ISO-certified cooling towers & heat exchangers. Trusted industrial solutions for 37+ years.",
   keywords: [
     "Industrial Cooling",
     "Cooling Towers",
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     "Process cooling systems provider",
     "Global industrial cooling equipment supplier",
     "Trusted by 11,000+ organizations",
-    "Exporting cooling towers to 25+ countries",
+    "Exporting cooling towers to 46+ countries",
     "Low power consumption cooling towers",
     "Low maintenance industrial cooling solutions",
     "Precision-engineered cooling systems",
@@ -41,8 +41,8 @@ export const metadata: Metadata = {
     canonical: '/about/our-clients',
   },
   openGraph: {
-    title: "Paltech™ Trusted by 11,000+ Industrial Clients Worldwide",
-    description: "Serving 11,000+ clients across 25+ countries with ISO-certified cooling towers & heat exchangers. Trusted industrial solutions for 37+ years.",
+    title: "Paltech™ Trusted by 9,000+ Industrial Clients Worldwide",
+    description: "Serving 9,000+ clients across 46+ countries with ISO-certified cooling towers & heat exchangers. Trusted industrial solutions for 37+ years.",
     type: "website",
   },
 };

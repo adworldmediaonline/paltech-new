@@ -9,7 +9,7 @@ export function OtherServicesContent() {
           Paltech™ Annual Maintenance and Other Services
         </h1>
         <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-          Paltech™ offers industry-leading <strong>annual maintenance and allied services</strong> for cooling towers, ensuring sustained performance, longevity, and operational reliability of your cooling infrastructure. With over <strong>34 years of experience</strong> and <strong>11,000+ installations worldwide</strong>, our expert team delivers tailored solutions across diverse cooling tower types—RCC, wooden, FRP, and more.
+          Paltech™ offers industry-leading <strong>annual maintenance and allied services</strong> for cooling towers, ensuring sustained performance, longevity, and operational reliability of your cooling infrastructure. With over <strong>37 years of experience</strong> and <strong>11,000+ installations worldwide</strong>, our expert team delivers tailored solutions across diverse cooling tower types—RCC, wooden, FRP, and more.
         </p>
       </div>
 
@@ -106,7 +106,7 @@ export function OtherServicesContent() {
             {
               icon: <Globe className="w-7 h-7" />,
               title: "Global Reach & Experience",
-              description: "Over 9000 satisfied clients across 25+ countries and multiple industries."
+              description: "Over 9000 satisfied clients across 46+ countries and multiple industries."
             },
             {
               icon: <Shield className="w-7 h-7" />,
@@ -215,7 +215,7 @@ export function OtherServicesContent() {
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-4">
               <Globe className="w-8 h-8" />
             </div>
-            <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">25+</div>
+            <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">46+</div>
             <div className="text-sm text-gray-600 font-medium">Countries Served</div>
           </div>
         </div>

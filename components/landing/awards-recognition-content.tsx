@@ -151,7 +151,7 @@ export function AwardsRecognitionContent() {
             <div>
               <h3 className="text-xl font-bold mb-2">Continued Excellence</h3>
               <p className="text-white/90 leading-relaxed">
-                With 37+ years of experience, 11,000+ installations worldwide, and 9,000+ satisfied clients across 25+ countries, we continue to set benchmarks in the industry.
+                With 37+ years of experience, 11,000+ installations worldwide, and 9,000+ satisfied clients across 46+ countries, we continue to set benchmarks in the industry.
               </p>
             </div>
           </div>

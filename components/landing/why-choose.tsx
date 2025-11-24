@@ -212,7 +212,7 @@ export function WhyChoose() {
               <div className="text-sm lg:text-base text-muted-foreground">Installations</div>
             </div>
             <div>
-              <div className="text-5xl lg:text-6xl font-bold text-primary mb-3">25+</div>
+              <div className="text-5xl lg:text-6xl font-bold text-primary mb-3">46+</div>
               <div className="text-sm lg:text-base text-muted-foreground">Export Countries</div>
             </div>
           </div>

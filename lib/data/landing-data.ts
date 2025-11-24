@@ -431,7 +431,7 @@ export const navItems: NavItem[] = [
 
 export const heroData: HeroData = {
   headline: "Precision-Engineered Cooling Solutions for Critical Industries",
-  subheadline: "3+ decades of excellence serving 25+ countries",
+  subheadline: "3+ decades of excellence serving 46+ countries",
   primaryCta: {
     text: "Request a Quote",
     href: "#contact",
@@ -623,9 +623,9 @@ export const servicesData: ServicesData = {
 export const statsData: StatsData = {
   stats: [
     { value: "37+", label: "Years of Excellence" },
-    { value: "11,000+", label: "Clients Served" },
+    { value: "9,000+", label: "Clients Served" },
     { value: "14,000+", label: "Installations Worldwide" },
-    { value: "25+", label: "Export Countries" },
+    { value: "46+", label: "Export Countries" },
   ],
 };
 
