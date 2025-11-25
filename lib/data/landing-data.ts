@@ -171,6 +171,7 @@ export const navItems: NavItem[] = [
       { label: "Project Consultants", href: "/about/project-consultants" },
       { label: "Affilliated Bodies", href: "/about/affiliated-bodies" },
       { label: "Policies & Certification", href: "/about/policies-certification" },
+      { label: "Testimonials", href: "/about/testimonials" },
     ]
   },
   {
