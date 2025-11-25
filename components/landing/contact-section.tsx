@@ -6,8 +6,9 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { contactFormData, ctaSectionData } from "@/lib/data/landing-data";
-import { CheckCircle2, Mail, MapPin, Phone, Send } from "lucide-react";
-import { useState } from "react";
+import { CheckCircle2, Mail, MapPin, Phone, Send, Loader2, AlertCircle } from "lucide-react";
+import { useState, useTransition } from "react";
+import { sendContactEmail } from "@/app/actions/send-email";
 
 export function ContactSection() {
   const [ref, isVisible] = useIntersectionObserver({ freezeOnceVisible: true });
@@ -18,10 +19,43 @@ export function ContactSection() {
     phone: "",
     message: "",
   });
+  const [isPending, startTransition] = useTransition();
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: "success" | "error" | null;
+    message: string;
+  }>({ type: null, message: "" });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
+    setSubmitStatus({ type: null, message: "" });
+
+    startTransition(async () => {
+      const result = await sendContactEmail({
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        phone: formData.phone || undefined,
+        message: formData.message,
+      });
+
+      if (result.success) {
+        setSubmitStatus({ type: "success", message: result.message });
+        // Reset form on success
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          phone: "",
+          message: "",
+        });
+        // Clear success message after 5 seconds
+        setTimeout(() => {
+          setSubmitStatus({ type: null, message: "" });
+        }, 5000);
+      } else {
+        setSubmitStatus({ type: "error", message: result.message });
+      }
+    });
   };
 
   const handleChange = (
@@ -250,14 +284,43 @@ export function ContactSection() {
                     />
                   </div>
 
+                  {/* Status Messages */}
+                  {submitStatus.type && (
+                    <div
+                      className={`p-4 rounded-xl border ${submitStatus.type === "success"
+                        ? "bg-green-500/10 border-green-500/30 text-green-400"
+                        : "bg-red-500/10 border-red-500/30 text-red-400"
+                        }`}
+                    >
+                      <div className="flex items-start gap-3">
+                        {submitStatus.type === "success" ? (
+                          <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" />
+                        ) : (
+                          <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
+                        )}
+                        <p className="text-sm font-medium">{submitStatus.message}</p>
+                      </div>
+                    </div>
+                  )}
+
                   {/* Submit Button */}
                   <Button
                     type="submit"
                     size="lg"
-                    className="w-full bg-primary hover:bg-primary/90 text-white rounded-xl py-6 h-auto text-base font-semibold shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all group"
+                    disabled={isPending}
+                    className="w-full bg-primary hover:bg-primary/90 disabled:bg-primary/50 disabled:cursor-not-allowed text-white rounded-xl py-6 h-auto text-base font-semibold shadow-lg shadow-primary/20 hover:shadow-xl hover:shadow-primary/30 transition-all group"
                   >
-                    Send Message
-                    <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                    {isPending ? (
+                      <>
+                        <Loader2 className="mr-2 h-5 w-5 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        Send Message
+                        <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                      </>
+                    )}
                   </Button>
                 </form>
 

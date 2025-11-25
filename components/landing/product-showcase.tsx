@@ -11,147 +11,191 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
+import rccConcreteCoolingTowers1 from "@/public/categories/RCC Concrete Cooling Towers 1.webp";
+import rccConcreteCoolingTowers2 from "@/public/categories/RCC Concrete Cooling Towers 2.webp";
+import rccConcreteCoolingTowers3 from "@/public/categories/RCC Concrete Cooling Towers 3.webp";
+import pultrudedFrpCoolingTowers1 from "@/public/categories/pultruded-frp-cooling-towers-1.webp";
+import pultrudedFrpCoolingTowers2 from "@/public/categories/pultruded-frp-cooling-towers-2.webp";
+import pultrudedFrpCoolingTowers3 from "@/public/categories/pultruded-frp-cooling-towers-3.webp";
+import pultrudedFrpCoolingTowers4 from "@/public/categories/pultruded-frp-cooling-towers-4.webp";
+import woodenTimberCoolingTowers1 from "@/public/categories/wooden-timber-cooling-towers-1.webp";
+import woodenTimberCoolingTowers2 from "@/public/categories/wooden-timber-cooling-towers-2.webp";
+import woodenTimberCoolingTowers3 from "@/public/categories/wooden-timber-cooling-towers-3.webp";
+import woodenTimberCoolingTowers4 from "@/public/categories/wooden-timber-cooling-towers-4.webp";
+import packagedWoodenTimberDoubleFlowInducedDraftCrossflowCoolingTowers1 from "@/public/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-1.webp";
+import packagedWoodenTimberDoubleFlowInducedDraftCrossflowCoolingTowers2 from "@/public/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-2.webp";
+import packagedWoodenTimberDoubleFlowInducedDraftCrossflowCoolingTowers3 from "@/public/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-3.webp";
+import packagedWoodenTimberDoubleFlowInducedDraftCrossflowCoolingTowers4 from "@/public/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-4.webp";
+import waterAirCooledScrollChillingPlants1 from "@/public/categories/water-air-cooled-scroll-chilling-plants-1.webp";
+import waterAirCooledScrollChillingPlants2 from "@/public/categories/water-air-cooled-scroll-chilling-plants-2.webp";
+import waterAirCooledScrollChillingPlants3 from "@/public/categories/water-air-cooled-scroll-chilling-plants-3.webp";
+import waterAirCooledScrollChillingPlants4 from "@/public/categories/water-air-cooled-scroll-chilling-plants-4.webp";
+import reciprocatingWaterAirCooledChillingPlants1 from "@/public/categories/reciprocating-water-air-cooled-chilling-plants-1.webp";
+import reciprocatingWaterAirCooledChillingPlants2 from "@/public/categories/reciprocating-water-air-cooled-chilling-plants-2.webp";
+import reciprocatingWaterAirCooledChillingPlants3 from "@/public/categories/reciprocating-water-air-cooled-chilling-plants-3.webp";
+import reciprocatingWaterAirCooledChillingPlants4 from "@/public/categories/reciprocating-water-air-cooled-chilling-plants-4.webp";
+import trolleyMountedWaterAirCooledChillingPlant1 from "@/public/categories/trolley-mounted-water-air-cooled-chilling-plant-1.webp";
+import trolleyMountedWaterAirCooledChillingPlant2 from "@/public/categories/trolley-mounted-water-air-cooled-chilling-plant-2.webp";
+import trolleyMountedWaterAirCooledChillingPlant3 from "@/public/categories/trolley-mounted-water-air-cooled-chilling-plant-3.webp";
+import trolleyMountedWaterAirCooledChillingPlant4 from "@/public/categories/trolley-mounted-water-air-cooled-chilling-plant-4.webp";
+
+import glycolBasedWaterAirCooledChillingPlants1 from "@/public/categories/glycol-based-water-air-cooled-chilling-plants-1.webp";
+import glycolBasedWaterAirCooledChillingPlants2 from "@/public/categories/glycol-based-water-air-cooled-chilling-plants-2.webp";
+import glycolBasedWaterAirCooledChillingPlants3 from "@/public/categories/glycol-based-water-air-cooled-chilling-plants-3.webp";
+import glycolBasedWaterAirCooledChillingPlants4 from "@/public/categories/glycol-based-water-air-cooled-chilling-plants-4.webp";
+import frpGratings1 from "@/public/categories/frp-gratings-1.webp";
+import frpGratings2 from "@/public/categories/frp-gratings-2.webp";
+import frpGratings3 from "@/public/categories/frp-gratings-3.webp";
+import frpGratings4 from "@/public/categories/frp-gratings-4.webp";
+import frpLadders1 from "@/public/categories/frp-ladders-1.webp";
+import frpLadders2 from "@/public/categories/frp-ladders-2.webp";
+import frpLadders3 from "@/public/categories/frp-ladders-3.webp";
+import frpLadders4 from "@/public/categories/frp-ladders-4.webp";
+import frpDeckPanels1 from "@/public/categories/frp-deck-panels-1.webp";
+import frpDeckPanels2 from "@/public/categories/frp-deck-panels-2.webp";
+import frpDeckPanels3 from "@/public/categories/frp-deck-panels-3.webp";
+import frpCorrugatedSheets1 from "@/public/categories/frp-corrugated-sheets-1.webp";
+import frpCorrugatedSheets2 from "@/public/categories/frp-corrugated-sheets-2.webp";
+import frpCorrugatedSheets3 from "@/public/categories/frp-corrugated-sheets-3.webp";
+import frpCorrugatedSheets4 from "@/public/categories/frp-corrugated-sheets-4.webp";
+import fanLessInducedDraftJetTypeFrp1 from "@/public/categories/fan-less-induced-draft-jet-type-frp-1.webp";
+import fanLessInducedDraftJetTypeFrp2 from "@/public/categories/fan-less-induced-draft-jet-type-frp-2.webp";
+import fanLessInducedDraftJetTypeFrp3 from "@/public/categories/fan-less-induced-draft-jet-type-frp-3.webp";
+import fanLessInducedDraftJetTypeFrp4 from "@/public/categories/fan-less-induced-draft-jet-type-frp-4.webp";
+
+
+
+
+import fanCylinders1 from "@/public/categories/fan-cylinders-1.webp";
+import fanCylinders2 from "@/public/categories/fan-cylinders-2.webp";
+import fanCylinders3 from "@/public/categories/fan-cylinders-3.webp";
+
+
 const products = [
   {
     title: "RCC Concrete Cooling Towers",
     images: [
-      "/categories/RCC Concrete Cooling Towers 1.webp",
-      "/categories/RCC Concrete Cooling Towers 2.webp",
-      "/categories/RCC Concrete Cooling Towers 3.webp",
-      "/categories/RCC Concrete Cooling Towers 4.webp",
+      rccConcreteCoolingTowers1,
+      rccConcreteCoolingTowers2,
+      rccConcreteCoolingTowers3,
+
     ],
   },
   {
     title: "Pultruded FRP Cooling Towers",
     images: [
-      "/categories/pultruded-frp-cooling-towers-1.webp",
-      "/categories/pultruded-frp-cooling-towers-2.webp",
-      "/categories/pultruded-frp-cooling-towers-3.webp",
-      "/categories/pultruded-frp-cooling-towers-4.webp",
+      pultrudedFrpCoolingTowers1,
+      pultrudedFrpCoolingTowers2,
+      pultrudedFrpCoolingTowers3,
+      pultrudedFrpCoolingTowers4,
     ],
   },
   {
     title: "Wooden Timber Cooling Towers",
     images: [
-      "/categories/wooden-timber-cooling-towers-1.webp",
-      "/categories/wooden-timber-cooling-towers-2.webp",
-      "/categories/wooden-timber-cooling-towers-3.webp",
-      "/categories/wooden-timber-cooling-towers-4.webp",
+      woodenTimberCoolingTowers1,
+      woodenTimberCoolingTowers2,
+      woodenTimberCoolingTowers3,
+      woodenTimberCoolingTowers4,
     ],
   },
   {
     title: "Packaged Wooden Double Flow Cooling Towers",
     images: [
-      "/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-1.webp",
-      "/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-2.webp",
-      "/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-3.webp",
-      "/categories/packaged-wooden-timber-double-flow-induced-draft-crossflow-cooling-towers-4.webp",
+      packagedWoodenTimberDoubleFlowInducedDraftCrossflowCoolingTowers1,
+      packagedWoodenTimberDoubleFlowInducedDraftCrossflowCoolingTowers2,
+      packagedWoodenTimberDoubleFlowInducedDraftCrossflowCoolingTowers3,
+      packagedWoodenTimberDoubleFlowInducedDraftCrossflowCoolingTowers4,
     ],
   },
   {
     title: "Water/Air Cooled Scroll Chilling Plants",
     images: [
-      "/categories/water-air-cooled-scroll-chilling-plants-1.webp",
-      "/categories/water-air-cooled-scroll-chilling-plants-2.webp",
-      "/categories/water-air-cooled-scroll-chilling-plants-3.webp",
-      "/categories/water-air-cooled-scroll-chilling-plants-4.webp",
+      waterAirCooledScrollChillingPlants1,
+      waterAirCooledScrollChillingPlants2,
+      waterAirCooledScrollChillingPlants3,
+      waterAirCooledScrollChillingPlants4,
     ],
   },
   {
     title: "Reciprocating Chilling Plants",
     images: [
-      "/categories/reciprocating-water-air-cooled-chilling-plants-1.webp",
-      "/categories/reciprocating-water-air-cooled-chilling-plants-2.webp",
-      "/categories/reciprocating-water-air-cooled-chilling-plants-3.webp",
-      "/categories/reciprocating-water-air-cooled-chilling-plants-4.webp",
+      reciprocatingWaterAirCooledChillingPlants1,
+      reciprocatingWaterAirCooledChillingPlants2,
+      reciprocatingWaterAirCooledChillingPlants3,
+      reciprocatingWaterAirCooledChillingPlants4,
     ],
   },
   {
     title: "Trolley Mounted Chilling Plants",
     images: [
-      "/categories/trolley-mounted-water-air-cooled-chilling-plant-1.webp",
-      "/categories/trolley-mounted-water-air-cooled-chilling-plant-2.webp",
-      "/categories/trolley-mounted-water-air-cooled-chilling-plant-3.webp",
-      "/categories/trolley-mounted-water-air-cooled-chilling-plant-4.webp",
+      trolleyMountedWaterAirCooledChillingPlant1,
+      trolleyMountedWaterAirCooledChillingPlant2,
+      trolleyMountedWaterAirCooledChillingPlant3,
+      trolleyMountedWaterAirCooledChillingPlant4,
     ],
   },
-  {
-    title: "Micro-Processor Based Chilling Plants",
-    images: [
-      "/categories/micro-processor-based-water-air-cooled-chilling-plants-1.webp",
-      "/categories/micro-processor-based-water-air-cooled-chilling-plants-2.webp",
-      "/categories/micro-processor-based-water-air-cooled-chilling-plants-3.webp",
-      "/categories/micro-processor-based-water-air-cooled-chilling-plants-4.webp",
-    ],
-  },
+
   {
     title: "Glycol Based Chilling Plants",
     images: [
-      "/categories/glycol-based-water-air-cooled-chilling-plants-1.webp",
-      "/categories/glycol-based-water-air-cooled-chilling-plants-2.webp",
-      "/categories/glycol-based-water-air-cooled-chilling-plants-3.webp",
-      "/categories/glycol-based-water-air-cooled-chilling-plants-4.webp",
+      glycolBasedWaterAirCooledChillingPlants1,
+      glycolBasedWaterAirCooledChillingPlants2,
+      glycolBasedWaterAirCooledChillingPlants3,
+      glycolBasedWaterAirCooledChillingPlants4,
     ],
   },
   {
     title: "FRP Gratings",
     images: [
-      "/categories/frp-gratings-1.webp",
-      "/categories/frp-gratings-2.webp",
-      "/categories/frp-gratings-3.webp",
-      "/categories/frp-gratings-4.webp",
+      frpGratings1,
+      frpGratings2,
+      frpGratings3,
+      frpGratings4,
     ],
   },
   {
     title: "FRP Ladders",
     images: [
-      "/categories/frp-ladders-1.webp",
-      "/categories/frp-ladders-2.webp",
-      "/categories/frp-ladders-3.webp",
-      "/categories/frp-ladders-4.webp",
+      frpLadders1,
+      frpLadders2,
+      frpLadders3,
+      frpLadders4,
     ],
   },
   {
     title: "FRP Deck Panels",
     images: [
-      "/categories/frp-deck-panels-1.webp",
-      "/categories/frp-deck-panels-2.webp",
-      "/categories/frp-deck-panels-3.webp",
+      frpDeckPanels1,
+      frpDeckPanels2,
+      frpDeckPanels3,
     ],
   },
   {
     title: "FRP Corrugated Sheets",
     images: [
-      "/categories/frp-corrugated-sheets-1.webp",
-      "/categories/frp-corrugated-sheets-2.webp",
-      "/categories/frp-corrugated-sheets-3.webp",
-      "/categories/frp-corrugated-sheets-4.webp",
+      frpCorrugatedSheets1,
+      frpCorrugatedSheets2,
+      frpCorrugatedSheets3,
+      frpCorrugatedSheets4,
     ],
   },
   {
     title: "Fan-Less Induced Draft Jet Type",
     images: [
-      "/categories/fan-less-induced-draft-jet-type-frp-1.webp",
-      "/categories/fan-less-induced-draft-jet-type-frp-2.webp",
-      "/categories/fan-less-induced-draft-jet-type-frp-3.webp",
-      "/categories/fan-less-induced-draft-jet-type-frp-4.webp",
+      fanLessInducedDraftJetTypeFrp1,
+      fanLessInducedDraftJetTypeFrp2,
+      fanLessInducedDraftJetTypeFrp3,
+      fanLessInducedDraftJetTypeFrp4,
     ],
   },
-  {
-    title: "Gear Reducers",
-    images: [
-      "/categories/gear-reducer-1.webp",
-      "/categories/gear-reducer-2.webp",
-      "/categories/gear-reducer-3.webp",
-      "/categories/gear-reducer-4.webp",
-    ],
-  },
+
   {
     title: "Fan Cylinders",
     images: [
-      "/categories/fan-cylinders-1.webp",
-      "/categories/fan-cylinders-2.webp",
-      "/categories/fan-cylinders-3.webp",
+      fanCylinders1,
+      fanCylinders2,
+      fanCylinders3,
     ],
   },
 ];
