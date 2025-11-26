@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 const uspItems = [
   "Quality Products & Most Reliable Services",
   "More than 39 years of mfg. Excellence",
-  "More than 9000 clients",
+  "More than 11000 clients",
   "Export to 46+ countries",
   "More than 11000 Installations Worldwide",
   "Associate Member of Cooling Technology Institute (CTI) USA, Since more than Last Two Decades",

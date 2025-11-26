@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Cooling Tower Annual Maintenance & Services | Paltech™ Experts",
-  description: "Paltech™ annual maintenance contracts and comprehensive services ensure optimized performance and longevity of cooling towers. Trusted by 9000+ clients worldwide.",
+  description: "Paltech™ annual maintenance contracts and comprehensive services ensure optimized performance and longevity of cooling towers. Trusted by 11000+ clients worldwide.",
   alternates: {
     canonical: '/other-services',
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Cooling Tower Annual Maintenance & Services | Paltech™ Experts",
-    description: "Paltech™ annual maintenance contracts and comprehensive services ensure optimized performance and longevity of cooling towers. Trusted by 9000+ clients worldwide.",
+    description: "Paltech™ annual maintenance contracts and comprehensive services ensure optimized performance and longevity of cooling towers. Trusted by 11000+ clients worldwide.",
     type: "website",
   },
 };

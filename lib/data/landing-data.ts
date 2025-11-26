@@ -362,6 +362,24 @@ export const navItems: NavItem[] = [
           {
             label: "Cooling Tower Splash Bar",
             href: "/spares/fills/cooling-tower-splash-bar"
+          }
+        ]
+      },
+      {
+        title: "Other",
+        href: "#",
+        subItems: [
+          {
+            label: "Gear Reducers",
+            href: "/spares/gear-reducers"
+          },
+          {
+            label: "Fan Cylinders",
+            href: "/spares/fan-cylinders"
+          },
+          {
+            label: "Fan Guards",
+            href: "/spares/fan-guards"
           },
           {
             label: "Drift Eliminator",
@@ -374,23 +392,9 @@ export const navItems: NavItem[] = [
           {
             label: "Nozzles",
             href: "/spares/fills/nozzles"
-          }
+          },
+
         ]
-      },
-      {
-        title: "Gear Reducers",
-        href: "/spares/gear-reducers",
-        subItems: []
-      },
-      {
-        title: "Fan Cylinders",
-        href: "/spares/fan-cylinders",
-        subItems: []
-      },
-      {
-        title: "Fan Guards",
-        href: "/spares/fan-guards",
-        subItems: []
       }
     ]
   },

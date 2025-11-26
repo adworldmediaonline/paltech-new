@@ -156,7 +156,7 @@ export function ExecutedProjectsContent() {
       const capacities = capacityStr.split(' & ').map(c => parseFloat(c.replace(/,/g, '')));
       return Math.max(...capacities);
     };
-    return getMaxCapacity(a.capacity) - getMaxCapacity(b.capacity);
+    return getMaxCapacity(b.capacity) - getMaxCapacity(a.capacity);
   });
 
   return (
@@ -176,8 +176,8 @@ export function ExecutedProjectsContent() {
         {[
           {
             icon: <Gauge className="w-7 h-7" />,
-            value: "50K+",
-            label: "Total Capacity (M³/hr)",
+            value: "56,000(M³/hr)",
+            label: "(NTPC - Muzaffarpur, Bihar)",
             color: "from-green-500 to-green-600"
           },
           {

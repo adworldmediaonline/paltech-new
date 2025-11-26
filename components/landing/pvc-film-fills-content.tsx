@@ -148,7 +148,7 @@ export function PvcFilmFillsContent() {
       {/* Fill Types Comparison */}
       <div className="space-y-6">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center">Fill Types Overview</h2>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6">
           {[
             {
               icon: <Layers className="w-8 h-8" />,
@@ -156,12 +156,7 @@ export function PvcFilmFillsContent() {
               description: "Spreads water in thin sheets across chevron patterns for maximum surface contact and efficient heat transfer.",
               features: ["High efficiency", "Clean water", "Chevron design"]
             },
-            {
-              icon: <Droplets className="w-8 h-8" />,
-              title: "Splash-Type Fill",
-              description: "Breaks water into droplets for extended air contact time, ideal for contaminated or dirty water conditions.",
-              features: ["Fouling resistant", "Dirty water", "Robust design"]
-            },
+
             {
               icon: <ThermometerSun className="w-8 h-8" />,
               title: "Fill-Less Design",
