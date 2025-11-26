@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Paltech™ ISO Certified Cooling Towers & Equipment",
-  description: "ISO 9001, 14001 & 45001 certified industrial cooling solutions. Ensuring quality, safety, and sustainability for 37+ years worldwide.",
+  description: "ISO 9001, 14001 & 45001 certified industrial cooling solutions. Ensuring quality, safety, and sustainability for 39+ years worldwide.",
   keywords: [
     "ISO Certification",
     "Cooling Towers",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Paltech™ ISO Certified Cooling Towers & Equipment",
-    description: "ISO 9001, 14001 & 45001 certified industrial cooling solutions. Ensuring quality, safety, and sustainability for 37+ years worldwide.",
+    description: "ISO 9001, 14001 & 45001 certified industrial cooling solutions. Ensuring quality, safety, and sustainability for 39+ years worldwide.",
     type: "website",
   },
 };

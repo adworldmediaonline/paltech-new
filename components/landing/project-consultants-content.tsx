@@ -107,7 +107,7 @@ export function ProjectConsultantsContent() {
             {
               icon: <Award className="w-6 h-6" />,
               title: "Proven Expertise",
-              description: "37+ years of engineering excellence in cooling tower design and manufacturing"
+              description: "39+ years of engineering excellence in cooling tower design and manufacturing"
             },
             {
               icon: <CheckCircle className="w-6 h-6" />,

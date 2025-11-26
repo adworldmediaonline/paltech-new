@@ -37,7 +37,7 @@ export function ClientLogos() {
             {clientLogosData.headline}
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
-            Partnering with industry leaders across 46+ countries for over 37+
+            Partnering with industry leaders across 46+ countries for over 39+
           </p>
         </div>
       </div>
@@ -178,7 +178,7 @@ export function ClientLogos() {
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" style={{ animationDelay: '1s' }} />
             <span className="text-sm font-semibold text-foreground">
-              37+ years trusted
+              39+ years trusted
             </span>
           </div>
         </div>

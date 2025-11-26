@@ -184,7 +184,7 @@ export function StainlessSteelDriveShaftsContent() {
           {[
             {
               icon: <Award className="w-5 h-5" />,
-              text: "Over 37 Years of Cooling Tower Expertise – Proven reliability in global markets."
+              text: "Over 39 Years of Cooling Tower Expertise – Proven reliability in global markets."
             },
             {
               icon: <CheckCircle className="w-5 h-5" />,

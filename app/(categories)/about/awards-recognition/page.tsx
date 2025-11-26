@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Paltech™ National Awards for Excellence & Quality",
-  description: "Recognized with national awards for excellence & quality in cooling towers, water treatment, and chilling plants. 37+ years of proven industrial expertise.",
+  description: "Recognized with national awards for excellence & quality in cooling towers, water treatment, and chilling plants. 39+ years of proven industrial expertise.",
   keywords: [
     "Cooling Towers",
     "Industrial Awards",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     "Excellence in industrial cooling solutions",
     "Quality-certified FRP, wooden, and RCC cooling towers",
     "Awarded industrial water treatment and chilling solutions",
-    "Proven 37+ years of industrial cooling expertise",
+    "Proven 39+ years of industrial cooling expertise",
     "ISO-certified cooling tower and equipment manufacturer",
     "Industrial process cooling solutions with national recognition",
     "Award-winning industrial cooling solutions",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Paltech™ National Awards for Excellence & Quality",
-    description: "Recognized with national awards for excellence & quality in cooling towers, water treatment, and chilling plants. 37+ years of proven industrial expertise.",
+    description: "Recognized with national awards for excellence & quality in cooling towers, water treatment, and chilling plants. 39+ years of proven industrial expertise.",
     type: "website",
   },
 };

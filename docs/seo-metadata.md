@@ -3,7 +3,7 @@ home page
 Meta Title :
 Paltech™ Industrial Cooling Towers & Heat Exchangers
 Meta Description :
-Trusted industrial cooling solutions with 37+ years expertise. High-quality cooling towers, heat exchangers & energy-efficient systems worldwide.
+Trusted industrial cooling solutions with 39+ years expertise. High-quality cooling towers, heat exchangers & energy-efficient systems worldwide.
 Keyword List:
 Short-Tail Keywords:
 Cooling Towers
@@ -95,7 +95,7 @@ Meta Title (≤60 characters)
 Paltech™ Trusted by 11,000+ Industrial Clients Worldwide
 
 Meta Description (≤160 characters)
-Serving 11,000+ clients across 46+ countries with ISO-certified cooling towers & heat exchangers. Trusted industrial solutions for 37+ years.
+Serving 11,000+ clients across 46+ countries with ISO-certified cooling towers & heat exchangers. Trusted industrial solutions for 39+ years.
 
 Keyword List
 Short-Tail Keywords:
@@ -190,7 +190,7 @@ Meta Title (≤60 characters)
 Paltech™ National Awards for Excellence & Quality
 
 Meta Description (≤160 characters)
-Recognized with national awards for excellence & quality in cooling towers, water treatment, and chilling plants. 37+ years of proven industrial expertise.
+Recognized with national awards for excellence & quality in cooling towers, water treatment, and chilling plants. 39+ years of proven industrial expertise.
 
 Keyword List
 Short-Tail Keywords:
@@ -222,7 +222,7 @@ Quality-certified FRP, wooden, and RCC cooling towers
 Awarded industrial water treatment and chilling solutions
 
 
-Proven 37+ years of industrial cooling expertise
+Proven 39+ years of industrial cooling expertise
 
 
 ISO-certified cooling tower and equipment manufacturer
@@ -287,7 +287,7 @@ Meta Title (≤60 characters)
 Paltech™ ISO Certified Cooling Towers & Equipment
 
 Meta Description (≤160 characters)
-ISO 9001, 14001 & 45001 certified industrial cooling solutions. Ensuring quality, safety, and sustainability for 37+ years worldwide.
+ISO 9001, 14001 & 45001 certified industrial cooling solutions. Ensuring quality, safety, and sustainability for 39+ years worldwide.
 
 Keyword List
 Short-Tail Keywords:
@@ -384,7 +384,7 @@ Meta Title (≤60 characters)
 Paltech™ Executed Cooling Tower Projects Worldwide
 
 Meta Description (≤160 characters)
-Showcasing executed cooling tower projects across industries & countries. 37+ years of expertise delivering high-quality, reliable industrial solutions.
+Showcasing executed cooling tower projects across industries & countries. 39+ years of expertise delivering high-quality, reliable industrial solutions.
 
 Keyword List
 Short-Tail Keywords:
@@ -460,7 +460,7 @@ Related / Semantic Keywords:
 Executed projects portfolio
 
 
-37+ years of industrial cooling expertise
+39+ years of industrial cooling expertise
 
 
 High client satisfaction cooling projects
@@ -478,7 +478,7 @@ Meta Title (≤60 characters)
 Paltech™ Project Consultants for Industrial Cooling Towers
 
 Meta Description (≤160 characters)
-Partner with leading project consultants for world-class cooling tower solutions. 37+ years expertise in engineering, design, and global industrial projects.
+Partner with leading project consultants for world-class cooling tower solutions. 39+ years expertise in engineering, design, and global industrial projects.
 
 Keyword List
 Short-Tail Keywords:
@@ -560,7 +560,7 @@ Trusted engineering partners
 Collaboration with top consultants
 
 
-37+ years of engineering excellence
+39+ years of engineering excellence
 
 
 Global network of industrial consultants

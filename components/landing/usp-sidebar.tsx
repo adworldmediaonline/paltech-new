@@ -13,7 +13,7 @@ export function USPSidebar() {
     },
     {
       icon: <Clock className="w-5 h-5" />,
-      text: "More than 37 years of mfg. Excellence"
+      text: "More than 39 years of mfg. Excellence"
     },
     {
       icon: <Users className="w-5 h-5" />,

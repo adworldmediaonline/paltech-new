@@ -70,7 +70,7 @@ export function Principles() {
                 "ISO 14001:2015",
                 "ISO 45001:2018",
                 "CTI USA Member",
-                "37+ Years",
+                "39+ Years",
                 "11K+ Clients",
               ].map((cert, index) => (
                 <div key={index} className="flex items-start gap-3 group">

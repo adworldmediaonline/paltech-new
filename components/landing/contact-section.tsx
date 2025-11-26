@@ -119,7 +119,7 @@ export function ContactSection() {
               {[
                 "Expert consultation within 24 hours",
                 "Tailored solutions for your needs",
-                "37+ years of proven expertise",
+                "39+ years of proven expertise",
               ].map((item, index) => (
                 <div
                   key={index}

@@ -14,7 +14,7 @@ export function GearReducersContent() {
           At Paltech™ Cooling Towers and Equipments Ltd., we design and manufacture high-performance <strong>Gear Reducers (Gearboxes)</strong> specifically engineered for industrial cooling tower applications. Built with superior materials and precision engineering, our gear drives deliver high torque, smooth transmission, and extended service life even under the most demanding environmental conditions.
         </p>
         <p className="text-base sm:text-lg text-gray-600">
-          With over 37 years of experience in cooling tower engineering, Paltech™ Gear Reducers are trusted globally for their efficiency, reliability, and adherence to international quality standards.
+          With over 39 years of experience in cooling tower engineering, Paltech™ Gear Reducers are trusted globally for their efficiency, reliability, and adherence to international quality standards.
         </p>
       </div>
 
@@ -228,7 +228,7 @@ export function GearReducersContent() {
           {[
             {
               icon: <Award className="w-5 h-5" />,
-              text: "37+ Years of Engineering Expertise in cooling tower and power transmission systems."
+              text: "39+ Years of Engineering Expertise in cooling tower and power transmission systems."
             },
             {
               icon: <CheckCircle className="w-5 h-5" />,

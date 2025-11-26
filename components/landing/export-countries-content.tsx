@@ -308,7 +308,7 @@ export function ExportCountriesContent() {
           },
           {
             icon: <TrendingUp className="w-7 h-7" />,
-            value: "37+",
+            value: "39+",
             label: "Years Global Presence",
             color: "from-orange-500 to-orange-600"
           }

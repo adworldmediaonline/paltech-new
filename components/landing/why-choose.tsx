@@ -200,7 +200,7 @@ export function WhyChoose() {
         >
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-16 text-center">
             <div>
-              <div className="text-5xl lg:text-6xl font-bold text-foreground mb-3">37+</div>
+              <div className="text-5xl lg:text-6xl font-bold text-foreground mb-3">39+</div>
               <div className="text-sm lg:text-base text-muted-foreground">Years of Excellence</div>
             </div>
             <div>
