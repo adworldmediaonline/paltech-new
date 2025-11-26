@@ -30,7 +30,7 @@ export function RCCConcreteCoolingTowersContent() {
   ];
 
   const currentOperations = [
-    { capacity: "56,000", unit: "m³/hr", status: "Operational", location: "Large-scale power generation facility" }
+    { capacity: "56,000(m³/hr)", unit: "", status: "Operational", location: "Large-scale power generation facility" }
   ];
 
   return (
@@ -109,40 +109,6 @@ export function RCCConcreteCoolingTowersContent() {
       <section className="py-16 bg-gray-50">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Comprehensive Capacity Range
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Paltech™ offers extensive capacity options from single-cell units to multicellular installations, serving diverse industrial cooling requirements across multiple sectors.
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-              {capacityRanges.map((item, index) => (
-                <div key={index} className="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-                  <div className="text-center mb-3">
-                    {item.max ? (
-                      <div className="flex items-center justify-center gap-3 mb-2">
-                        <div>
-                          <div className="text-xs text-gray-500 mb-1">Min</div>
-                          <div className="text-2xl font-bold text-primary">{item.min}</div>
-                        </div>
-                        <div className="text-2xl text-gray-300">—</div>
-                        <div>
-                          <div className="text-xs text-gray-500 mb-1">Max</div>
-                          <div className="text-2xl font-bold text-primary">{item.max}</div>
-                        </div>
-                      </div>
-                    ) : (
-                      <div className="text-3xl font-bold text-primary mb-2">{item.min}</div>
-                    )}
-                    <div className="text-sm text-gray-600 font-medium mb-3">{item.unit}</div>
-                    <div className="text-xs text-gray-500">{item.applications}</div>
-                  </div>
-                </div>
-              ))}
-            </div>
 
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6 text-center">Operational Track Record</h3>
@@ -163,9 +129,12 @@ export function RCCConcreteCoolingTowersContent() {
                 ))}
               </div>
             </div>
+
           </div>
         </div>
       </section>
+
+
 
       {/* Available Types */}
       <section className="py-16 bg-white">

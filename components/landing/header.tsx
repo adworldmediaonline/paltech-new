@@ -110,31 +110,42 @@ export function Header() {
                                     {/* Products List - All Visible */}
                                     <div className="space-y-1 sm:space-y-2">
                                       {category.subItems?.map((subItem) => (
-                                        <div key={subItem.label} className="min-w-0">
-                                          {/* Parent Product */}
-                                          <NavigationMenuLink asChild>
-                                            <Link
-                                              href={subItem.href}
-                                              className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors wrap-break-word leading-relaxed"
-                                            >
-                                              {subItem.label}
-                                            </Link>
-                                          </NavigationMenuLink>
-
-                                          {/* Nested Items - Always Visible */}
-                                          {subItem.nestedItems && (
-                                            <div className="ml-3 sm:ml-4 pl-2 sm:pl-3 border-l-2 border-gray-200 space-y-0.5 sm:space-y-1 bg-gray-50/50 py-0.5 sm:py-1 rounded-r-lg">
-                                              {subItem.nestedItems.map((nested) => (
-                                                <NavigationMenuLink asChild key={nested.label}>
-                                                  <Link
-                                                    href={nested.href}
-                                                    className="block py-1 sm:py-1.5 text-xs text-gray-600 hover:text-primary transition-colors wrap-break-word leading-relaxed"
-                                                  >
-                                                    • {nested.label}
-                                                  </Link>
-                                                </NavigationMenuLink>
-                                              ))}
-                                            </div>
+                                        <div key={subItem.label} className="min-w-0 group/nested relative">
+                                          {subItem.nestedItems && subItem.nestedItems.length > 0 ? (
+                                            <>
+                                              <NavigationMenuLink asChild>
+                                                <Link
+                                                  href={subItem.href}
+                                                  className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors wrap-break-word leading-relaxed pr-6"
+                                                >
+                                                  {subItem.label}
+                                                  <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 opacity-50 group-hover/nested:opacity-100 group-hover/nested:rotate-180 transition-all duration-200" />
+                                                </Link>
+                                              </NavigationMenuLink>
+                                              {/* Nested Items - Dropdown on Hover */}
+                                              <div className="absolute left-full top-0 ml-2 w-[280px] sm:w-[320px] bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 z-50 py-2">
+                                                <div className="space-y-0.5">
+                                                  {subItem.nestedItems.map((nested) => (
+                                                    <Link
+                                                      key={nested.label}
+                                                      href={nested.href}
+                                                      className="block py-2 px-4 text-xs sm:text-sm text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors wrap-break-word leading-relaxed"
+                                                    >
+                                                      {nested.label}
+                                                    </Link>
+                                                  ))}
+                                                </div>
+                                              </div>
+                                            </>
+                                          ) : (
+                                            <NavigationMenuLink asChild>
+                                              <Link
+                                                href={subItem.href}
+                                                className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors wrap-break-word leading-relaxed"
+                                              >
+                                                {subItem.label}
+                                              </Link>
+                                            </NavigationMenuLink>
                                           )}
                                         </div>
                                       ))}
