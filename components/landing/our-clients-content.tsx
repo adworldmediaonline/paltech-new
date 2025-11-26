@@ -71,35 +71,30 @@ export function OurClientsContent() {
         </div>
       </div>
       {/* Key Statistics */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {[
-          {
-            icon: <Users className="w-7 h-7" />,
-            value: "65+",
-            label: "Featured Clients",
-            color: "from-blue-500 to-blue-600"
-          },
+
           {
             icon: <Building2 className="w-7 h-7" />,
-            value: "16",
+            value: "30%",
             label: "Public Sector",
             color: "from-blue-500 to-blue-700"
           },
           {
             icon: <Building2 className="w-7 h-7" />,
-            value: "49",
+            value: "60%",
             label: "Private Sector",
             color: "from-green-500 to-green-600"
           },
           {
             icon: <Globe className="w-7 h-7" />,
-            value: "46+",
+            value: "10%",
             label: "Export Countries",
             color: "from-purple-500 to-purple-600"
           },
           {
             icon: <Award className="w-7 h-7" />,
-            value: "9,000+",
+            value: "11,000+",
             label: "Total Clients",
             color: "from-orange-500 to-orange-600"
           }
@@ -229,7 +224,7 @@ export function OurClientsContent() {
       <div className="space-y-6">
         <div className="text-center space-y-2">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Our Esteemed Clients</h2>
-          <p className="text-gray-600">A comprehensive list of organizations that trust Paltech™ for their cooling solutions</p>
+          <p className="text-gray-600">A list of a few organisations that trust Paltech™ for their cooling solutions.</p>
         </div>
 
         <Tabs defaultValue="private" className="w-full">

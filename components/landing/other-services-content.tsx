@@ -106,7 +106,7 @@ export function OtherServicesContent() {
             {
               icon: <Globe className="w-7 h-7" />,
               title: "Global Reach & Experience",
-              description: "Over 9000 satisfied clients across 46+ countries and multiple industries."
+              description: "Over 11000 satisfied clients across 46+ countries and multiple industries."
             },
             {
               icon: <Shield className="w-7 h-7" />,

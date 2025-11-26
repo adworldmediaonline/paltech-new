@@ -17,7 +17,7 @@ export function USPSidebar() {
     },
     {
       icon: <Users className="w-5 h-5" />,
-      text: "More than 9000 clients"
+      text: "More than 11000 clients"
     },
     {
       icon: <Globe className="w-5 h-5" />,

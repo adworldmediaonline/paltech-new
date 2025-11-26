@@ -32,7 +32,7 @@ export function CategoryHero({
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
           autoplay={{
-            delay: 5000,
+            delay: 1000,
             disableOnInteraction: false,
             pauseOnMouseEnter: true,
           }}

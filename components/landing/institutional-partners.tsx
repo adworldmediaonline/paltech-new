@@ -20,9 +20,8 @@ export function InstitutionalPartners() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div
-          className={`text-center mb-12 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`text-center mb-12 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           <div className="inline-flex items-center gap-2 mb-4 px-5 py-2 bg-primary/10 rounded-full">
             <GraduationCap className="w-4 h-4 text-primary" />
@@ -34,15 +33,14 @@ export function InstitutionalPartners() {
             Institutional Collaboration
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Partnering with premier institutions for research, innovation, and advanced engineering solutions
+            Gear Reducer systems technically validated by IIT Delhi & Gear Reducer systems technically validated by IIT Delhi
           </p>
         </div>
 
         {/* IIT Delhi Showcase */}
         <div
-          className={`transition-all duration-700 delay-200 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           <div className="bg-white rounded-3xl border-2 border-gray-200 shadow-2xl overflow-hidden">
             <div className="grid md:grid-cols-2 gap-0">
@@ -81,18 +79,13 @@ export function InstitutionalPartners() {
                   {[
                     {
                       icon: <GraduationCap className="w-5 h-5" />,
-                      title: "Academic Excellence",
-                      description: "World-class engineering and technology education"
+                      title: "Received Technical Validation from IIT Delhi for our high-performance Gear Reducers",
+                      description: "Paltech’s Gear Reducers underwent a rigorous technical evaluation conducted by IIT Delhi, one of India’s most respected engineering institutes. The validation process included performance benchmarking, structural analysis, reliability testing, and adherence to industry standards. This independent assessment confirms that Paltech Gear Reducers deliver superior efficiency, durability, and operational stability under diverse industrial conditions. The endorsement strengthens customer confidence and reinforces Paltech’s commitment to engineering excellence."
                     },
                     {
                       icon: <BookOpen className="w-5 h-5" />,
-                      title: "Research & Innovation",
-                      description: "Leading research in advanced cooling technologies"
-                    },
-                    {
-                      icon: <Award className="w-5 h-5" />,
-                      title: "Industry Collaboration",
-                      description: "Strategic partnership for technological advancement"
+                      title: "Obtained Technical Design Expertise from IIT Bombay for next-generation FRP Fans",
+                      description: "To develop advanced, high-efficiency FRP Fans, Paltech collaborated with IIT Bombay’s engineering experts. The institute provided specialized technical design inputs covering aerodynamic modeling, structural optimization, material selection, and performance enhancement. This partnership helped us create FRP Fans that offer improved airflow, reduced energy consumption, lower noise levels, and enhanced resistance to corrosion. The result is a next-generation product line engineered using world-class academic and technical knowledge."
                     }
                   ].map((item, index) => (
                     <div

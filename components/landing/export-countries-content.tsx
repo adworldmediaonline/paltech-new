@@ -302,7 +302,7 @@ export function ExportCountriesContent() {
           },
           {
             icon: <Award className="w-7 h-7" />,
-            value: "1000+",
+            value: "100+",
             label: "International Projects",
             color: "from-purple-500 to-purple-600"
           },
