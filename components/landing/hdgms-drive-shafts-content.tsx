@@ -231,7 +231,7 @@ export function HdgmsDriveShaftsContent() {
           {[
             {
               icon: <Award className="w-5 h-5" />,
-              text: "37+ Years of Manufacturing Excellence in cooling tower technology."
+              text: "39+ Years of Manufacturing Excellence in cooling tower technology."
             },
             {
               icon: <CheckCircle className="w-5 h-5" />,

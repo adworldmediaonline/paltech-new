@@ -5,7 +5,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Paltech™ Client Testimonials & Appreciation Certificates",
-  description: "Read testimonials and appreciation certificates from satisfied clients across 46+ countries. Trusted by leading industries worldwide for 37+ years.",
+  description: "Read testimonials and appreciation certificates from satisfied clients across 46+ countries. Trusted by leading industries worldwide for 39+ years.",
   keywords: [
     "Cooling Towers",
     "Client Testimonials",
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Chilling plant client reviews",
     "Water treatment system testimonials",
     "ISO-certified cooling tower company reviews",
-    "37+ years client testimonials",
+    "39+ years client testimonials",
     "Global cooling solutions client feedback",
     "Industrial cooling equipment reviews",
     "Cooling tower manufacturer testimonials",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Paltech™ Client Testimonials & Appreciation Certificates",
-    description: "Read testimonials and appreciation certificates from satisfied clients across 46+ countries. Trusted by leading industries worldwide for 37+ years.",
+    description: "Read testimonials and appreciation certificates from satisfied clients across 46+ countries. Trusted by leading industries worldwide for 39+ years.",
     type: "website",
   },
   twitter: {

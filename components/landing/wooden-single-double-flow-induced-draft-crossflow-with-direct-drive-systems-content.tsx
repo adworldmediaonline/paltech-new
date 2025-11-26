@@ -6,11 +6,11 @@ export function WoodenTimberDirectDriveSystemsContent() {
     {
       icon: <Award className="w-5 h-5" />,
       title: "Quality Products & Reliable Services",
-      description: "Paltech™ ensures top-tier quality and dependable services for all cooling tower components, backed by over 37 years of manufacturing excellence."
+      description: "Paltech™ ensures top-tier quality and dependable services for all cooling tower components, backed by over 39 years of manufacturing excellence."
     },
     {
       icon: <Clock className="w-5 h-5" />,
-      title: "37+ Years of Manufacturing Excellence",
+      title: "39+ Years of Manufacturing Excellence",
       description: "Decades of experience in manufacturing ensure superior product quality, performance, and reliability across diverse industrial applications."
     },
     {

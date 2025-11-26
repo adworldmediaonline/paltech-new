@@ -37,7 +37,7 @@ export function OurClientsContent() {
           Our Clients
         </h1>
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-          Partnering with industry leaders across 46+ countries for over 37+ years. Paltech™ is trusted by thousands of organizations worldwide for delivering exceptional cooling solutions.
+          Partnering with industry leaders across 46+ countries for over 39+ years. Paltech™ is trusted by thousands of organizations worldwide for delivering exceptional cooling solutions.
         </p>
       </div>
       {/* Industries Served */}
@@ -219,7 +219,7 @@ export function OurClientsContent() {
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" style={{ animationDelay: '1s' }} />
             <span className="text-sm font-semibold text-foreground">
-              37+ years trusted
+              39+ years trusted
             </span>
           </div>
         </div>

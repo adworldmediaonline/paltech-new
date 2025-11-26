@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Paltech™ Project Consultants for Industrial Cooling Towers",
-  description: "Partner with leading project consultants for world-class cooling tower solutions. 37+ years expertise in engineering, design, and global industrial projects.",
+  description: "Partner with leading project consultants for world-class cooling tower solutions. 39+ years expertise in engineering, design, and global industrial projects.",
   keywords: [
     "Project Consultants",
     "Cooling Towers",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "Industrial project engineering services",
     "Trusted engineering partners",
     "Collaboration with top consultants",
-    "37+ years of engineering excellence",
+    "39+ years of engineering excellence",
     "Global network of industrial consultants",
     "Timely delivery of industrial projects",
     "ISO-certified quality assurance in cooling systems"
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Paltech™ Project Consultants for Industrial Cooling Towers",
-    description: "Partner with leading project consultants for world-class cooling tower solutions. 37+ years expertise in engineering, design, and global industrial projects.",
+    description: "Partner with leading project consultants for world-class cooling tower solutions. 39+ years expertise in engineering, design, and global industrial projects.",
     type: "website",
   },
 };

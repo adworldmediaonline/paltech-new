@@ -34,7 +34,7 @@ export function CoolingTowersContent() {
   const keyBenefits = [
     {
       icon: <Building2 className="w-6 h-6" />,
-      title: "37+ Years of Manufacturing Excellence",
+      title: "39+ Years of Manufacturing Excellence",
       description: "Established in 1986, Paltech™ has served over 9,000 clients across 46+ countries with proven expertise in cooling tower manufacturing."
     },
     {
@@ -65,7 +65,7 @@ export function CoolingTowersContent() {
             </h1>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
-                Paltech™ Cooling Towers & Equipments Limited stands as India's premier manufacturer of industrial cooling towers, serving diverse sectors including power plants, chemical processing, petrochemicals, refineries, HVAC systems, and manufacturing facilities. With <strong>over 37 years of manufacturing excellence</strong> and a track record of <strong>9,000+ successful installations</strong>, we deliver high-performance cooling solutions engineered for reliability, efficiency, and long-term value.
+                Paltech™ Cooling Towers & Equipments Limited stands as India's premier manufacturer of industrial cooling towers, serving diverse sectors including power plants, chemical processing, petrochemicals, refineries, HVAC systems, and manufacturing facilities. With <strong>over 39 years of manufacturing excellence</strong> and a track record of <strong>9,000+ successful installations</strong>, we deliver high-performance cooling solutions engineered for reliability, efficiency, and long-term value.
               </p>
               <p>
                 Our extensive range of cooling towers encompasses RCC concrete structures for large-scale applications, lightweight pultruded FRP systems for rapid deployment, traditional wooden towers for specific industrial needs, and versatile FRP cooling towers offering design flexibility. Each product category is manufactured using <strong>premium-grade materials</strong>, advanced engineering techniques, and rigorous quality control processes ensuring optimal thermal performance and extended service life.
@@ -190,7 +190,7 @@ export function CoolingTowersContent() {
               {[
                 {
                   q: "What is the typical lifespan of a cooling tower?",
-                  a: "Cooling tower lifespan varies by type and maintenance: RCC concrete towers can last 37+ years with proper maintenance, FRP cooling towers typically offer 15-25 years of service life, while wooden towers require more frequent maintenance but can operate effectively for 10-15 years. Regular maintenance, water treatment, and component replacement significantly extend operational life."
+                  a: "Cooling tower lifespan varies by type and maintenance: RCC concrete towers can last 39+ years with proper maintenance, FRP cooling towers typically offer 15-25 years of service life, while wooden towers require more frequent maintenance but can operate effectively for 10-15 years. Regular maintenance, water treatment, and component replacement significantly extend operational life."
                 },
                 {
                   q: "How do I choose between cross-flow and counter-flow cooling towers?",

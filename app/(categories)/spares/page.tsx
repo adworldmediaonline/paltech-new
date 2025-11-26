@@ -7,7 +7,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Cooling Tower Spares & FRP Fans | Paltech™ Industrial Cooling Components",
-  description: "Buy premium Cooling Tower Spares & FRP Fans from Paltech™ – India's trusted cooling equipment manufacturer with 37+ years of industry expertise.",
+  description: "Buy premium Cooling Tower Spares & FRP Fans from Paltech™ – India's trusted cooling equipment manufacturer with 39+ years of industry expertise.",
   alternates: {
     canonical: '/spares',
   },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Cooling Tower Spares & FRP Fans | Paltech™ Industrial Cooling Components",
-    description: "Buy premium Cooling Tower Spares & FRP Fans from Paltech™ – India's trusted cooling equipment manufacturer with 37+ years of industry expertise.",
+    description: "Buy premium Cooling Tower Spares & FRP Fans from Paltech™ – India's trusted cooling equipment manufacturer with 39+ years of industry expertise.",
     type: "website",
   },
 };

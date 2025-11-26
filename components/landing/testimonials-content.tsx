@@ -94,7 +94,7 @@ export function TestimonialsContent() {
           </p>
           <div className="grid sm:grid-cols-2 gap-4 text-left">
             {[
-              "37+ years of proven expertise",
+              "39+ years of proven expertise",
               "ISO 9001:2015, ISO 14001:2015, OHSAS 45001:2018 certified",
               "CTI USA member",
               "46+ countries served globally",

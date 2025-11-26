@@ -5,7 +5,7 @@ import { useIntersectionObserver } from "@/hooks/use-intersection-observer";
 import { statsData } from "@/lib/data/landing-data";
 
 function StatItem({ value, label, isVisible }: { value: string; label: string; isVisible: boolean }) {
-  // Extract number from value string (e.g., "37+" -> 30)
+  // Extract number from value string (e.g., "39+" -> 30)
   const numericValue = parseInt(value.replace(/\D/g, ""), 10) || 0;
   const suffix = value.replace(/[0-9]/g, "");
   const count = useCounterAnimation(numericValue, 2000, isVisible);
