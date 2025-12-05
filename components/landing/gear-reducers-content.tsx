@@ -19,7 +19,7 @@ export function GearReducersContent() {
       </div>
 
       {/* High-Efficiency Section */}
-      <div className="bg-gradient-to-br from-primary/5 via-primary/3 to-transparent rounded-2xl p-6 sm:p-8 border border-primary/10">
+      <div className="bg-linear-to-br from-primary/5 via-primary/3 to-transparent rounded-2xl p-6 sm:p-8 border border-primary/10">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">High-Efficiency Gearboxes Designed for Cooling Tower Operations</h2>
         <p className="text-gray-700 leading-relaxed mb-4">
           Paltech™ Gear Reducers are right-angle gearboxes available in single and double reduction configurations to meet the varying torque and speed requirements of cooling tower fans and drive systems.
@@ -115,7 +115,7 @@ export function GearReducersContent() {
         ].map((highlight, index) => (
           <div
             key={index}
-            className="p-6 bg-gradient-to-br from-white to-gray-50 rounded-xl border border-gray-200 hover:border-primary/40 hover:shadow-lg transition-all duration-300 text-center"
+            className="p-6 bg-linear-to-br from-white to-gray-50 rounded-xl border border-gray-200 hover:border-primary/40 hover:shadow-lg transition-all duration-300 text-center"
           >
             <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mx-auto mb-4">
               {highlight.icon}
@@ -129,31 +129,153 @@ export function GearReducersContent() {
       {/* Technical Specifications */}
       <div className="space-y-6">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center">Technical Specifications</h2>
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-sm">
-            <thead>
-              <tr className="bg-primary text-white">
-                <th className="px-6 py-4 text-left font-semibold">Parameter</th>
-                <th className="px-6 py-4 text-left font-semibold">Specification</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                { parameter: "Type", spec: "Right-Angle Gear Reducer" },
-                { parameter: "Gear Design", spec: "Spiral Bevel / Spiral Bevel Cum Helical" },
-                { parameter: "Reduction Ratio", spec: "Single and Double Reduction" },
-                { parameter: "Mounting", spec: "Direct Replacement Dimensions" },
-                { parameter: "Lubrication", spec: "Splash Lubricated" },
-                { parameter: "Rating Standard", spec: "CTI STD-111 (86)" },
-                { parameter: "Application", spec: "Industrial Cooling Tower Fan Drives" }
-              ].map((row, index) => (
-                <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                  <td className="px-6 py-4 font-medium text-gray-900 border-t border-gray-200">{row.parameter}</td>
-                  <td className="px-6 py-4 text-gray-700 border-t border-gray-200">{row.spec}</td>
+
+        {/* PSB-200 */}
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+          <div className="bg-primary text-white px-6 py-4">
+            <h3 className="text-xl font-semibold">Spiral Bevel Gear Reducer PSB - 200</h3>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Model</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Gear Rated HP with SF &gt; 2 Over Prime Mover Power</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Output RPM at 1500 Input-RPM</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Net Weight (Kg)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Gross Weight with Packing (Kg)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Oil Capacity (Ltrs.)</th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {[
+                  { model: "PSB 200", hp: "35", rpm: "553", netWeight: "95", grossWeight: "105", oilCapacity: "9.5" },
+                  { model: "PSB 200", hp: "35", rpm: "459", netWeight: "95", grossWeight: "105", oilCapacity: "9.5" },
+                  { model: "PSB 200", hp: "25", rpm: "365", netWeight: "95", grossWeight: "105", oilCapacity: "9.5" }
+                ].map((row, index) => (
+                  <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                    <td className="px-4 py-3 font-medium text-gray-900 border-t border-gray-200">{row.model}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.hp}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.rpm}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.netWeight}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.grossWeight}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.oilCapacity}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* PSB-300 */}
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+          <div className="bg-primary text-white px-6 py-4">
+            <h3 className="text-xl font-semibold">Spiral Bevel Gear Reducer PSB - 300</h3>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Model</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Gear Rated HP with SF &gt; 2 Over Prime Mover Power</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Output RPM at 1500 Input-RPM</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Net Weight (Kg)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Gross Weight with Packing (Kg)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Oil Capacity (Ltrs.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { model: "PSB 300", hp: "60", rpm: "272", netWeight: "170", grossWeight: "195", oilCapacity: "15" },
+                  { model: "PSB 300", hp: "70", rpm: "328", netWeight: "170", grossWeight: "195", oilCapacity: "15" }
+                ].map((row, index) => (
+                  <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                    <td className="px-4 py-3 font-medium text-gray-900 border-t border-gray-200">{row.model}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.hp}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.rpm}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.netWeight}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.grossWeight}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.oilCapacity}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* PSB-400 */}
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+          <div className="bg-primary text-white px-6 py-4">
+            <h3 className="text-xl font-semibold">Spiral Bevel Gear Reducer PSB - 400</h3>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Model</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Gear Rated HP with SF &gt; 2 Over Prime Mover Power</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Output RPM at 1500 Input-RPM</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Net Weight (Kg)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Gross Weight with Packing (Kg)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Oil Capacity (Ltrs.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { model: "PSB 400", hp: "80", rpm: "260", netWeight: "375", grossWeight: "405", oilCapacity: "40" },
+                  { model: "PSB 400", hp: "75", rpm: "195", netWeight: "375", grossWeight: "405", oilCapacity: "40" }
+                ].map((row, index) => (
+                  <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                    <td className="px-4 py-3 font-medium text-gray-900 border-t border-gray-200">{row.model}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.hp}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.rpm}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.netWeight}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.grossWeight}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.oilCapacity}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        {/* PSB-500 & PSB-600 */}
+        <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+          <div className="bg-primary text-white px-6 py-4">
+            <h3 className="text-xl font-semibold">Spiral Bevel Cum Helical Gear Reducer PSB - 500 & PSB 600</h3>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+              <thead>
+                <tr className="bg-gray-100">
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Model</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Gear Rated HP with SF &gt; 2 Over Prime Mover Power</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Output RPM at 1500 Input-RPM</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Net Weight (Kg)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Gross Weight with Packing (Kg)</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Oil Capacity (Ltrs.)</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  { model: "PSB 500", hp: "160", rpm: "134", netWeight: "850", grossWeight: "925", oilCapacity: "45" },
+                  { model: "PSB 500", hp: "160", rpm: "116", netWeight: "850", grossWeight: "925", oilCapacity: "45" },
+                  { model: "PSB 500", hp: "160", rpm: "170", netWeight: "850", grossWeight: "925", oilCapacity: "45" },
+                  { model: "PSB 500", hp: "175", rpm: "100", netWeight: "850", grossWeight: "925", oilCapacity: "45" },
+                  { model: "PSB 600", hp: "220", rpm: "115", netWeight: "1400", grossWeight: "1500", oilCapacity: "75" }
+                ].map((row, index) => (
+                  <tr key={index} className={index % 2 === 0 ? "bg-white" : "bg-gray-50"}>
+                    <td className="px-4 py-3 font-medium text-gray-900 border-t border-gray-200">{row.model}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.hp}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.rpm}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.netWeight}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.grossWeight}</td>
+                    <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.oilCapacity}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
@@ -202,7 +324,7 @@ export function GearReducersContent() {
       </div>
 
       {/* Applications */}
-      <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl p-6 sm:p-8 border border-gray-200">
+      <div className="bg-linear-to-br from-gray-50 to-white rounded-2xl p-6 sm:p-8 border border-gray-200">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Applications</h2>
         <p className="text-gray-700 mb-4">Paltech™ Gear Reducers are used in:</p>
         <ul className="grid sm:grid-cols-2 gap-3">
@@ -282,7 +404,7 @@ export function GearReducersContent() {
       </div>
 
       {/* CTA */}
-      <div className="bg-gradient-to-br from-primary to-primary/90 rounded-2xl p-8 sm:p-12 text-center text-white">
+      <div className="bg-linear-to-br from-primary to-primary/90 rounded-2xl p-8 sm:p-12 text-center text-white">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
           Enhance Your Cooling Tower's Efficiency
         </h2>
