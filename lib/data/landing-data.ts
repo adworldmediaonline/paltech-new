@@ -370,18 +370,6 @@ export const navItems: NavItem[] = [
         href: "#",
         subItems: [
           {
-            label: "Gear Reducers",
-            href: "/spares/gear-reducers"
-          },
-          {
-            label: "Fan Cylinders",
-            href: "/spares/fan-cylinders"
-          },
-          {
-            label: "Fan Guards",
-            href: "/spares/fan-guards"
-          },
-          {
             label: "Drift Eliminator",
             href: "/spares/fills/drift-eliminator"
           },
@@ -392,8 +380,7 @@ export const navItems: NavItem[] = [
           {
             label: "Nozzles",
             href: "/spares/fills/nozzles"
-          },
-
+          }
         ]
       }
     ]
@@ -426,6 +413,21 @@ export const navItems: NavItem[] = [
       {
         title: "Reverse Osmosis / R.O",
         href: "/other-services/reverse-osmosis-ro",
+        subItems: []
+      },
+      {
+        title: "Gear Reducers",
+        href: "/spares/gear-reducers",
+        subItems: []
+      },
+      {
+        title: "Fan Cylinders",
+        href: "/spares/fan-cylinders",
+        subItems: []
+      },
+      {
+        title: "Fan Guards",
+        href: "/spares/fan-guards",
         subItems: []
       }
     ]
