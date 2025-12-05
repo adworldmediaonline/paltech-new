@@ -5,12 +5,11 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import rcc1 from '../../../../public/categories/rcc-cooling-tower-1.png';
-import rcc2 from '../../../../public/categories/rcc-cooling-tower-2.png';
-import rcc3 from '../../../../public/categories/rcc-cooling-tower-3.png';
+import rcc1 from '../../../../public/categories/rcc-cooling-tower-1.png.jpg';
+import rcc2 from '../../../../public/categories/rcc-cooling-tower-2.png.jpg';
 
 
-const images = [rcc1, rcc2, rcc3];
+const images = [rcc1, rcc2];
 
 export const metadata: Metadata = {
   title: "RCC Concrete Cooling Towers | Large-Scale Industrial Cooling",
