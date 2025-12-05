@@ -68,33 +68,104 @@ export function AluminumFansContent() {
       {/* Technical Specifications */}
       <div className="space-y-6">
         <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center">Technical Specifications</h2>
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse bg-white rounded-xl overflow-hidden shadow-sm">
-            <thead>
-              <tr className="bg-primary text-white">
-                <th className="px-6 py-4 text-left font-semibold">Feature</th>
-                <th className="px-6 py-4 text-left font-semibold">Specification</th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                { feature: "Usage", specification: "Commercial Cooling Tower" },
-                { feature: "Material", specification: "Premium Aluminum Alloy" },
-                { feature: "Blade Diameter Range", specification: "3' to 6' (Custom sizes available)" },
-                { feature: "Blade Width", specification: "5 inches" },
-                { feature: "Hub Design", specification: "Extruded Alloy" },
-                { feature: "Plate Material", specification: "5052-H32 Aluminum" },
-                { feature: "Hardware", specification: "Zinc-Plated Carbon Steel Bushing/Clamps" },
-                { feature: "Corrosion Protection", specification: "Specialized Coating" },
-                { feature: "Application", specification: "Industrial Cooling Systems" }
-              ].map((row, index) => (
-                <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
-                  <td className="px-6 py-4 font-medium text-gray-900 border-t border-gray-200">{row.feature}</td>
-                  <td className="px-6 py-4 text-gray-700 border-t border-gray-200">{row.specification}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+
+        {/* Performance & Operating Ranges */}
+        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+          <div className="bg-primary text-white px-6 py-4">
+            <h3 className="text-xl font-semibold">Performance & Operating Ranges</h3>
+          </div>
+          <div className="p-6">
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Air Flow</h4>
+                  <p className="text-gray-700">3.0 million CMH (850 M³/Sec) maximum</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Static Pressure</h4>
+                  <p className="text-gray-700">3.0 inch (75 mm) wc maximum</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Available Size Range & Standard Features */}
+        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+          <div className="bg-primary text-white px-6 py-4">
+            <h3 className="text-xl font-semibold">Available Size Range & Standard Features</h3>
+          </div>
+          <div className="p-6">
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Diameter</h4>
+                  <p className="text-gray-700">2 feet (914 mm) to 34 feet (10363 mm)</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">No. of Blades</h4>
+                  <p className="text-gray-700">3 to 10 blades</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Blade Pitch Angle</h4>
+                  <p className="text-gray-700">Adjustable</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <CheckCircle className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Leading Edge Protection</h4>
+                  <p className="text-gray-700">Included on all blades</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Material of Construction */}
+        <div className="bg-white rounded-xl border border-gray-200 overflow-hidden shadow-sm">
+          <div className="bg-primary text-white px-6 py-4">
+            <h3 className="text-xl font-semibold">Material of Construction</h3>
+          </div>
+          <div className="p-6">
+            <p className="text-gray-700 mb-6">The best available is used for the manufacturing of fan assemblies confirming various international standards. The specification of these are as below:</p>
+            <div className="overflow-x-auto">
+              <table className="w-full border-collapse">
+                <thead>
+                  <tr className="border-b border-gray-200">
+                    <th className="px-4 py-3 text-left font-semibold text-gray-900">Component</th>
+                    <th className="px-4 py-3 text-left font-semibold text-gray-900">Material Specification</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {[
+                    { component: "HUB ASSEMBLY", material: "HDGMS TO AISI 304" },
+                    { component: "HARDWARE", material: "SST TO AISI 304" },
+                    { component: "HUB SPOOL", material: "CI TO IS 210-1970" },
+                    { component: "CLAMPS", material: "LM 6 TO BS 1490 1963" },
+                    { component: "HUB BODY", material: "HDGMS" },
+                    { component: "BLADES", material: "ISO AND EPOXY RESIN AS PER ASTM CODES" }
+                  ].map((row, index) => (
+                    <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
+                      <td className="px-4 py-3 font-medium text-gray-900 border-t border-gray-200">{row.component}</td>
+                      <td className="px-4 py-3 text-gray-700 border-t border-gray-200">{row.material}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
 
