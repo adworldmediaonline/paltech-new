@@ -27,7 +27,7 @@ export function CategoryHero({
   const sliderImages = images || [imageSrc, imageSrc, imageSrc];
 
   return (
-    <section className="relative w-full pt-32">
+    <section className="relative w-full pt-20 sm:pt-32">
       <div className="relative w-full overflow-hidden bg-gray-100">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
@@ -47,18 +47,19 @@ export function CategoryHero({
         >
           {sliderImages.map((img, index) => (
             <SwiperSlide key={index}>
-              <div className="relative w-full min-h-[200px] sm:min-h-[260px] md:min-h-[320px] lg:min-h-[400px] flex items-center justify-center">
+              <div className="relative w-full h-full flex items-center justify-center">
                 {/* Image container */}
-                <div className="absolute inset-0 w-full h-full">
-                  <Image
-                    src={img}
-                    alt={`${alt} - Slide ${index + 1}`}
-                    fill
-                    sizes="100vw"
-                    className="object-cover"
-                    priority={index === 0}
-                  />
-                </div>
+                {/* <div className="absolute inset-0 w-full h-full"> */}
+                <Image
+                  src={img}
+                  alt={`${alt} - Slide ${index + 1}`}
+                  // fill
+                  // sizes="100vw"
+                  className="object-cover object-center w-full h-full"
+                  // priority={index === 0}
+                  unoptimized={true}
+                />
+                {/* </div> */}
                 {/* Gradient overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent pointer-events-none z-[1]" />
                 {/* Breadcrumb overlay - only on first slide */}

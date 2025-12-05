@@ -4,10 +4,10 @@ import { Breadcrumb, BreadcrumbItem, BreadcrumbLink, BreadcrumbList, BreadcrumbP
 import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
-import pultruded1 from '../../../../public/categories/pultruded-frp-cooling-towers-1.webp';
-import pultruded2 from '../../../../public/categories/pultruded-frp-cooling-towers-2.webp';
-import pultruded3 from '../../../../public/categories/pultruded-frp-cooling-towers-3.webp';
-import pultruded4 from '../../../../public/categories/pultruded-frp-cooling-towers-4.webp';
+import pultruded1 from '../../../../public/categories/pultruded-frp-cooling-towers-1.png';
+import pultruded2 from '../../../../public/categories/pultruded-frp-cooling-towers-2.png';
+import pultruded3 from '../../../../public/categories/pultruded-frp-cooling-towers-3.png';
+import pultruded4 from '../../../../public/categories/pultruded-frp-cooling-towers-4.png';
 
 const images = [pultruded1, pultruded2, pultruded3, pultruded4];
 
