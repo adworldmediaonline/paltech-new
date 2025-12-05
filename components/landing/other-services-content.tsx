@@ -208,7 +208,7 @@ export function OtherServicesContent() {
             <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mx-auto mb-4">
               <Users className="w-8 h-8" />
             </div>
-            <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">9,000+</div>
+            <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">11,000+</div>
             <div className="text-sm text-gray-600 font-medium">Satisfied Clients</div>
           </div>
           <div className="text-center">

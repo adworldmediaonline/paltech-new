@@ -15,7 +15,7 @@ export function WoodenTimberReductionGearboxDriveSystemContent() {
     },
     {
       icon: <Users className="w-5 h-5" />,
-      title: "9,000+ Satisfied Clients",
+      title: "11,000+ Satisfied Clients",
       description: "A vast client base trusts Paltech™ for their industrial cooling solutions worldwide, demonstrating proven track record and customer satisfaction."
     },
     {

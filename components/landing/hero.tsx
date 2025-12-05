@@ -70,7 +70,7 @@ export function Hero() {
 
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-10 sm:mb-12 leading-relaxed max-w-4xl mx-auto font-light px-4">
               Over 39+ of Years delivering quality products and most reliable services.
-              Trusted by 9,000+ clients worldwide with 14,000+ installations across 46+ countries.
+              Trusted by 11,000+ clients worldwide with 14,000+ installations across 46+ countries.
             </p>
 
             {/* CTAs */}

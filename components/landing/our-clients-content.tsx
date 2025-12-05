@@ -200,7 +200,7 @@ export function OurClientsContent() {
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             <span className="text-sm font-semibold text-foreground">
-              9,000+ clients
+              11,000+ clients
             </span>
           </div>
           <div className="w-px h-4 bg-gray-300" />
