@@ -1,5 +1,9 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Building2, Factory } from "lucide-react";
+import Image from "next/image";
+import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Building2 } from "lucide-react";
+
+import rccCounterFlowCoolingTower from "../../public/rcc-img/RCC COUNTER-FLOW COOLING TOWER-Model_page-0001.jpg";
+import rccCrossFlowCoolingTower from "../../public/rcc-img/RCC CROSS-FLOW COOLING TOWER-Model_page-0001.jpg";
 
 export function RCCConcreteCoolingTowersContent() {
   const availableTypes = [
@@ -168,8 +172,56 @@ export function RCCConcreteCoolingTowersContent() {
         </div>
       </section>
 
-      {/* Applications */}
+      {/* Counter Flow Technical Drawing */}
       <section className="py-16 bg-gray-50">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
+                RCC Counter Flow Cooling Tower
+              </h2>
+              <p className="text-lg text-gray-600">Vertical air flow configuration</p>
+            </div>
+
+            <div className="relative w-full overflow-hidden bg-white">
+              <Image
+                src={rccCounterFlowCoolingTower}
+                alt="RCC Counter Flow Cooling Tower Technical Drawing"
+                // fill
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Cross Flow Technical Drawing */}
+      <section className="py-16 bg-white">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
+                RCC Cross Flow Cooling Tower
+              </h2>
+              <p className="text-lg text-gray-600">Horizontal air flow configuration</p>
+            </div>
+
+            <div className="relative w-full overflow-hidden bg-white">
+              <Image
+                src={rccCrossFlowCoolingTower}
+                alt="RCC Cross Flow Cooling Tower Technical Drawing"
+                // fill
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Applications */}
+      <section className="py-16 bg-white">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">

@@ -1,5 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight, CheckCircle, Zap, Settings, Droplets, Shield, Award, Factory, Building2 } from "lucide-react";
+
+import pultrudedFRPCoolingTower from "../../public/PULTRUDED FRP COOLING TOWER-Model_page-0001.jpg";
 
 export function PultrudedFRPCoolingTowersContent() {
   const availableTypes = [
@@ -142,7 +145,7 @@ export function PultrudedFRPCoolingTowersContent() {
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {uspFeatures.map((usp, index) => (
-                <div key={index} className="bg-gradient-to-br from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200 hover:shadow-lg transition-shadow">
+                <div key={index} className="bg-linear-to-br from-green-50 to-emerald-50 p-6 rounded-xl border border-green-200 hover:shadow-lg transition-shadow">
                   <div className="flex items-center gap-3 mb-4">
                     <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center text-green-600">
                       {usp.icon}
@@ -208,7 +211,7 @@ export function PultrudedFRPCoolingTowersContent() {
               {additionalFeatures.map((feature, index) => (
                 <div key={index} className="bg-gray-50 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                    <div className="shrink-0 w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
                       {feature.icon}
                     </div>
                     <div className="flex-1">
@@ -240,7 +243,7 @@ export function PultrudedFRPCoolingTowersContent() {
               {availableTypes.map((type, index) => (
                 <div key={index} className="bg-white rounded-xl p-6 border border-gray-200 hover:shadow-lg transition-shadow">
                   <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
+                    <div className="shrink-0 w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
                       {type.icon}
                     </div>
                     <div className="flex-1">
@@ -255,8 +258,31 @@ export function PultrudedFRPCoolingTowersContent() {
         </div>
       </section>
 
-      {/* Applications */}
+      {/* Technical Drawing */}
       <section className="py-16 bg-white">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">
+                Pultruded FRP Cooling Tower
+              </h2>
+              <p className="text-lg text-gray-600">Technical Design Schematic</p>
+            </div>
+
+            <div className="relative w-full overflow-hidden bg-white">
+              <Image
+                src={pultrudedFRPCoolingTower}
+                alt="Pultruded FRP Cooling Tower Technical Drawing"
+                className="object-cover"
+                sizes="100vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Applications */}
+      <section className="py-16 bg-gray-50">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
@@ -287,7 +313,7 @@ export function PultrudedFRPCoolingTowersContent() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-gradient-to-br from-primary to-primary/90 text-white">
+      <section className="py-16 bg-linear-to-br from-primary to-primary/90 text-white">
         <div className="px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold mb-6">
             Ready to Upgrade Your Cooling System?
