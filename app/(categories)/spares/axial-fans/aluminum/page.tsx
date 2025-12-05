@@ -5,10 +5,10 @@ import { USPSidebar } from "@/components/landing/usp-sidebar";
 import Link from "next/link";
 import { Metadata } from "next";
 
-import aluminumFans1 from '../../../../../public/categories/aluminum-fans-1.webp';
-import aluminumFans2 from '../../../../../public/categories/aluminum-fans-2.webp';
-import aluminumFans3 from '../../../../../public/categories/aluminum-fans-3.webp';
-import aluminumFans4 from '../../../../../public/categories/aluminum-fans-4.webp';
+import aluminumFans1 from '../../../../../public/categories/axial-fans-aluminum-1.jpeg';
+import aluminumFans2 from '../../../../../public/categories/axial-fans-aluminum-2.jpeg';
+import aluminumFans3 from '../../../../../public/categories/axial-fans-aluminum-3.jpeg';
+import aluminumFans4 from '../../../../../public/categories/axial-fans-aluminum-4.jpeg';
 
 const images = [aluminumFans1, aluminumFans2, aluminumFans3, aluminumFans4];
 
