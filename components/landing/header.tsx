@@ -138,14 +138,14 @@ export function Header() {
                                               </div>
                                             </>
                                           ) : (
-                                            <NavigationMenuLink asChild>
-                                              <Link
-                                                href={subItem.href}
-                                                className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors wrap-break-word leading-relaxed"
-                                              >
-                                                {subItem.label}
-                                              </Link>
-                                            </NavigationMenuLink>
+                                          <NavigationMenuLink asChild>
+                                            <Link
+                                              href={subItem.href}
+                                              className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors wrap-break-word leading-relaxed"
+                                            >
+                                              {subItem.label}
+                                            </Link>
+                                          </NavigationMenuLink>
                                           )}
                                         </div>
                                       ))}
