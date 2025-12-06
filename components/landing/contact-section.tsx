@@ -169,18 +169,24 @@ export function ContactSection() {
               </div>
 
               {/* Location */}
-              <div className="group flex items-start gap-4 p-5 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary/30 transition-all duration-300 backdrop-blur-sm">
+              <a
+                href="https://maps.app.goo.gl/Ss4PVVu3ScZ8MiCZ8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-start gap-4 p-5 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 hover:border-primary/30 transition-all duration-300 backdrop-blur-sm"
+              >
                 <div className="shrink-0 w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center">
                   <MapPin className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
                 </div>
                 <div className="flex-1">
                   <span className="text-xs text-white/60 uppercase tracking-wider font-medium block mb-1">Location</span>
-                  <p className="text-sm font-medium text-white leading-relaxed">
+                  <p className="text-sm font-medium text-white leading-relaxed group-hover:text-primary transition-colors">
                     Plot No. 774, IInd Floor, Udyog Vihar,<br />
                     Phase - V, Gurugram, Haryana-122016
                   </p>
+                  <span className="text-xs text-primary/80 mt-2 block">Click to view on Google Maps →</span>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
 
