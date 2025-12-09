@@ -3,14 +3,10 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from "@/components/ui/hover-card";
 import { ProductDropdownMobile } from "@/components/landing/product-dropdown";
 import { useScrollPosition } from "@/hooks/use-scroll-position";
 import { navItems } from "@/lib/data/landing-data";
@@ -72,152 +68,157 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <NavigationMenu className="hidden md:flex">
-            <NavigationMenuList className="flex items-center gap-1">
-              {navItems.map((item) => (
-                <NavigationMenuItem key={item.href}>
-                  {item.hasDropdown && item.productCategories ? (
-                    <>
-                      <NavigationMenuTrigger className={`flex bg-transparent items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
-                        ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
-                        : "text-white/80 hover:text-white hover:bg-white/10"
-                        }`}>
-                        {item.label}
-                      </NavigationMenuTrigger>
-                      <NavigationMenuContent className="navigation-menu-content">
-                        <div className="px-4 sm:px-6 py-6 sm:py-8 max-h-[70vh] overflow-y-auto w-full max-w-full">
-                          {(() => {
-                            // Separate categories with subItems from those without
-                            const categoriesWithItems = item.productCategories.filter(cat => cat.subItems && cat.subItems.length > 0);
-                            const categoriesWithoutItems = item.productCategories.filter(cat => !cat.subItems || cat.subItems.length === 0);
-
-                            return (
-                              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6">
-                                {/* Categories with sub-items */}
-                                {categoriesWithItems.map((category) => (
-                                  <div key={category.title || 'spares'} className="min-w-0">
-                                    {/* Category Header */}
-                                    {category.title && (
-                                      <NavigationMenuLink asChild>
-                                        <Link href={category.href} className="block mb-3 sm:mb-4">
-                                          <h3 className="text-base sm:text-lg font-bold text-gray-900 hover:text-primary transition-colors">
-                                            {category.title}
-                                          </h3>
-                                        </Link>
-                                      </NavigationMenuLink>
-                                    )}
-
-                                    {/* Products List - All Visible */}
-                                    <div className="space-y-1 sm:space-y-2">
-                                      {category.subItems?.map((subItem) => (
-                                        <div key={subItem.label} className="min-w-0 group/nested relative">
-                                          {subItem.nestedItems && subItem.nestedItems.length > 0 ? (
-                                            <>
-                                              <NavigationMenuLink asChild>
-                                                <Link
-                                                  href={subItem.href}
-                                                  className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors wrap-break-word leading-relaxed pr-6"
-                                                >
-                                                  {subItem.label}
-                                                  <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 opacity-50 group-hover/nested:opacity-100 group-hover/nested:rotate-180 transition-all duration-200" />
-                                                </Link>
-                                              </NavigationMenuLink>
-                                              {/* Nested Items - Dropdown on Hover */}
-                                              <div className="absolute left-full top-0 ml-2 w-[280px] sm:w-[320px] bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 z-50 py-2">
-                                                <div className="space-y-0.5">
-                                                  {subItem.nestedItems.map((nested) => (
-                                                    <Link
-                                                      key={nested.label}
-                                                      href={nested.href}
-                                                      className="block py-2 px-4 text-xs sm:text-sm text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors wrap-break-word leading-relaxed"
-                                                    >
-                                                      {nested.label}
-                                                    </Link>
-                                                  ))}
-                                                </div>
-                                              </div>
-                                            </>
-                                          ) : (
-                                          <NavigationMenuLink asChild>
-                                            <Link
-                                              href={subItem.href}
-                                              className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors wrap-break-word leading-relaxed"
-                                            >
-                                              {subItem.label}
-                                            </Link>
-                                          </NavigationMenuLink>
-                                          )}
-                                        </div>
-                                      ))}
-                                    </div>
-                                  </div>
-                                ))}
-
-                                {/* Fourth column for categories without sub-items */}
-                                {categoriesWithoutItems.length > 0 && (
-                                  <div className="min-w-0">
-                                    <div className="space-y-1 sm:space-y-2">
-                                      {categoriesWithoutItems.map((category) => (
-                                        <NavigationMenuLink asChild key={category.title || 'spares'}>
-                                          <Link
-                                            href={category.href}
-                                            className="block py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-gray-900 hover:text-primary transition-colors wrap-break-word leading-relaxed"
-                                          >
-                                            {category.title}
-                                          </Link>
-                                        </NavigationMenuLink>
-                                      ))}
-                                    </div>
-                                  </div>
-                                )}
-                              </div>
-                            );
-                          })()}
-                        </div>
-                      </NavigationMenuContent>
-                    </>
-                  ) : item.hasDropdown && item.subItems ? (
-                    <>
-                      <NavigationMenuTrigger className={`flex bg-transparent items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
-                        ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
-                        : "text-white/80 hover:text-white hover:bg-white/10"
-                        }`}>
-                        {item.label}
-                      </NavigationMenuTrigger>
-                      <NavigationMenuContent>
-                        <ul className="grid w-[180px] sm:w-[200px] gap-1 sm:gap-2 p-3 sm:p-4">
-                          {item.subItems.map((subItem) => (
-                            <li key={subItem.href}>
-                              <NavigationMenuLink asChild>
-                                <Link
-                                  href={subItem.href}
-                                  className="block px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-gray-50 transition-colors rounded-md"
-                                >
-                                  {subItem.label}
-                                </Link>
-                              </NavigationMenuLink>
-                            </li>
-                          ))}
-                        </ul>
-                      </NavigationMenuContent>
-                    </>
-                  ) : (
-                    <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                      <Link
-                        href={item.href}
-                        className={`bg-transparent px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
+          <nav className="hidden md:flex items-center gap-1">
+            {navItems.map((item) => (
+              <div key={item.href}>
+                {item.hasDropdown && item.productCategories ? (
+                  <HoverCard openDelay={100} closeDelay={100}>
+                    <HoverCardTrigger asChild>
+                      <button
+                        className={`flex bg-transparent items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
                           ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
                           : "text-white/80 hover:text-white hover:bg-white/10"
                           }`}
                       >
                         {item.label}
-                      </Link>
-                    </NavigationMenuLink>
-                  )}
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-          </NavigationMenu>
+                        <ChevronDown className="w-3 h-3 opacity-50" />
+                      </button>
+                    </HoverCardTrigger>
+                    <HoverCardContent
+                      align="start"
+                      sideOffset={8}
+                      className="w-[min(95vw,1200px)] max-w-[95vw] p-0 max-h-[70vh] overflow-y-auto"
+                    >
+                      <div className="px-4 sm:px-6 py-6 sm:py-8">
+                        {(() => {
+                          // Separate categories with subItems from those without
+                          const categoriesWithItems = item.productCategories.filter(cat => cat.subItems && cat.subItems.length > 0);
+                          const categoriesWithoutItems = item.productCategories.filter(cat => !cat.subItems || cat.subItems.length === 0);
+
+                          return (
+                            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6">
+                              {/* Categories with sub-items */}
+                              {categoriesWithItems.map((category) => (
+                                <div key={category.title || 'spares'} className="min-w-0">
+                                  {/* Category Header */}
+                                  {category.title && (
+                                    <Link href={category.href} className="block mb-3 sm:mb-4">
+                                      <h3 className="text-base sm:text-lg font-bold text-gray-900 hover:text-primary transition-colors">
+                                        {category.title}
+                                      </h3>
+                                    </Link>
+                                  )}
+
+                                  {/* Products List - All Visible */}
+                                  <div className="space-y-1 sm:space-y-2">
+                                    {category.subItems?.map((subItem) => (
+                                      <div key={subItem.label} className="min-w-0 group/nested relative">
+                                        {subItem.nestedItems && subItem.nestedItems.length > 0 ? (
+                                          <>
+                                            <Link
+                                              href={subItem.href}
+                                              className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors wrap-break-word leading-relaxed pr-6"
+                                            >
+                                              {subItem.label}
+                                              <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 w-3 h-3 opacity-50 group-hover/nested:opacity-100 group-hover/nested:rotate-180 transition-all duration-200" />
+                                            </Link>
+                                            {/* Nested Items - Dropdown on Hover */}
+                                            <div className="absolute left-full top-0 ml-2 w-[280px] sm:w-[320px] bg-white border border-gray-200 rounded-lg shadow-lg opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition-all duration-200 z-50 py-2">
+                                              <div className="space-y-0.5">
+                                                {subItem.nestedItems.map((nested) => (
+                                                  <Link
+                                                    key={nested.label}
+                                                    href={nested.href}
+                                                    className="block py-2 px-4 text-xs sm:text-sm text-gray-700 hover:text-primary hover:bg-gray-50 transition-colors wrap-break-word leading-relaxed"
+                                                  >
+                                                    {nested.label}
+                                                  </Link>
+                                                ))}
+                                              </div>
+                                            </div>
+                                          </>
+                                        ) : (
+                                          <Link
+                                            href={subItem.href}
+                                            className="block py-1.5 sm:py-2 text-xs sm:text-sm hover:text-primary transition-colors wrap-break-word leading-relaxed"
+                                          >
+                                            {subItem.label}
+                                          </Link>
+                                        )}
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                              ))}
+
+                              {/* Categories without sub-items */}
+                              {categoriesWithoutItems.length > 0 && (
+                                <div className="min-w-0">
+                                  <div className="space-y-1 sm:space-y-2">
+                                    {categoriesWithoutItems.map((category) => (
+                                      <Link
+                                        key={category.title || 'spares'}
+                                        href={category.href}
+                                        className="block py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-gray-900 hover:text-primary transition-colors wrap-break-word leading-relaxed"
+                                      >
+                                        {category.title}
+                                      </Link>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
+                            </div>
+                          );
+                        })()}
+                      </div>
+                    </HoverCardContent>
+                  </HoverCard>
+                ) : item.hasDropdown && item.subItems ? (
+                  <HoverCard openDelay={100} closeDelay={100}>
+                    <HoverCardTrigger asChild>
+                      <button
+                        className={`flex bg-transparent items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
+                          ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
+                          : "text-white/80 hover:text-white hover:bg-white/10"
+                          }`}
+                      >
+                        {item.label}
+                        <ChevronDown className="w-3 h-3 opacity-50" />
+                      </button>
+                    </HoverCardTrigger>
+                    <HoverCardContent
+                      align="start"
+                      sideOffset={8}
+                      className="w-[200px] p-0"
+                    >
+                      <ul className="grid gap-1 sm:gap-2 p-3 sm:p-4">
+                        {item.subItems.map((subItem) => (
+                          <li key={subItem.href}>
+                            <Link
+                              href={subItem.href}
+                              className="block px-2 sm:px-3 py-1.5 sm:py-2 text-xs sm:text-sm font-medium text-foreground/70 hover:text-foreground hover:bg-gray-50 transition-colors rounded-md"
+                            >
+                              {subItem.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </HoverCardContent>
+                  </HoverCard>
+                ) : (
+                  <Link
+                    href={item.href}
+                    className={`bg-transparent px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium rounded-lg transition-all ${scrolled || isCategoryPage
+                      ? "text-foreground/70 hover:text-foreground hover:bg-gray-100/50"
+                      : "text-white/80 hover:text-white hover:bg-white/10"
+                      }`}
+                  >
+                    {item.label}
+                  </Link>
+                )}
+              </div>
+            ))}
+          </nav>
 
           {/* Desktop Actions */}
           <div className="hidden md:flex items-center gap-3">

@@ -339,38 +339,25 @@
     overflow: visible !important;
   }
 
+  /* NavigationMenu Viewport - Ensure it doesn't overflow */
+  [data-slot="navigation-menu-viewport"] {
+    max-width: min(95vw, 1200px) !important;
+  }
+
   /* NavigationMenu Content Styling */
   .navigation-menu-content {
-    width: min(95vw, 1200px) !important;
-    max-width: min(95vw, 1200px) !important;
+    width: 100% !important;
+    max-width: 100% !important;
     max-height: 70vh !important;
     overflow-y: auto !important;
     background: white !important;
     border-radius: 0.5rem !important;
     padding: 1rem !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
   }
 
-  @media (min-width: 640px) {
-    .navigation-menu-content {
-      width: min(90vw, 800px) !important;
-      max-width: min(90vw, 800px) !important;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .navigation-menu-content {
-      width: min(95vw, 1000px) !important;
-      max-width: min(95vw, 1000px) !important;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .navigation-menu-content {
-      width: min(95vw, 1200px) !important;
-      max-width: min(95vw, 1200px) !important;
-    }
+  .navigation-menu-content > div {
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .navigation-menu-content li {
@@ -379,20 +366,16 @@
   }
 
   /* Responsive NavigationMenu adjustments */
-  @media (max-width: 1024px) {
-    .navigation-menu-content {
-      left: 50% !important;
-      transform: translateX(-50%) !important;
-      width: min(95vw, 100%) !important;
-      max-width: min(95vw, 100%) !important;
-    }
-  }
-
-  /* Mobile-specific scrolling improvements */
   @media (max-width: 768px) {
+    [data-slot="navigation-menu"] > div:last-child {
+      max-width: 98vw !important;
+    }
+
+    [data-slot="navigation-menu-viewport"] {
+      max-width: 98vw !important;
+    }
+
     .navigation-menu-content {
-      width: min(95vw, 100%) !important;
-      max-width: min(95vw, 100%) !important;
       max-height: 60vh !important;
       overflow-y: auto !important;
       -webkit-overflow-scrolling: touch !important;
