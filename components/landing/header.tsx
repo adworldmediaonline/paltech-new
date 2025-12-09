@@ -85,14 +85,14 @@ export function Header() {
                         {item.label}
                       </NavigationMenuTrigger>
                       <NavigationMenuContent className="navigation-menu-content">
-                        <div className="px-4 sm:px-6 py-6 sm:py-8 max-h-[70vh] overflow-y-auto w-[90vw] sm:w-[800px] max-w-6xl">
+                        <div className="px-4 sm:px-6 py-6 sm:py-8 max-h-[70vh] overflow-y-auto w-full max-w-full">
                           {(() => {
                             // Separate categories with subItems from those without
                             const categoriesWithItems = item.productCategories.filter(cat => cat.subItems && cat.subItems.length > 0);
                             const categoriesWithoutItems = item.productCategories.filter(cat => !cat.subItems || cat.subItems.length === 0);
 
                             return (
-                              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+                              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 md:gap-6">
                                 {/* Categories with sub-items */}
                                 {categoriesWithItems.map((category) => (
                                   <div key={category.title || 'spares'} className="min-w-0">

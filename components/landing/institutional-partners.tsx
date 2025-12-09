@@ -33,7 +33,7 @@ export function InstitutionalPartners() {
             Institutional Collaboration
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Gear Reducer systems technically validated by IIT Delhi
+            Gear Reducer systems technically validated by IIT Delhi and Fan design is validate by Premier  Institute IIT, Mumbai
           </p>
         </div>
 

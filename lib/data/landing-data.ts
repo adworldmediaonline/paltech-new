@@ -366,6 +366,16 @@ export const navItems: NavItem[] = [
         ]
       },
       {
+        title: "Gear Reducers",
+        href: "/spares/gear-reducers",
+        subItems: [
+          {
+            label: "Gear Reducers",
+            href: "/spares/gear-reducers"
+          }
+        ]
+      },
+      {
         title: "Other",
         href: "#",
         subItems: [
@@ -413,11 +423,6 @@ export const navItems: NavItem[] = [
       {
         title: "Reverse Osmosis / R.O",
         href: "/other-services/reverse-osmosis-ro",
-        subItems: []
-      },
-      {
-        title: "Gear Reducers",
-        href: "/spares/gear-reducers",
         subItems: []
       },
       {
