@@ -28,7 +28,7 @@ export function CategoryHero({
 
   return (
     <section className="relative w-full pt-20 sm:pt-32">
-      <div className="relative w-full overflow-hidden bg-gray-100">
+      <div className="relative w-full overflow-hidden bg-gray-100 min-h-[240px] sm:min-h-[280px] md:min-h-[320px] lg:min-h-[380px]">
         <Swiper
           modules={[Autoplay, Navigation, Pagination]}
           autoplay={{
@@ -47,24 +47,23 @@ export function CategoryHero({
         >
           {sliderImages.map((img, index) => (
             <SwiperSlide key={index}>
-              <div className="relative w-full h-full flex items-center justify-center">
+              <div className="relative w-full min-h-[240px] sm:min-h-[280px] md:min-h-[320px] lg:min-h-[380px] flex items-center justify-center overflow-hidden">
                 {/* Image container */}
                 {/* <div className="absolute inset-0 w-full h-full"> */}
                 <Image
                   src={img}
                   alt={`${alt} - Slide ${index + 1}`}
-                  // fill
-                  // sizes="100vw"
-                  className="object-cover object-center w-full h-full"
-                  // priority={index === 0}
+                  fill
+                  sizes="100vw"
+                  className="object-cover object-center"
                   unoptimized={true}
                 />
                 {/* </div> */}
                 {/* Gradient overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent pointer-events-none z-[1]" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/40 via-black/10 to-transparent pointer-events-none z-1" />
                 {/* Breadcrumb overlay - only on first slide */}
                 {children && index === 0 && (
-                  <div className="absolute bottom-4 left-4 right-4 sm:left-6 sm:right-6 md:left-8 md:right-8 z-10">
+                  <div className="absolute bottom-5 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 md:left-8 md:right-8 md:bottom-8 z-10">
                     {children}
                   </div>
                 )}
@@ -79,11 +78,49 @@ export function CategoryHero({
         .category-hero-swiper {
           width: 100%;
           height: 100%;
+          min-height: 240px;
+        }
+
+        @media (min-width: 640px) {
+          .category-hero-swiper {
+            min-height: 280px;
+          }
+        }
+
+        @media (min-width: 768px) {
+          .category-hero-swiper {
+            min-height: 320px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .category-hero-swiper {
+            min-height: 380px;
+          }
         }
 
         .category-hero-swiper .swiper-slide {
           width: 100%;
-          height: auto;
+          height: 100%;
+          min-height: 240px;
+        }
+
+        @media (min-width: 640px) {
+          .category-hero-swiper .swiper-slide {
+            min-height: 280px;
+          }
+        }
+
+        @media (min-width: 768px) {
+          .category-hero-swiper .swiper-slide {
+            min-height: 320px;
+          }
+        }
+
+        @media (min-width: 1024px) {
+          .category-hero-swiper .swiper-slide {
+            min-height: 380px;
+          }
         }
 
         .category-hero-swiper .swiper-button-next,
@@ -110,7 +147,13 @@ export function CategoryHero({
         }
 
         .category-hero-swiper .swiper-pagination {
-          bottom: 20px;
+          bottom: 16px;
+        }
+
+        @media (min-width: 640px) {
+          .category-hero-swiper .swiper-pagination {
+            bottom: 20px;
+          }
         }
 
         .category-hero-swiper .swiper-pagination-bullet {
