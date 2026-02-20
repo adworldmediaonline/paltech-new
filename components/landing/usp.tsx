@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 export function USP() {
   const uspItems = [
     "Quality Products & Most Reliable Services",
-    "More than 39 years of mfg. Excellence",
+    "More than 39+ of mfg. Excellence",
     "More than 11000 clients",
     "Export to 46+ countries",
     "More than 11000 Installations Worldwide",

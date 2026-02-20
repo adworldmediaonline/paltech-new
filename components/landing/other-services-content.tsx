@@ -9,7 +9,7 @@ export function OtherServicesContent() {
           Paltech™ Annual Maintenance and Other Services
         </h1>
         <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-          Paltech™ offers industry-leading <strong>annual maintenance and allied services</strong> for cooling towers, ensuring sustained performance, longevity, and operational reliability of your cooling infrastructure. With over <strong>39 years of experience</strong> and <strong>11,000+ installations worldwide</strong>, our expert team delivers tailored solutions across diverse cooling tower types—RCC, wooden, FRP, and more.
+          Paltech™ offers industry-leading <strong>annual maintenance and allied services</strong> for cooling towers, ensuring sustained performance, longevity, and operational reliability of your cooling infrastructure. With over <strong>39+ of experience</strong> and <strong>11,000+ installations worldwide</strong>, our expert team delivers tailored solutions across diverse cooling tower types—RCC, wooden, FRP, and more.
         </p>
       </div>
 

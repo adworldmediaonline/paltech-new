@@ -11,7 +11,7 @@ export function SparesContent() {
           Spares and FRP Fans – High-Performance Cooling Tower Components
         </h1>
         <p className="text-lg sm:text-xl text-gray-600 leading-relaxed">
-          Paltech™ Cooling Towers and Equipments Ltd. is one of India's most trusted manufacturers and exporters of <strong>Cooling Tower Spares, FRP Fans, and Industrial Cooling Components</strong>. With over 39 years of engineering excellence, Paltech™ designs and delivers precision-built components that enhance cooling performance, minimize downtime, and extend equipment life.
+          Paltech™ Cooling Towers and Equipments Ltd. is one of India's most trusted manufacturers and exporters of <strong>Cooling Tower Spares, FRP Fans, and Industrial Cooling Components</strong>. With over 39+ of engineering excellence, Paltech™ designs and delivers precision-built components that enhance cooling performance, minimize downtime, and extend equipment life.
         </p>
         <p className="text-base sm:text-lg text-gray-600">
           Our spare parts are compatible with FRP, Timber, RCC, and Crossflow Cooling Towers across multiple industries, ensuring seamless integration and reliable performance.
