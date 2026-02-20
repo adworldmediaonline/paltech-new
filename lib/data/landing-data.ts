@@ -552,14 +552,14 @@ export const whyChooseData: WhyChooseData = {
 export const principlesData: PrinciplesData = {
   eyebrow: "OUR PRINCIPLES",
   headline: "Built on a foundation of excellence and innovation",
-  subheadline: "36+ years of delivering the best quality products and most reliable services at the most reasonable prices in the market",
+  subheadline: "39+ years of delivering the best quality products and most reliable services at the most reasonable prices in the market",
   principles: [
     {
       icon: "award",
       title: "Quality Products & Services",
       description:
-        "Paltech™, our brand name, stands for the best quality products, genuine accessories, and the most reliable services at the most reasonable prices in the market. With over 36 years of experience in the industry, we are here to provide you with the best quality products and services compared to any other company in India.",
-      highlight: "36+ Years Excellence",
+        "Paltech™, our brand name, stands for the best quality products, genuine accessories, and the most reliable services at the most reasonable prices in the market. With over 39+ years of experience in the industry, we are here to provide you with the best quality products and services compared to any other company in India.",
+      highlight: "39+ years Excellence",
     },
     {
       icon: "crosshair",

@@ -14,7 +14,7 @@ export function DriveShaftsContent() {
           At Paltech™ Cooling Towers and Equipments Ltd., we manufacture high-performance <strong>drive shafts</strong> engineered to deliver smooth, vibration-free power transmission for all types of industrial cooling towers. Designed for long service life, our single-piece dynamically balanced drive shafts ensure maximum mechanical efficiency with minimal maintenance requirements.
         </p>
         <p className="text-base sm:text-lg text-gray-600">
-          With over 39 years of manufacturing expertise, Paltech™ has become a trusted name in cooling tower components across India and over 30 export countries. Our drive shafts are built to perform efficiently under the toughest industrial conditions — from power plants to chemical and steel industries.
+          With over 39+ years of manufacturing expertise, Paltech™ has become a trusted name in cooling tower components across India and over 30 export countries. Our drive shafts are built to perform efficiently under the toughest industrial conditions — from power plants to chemical and steel industries.
         </p>
       </div>
 
